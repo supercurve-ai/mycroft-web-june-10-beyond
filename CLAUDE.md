@@ -28,6 +28,15 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
    markup (dropdowns, sliders, tabs) — it wires those after hydration.
 4. Set `NEXT_PUBLIC_SITE_URL` to the production domain before launch so the
    sitemap + metadata point at the right host.
+5. **No Webflow dependencies.** The client is leaving Webflow, so this site
+   must not rely on anything Webflow-hosted. Never add a new reference to
+   `cdn.prod.website-files.com` (or any other Webflow-served URL) in code,
+   CSS, or metadata. The clone still contains legacy references (images,
+   OG/Twitter share images, CSS `url(...)` assets) — these are being migrated
+   to self-hosted copies under `public/`. When touching a file that still
+   points at the Webflow CDN, download the asset into `public/` and reference
+   the local copy instead. Verify with:
+   `grep -rl "cdn.prod.website-files.com" src/`
 
 ## Non-technical owner
 
