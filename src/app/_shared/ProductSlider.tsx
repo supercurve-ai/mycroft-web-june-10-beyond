@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { KeyboardEvent, MouseEvent } from "react";
+import type { FocusEvent, KeyboardEvent, MouseEvent } from "react";
 import { ProductSlideCard, type ProductSlide } from "./ProductSlideCard";
 
 type ProductSliderProps = {
@@ -14,7 +14,7 @@ type ProductSliderProps = {
  * The home-page product carousel ("5 pillars"). Self-contained React state
  * replaces the captured Webflow slider runtime: slides are stacked in the
  * mask and crossfaded by index. Advance by clicking the card itself, the
- * prev/next arrows, or wait for autoplay (which stops on first interaction).
+ * prev/next arrows, or wait for autoplay (paused while hovered/focused).
  * Markup/class names mirror the original so webflow-shared.css applies.
  * Timings/easings reproduce the original site's IX2 "Product Slider IN/OUT"
  * interactions (slide drift + fade here; cover wipe + Lottie fade in the card).
@@ -24,37 +24,42 @@ export function ProductSlider({
   autoplayDelay = 8000,
 }: ProductSliderProps) {
   const [index, setIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
+  // autoplay pauses while the pointer or keyboard focus is inside the slider
+  // and resumes on leave — same as the original Webflow slider runtime
+  const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
 
   const go = (n: number) =>
     setIndex(((n % slides.length) + slides.length) % slides.length);
-  const interact = (n: number) => {
-    setPaused(true);
-    go(n);
-  };
 
   useEffect(() => {
-    if (paused || !autoplayDelay) return;
+    if (hovered || focused || !autoplayDelay) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const timer = setInterval(
+    // keyed on index so each advance (auto or manual) restarts the full delay
+    const timer = setTimeout(
       () => setIndex((i) => (i + 1) % slides.length),
       autoplayDelay,
     );
-    return () => clearInterval(timer);
-  }, [paused, autoplayDelay, slides.length]);
+    return () => clearTimeout(timer);
+  }, [hovered, focused, index, autoplayDelay, slides.length]);
 
   // the whole card is clickable to advance — but let the "Learn more" link
   // navigate without also flipping the slide
   const onMaskClick = (e: MouseEvent<HTMLDivElement>) => {
     if ((e.target as HTMLElement).closest("a")) return;
-    interact(index + 1);
+    go(index + 1);
   };
 
   const arrowKeys = (n: number) => (e: KeyboardEvent<HTMLDivElement>) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
-      interact(n);
+      go(n);
     }
+  };
+
+  // only unpause when focus moves fully outside the slider
+  const onBlur = (e: FocusEvent<HTMLDivElement>) => {
+    if (!e.currentTarget.contains(e.relatedTarget)) setFocused(false);
   };
 
   return (
@@ -65,6 +70,10 @@ export function ProductSlider({
         data-wf-slider=""
         role="region"
         aria-label="carousel"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        onFocus={() => setFocused(true)}
+        onBlur={onBlur}
       >
         <div
           className="slider-mask w-slider-mask"
@@ -112,7 +121,7 @@ export function ProductSlider({
               role="button"
               tabIndex={i === index ? 0 : -1}
               style={{ marginLeft: "3px", marginRight: "3px" }}
-              onClick={() => interact(i)}
+              onClick={() => go(i)}
             ></div>
           ))}
         </div>
@@ -125,7 +134,7 @@ export function ProductSlider({
               tabIndex={0}
               aria-controls="w-slider-mask-0"
               aria-label="previous slide"
-              onClick={() => interact(index - 1)}
+              onClick={() => go(index - 1)}
               onKeyDown={arrowKeys(index - 1)}
             >
               <div className="slider__left-icon w-icon-slider-left"></div>
@@ -139,7 +148,7 @@ export function ProductSlider({
               tabIndex={0}
               aria-controls="w-slider-mask-0"
               aria-label="next slide"
-              onClick={() => interact(index + 1)}
+              onClick={() => go(index + 1)}
               onKeyDown={arrowKeys(index + 1)}
             >
               <div className="slider__right-icon w-icon-slider-right"></div>
