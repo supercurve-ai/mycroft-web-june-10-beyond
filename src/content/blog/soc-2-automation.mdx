@@ -1,0 +1,202 @@
+---
+title: "SOC 2 automation: What works, what's missing, and how to fill the gap"
+slug: "soc-2-automation"
+excerpt: "SOC 2 automation speeds up evidence collection, but it doesn't run your program. Here's what automation tools get right, where they fall short, and what it actually takes to stay compliant at scale."
+coverImage: "/assets/soc-2-automation-what-s-missing-and-how-to-fill-the-gap-mycroft.webp"
+---
+
+There's one person at your company who knows where every piece of compliance evidence lives, which auditor findings were exceptions versus which ones are real gaps, why that one port has been open for eight months, and what your auditor expects to see next year because they've been through it three times before.
+
+Now imagine they give two weeks' notice.
+
+This is not a hypothetical. It's the single most common compliance failure mode, and it's not something that they'll cover in any SOC 2 automation demo.
+
+You might see dashboards go green or evidence of auto-collecting from 400 integrations. What they won't show you is what happens when the human context holding your compliance program together walks out the door.
+
+This post is about that gap. The space between what SOC 2 automation genuinely solves and where it reliably fails. Plus, we'll share what actually keeps your program running.
+
+
+## What is SOC 2 automation?
+
+First, let's give credit to the unsung heroes of audits past. Before compliance automation software existed, getting a SOC 2 was a grueling, mostly manual process. Scoping the report, implementing security controls, collecting evidence, and finding an auditor— all done without automation. This realistically would have taken the better part of a year for most organizations. Teams assigned their best engineers to the compliance sprint, pulled them off product work, and ran the process like an all-hands fire drill.
+
+Definition block: SOC 2 compliance automation uses software to automate the most time-consuming compliance tasks, like continuous control monitoring, automated evidence collection, policy management, and audit preparation.
+
+Modern compliance automation platforms connect directly to your tech stack–think cloud infrastructure (AWS, Azure, GCP), identity providers like Okta, HR systems, MDM tools, CI/CD pipelines–and pull evidence continuously rather than in periodic collection bursts.
+
+
+## What SOC 2 automation accelerates (when it works)
+
+Security controls that used to require manual screenshots and spreadsheet tracking now have automated tests running on hourly or daily cycles. Security policies that used to live in outdated Google Docs now have versioning, employee acknowledgment workflows, and audit-ready lifecycle management built in. The entire audit process becomes more streamlined with evidence collection during auditor fieldwork becoming a matter of granting access rather than scrambling to compile documentation under a deadline.
+
+Specifically, compliance automation handles:
+
+- **Automated evidence collection** from cloud infrastructure, identity providers, HR systems, and MDM tools, eliminating manual effort and human error
+- **Continuous monitoring** of security controls, catching drift in real time instead of discovering gaps during fieldwork
+- **Policy versioning**, employee acknowledgment tracking, and lifecycle management
+- **Audit-ready documentation** without the time-consuming screenshot-chasing
+- **Cross-framework mapping** using SOC 2 controls as a foundation for ISO 27001, [HIPAA](https://www.hhs.gov/hipaa/index.html), or PCI to streamline compliance across multiple frameworks
+
+The result is a genuine compression of the most time-consuming compliance activities. Teams that used to spend 300+ engineering hours getting audit-ready now spend a fraction of that. The observation period for SOC 2 Type 2 can start sooner. Manual evidence collection gets replaced with automated workflows that save time and reduce costly mistakes.
+
+For getting to your first [SOC 2 compliance](https://www.mycroft.io/blog/soc-2-compliance), automation software is table stakes. It compresses the groundwork significantly, helps you achieve compliance faster, and frees your team from repetitive tasks. That's real, and it's worth acknowledging.
+
+But there's a difference between achieving compliance and maintaining a compliance program. Here's where the automation ends.
+
+
+## What does SOC 2 automation do (and what doesn't it do)?
+
+The tools are good at what they're designed for. The problem is that they're marketed as one thing but can actually sometimes be something else. Here is what you should be digging into that goes beyond what you'll see in a demo.
+
+
+### Automation surfaces signals. It doesn't supply judgment.
+
+Automation platforms are excellent at flagging things. A misconfigured S3 bucket. An access review that's 30 days overdue. A vendor assessment that expired in Q3 and was never followed up on. The finding surfaces. The alert fires. The dashboard turns red.
+
+What the tool cannot tell you is *why* that configuration exists, whether it's a real risk or a longstanding documented exception, which engineer made the call, whether it's already been escalated twice and closed as accepted risk, and who is actually responsible for resolving it by when.
+
+That context lives in people, specifically in those who've lived through your previous audits. It's tribal knowledge. When they leave, the dashboard doesn't change, the integrations keep running, and the evidence keeps collecting. But the judgment that makes all of that actionable goes out the door with them.
+
+And you'll only find out the gap exists when your auditor asks a question that the tool can't answer.
+
+
+### Controls mapped to templates aren't the same as controls mapped to your reality
+
+Most compliance automation platforms ship with pre-built "auditor-approved" control frameworks. For straightforward, cloud-native environments, these work reasonably well. For organizations with hybrid infrastructure, legacy systems, custom business processes, or complex data environments, template controls have a particular failure mode—they can pass an audit without actually reflecting how your organization operates.
+
+Security practitioners have a name for this: paper security. A compliance posture that satisfies a checklist without reducing real exposure. The security controls look right on paper, and to a less thorough auditor, they pass. But they weren't designed for your actual risk profile. They were designed around a template.
+
+The cost of paper security doesn't usually show up at your first Type 1. It shows up at your Type 2 renewal, when the observation period reveals that a control documented as operating effectively wasn't actually operating at all. Or it shows up when a real incident occurs, and your "compliant" program offers no meaningful protection. Custom controls engineered to your actual environment cost more upfront, but they're also what prevent this gap.
+
+
+### Automation doesn't fix broken workflows (it accelerates them)
+
+I've watched companies upgrade from manual processes to 'automated' GRC platforms, only to discover they've just automated chaos. If your vulnerability findings live in one platform, your engineering tickets live in another, ownership is ambiguous, and your notification system treats a critical CVE with the same urgency as an overdue employee security training, automation will not fix that. It will make the noise louder and faster.
+
+In my experience, the most consistent complaint among compliance and security leaders isn't that compliance automation tools don't collect evidence. It's that they can't make anyone act on it. Alerts go to people who don't log into the platform, escalations follow a path that only one person knows, and remediation SLAs are tracked somewhere between someone's memory and a spreadsheet. The automated workflows are running. The compliance program isn't.
+
+
+### And HR tasks. Yes, those too.
+
+Beyond the strategic limitations, there's also just...practical reality. Some compliance tasks are manual because they have to be. Background checks, executive management review meetings, business continuity plans, disaster recovery testing, and certain physical security documentation still require human handling. Evidence needs to be reviewed, redacted where necessary, and contextualized before an auditor sees it. No integration collects this for you, and any platform claiming otherwise isn't sharing all the details.
+
+The automation gap isn't always about features; sometimes it's about good old-fashioned human judgment, context, and operational discipline—none of which live in a dashboard.
+
+
+## The gap gets worse as you scale
+
+Everything described above is manageable when a small, experienced team is running the compliance program. The key-man risk is real but contained. The template controls are close enough. The broken workflows are something one person can compensate for by sheer familiarity.
+
+But the problem compounds as you scale. And as your business grows, so does the compliance gap.
+
+
+### The key-man risk compounds
+
+At 10 employees, one person holding the compliance program in their head is inefficient. At 100, it's a liability that will eventually materialize. The knowledge transfer doesn't happen naturally; it requires deliberate security documentation, structured handoffs, and institutional memory built into the program itself rather than into an individual.
+
+Most organizations don't build this until after they've failed a renewal audit or lost a critical team member mid-observation period.
+
+
+### More frameworks can multiply both complexity and effort
+
+Pursuing SOC 1, PCI DSS, or ISO 27001 in addition to your SOC 2 is multiplicative. Managing multiple frameworks means cross-mapping decisions, overlapping evidence requirements, new auditor relationships, and framework-specific judgment calls that don't fit neatly into automation templates.
+
+They require tech expertise and someone who understands all of the frameworks in context and can make intelligent decisions about where they align and where they diverge.
+
+
+### Your vendor list is part of your attack surface
+
+As your third-party footprint grows, so does your compliance exposure. Annual questionnaire cycles and reactive vendor reviews don't keep up. A vendor gets breached, or a certification expires. Or maybe a material configuration change occurs. If your vendor risk management program only activates when your auditor asks for evidence, you're always behind.
+
+I hear this constantly from security teams: They had a backlog of 70+ vendor assessments... Or their vendor's SOC 2 report expired, and they didn't find out until their own audit.
+
+Effective vendor management requires [continuous third-party monitoring](https://www.mycroft.io/blog/continuous-compliance-monitoring-the-complete-guide), the kind that surfaces changes in real time rather than annually, conducts ongoing risk assessments, and helps you identify gaps before they become audit findings. Real-time monitoring of vendor security posture isn't a feature most compliance platforms treat as a core capability.
+
+
+### The notification problem, amplified
+
+When everything is flagged, nothing is prioritized. A generic alert system that groups a missing network diagram refresh with a critical infrastructure vulnerability trains them to treat everything as low urgency, rather than helping security teams truly prioritize. Over time, that's how critical findings age out without resolution.
+
+Automation's limits are a startup annoyance. At scale, they're an enterprise liability.
+
+
+## How to build a scalable security program
+
+The companies that not only pass their SOC 2 audit but also maintain a strong security posture over time treat compliance as an operational discipline.
+
+Here's what that looks like in practice.
+
+
+### Centralize context, not just data
+
+There's an important difference between aggregating findings from your cloud scanner, your GRC platform, your vulnerability scanner, and your vendor risk management workflow, and actually understanding what those findings mean together. A dashboard consolidates data, but a risk management function makes it actionable.
+
+Every finding should include the business metadata that makes it meaningful: who owns it, why it exists, what the organization's risk tolerance is, and what "resolved" actually means in your specific environment. Without that context, you're looking at a list of alerts rather than a security posture you can actually manage.
+
+
+### Implement controls engineered to your environment
+
+In my experience, the most durable compliance programs are built on security controls that reflect how your organization actually operates, as opposed to how a template assumes it does. For complex environments, that means custom control design, testing that maps to real engineering workflows, and security documentation that a new team member could pick up and run with, because the logic is documented rather than held in someone's head.
+
+
+### Put human expertise in the right places
+
+A mature security program puts the right humans in the right positions. Compliance experts and GRC practitioners who understand your stack, your audit history, and your auditor's expectations can contextualize findings, own escalation paths, manage auditor relationships directly, and make the judgment calls that automation software can't.
+
+That expertise should live in the program's structure. Avoid having it live within the mind of a single employee whose departure would leave a gap.
+
+
+### Treat TPRM as a continuous program, not an annual event
+
+Vendor risk doesn't pause between questionnaire seasons. A mature vendor risk management program monitors continuously, uses open-source intelligence and real-time signals to maintain current vendor profiles, and automates the assessment workflow to the extent possible, so the time a human spends is on oversight and decision-making, not on chasing documents and answering security questionnaires.
+
+A vendor backlog of 70 assessments shouldn't take weeks of manual effort. It should take oversight. Continuous compliance monitoring of your third-party ecosystem is what allows you to maintain compliance at scale rather than treating vendor management as an annual fire drill.
+
+This is what the Risk Operations model looks like. It's not a replacement for compliance automation tools, but the layer between your integrations and your actual compliance and security posture.
+
+
+## How to evaluate where you are: 8 questions to ask yourself
+
+Before choosing a compliance platform or building out a security program, the most useful exercise is an honest audit of where you stand operationally. These questions apply regardless of what compliance automation software you're currently using:
+
+1. **Is your compliance program documented in a way that would survive the departure of the person currently running it?** And I'm not just talking about the data. Does it apply to the context, the exceptions, and the auditor relationships?
+2. **Do your security controls reflect how your engineering team actually works?** If they were generated from a template and never fully validated against your real workflows, you may want to rethink the approach.
+3. **When a critical finding is surfaced, is there a documented owner, a defined SLA, and a clear escalation path?** If the answer is no and it lives in someone's awareness, you've identified a vulnerability in your program.
+4. **Can you produce a consolidated view of your compliance posture?** Look across the cloud environment, third parties, and GRC. Is there context attached, or are they just documented in a finding list?
+5. **Is your vendor risk management program continuous?** If it happens once a year when your auditor asks for vendor evidence, the answer is likely no.
+6. **If you're adding a second framework, do you have a plan for cross-mapping?** Or will you be starting from scratch?
+7. **Do your notification and prioritization systems distinguish between critical findings and routine compliance tasks?** If everything arrives at the same urgency level, you'll need to revisit
+8. **Are you audit-ready year-round?**Or does audit preparation still mean weeks of scrambling to gather evidence?
+
+If most of these don't have clean answers, the constraint isn't your compliance automation platform. It's your operating model.
+
+
+## Platforms aren't programs: Here's what actually scales
+
+SOC 2 automation is necessary, valuable, and genuinely underutilized by teams still relying on manual processes. But automation software is not a security program. A green dashboard is not a compliance posture. And an audit report is not institutional knowledge.
+
+I saw this constantly as an auditor at EY. The companies that got the most out of their compliance journey are the ones that treat it as an ongoing engineering and risk discipline. One that survives turnover, scales across multiple frameworks, and produces real risk mitigation alongside the compliance reports.
+
+That's what Mycroft was built to enable.
+
+If your current setup handles the evidence collection but leaves everything else on your plate,[book a demo](https://mycroft.io/) to see how the Mycroft Risk Operations Center closes the gap.
+
+
+## Frequently asked questions
+
+
+### Can SOC 2 automation completely replace manual compliance work?
+
+No. SOC 2 automation excels at evidence collection, control monitoring, and policy management—but it can't make risk judgments, design custom controls for complex environments, or provide the institutional knowledge that makes findings actionable. Automation platforms surface signals; humans provide context. Tasks like executive sign-offs, business continuity planning, and vendor relationship management still require human expertise. The goal here is to focus human time on decisions that actually require judgment rather than repetitive administrative work.
+
+
+### What happens when the person running your compliance program leaves?
+
+The automation keeps running, but the institutional knowledge disappears. The context about why certain configurations exist, which findings are documented exceptions, how to interpret edge cases, and what your auditor expects based on past cycles all walk out the door. This is the "key-man risk" most compliance platforms don't address. Organizations that survive this build knowledge into their program structure through documentation, standardized workflows, and operational support, not into individual employees.
+
+
+### What's the difference between a compliance platform and a compliance program?
+
+A compliance platform is software that automates evidence collection, monitors controls, and generates reports. A compliance program is the operational discipline of maintaining a continuous security posture, including custom control design, remediation workflows, auditor relationships, cross-functional coordination, and institutional knowledge. Platforms provide visibility; programs provide accountability and execution. Most companies buy platforms expecting programs, then discover someone still needs to configure integrations, contextualize findings, drive remediation, and interface with auditors. That's the gap between automation and operations.
+
+‍

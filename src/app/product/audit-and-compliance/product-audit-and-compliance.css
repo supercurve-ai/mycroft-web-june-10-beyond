@@ -1,0 +1,157 @@
+/* ---- page-embedded <style> blocks (preserved) ---- */
+.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}
+
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f8187a"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f8187c"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f81876"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f80"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f82"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f7c"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e6"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e8"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e2"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec41f"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec421"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec41b"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354da"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354dc"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354d6"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b2419935a"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b2419935c"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b24199356"] {width:24px;height:24px;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f8187a"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f8187c"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f81876"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f80"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f82"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f7c"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e6"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e8"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e2"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec41f"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec421"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec41b"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354da"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354dc"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354d6"] {width:24px;height:24px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b2419935a"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b2419935c"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b24199356"] {width:24px;height:24px;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f8187a"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f8187c"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f81876"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f80"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f82"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f7c"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e6"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e8"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e2"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec41f"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec421"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec41b"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354da"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354dc"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354d6"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b2419935a"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b2419935c"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b24199356"] {width:19px;height:19px;}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f8187a"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f8187c"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="53f45f5c-c11c-7b7c-dce0-f32f07f81876"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f80"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f82"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0994dc05-90f7-ef28-a681-b5f1a6f15f7c"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e6"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e8"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2a1e6b73-5d15-0b90-051a-6a77874368e2"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec41f"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec421"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="046b6880-e584-d37f-7188-c1ccbafec41b"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354da"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354dc"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ddb1ee07-e730-e1ef-6e53-39951a3354d6"] {width:19px;height:19px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b2419935a"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b2419935c"] {height:0px;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ae53e5e8-5a85-a89d-3dd7-509b24199356"] {width:19px;height:19px;}}
+
+/*Text Selection Color*/
+  ::selection {
+    background: #d14424;
+    color: #fff;
+  }
+  ::-moz-selection {
+    background: #d14424;
+    color: #fff;
+  }
+
+  /*Reset apple form styles*/
+  input, textarea, select { 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; border-radius: 0; 
+    background-image: none; 
+  }
+
+/* HERO LOTTIE SMALL DESKTOP */
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+	.col-hero-right.audit {justify-content: flex-start !important;}
+  .col-hero-right {
+  	width: 40% !important;
+    margin-right: 2vw;}
+  .hero-imgs.audit {width: 50vw}
+  .audit-hero2 {margin-right: 0px;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.col-hero-right.audit {margin-right: 4vw;}
+  .h2_v2.color_rg.smaller_tablet {font-size: 5vw;}
+  .audit-hero2 {margin-right: -5vw;}
+}
+
+:root {
+    /* Reset Font Weight variable values */
+    --type-weight--100: 100;
+    --type-weight--200: 200;
+    --type-weight--300: 300;
+    --type-weight--400: 400;
+    --type-weight--500: 500;
+    --type-weight--600: 600;
+    --type-weight--700: 700;
+    --type-weight--800: 800;
+    --type-weight--900: 900;
+  }
+
+ 	/* Apply font smoothing */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+  }
+
+  /* Remove top margin on rich text first child */
+  .w-richtext>:first-child {
+    margin-top: 0;
+  }
+
+  /* Remove bottom margin of rich text last child */
+  .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0;
+  }
+
+/* Scroll behaviour for submenu */
+.scrollable-submenu {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Hide scrollbar Chrome/Safari/Opera */
+.scrollable-submenu::-webkit-scrollbar {
+  display: none;}
+
+/* Hide scrollbar IE/Edge/Firefox */
+.scrollable-submenu {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;  /* Firefox */}
+
+/* Dropdown hover */
+@media screen and (min-width: 992px) {
+.dropdown-trigger {
+  background-image: linear-gradient(#FFFABF, #FFFABF) !important;
+  background-position: 0% 50% !important; 
+  background-repeat: no-repeat !important;
+  background-size: 0% 19px !important;
+  transition: background-size 0.5s cubic-bezier(0.25, 1, 0.5, 1) !important;}
+
+.dropdown-trigger:hover, .dropdown-trigger.w--open {
+  background-size: 100% 19px !important;}
+}
+
+/* Submenu dropshadow fix */
+.nav-submenu::before {
+  content: "";
+  display: block; 
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0);
+  z-index: 10;
+  pointer-events: none;}
+
+/* HIDES sub dropshadow by default */
+.nav-shadow-sliver {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+  background: transparent;}
+
+/* OPEN dropmenu casts dropshadow */
+.nav-container_v3:has(.w--open) .nav-shadow-sliver {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.18) !important;}
+
+/* Control the speed and direction of the marquee */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100%));
+  }
+}
+
+.scroll {
+  animation: scroll 80s linear infinite;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+.logosoup-mini_img {
+  -webkit-transform: translateZ(0);
+}
+
+/* Base style for all slider dots */
+  .w-slider-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #88E2B5;
+    transition: background-color 250ms ease, border-color 250ms ease;
+    margin: 0 6px; /* spacing between dots */
+  }
+
+  /* Style for the active (selected) dot */
+  .w-slider-dot.w-active {
+    background-color: #88E2B5;
+    border-color: #88E2B5;
+  }
