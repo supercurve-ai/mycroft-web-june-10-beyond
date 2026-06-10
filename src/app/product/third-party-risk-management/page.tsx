@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./product-third-party-risk-management.css";
 import { ProductThirdPartyRiskManagementSnapshot } from "./_snapshot/ProductThirdPartyRiskManagementSnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

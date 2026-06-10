@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./frameworks-iso27001.css";
 import { FrameworksIso27001Snapshot } from "./_snapshot/FrameworksIso27001Snapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

@@ -12,8 +12,21 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
   (current-page-aware link), `WebflowInteractions` (tabs/sliders/reveals/lightbox),
   `ThirdPartyScripts` (re-wired analytics/pixels), `DotLottiePlayer`.
 - `src/app/webflow-shared.css` — the captured global Webflow stylesheet.
-  `src/app/<route>/<route>.css` — page-specific CSS. Don't rewrite these to
-  Tailwind wholesale; the class names are what keeps the clone faithful.
+  `src/app/<route>/<route>.css` — page-specific CSS (only a handful of pages
+  still have one; they hold genuinely page-unique rules). Don't rewrite these
+  to Tailwind wholesale; the class names are what keeps the clone faithful.
+- `src/app/tokens.css` — the design-token layer: the Mycroft palette, fonts,
+  and Webflow breakpoints as Tailwind `@theme` tokens, plus the site-wide
+  chrome (selection color, nav dropdown hover, marquee keyframes, …) that was
+  formerly duplicated in every page's CSS. webflow-shared.css's `:root`
+  palette/font vars alias these tokens — change a color here and the whole
+  site follows. Must stay imported AFTER webflow-shared.css in globals.css.
+- `src/lib/tokens.ts` — TS class-name tokens (`t.type.h2`, `t.layout.*`) that
+  reproduce the site's type scale with Tailwind utilities. Use these when
+  building NET-NEW components; existing snapshot components keep their
+  Webflow class names. Custom responsive variants `max-tablet:` (≤991px),
+  `max-landscape:` (≤767px), `max-portrait:` (≤479px) match Webflow's
+  breakpoints — Tailwind's default `sm/md/lg` do not.
 - `src/content/<collection>/*.mdx` — CMS articles (blog posts). One file per
   post, gray-matter frontmatter + Markdown body.
 - `src/app/sitemap.ts` — the sitemap, mirroring the original site's. Served at

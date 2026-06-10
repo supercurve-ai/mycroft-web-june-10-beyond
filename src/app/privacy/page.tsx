@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./privacy.css";
 import { PrivacySnapshot } from "./_snapshot/PrivacySnapshot";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 

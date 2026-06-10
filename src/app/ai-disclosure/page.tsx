@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./ai-disclosure.css";
 import { AiDisclosureSnapshot } from "./_snapshot/AiDisclosureSnapshot";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 

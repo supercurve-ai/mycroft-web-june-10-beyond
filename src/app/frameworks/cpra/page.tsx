@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./frameworks-cpra.css";
 import { FrameworksCpraSnapshot } from "./_snapshot/FrameworksCpraSnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./product-device-management.css";
 import { ProductDeviceManagementSnapshot } from "./_snapshot/ProductDeviceManagementSnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

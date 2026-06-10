@@ -2,3 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CLibre+Baskerville:300,400,500,600,700&display=swap');
 @import "tailwindcss";
 @import "./webflow-shared.css";
+/* Design tokens + shared site chrome — must come AFTER webflow-shared.css
+   (the chrome rules were originally page-embedded styles that loaded last). */
+@import "./tokens.css";

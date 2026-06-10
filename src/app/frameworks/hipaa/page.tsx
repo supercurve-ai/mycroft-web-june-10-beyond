@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./frameworks-hipaa.css";
 import { FrameworksHipaaSnapshot } from "./_snapshot/FrameworksHipaaSnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

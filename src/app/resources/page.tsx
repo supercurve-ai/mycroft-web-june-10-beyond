@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./resources.css";
 import { ResourcesSnapshot } from "./_snapshot/ResourcesSnapshot";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 

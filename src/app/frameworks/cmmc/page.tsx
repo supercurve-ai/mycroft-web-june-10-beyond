@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./frameworks-cmmc.css";
 import { FrameworksCmmcSnapshot } from "./_snapshot/FrameworksCmmcSnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./frameworks-pipeda.css";
 import { FrameworksPipedaSnapshot } from "./_snapshot/FrameworksPipedaSnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

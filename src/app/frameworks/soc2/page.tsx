@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./frameworks-soc2.css";
 import { FrameworksSoc2Snapshot } from "./_snapshot/FrameworksSoc2Snapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

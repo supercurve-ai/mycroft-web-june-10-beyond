@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./frameworks-fedramp.css";
 import { FrameworksFedrampSnapshot } from "./_snapshot/FrameworksFedrampSnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

@@ -18,7 +18,7 @@ export function ResourcesSection1() {
           </div>
         </div>
       </div>
-      <div className="cursor-glow green_background" style={{"willChange": "transform", "transform": "translate3d(-25vw, -35.3573%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}}></div>
+      <div className="cursor-glow green_background"></div>
       <div className="hero-background color_about"></div>
       <div className="hero-background color_overlay_green"></div>
       <div className="hero-background pattern_pixels extra_bright"></div>

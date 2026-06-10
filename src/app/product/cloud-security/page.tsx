@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./product-cloud-security.css";
 import { ProductCloudSecuritySnapshot } from "./_snapshot/ProductCloudSecuritySnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./frameworks-iso42001.css";
 import { FrameworksIso42001Snapshot } from "./_snapshot/FrameworksIso42001Snapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./frameworks-gdpr.css";
 import { FrameworksGdprSnapshot } from "./_snapshot/FrameworksGdprSnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

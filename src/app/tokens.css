@@ -1,0 +1,188 @@
+/**
+ * Mycroft Shared Design Tokens — CSS layer
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Single source of truth for the Mycroft palette, fonts, breakpoints, and the
+ * site-wide chrome that used to be duplicated across every page's CSS file.
+ * Imported LAST in globals.css (after webflow-shared.css) because the chrome
+ * rules below were originally page-embedded <style> blocks that loaded after
+ * the shared Webflow stylesheet — keeping that order preserves the cascade.
+ *
+ * The values here are extracted 1:1 from the captured Webflow stylesheet
+ * (webflow-shared.css), whose :root palette/font variables now alias these
+ * tokens. Changing a color here recolors the whole site.
+ *
+ * Pair this with src/lib/tokens.ts (TS class-name tokens like t.type.h1) when
+ * building NEW components with Tailwind. Existing snapshot components keep
+ * their Webflow class names — that's what keeps the clone faithful.
+ */
+
+/* `static` so every variable is emitted into :root even when no Tailwind
+   utility uses it yet — webflow-shared.css reads these via var(). */
+@theme static {
+  /* ─── Fonts ────────────────────────────────────────────────────────────────
+     Self-hosted @font-face declarations live in webflow-shared.css; the woff2
+     files are under public/fonts/. Utilities: font-display, font-body, … */
+  --font-display: "Newsreader Display", "Times New Roman", sans-serif; /* serif headlines (h1_v2…h3_v2, pullquotes) */
+  --font-body: "Tasa Orbiter (Variable)", Arial, sans-serif;           /* body / UI text (body-text-*, h4_v2, h6, eyebrows) */
+  --font-general: "General Sans", Arial, sans-serif;                   /* loaded but rarely used */
+  --font-serif-legacy: "Libre Baskerville", sans-serif;                /* deprecated Webflow "primary" (old h1/h3/h4) */
+  --font-sans-legacy: Inter, sans-serif;                               /* deprecated Webflow "secondary" (default <body> font) */
+
+  /* ─── Palette ──────────────────────────────────────────────────────────────
+     Mycroft brand colours, named as in the Webflow design system. Numeric
+     suffix = Webflow tint percentage (lighter mix toward white).
+     Utilities: bg-mint, text-racing-green, border-earl-grey-40, … */
+  --color-unblack: #1d1c1a;          /* page background / primary text */
+  --color-charcoal: #2e3333;
+  --color-racing-green: #0e2a2a;     /* dark sections, headings on light */
+  --color-racing-green-60: #6e7f7f;
+  --color-racing-green-75: #4a5f5f;
+  --color-velvet-green: #014d4b;     /* dark CTA / button surfaces */
+  --color-mint: #88e2b5;             /* hero headlines, accents on dark */
+  --color-mint-75: #a6eac8;
+  --color-earl-grey: #b9caca;        /* muted text on dark */
+  --color-earl-grey-40: #e3eaea;     /* light section backgrounds */
+  --color-earl-grey-60: #d5dfdf;
+  --color-earl-grey-75: #cbd7d7;
+  --color-sand: #dedcce;             /* warm light section background */
+  --color-smoke: #75888f;            /* secondary / muted text */
+  --color-smoke-50: #bac3c7;
+  --color-glow: #fff480;             /* yellow highlight */
+  --color-glow-50: #fffabf;          /* nav dropdown hover underline */
+  --color-glow-75: #fff7a0;
+  --color-blueberry-wine: #5750e3;
+  --color-blueberry-wine-50: #aba7f1;
+  --color-aubergine: #67437b;
+  --color-dusty-lavender: #beacb9;
+  --color-gold: #d9c382;
+  --color-terracotta: #db9a8c;
+  --color-terracotta-75: #e4b3a9;
+  --color-ember: #d14424;            /* ::selection highlight (unnamed in Webflow) */
+
+  /* ─── Breakpoints — Webflow's, not Tailwind's defaults ─────────────────────
+     Webflow styles desktop-first with max-width queries at 991/767/479px.
+     `max-tablet:` compiles to (width < 992px) ≡ Webflow's ≤991px, etc.
+     Tailwind's default sm/md/lg/xl still exist but don't match the site's
+     breakpoints — use these for anything that must line up with the clone. */
+  --breakpoint-tablet: 992px;     /* max-tablet:    ≤ 991px */
+  --breakpoint-landscape: 768px;  /* max-landscape: ≤ 767px (mobile landscape) */
+  --breakpoint-portrait: 480px;   /* max-portrait:  ≤ 479px (mobile portrait) */
+
+  /* ─── Shape & layout ───────────────────────────────────────────────────── */
+  --radius-button: 0.5rem;        /* rounded-button — Webflow component radius */
+  --radius-card: 0.5rem;          /* rounded-card */
+  --container-site: 74.875rem;    /* max-w-site — Webflow container max width */
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Site chrome — formerly a ~100-line block duplicated in every page's CSS
+   file (page-embedded <style> blocks captured by the cloner). Defined once,
+   globally. Unlayered on purpose: these must beat Tailwind's layered styles
+   and load after webflow-shared.css, exactly like the originals did.
+   ───────────────────────────────────────────────────────────────────────── */
+
+.wf-force-outline-none[tabindex="-1"]:focus { outline: none; }
+
+/* Text selection color */
+::selection {
+  background: var(--color-ember);
+  color: #fff;
+}
+::-moz-selection {
+  background: var(--color-ember);
+  color: #fff;
+}
+
+/* Reset apple form styles */
+input, textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  background-image: none;
+}
+
+:root {
+  /* Reset Font Weight variable values (the captured Webflow :root zeroes the
+     double-dash --type--weight--* vars; pages re-declared these single-dash
+     ones — preserved verbatim) */
+  --type-weight--100: 100;
+  --type-weight--200: 200;
+  --type-weight--300: 300;
+  --type-weight--400: 400;
+  --type-weight--500: 500;
+  --type-weight--600: 600;
+  --type-weight--700: 700;
+  --type-weight--800: 800;
+  --type-weight--900: 900;
+}
+
+/* Apply font smoothing */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+/* Remove top/bottom margins on rich text first/last children */
+.w-richtext > :first-child { margin-top: 0; }
+.w-richtext > :last-child,
+.w-richtext ol li:last-child,
+.w-richtext ul li:last-child { margin-bottom: 0; }
+
+/* Scroll behaviour for submenu (scrollbar hidden cross-browser) */
+.scrollable-submenu {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollable-submenu::-webkit-scrollbar { display: none; }
+
+/* Dropdown hover — glow underline sweep on desktop nav triggers */
+@media screen and (min-width: 992px) {
+  .dropdown-trigger {
+    background-image: linear-gradient(var(--color-glow-50), var(--color-glow-50)) !important;
+    background-position: 0% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 19px !important;
+    transition: background-size 0.5s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  }
+  .dropdown-trigger:hover, .dropdown-trigger.w--open {
+    background-size: 100% 19px !important;
+  }
+}
+
+/* Submenu dropshadow fix */
+.nav-submenu::before {
+  content: "";
+  display: block;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* HIDES sub dropshadow by default */
+.nav-shadow-sliver {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+  background: transparent;
+}
+
+/* OPEN dropmenu casts dropshadow */
+.nav-container_v3:has(.w--open) .nav-shadow-sliver {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* Logo marquee — speed/direction of the scrolling logo strips (LogoMarquee) */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100%)); }
+}
+.scroll { animation: scroll 80s linear infinite; }
+.reverse { animation-direction: reverse; }
+.logosoup-mini_img { -webkit-transform: translateZ(0); }

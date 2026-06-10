@@ -23,7 +23,7 @@ export function IntegrationsSection1() {
           </div>
         </div>
       </div>
-      <div className="cursor-glow blue_background" style={{"willChange": "transform", "transform": "translate3d(0vw, -15.7141%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}}></div>
+      <div className="cursor-glow blue_background"></div>
       <div className="hero-background color_integrations"></div>
       <div className="hero-background color_overlay_blue"></div>
       <div className="hero-background pattern_pixels"></div>
