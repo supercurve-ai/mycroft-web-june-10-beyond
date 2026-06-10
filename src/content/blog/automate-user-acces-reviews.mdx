@@ -3,6 +3,10 @@ title: "How to automate user access reviews without creating new problems"
 slug: "automate-user-acces-reviews"
 excerpt: "Most UAR tools automate the workflow. Nobody talks about who runs the program. Mike Kim, former EY auditor and Mycroft CEO, on what access review automation actually gets wrong, and how to build a program that holds up."
 coverImage: "/assets/how-to-automate-user-access-reviews-without-creating-new-problems.webp"
+date: "2026-05-04"
+author: "Mike Kim"
+authorImage: "/assets/mikekim2025.png"
+readingTime: "10 min read"
 ---
 
 **User access review automation** is the use of software to continuously or periodically verify that every user—employee, contractor, or service account—has only the access their job function requires. Automated platforms replace manual spreadsheets and email chains by ingesting access data, routing review requests to the right stakeholders, and generating audit-ready reports.
@@ -23,7 +27,7 @@ User access review automation is software that ingests access data from identity
 Three things are worth establishing up front:
 
 - **Automation handles the workflow.** Governance—the contextual decision-making that makes a review meaningful—still requires people who understand the business.
-- **The "automated" label covers a wide spectrum.**Some tools automate campaign scheduling. Others automate evidence collection. Very few automate the judgment work that determines whether access is actually appropriate.
+- **The "automated" label covers a wide spectrum.** Some tools automate campaign scheduling. Others automate evidence collection. Very few automate the judgment work that determines whether access is actually appropriate.
 - **Non-human identities are increasingly in scope.** This includes things like service accounts, API keys, bots, and other machine identities. Most user access review platforms were not originally designed with them in mind, and traditional UAR workflows often exclude them entirely.
 
 
@@ -181,7 +185,7 @@ After the first completed cycle, the next one begins. Access review compliance i
 
 **When that person leaves, event-driven reviews stop firing**. The evidence chain breaks. The next audit surfaces findings that weren't there before. This is the failure mode none of the platform comparison guides discuss, because it is not a feature problem.
 
-**Sustainable compliance requires centralized context.**Access data, review history, user identities, and exception documentation should feed into one place—so anyone can understand where things stand, not just the person who built the program. This is what a Risk Operations Center is designed to do: make access reviews an organizational capability, not a personal one.
+**Sustainable compliance requires centralized context.** Access data, review history, user identities, and exception documentation should feed into one place—so anyone can understand where things stand, not just the person who built the program. This is what a Risk Operations Center is designed to do: make access reviews an organizational capability, not a personal one.
 
 [How Mycroft helps callout] Mycroft's AI-native Security and Compliance Officer takes on the operating work between audits. Campaigns get configured with business context. Escalations route through workflows that understand which permissions matter. Evidence is captured continuously, not reconstructed at audit. Companies like [Unified](https://www.mycroft.io) reached SOC 2 Type 2 in six weeks with Mycroft, after eleven months and twenty-five days with a previous vendor.
 

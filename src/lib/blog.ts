@@ -11,6 +11,7 @@ export type BlogMeta = {
   date?: string;
   author?: string;
   authorRole?: string;
+  authorImage?: string;
   category?: string;
   readingTime?: string;
   coverImage?: string;

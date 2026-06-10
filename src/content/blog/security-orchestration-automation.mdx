@@ -3,6 +3,10 @@ title: "What is security orchestration, automation and response (SOAR)—and why
 slug: "security-orchestration-automation"
 excerpt: "Security orchestration automation connects your security tools and automates responses. But who maintains the playbooks? Here's what SOAR vendors don't tell you."
 coverImage: "/assets/what-is-security-orchestration-automation-and-response-soarand-why-most-implementations-fail.webp"
+date: "2026-02-24"
+author: "Mike Kim"
+authorImage: "/assets/mikekim2025.png"
+readingTime: "10 min read"
 ---
 
 SOAR (Security Orchestration, Automation and Response) platforms integrate security tools and automate incident response. That's the 30-second answer.
@@ -21,9 +25,9 @@ SOAR stands for Security Orchestration, Automation and Response. It's a category
 
 A SOAR platform typically includes three core capabilities:
 
-1. **Security Orchestration:**Connects disparate security tools (SIEM, EDR, threat intelligence platforms, ticketing systems) through APIs and integrations, creating a unified view of security operations.
+1. **Security Orchestration:** Connects disparate security tools (SIEM, EDR, threat intelligence platforms, ticketing systems) through APIs and integrations, creating a unified view of security operations.
 2. **Security Automation:** Executes predefined actions without manual intervention—enriching alerts with threat intelligence, blocking malicious IPs, isolating compromised endpoints, or creating incident tickets.
-3. **Incident Response:**Provides structured workflows (called "playbooks") that codify how your team investigates and responds to specific security events, ensuring consistent handling of common threats.
+3. **Incident Response:** Provides structured workflows (called "playbooks") that codify how your team investigates and responds to specific security events, ensuring consistent handling of common threats.
 
 Reduce the manual burden on security teams by automating the rote work of triage, enrichment, and initial response. At least, that's the pitch. In practice, it's more like: Trade manual alert triage for manual playbook maintenance. The work doesn't disappear—it just changes shape.
 
@@ -32,8 +36,8 @@ Reduce the manual burden on security teams by automating the rote work of triage
 
 SOAR and SIEM are complementary but distinct:
 
-- **SIEM (Security Information and Event Management)**collects, aggregates, and analyzes security data from across your infrastructure. It's fundamentally a detection and visibility tool—answering "what's happening in our environment?"
-- **SOAR (Security Orchestration, Automation and Response)**acts on that information by coordinating tools and executing workflows. It's a response and coordination tool—answering "what should we do about it?"
+- **SIEM (Security Information and Event Management)** collects, aggregates, and analyzes security data from across your infrastructure. It's fundamentally a detection and visibility tool—answering "what's happening in our environment?"
+- **SOAR (Security Orchestration, Automation and Response)** acts on that information by coordinating tools and executing workflows. It's a response and coordination tool—answering "what should we do about it?"
 
 In a typical architecture, SIEM ingests logs, correlates events, and generates alerts. Those alerts feed into SOAR playbooks, which enrich the data, determine severity, and orchestrate response. Actions and results flow back to SIEM for correlation and documentation.
 
@@ -49,7 +53,7 @@ In practice, here's how a SOAR workflow operates:
 - **Automated enrichment:** The SOAR platform queries threat intelligence sources, checks internal logs for related activity, and gathers context about the affected user or system.
 - **Decision logic:** Based on enrichment results and predefined rules, the playbook determines next steps: escalate to an analyst, auto-remediate, or close as a false positive.
 - **Orchestrated response:** If remediation is needed, the SOAR platform coordinates actions across multiple tools: isolate the endpoint, block the IP, create an incident record, and notify the affected user.
-- **Documentation:**All actions, decisions, and timestamps are logged for audit purposes.
+- **Documentation:** All actions, decisions, and timestamps are logged for audit purposes.
 
 This process can reduce incident response time from hours to minutes—assuming your playbooks are current, your integrations are working, and someone on your team knows how to modify the logic when business requirements change.
 
@@ -63,7 +67,7 @@ The use cases for security orchestration all make perfect sense on paper. They'r
 
 **The promise:** User reports suspicious email → SOAR extracts indicators → checks threat intel → quarantines email across organization → creates ticket if needed.
 
-**The reality:**Requires integrations with email gateway, threat intel feeds, and ticketing system. Works great until your email provider changes their API, users report emails in formats your parser doesn't handle, or you need to customize logic for VIP accounts. Someone needs to maintain the exception handling.
+**The reality:** Requires integrations with email gateway, threat intel feeds, and ticketing system. Works great until your email provider changes their API, users report emails in formats your parser doesn't handle, or you need to customize logic for VIP accounts. Someone needs to maintain the exception handling.
 
 
 #### 2. Malware containment
@@ -75,9 +79,9 @@ The use cases for security orchestration all make perfect sense on paper. They'r
 
 #### 3. Vulnerability workflow orchestration
 
-**The promise:**Scanner identifies vulnerability → SOAR enriches with exploitability data → prioritizes based on asset criticality → creates tickets for remediation → verifies patch deployment.
+**The promise:** Scanner identifies vulnerability → SOAR enriches with exploitability data → prioritizes based on asset criticality → creates tickets for remediation → verifies patch deployment.
 
-**The reality:**Asset criticality data has to come from somewhere and be kept current. Patch verification requires integration with whatever deployment tool you use. Ticket routing requires knowing org structure and ownership. This use case is incredibly valuable but also incredibly complex to maintain.
+**The reality:** Asset criticality data has to come from somewhere and be kept current. Patch verification requires integration with whatever deployment tool you use. Ticket routing requires knowing org structure and ownership. This use case is incredibly valuable but also incredibly complex to maintain.
 
 
 ## The case for SOAR: Five real benefits (when it works)
@@ -85,14 +89,14 @@ The use cases for security orchestration all make perfect sense on paper. They'r
 Look, I'm not here to trash SOAR. When properly implemented and maintained—and I mean *properly*, with dedicated resources and continuous refinement—security orchestration automation delivers measurable improvements, including:
 
 1. **Faster Mean Time to Respond (MTTR):** Automated triage and enrichment compress the time between alert generation and initial response, particularly for high-volume, low-complexity events.
-2. **Consistent incident handling:**Playbooks ensure that every analyst follows the same investigation steps, reducing the risk that critical checks get skipped during busy periods.
+2. **Consistent incident handling:** Playbooks ensure that every analyst follows the same investigation steps, reducing the risk that critical checks get skipped during busy periods.
 3. **Better tool ROI:** SOAR can surface value from security solutions you're already paying for by correlating their data and coordinating their actions.
 4. **Reduced alert fatigue:** Automated enrichment and de-duplication help analysts distinguish signal from noise, filtering out false positives before they consume human attention.
-5. **Auditability:**Full documentation of who did what, when, and why—critical for compliance requirements and post-incident reviews.
+5. **Auditability:** Full documentation of who did what, when, and why—critical for compliance requirements and post-incident reviews.
 
 I've seen organizations achieve all of these benefits. They're real, not theoretical. But here's what they had in common: Dedicated security engineers who continuously refined playbooks, executive buy-in for ongoing investment, and realistic expectations about what automation can and can't do.
 
-**The question you need to answer honestly:**Can your team actually achieve and sustain that level of maturity? Or are you one security engineer away from the whole thing falling apart?
+**The question you need to answer honestly:** Can your team actually achieve and sustain that level of maturity? Or are you one security engineer away from the whole thing falling apart?
 
 
 ## Why most SOAR implementations stall (the part vendors don’t emphasize)
@@ -135,10 +139,10 @@ You end up with a partial implementation that automates the simple stuff but sti
 If you're evaluating SOAR platforms, don't get hypnotized by the integration count or the slick demo. I've watched too many organizations buy on features and regret it six months later. Ask the harder questions that vendors don't want to answer:
 
 - **Playbook creation and maintenance:** How easy is it to build playbooks without a dedicated SOAR engineer? Can playbooks be version-controlled and tested before deployment? What happens when an integration breaks—how quickly do you find out, and how hard is it to fix?
-- **Integration reliability:**How are API changes handled? What's the vendor's track record on maintaining integrations when third-party tools update? Can you build custom integrations if needed?
+- **Integration reliability:** How are API changes handled? What's the vendor's track record on maintaining integrations when third-party tools update? Can you build custom integrations if needed?
 - **Knowledge transfer:** How is playbook logic documented? If your SOAR expert leaves, can the replacement get up to speed quickly?
-- **Operational support:**Does the vendor provide playbook development as a service? What level of ongoing support is included?
-- **Honest assessment of your team's capacity:**Do you have a dedicated security engineer who can own SOAR? If not, who will maintain playbooks during busy periods? What happens during vacation or turnover?
+- **Operational support:** Does the vendor provide playbook development as a service? What level of ongoing support is included?
+- **Honest assessment of your team's capacity:** Do you have a dedicated security engineer who can own SOAR? If not, who will maintain playbooks during busy periods? What happens during vacation or turnover?
 
 I've seen implementations fail not because the technology didn't work, but because nobody asked these questions during evaluation. The organization assumed "security orchestration" meant "less work for our team" when it actually meant "different work that still requires dedicated headcount." These questions determine whether you'll actually realize SOAR's value or end up with another $200k/year platform that three people log into.
 
@@ -184,8 +188,8 @@ A mature managed security operations platform unifies incident response with the
 - **Unified platform:** Compliance, cloud security, device management, third-party risk, and incident response in one system. When an endpoint is compromised, you immediately see which controls it violated, which policies need updating, and which compliance frameworks are affected.
 - **Built-in context:** Every incident is enriched not just with threat intelligence, but with business context: asset criticality, control coverage, policy requirements, compliance implications. Your team sees not just "malware detected" but "malware detected on a system that handles customer PII, is subject to SOC 2 requirements, and currently has two unpatched critical vulnerabilities."
 - **Continuous operation:** The platform team maintains playbooks, manages integrations, monitors for API changes, and handles day-to-day operations. When your environment changes, the automation evolves with it—without requiring your security engineer to rebuild workflows.
-- **Human expertise for complex scenarios:**Automated playbooks handle routine incidents. When something complex emerges—a novel attack pattern, a supply chain compromise, an insider threat—human security experts step in with the investigation and response.
-- **Root cause visibility for leadership:**Because incidents are connected to controls, policies, and risk frameworks, you can surface meaningful insights to leadership: "We're seeing repeated phishing attempts because our security awareness training is outdated" or "Cloud misconfigurations keep occurring because developers don't have access to secure templates."
+- **Human expertise for complex scenarios:** Automated playbooks handle routine incidents. When something complex emerges—a novel attack pattern, a supply chain compromise, an insider threat—human security experts step in with the investigation and response.
+- **Root cause visibility for leadership:** Because incidents are connected to controls, policies, and risk frameworks, you can surface meaningful insights to leadership: "We're seeing repeated phishing attempts because our security awareness training is outdated" or "Cloud misconfigurations keep occurring because developers don't have access to secure templates."
 
 This model makes sense for organizations that:
 

@@ -6319,6 +6319,7 @@ figcaption {
 .text-link.underline_75mint {
   color: var(--palette--tints--75-mint);
   text-decoration: underline;
+  align-items: center;
 }
 
 .text-link.link_embed {
@@ -14038,6 +14039,65 @@ figcaption {
 /* chevron flips 180° over 150ms while its dropdown is open */
 .dropdown-trigger .dropdown-icon { transition: transform 150ms ease; }
 .dropdown-trigger.w--open .dropdown-icon { transform: rotateZ(180deg) !important; }
+/* ── button + CTA hover animations, from the same IX2 extraction.
+   a-22/a-23 = btn-large arrow, a-19/a-20 = nav button arrow,
+   a-35/a-36 = lamp CTA, a-63/a-64 = fireplace CTA, a-41/a-42 = product
+   hero glow, a-123/a-124 = frameworks dial tiles. ── */
+/* large CTA buttons: arrow nudges 0 → 3px over 300ms ease-in, back over
+   250ms ease-in */
+.btn-large .btn-arrow-large { transition: transform 250ms ease-in; }
+.btn-large:hover .btn-arrow-large {
+  transform: translate3d(3px, 0, 0);
+  transition-duration: 300ms;
+}
+/* shine sweeps across the button: -100% → 0 (100ms) then 0 → +100% (100ms),
+   and snaps back to -100% on mouse-out (the frozen inline style) */
+@keyframes wf-btn-shine {
+  0% { transform: translate3d(-100%, 0, 0); }
+  50% { transform: translate3d(0%, 0, 0); }
+  100% { transform: translate3d(100%, 0, 0); }
+}
+.btn-large:hover .hero-btn-shine {
+  animation: wf-btn-shine 200ms linear forwards;
+}
+/* nav "Book a demo" button: same 3px arrow nudge */
+.btn-nav .nav-btn-arrow { transition: transform 250ms ease-in; }
+.btn-nav:hover .nav-btn-arrow {
+  transform: translate3d(3px, 0, 0);
+  transition-duration: 300ms;
+}
+/* lamp CTA: the second glow fades up to 0.8 once the shine has swept past
+   (100ms in), 300ms in / 250ms out, inOutQuad */
+.cta-glow2b-img { transition: opacity 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.cta-custom:has(.btn-large:hover) .cta-glow2b-img {
+  opacity: 0.8 !important;
+  transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 100ms;
+}
+/* fireplace CTA: hover art fades in 0 → 1 and its glow 0.5 → 1 on the same
+   schedule */
+.cta-fireplace-hover-img,
+.cta-fireplace-glow-img { transition: opacity 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.cta-custom2:has(.btn-large:hover) .cta-fireplace-hover-img {
+  opacity: 1 !important;
+  transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 100ms;
+}
+.cta-custom2:has(.btn-large:hover) .cta-fireplace-glow-img {
+  opacity: 1 !important;
+  transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 100ms;
+}
+/* product hero: hovering "Get Started" brightens the lantern glow
+   0.25 → 1, 350ms inOutQuad both ways */
+.hero-img-glow-hover { transition: opacity 350ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+section:has(.btn-large.hero:hover) .hero-img-glow-hover { opacity: 1 !important; }
+/* frameworks dial tiles: background + stroke fade in over 350ms ease,
+   out over 250ms ease */
+.fw-tile-link .dial-tile-background,
+.fw-tile-link .dial-tile-stroke { transition: opacity 250ms ease; }
+.fw-tile-link:hover .dial-tile-background,
+.fw-tile-link:hover .dial-tile-stroke {
+  opacity: 1 !important;
+  transition-duration: 350ms;
+}
 /* custom mobile menu (navbar_v3 uses .hamburger-lockup, not .w-nav-button) */
 .w-nav.wf-nav-open .nav-submenu-mobile { display: block; }
 .hamburger-top, .hamburger-mid, .hamburger-btm {

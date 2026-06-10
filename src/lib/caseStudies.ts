@@ -14,6 +14,19 @@ export type CaseStudiesMeta = {
   category?: string;
   readingTime?: string;
   coverImage?: string;
+  heroTitle?: string;
+  heroImage?: string;
+  /** Position in the prev/next chain (mirrors the original CMS order). */
+  order?: number;
+  /** Per-study testimonial accent color (slant label, triangle, card bg). */
+  accent?: string;
+  testimonial?: {
+    quote: string;
+    name: string;
+    role: string;
+    photo?: string;
+    logo?: string;
+  };
 };
 
 /** All caseStudies slugs (filenames without .mdx). */
