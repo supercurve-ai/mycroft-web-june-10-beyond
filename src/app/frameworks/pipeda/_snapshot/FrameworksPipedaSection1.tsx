@@ -61,7 +61,7 @@ export function FrameworksPipedaSection1() {
             </div>
             <div className="container-large">
               <div className="w-layout-grid features-3up frameworks">
-                <div className="feature-item frameworks" style={{"opacity": "0"}}>
+                <div className="feature-item frameworks wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "50ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "50ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
                   <img src="/assets/warning-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
                   <div className="container-flex vertical center text_center">
                     <div className="h6 color_mint">
@@ -74,7 +74,7 @@ export function FrameworksPipedaSection1() {
                     </div>
                   </div>
                 </div>
-                <div className="feature-item frameworks" style={{"opacity": "0"}}>
+                <div className="feature-item frameworks wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "150ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "150ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
                   <img src="/assets/checkmark-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
                   <div className="container-flex vertical center text_center">
                     <div className="h6 color_mint">
@@ -87,7 +87,7 @@ export function FrameworksPipedaSection1() {
                     </div>
                   </div>
                 </div>
-                <div className="feature-item frameworks" style={{"opacity": "0"}}>
+                <div className="feature-item frameworks wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "250ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "250ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
                   <img src="/assets/markets-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
                   <div className="container-flex vertical center text_center">
                     <div className="h6 color_mint">

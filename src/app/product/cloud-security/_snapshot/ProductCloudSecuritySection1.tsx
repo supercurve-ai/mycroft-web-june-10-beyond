@@ -25,7 +25,7 @@ export function ProductCloudSecuritySection1() {
             <div className="col-hero-right cloudsec">
               <div className="hero-imgs cloudsec">
                 <div data-wf-lottie-load="true" className="prod-hero1" data-animation-type="lottie" data-src="/lottie/6967d1f25c21a54fda6b48d5_data3.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="12" data-loading="eager">
-                  <DotLottiePlayer src="/lottie/6967d1f25c21a54fda6b48d5_data3.lottie" loop={true} autoplay={true} />
+                  <DotLottiePlayer src="/lottie/6967d1f25c21a54fda6b48d5_data3.lottie" loop={true} autoplay={true} width={1100} height={840} />
                 </div>
               </div>
             </div>

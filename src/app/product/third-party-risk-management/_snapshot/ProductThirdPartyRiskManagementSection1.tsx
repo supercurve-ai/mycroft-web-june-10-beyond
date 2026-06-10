@@ -25,7 +25,7 @@ export function ProductThirdPartyRiskManagementSection1() {
             <div className="col-hero-right tprm">
               <div className="hero-imgs cloudsec">
                 <div data-wf-lottie-load="true" className="prod-hero1" data-animation-type="lottie" data-src="/lottie/6984b2bb36f61e2d79a1dd3f_3rdPartyRisk-Hero_v1.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="12" data-loading="eager">
-                  <DotLottiePlayer src="/lottie/6984b2bb36f61e2d79a1dd3f_3rdPartyRisk-Hero_v1.lottie" loop={true} autoplay={true} />
+                  <DotLottiePlayer src="/lottie/6984b2bb36f61e2d79a1dd3f_3rdPartyRisk-Hero_v1.lottie" loop={true} autoplay={true} width={1100} height={840} />
                 </div>
               </div>
             </div>

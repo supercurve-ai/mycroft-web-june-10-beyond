@@ -9,6 +9,43 @@ import { ProductCloudSecuritySection1 } from "./ProductCloudSecuritySection1";
 import { ProductCloudSecuritySection3 } from "./ProductCloudSecuritySection3";
 import { ProductCloudSecuritySection4 } from "./ProductCloudSecuritySection4";
 import { ProductCloudSecuritySection5 } from "./ProductCloudSecuritySection5";
+import { ScrollFeatureSlider, type ScrollFeatureSlide } from "@/app/_shared/ScrollFeatureSlider";
+
+const cloudSecuritySlides: ScrollFeatureSlide[] = [
+  {
+    heading: "Cloud scan",
+    body: "Our platform continuously scans your cloud environment, delivering comprehensive security findings, providing clear insights into your security posture, allowing you to quickly identify and prioritize vulnerabilities based on their importance and scope.",
+    image: {
+      src: "/assets/product-automatedscan.webp",
+      srcSet:
+        "/assets/product-automatedscan-p-500.webp 500w, /assets/product-automatedscan-p-800.webp 800w, /assets/product-automatedscan-p-1080.webp 1080w, /assets/product-automatedscan.webp 1352w",
+      sizes: "(max-width: 767px) 100vw, 676px",
+      width: 676,
+    },
+  },
+  {
+    heading: "Automated scan",
+    body: "Configure our platform to automatically scan your cloud security environment regularly, providing continuous oversight without manual effort. It features a customized dashboard that consolidates findings, displaying security issues, severity, and affected regions or services.",
+    image: {
+      src: "/assets/product-automatedscan-2.webp",
+      srcSet:
+        "/assets/product-automatedscan-p-500-2.webp 500w, /assets/product-automatedscan-p-800-2.webp 800w, /assets/product-automatedscan-p-1080-2.webp 1080w, /assets/product-automatedscan-2.webp 1352w",
+      sizes: "(max-width: 767px) 100vw, 676px",
+      width: 676,
+    },
+  },
+  {
+    heading: "Remediation",
+    body: "Our platform not only identifies cloud security failed findings but also provides actionable remediation suggestions tailored to each issue. With our proactive recommendations, you can streamline your remediation process and ensure your cloud environment remains secure, compliant, and resilient.",
+    image: {
+      src: "/assets/product-remediation.webp",
+      srcSet:
+        "/assets/product-remediation-p-500.webp 500w, /assets/product-remediation-p-800.webp 800w, /assets/product-remediation-p-1080.webp 1080w, /assets/product-remediation.webp 1352w",
+      sizes: "(max-width: 767px) 100vw, 676px",
+      width: 676,
+    },
+  },
+];
 
 /**
  * Faithful React port of the Webflow https://mycroft.io/product/cloud-security page. DOM + classes mirror
@@ -31,90 +68,11 @@ export function ProductCloudSecuritySnapshot() {
                 <div className="container-xl">
                   <div className="padding-btm medium">
                     <div className="scroll-slider-outer">
-                      <section id="audit-compliance" className="scroll-slider-inner">
-                        <div className="enumeration-container">
-                          <div className="enumeration-counter">
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration1" style={{"willChange": "opacity", "opacity": "1"}}>
-                                1
-                                <br />
-                              </div>
-                            </div>
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration2" style={{"willChange": "opacity", "opacity": "0"}}>
-                                2
-                                <br />
-                              </div>
-                            </div>
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration3" style={{"willChange": "opacity", "opacity": "0"}}>
-                                3
-                              </div>
-                            </div>
-                          </div>
-                          <div className="body-text-medium _75_rg">
-                            /
-                          </div>
-                          <div className="body-text-medium _75_rg">
-                            3
-                          </div>
-                        </div>
-                        <div className="features-row static" style={{"willChange": "opacity", "opacity": "0"}}>
-                          <div className="features-text">
-                            <h4 className="h4_v2 color_rg">
-                              Remediation
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Our platform not only identifies cloud security failed findings but also provides actionable remediation suggestions tailored to each issue. With our proactive recommendations, you can streamline your remediation process and ensure your cloud environment remains secure, compliant, and resilient.
-                            </div>
-                          </div>
-                          <div className="features-img-container">
-                            <img src="/assets/product-frameworks.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-frameworks-p-500.webp 500w, /assets/product-frameworks-p-800.webp 800w, /assets/product-frameworks-p-1080.webp 1080w, /assets/product-frameworks.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide1">
-                          <div className="features-text slide1" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "1"}}>
-                            <h4 className="h4_v2 color_rg">
-                              Cloud scan
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Our platform continuously scans your cloud environment, delivering comprehensive security findings, providing clear insights into your security posture, allowing you to quickly identify and prioritize vulnerabilities based on their importance and scope.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide1" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "1"}}>
-                            <img src="/assets/product-automatedscan.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-automatedscan-p-500.webp 500w, /assets/product-automatedscan-p-800.webp 800w, /assets/product-automatedscan-p-1080.webp 1080w, /assets/product-automatedscan.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide2">
-                          <div className="features-text slide2 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 40px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <h4 className="h4_v2 color_rg">
-                              Automated scan
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Configure our platform to automatically scan your cloud security environment regularly, providing continuous oversight without manual effort. It features a customized dashboard that consolidates findings, displaying security issues, severity, and affected regions or services.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide2 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(-40px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <img src="/assets/product-automatedscan-2.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-automatedscan-p-500-2.webp 500w, /assets/product-automatedscan-p-800-2.webp 800w, /assets/product-automatedscan-p-1080-2.webp 1080w, /assets/product-automatedscan-2.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide3">
-                          <div className="features-text slide3 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 40px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <h4 className="h4_v2 color_rg">
-                              Remediation
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Our platform not only identifies cloud security failed findings but also provides actionable remediation suggestions tailored to each issue. With our proactive recommendations, you can streamline your remediation process and ensure your cloud environment remains secure, compliant, and resilient.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide3 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(-40px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <img src="/assets/product-remediation.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-remediation-p-500.webp 500w, /assets/product-remediation-p-800.webp 800w, /assets/product-remediation-p-1080.webp 1080w, /assets/product-remediation.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
+                      <ScrollFeatureSlider id="audit-compliance" slides={cloudSecuritySlides}>
                         <ButtonLarge href="/demo" velvet shine>
                           Book a demo
                         </ButtonLarge>
-                      </section>
+                      </ScrollFeatureSlider>
                       <div className="btm-tab">
                         <div className="shape-triangle _75_eg flipped mirrored smaller_mobile w-embed">
                           <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34 38" xmlSpace="preserve">

@@ -56,7 +56,7 @@ export function FrameworksIso27001Snapshot() {
                               <div style={{"opacity": "0"}} className="dial-tile-background"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
                               <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/69ebcb579b02affc99069e64_Compliance-Dial_55.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
-                                <DotLottiePlayer src="/lottie/69ebcb579b02affc99069e64_Compliance-Dial_55.json" loop={false} autoplay={false} />
+                                <DotLottiePlayer src="/lottie/69ebcb579b02affc99069e64_Compliance-Dial_55.json" loop={false} autoplay={false} width={500} height={500} playOnView={750} />
                               </div>
                               <div className="body-text-small color_white font_600 underline fw_dial">
                                 GDPR →
@@ -69,7 +69,7 @@ export function FrameworksIso27001Snapshot() {
                               <div style={{"opacity": "0"}} className="dial-tile-background"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
                               <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/6a024deb5cd92f1d32fe0c3d_Compliance-Dial_90.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
-                                <DotLottiePlayer src="/lottie/6a024deb5cd92f1d32fe0c3d_Compliance-Dial_90.json" loop={false} autoplay={false} />
+                                <DotLottiePlayer src="/lottie/6a024deb5cd92f1d32fe0c3d_Compliance-Dial_90.json" loop={false} autoplay={false} width={500} height={500} playOnView={1250} />
                               </div>
                               <div className="body-text-small color_white font_600 underline fw_dial">
                                 SOC 2 →
@@ -81,7 +81,7 @@ export function FrameworksIso27001Snapshot() {
                               <div style={{"opacity": "0"}} className="dial-tile-background"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
                               <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/6a024debde8e8bdd03fd3fe5_Compliance-Dial_10.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
-                                <DotLottiePlayer src="/lottie/6a024debde8e8bdd03fd3fe5_Compliance-Dial_10.json" loop={false} autoplay={false} />
+                                <DotLottiePlayer src="/lottie/6a024debde8e8bdd03fd3fe5_Compliance-Dial_10.json" loop={false} autoplay={false} width={500} height={500} playOnView={1750} />
                               </div>
                               <div className="body-text-small color_white font_600 underline fw_dial">
                                 FedRAMP →

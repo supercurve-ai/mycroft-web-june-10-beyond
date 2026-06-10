@@ -8,7 +8,7 @@ export function PricingSection2() {
             <div className="padding-top xxxs">
               <div className="padding-btm xl">
                 <div className="pricing-grid">
-                  <div className="pricing-tile wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(50px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                  <div className="pricing-tile wf-scrub" data-wf-scrub="5,15" style={{"opacity": "0", "transform": "translate3d(50px, 0px, 0px)"}}>
                     <div className="pricing-tile-top">
                       <h5 className="h5 pricing_hed">
                         Platform
@@ -69,7 +69,7 @@ export function PricingSection2() {
                       </div>
                     </div>
                   </div>
-                  <div className="pricing-tile wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(50px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                  <div className="pricing-tile wf-scrub" data-wf-scrub="10,20" style={{"opacity": "0", "transform": "translate3d(50px, 0px, 0px)"}}>
                     <div className="pricing-tile-top">
                       <h5 className="h5 pricing_hed">
                         Scale
@@ -123,7 +123,7 @@ export function PricingSection2() {
                       </div>
                     </div>
                   </div>
-                  <div className="pricing-tile wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(50px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                  <div className="pricing-tile wf-scrub" data-wf-scrub="15,25" style={{"opacity": "0", "transform": "translate3d(50px, 0px, 0px)"}}>
                     <div className="pricing-tile-top">
                       <h5 className="h5 pricing_hed">
                         Managed

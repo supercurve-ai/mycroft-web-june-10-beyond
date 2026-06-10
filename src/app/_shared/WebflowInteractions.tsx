@@ -126,6 +126,62 @@ export function WebflowInteractions() {
       });
     }
 
+    // ── frameworks hero badge mouse-parallax (IX2 a-119) ────────────────────
+    // MOUSE_MOVE over the hero section drives the badge (+16px full-range on
+    // both axes) and the dot grid (−8px) with exponential smoothing; the
+    // resting state is mid-range (mouse at section center), which is also the
+    // frozen inline transform the capture shipped — so no-JS/mobile/reduced
+    // motion all hold that pose.
+    const heroCircles = Array.from(
+      document.querySelectorAll<HTMLElement>(".fw-hero-circle:not([data-wf-parallax])"),
+    );
+    if (heroCircles.length && !reduce && !mobile) {
+      heroCircles.forEach((circle) => {
+        const section = circle.closest<HTMLElement>("section");
+        const badge = circle.querySelector<HTMLElement>(".fw-hero-badge-img");
+        const dots = circle.querySelector<HTMLElement>(".fw-hero-dots");
+        if (!section || !badge || !dots) return;
+        circle.setAttribute("data-wf-parallax", "");
+        let tx = 0.5, ty = 0.5, cx = 0.5, cy = 0.5;
+        let raf = 0;
+        const frame = () => {
+          cx += (tx - cx) * 0.5;
+          cy += (ty - cy) * 0.5;
+          if (Math.abs(tx - cx) < 0.001 && Math.abs(ty - cy) < 0.001) {
+            cx = tx;
+            cy = ty;
+            raf = 0;
+          } else {
+            raf = requestAnimationFrame(frame);
+          }
+          badge.style.transform = `translate3d(${16 * cx}px, ${16 * cy}px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`;
+          dots.style.transform = `translate3d(${-8 * cx}px, ${-8 * cy}px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`;
+        };
+        const kick = () => {
+          if (!raf) raf = requestAnimationFrame(frame);
+        };
+        const onMove = (e: MouseEvent) => {
+          const r = section.getBoundingClientRect();
+          tx = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+          ty = Math.min(1, Math.max(0, (e.clientY - r.top) / r.height));
+          kick();
+        };
+        const onLeave = () => {
+          tx = 0.5;
+          ty = 0.5;
+          kick();
+        };
+        section.addEventListener("mousemove", onMove);
+        section.addEventListener("mouseleave", onLeave);
+        cleanups.push(() => {
+          circle.removeAttribute("data-wf-parallax");
+          section.removeEventListener("mousemove", onMove);
+          section.removeEventListener("mouseleave", onLeave);
+          if (raf) cancelAnimationFrame(raf);
+        });
+      });
+    }
+
     // ── tabs ─────────────────────────────────────────────────────────────────
     document
       .querySelectorAll<HTMLElement>(".w-tabs:not([data-wf-tabs])")

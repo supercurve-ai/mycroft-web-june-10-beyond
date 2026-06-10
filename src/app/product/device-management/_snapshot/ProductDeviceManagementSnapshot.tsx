@@ -9,6 +9,43 @@ import { ProductDeviceManagementSection1 } from "./ProductDeviceManagementSectio
 import { ProductDeviceManagementSection3 } from "./ProductDeviceManagementSection3";
 import { ProductDeviceManagementSection4 } from "./ProductDeviceManagementSection4";
 import { ProductDeviceManagementSection5 } from "./ProductDeviceManagementSection5";
+import { ScrollFeatureSlider, type ScrollFeatureSlide } from "@/app/_shared/ScrollFeatureSlider";
+
+const deviceManagementSlides: ScrollFeatureSlide[] = [
+  {
+    heading: "Device dashboard",
+    body: "Mycroft's platform feature offers a comprehensive dashboard with insights into each device, displaying specifications, status, and compliance. It conducts regular compliance checks to ensure all devices meet security standards.",
+    image: {
+      src: "/assets/product-devicedashboard.webp",
+      srcSet:
+        "/assets/product-devicedashboard-p-500.webp 500w, /assets/product-devicedashboard-p-800.webp 800w, /assets/product-devicedashboard-p-1080.webp 1080w, /assets/product-devicedashboard.webp 1352w",
+      sizes: "(max-width: 767px) 100vw, 676px",
+      width: 676,
+    },
+  },
+  {
+    heading: "Remote device locking",
+    body: "Our platform lets you remotely lock a device in case of theft or security incidents, safeguarding sensitive data from unauthorized access. Quick remote lock actions help reduce data breach risks, protecting your company's information.",
+    image: {
+      src: "/assets/product-devicelocking.webp",
+      srcSet:
+        "/assets/product-devicelocking-p-500.webp 500w, /assets/product-devicelocking-p-800.webp 800w, /assets/product-devicelocking-p-1080.webp 1080w, /assets/product-devicelocking.webp 1352w",
+      sizes: "(max-width: 767px) 100vw, 676px",
+      width: 676,
+    },
+  },
+  {
+    heading: "Remote device wipe",
+    body: "Mycroft's platform feature allows users to  erase sensitive data from lost or stolen devices, ensuring data protection and regulatory compliance, while minimizing data breach risks. This tool empowers businesses to maintain control over mobile assets and enhance overall security.",
+    image: {
+      src: "/assets/product-devicewipe.webp",
+      srcSet:
+        "/assets/product-devicewipe-p-500.webp 500w, /assets/product-devicewipe-p-800.webp 800w, /assets/product-devicewipe-p-1080.webp 1080w, /assets/product-devicewipe.webp 1352w",
+      sizes: "(max-width: 767px) 100vw, 676px",
+      width: 676,
+    },
+  },
+];
 
 /**
  * Faithful React port of the Webflow https://mycroft.io/product/device-management page. DOM + classes mirror
@@ -31,90 +68,11 @@ export function ProductDeviceManagementSnapshot() {
                 <div className="container-xl">
                   <div className="padding-btm medium">
                     <div className="scroll-slider-outer">
-                      <section id="audit-compliance" className="scroll-slider-inner">
-                        <div className="enumeration-container">
-                          <div className="enumeration-counter">
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration1" style={{"willChange": "opacity", "opacity": "1"}}>
-                                1
-                                <br />
-                              </div>
-                            </div>
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration2" style={{"willChange": "opacity", "opacity": "0"}}>
-                                2
-                                <br />
-                              </div>
-                            </div>
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration3" style={{"willChange": "opacity", "opacity": "0"}}>
-                                3
-                              </div>
-                            </div>
-                          </div>
-                          <div className="body-text-medium _75_rg">
-                            /
-                          </div>
-                          <div className="body-text-medium _75_rg">
-                            3
-                          </div>
-                        </div>
-                        <div className="features-row static" style={{"willChange": "opacity", "opacity": "0"}}>
-                          <div className="features-text">
-                            <h4 className="h4_v2 color_rg">
-                              Remote device wipe
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Mycroft's platform feature allows users to  erase sensitive data from lost or stolen devices, ensuring data protection and regulatory compliance, while minimizing data breach risks. This tool empowers businesses to maintain control over mobile assets and enhance overall security.
-                            </div>
-                          </div>
-                          <div className="features-img-container">
-                            <img src="/assets/product-frameworks.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-frameworks-p-500.webp 500w, /assets/product-frameworks-p-800.webp 800w, /assets/product-frameworks-p-1080.webp 1080w, /assets/product-frameworks.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide1">
-                          <div className="features-text slide1" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "1"}}>
-                            <h4 className="h4_v2 color_rg">
-                              Device dashboard
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Mycroft's platform feature offers a comprehensive dashboard with insights into each device, displaying specifications, status, and compliance. It conducts regular compliance checks to ensure all devices meet security standards.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide1" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "1"}}>
-                            <img src="/assets/product-devicedashboard.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-devicedashboard-p-500.webp 500w, /assets/product-devicedashboard-p-800.webp 800w, /assets/product-devicedashboard-p-1080.webp 1080w, /assets/product-devicedashboard.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide2">
-                          <div className="features-text slide2 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 40px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <h4 className="h4_v2 color_rg">
-                              Remote device locking
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Our platform lets you remotely lock a device in case of theft or security incidents, safeguarding sensitive data from unauthorized access. Quick remote lock actions help reduce data breach risks, protecting your company's information.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide2 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(-40px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <img src="/assets/product-devicelocking.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-devicelocking-p-500.webp 500w, /assets/product-devicelocking-p-800.webp 800w, /assets/product-devicelocking-p-1080.webp 1080w, /assets/product-devicelocking.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide3">
-                          <div className="features-text slide3 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 40px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <h4 className="h4_v2 color_rg">
-                              Remote device wipe
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Mycroft's platform feature allows users to  erase sensitive data from lost or stolen devices, ensuring data protection and regulatory compliance, while minimizing data breach risks. This tool empowers businesses to maintain control over mobile assets and enhance overall security.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide3 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(-40px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <img src="/assets/product-devicewipe.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-devicewipe-p-500.webp 500w, /assets/product-devicewipe-p-800.webp 800w, /assets/product-devicewipe-p-1080.webp 1080w, /assets/product-devicewipe.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
+                      <ScrollFeatureSlider id="audit-compliance" slides={deviceManagementSlides}>
                         <ButtonLarge href="/demo" velvet shine>
                           Book a demo
                         </ButtonLarge>
-                      </section>
+                      </ScrollFeatureSlider>
                       <div className="btm-tab">
                         <div className="shape-triangle _75_eg flipped mirrored smaller_mobile w-embed">
                           <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34 38" xmlSpace="preserve">

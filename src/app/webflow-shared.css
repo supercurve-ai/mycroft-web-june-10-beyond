@@ -13953,6 +13953,15 @@ figcaption {
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) !important;
     transition: none !important; }
 }
+/* scroll-scrub (IX2 "while scrolling in view" / SCROLLING_IN_VIEW):
+   opacity + translateX are mapped by JS to the element's scroll progress
+   through the viewport, so the animation scrubs forward AND backward with
+   the scroll. Keyframe range comes from data-wf-scrub="start,end" (%). */
+.wf-scrub { will-change: opacity, transform; }
+/* mobile / reduced motion: no scroll animations — final state immediately */
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  .wf-scrub { opacity: 1 !important; transform: none !important; }
+}
 /* ── nav dropdown + hover animations, reproducing the original site's IX2
    action lists exactly (extracted from the published webflow.js bundle;
    see reference/webflow-ix2/). a-141/a-149 = product/solutions open,

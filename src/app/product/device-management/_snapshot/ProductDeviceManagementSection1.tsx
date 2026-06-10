@@ -25,7 +25,7 @@ export function ProductDeviceManagementSection1() {
             <div className="col-hero-right devmng">
               <div className="hero-imgs cloudsec">
                 <div data-wf-lottie-load="true" className="prod-hero1" data-animation-type="lottie" data-src="/lottie/6983fa2a5c7d48b337b1b7a1_9f43fdd189c1f55fd7c0c08b12f917cc_DeviceManagement-Hero_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="12" data-loading="eager">
-                  <DotLottiePlayer src="/lottie/6983fa2a5c7d48b337b1b7a1_9f43fdd189c1f55fd7c0c08b12f917cc_DeviceManagement-Hero_v2.lottie" loop={true} autoplay={true} />
+                  <DotLottiePlayer src="/lottie/6983fa2a5c7d48b337b1b7a1_9f43fdd189c1f55fd7c0c08b12f917cc_DeviceManagement-Hero_v2.lottie" loop={true} autoplay={true} width={1100} height={840} />
                 </div>
               </div>
             </div>

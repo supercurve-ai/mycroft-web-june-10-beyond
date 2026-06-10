@@ -31,10 +31,10 @@ export function HomeSection1() {
             </div>
             <div className="col-hero-right_v2">
               <div className="hero-lottie1" data-animation-type="lottie" data-src="/lottie/68ccb03396647e4ea44d0e70_Mycroft-NewHero_Animation-Product_v3.lottie" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="5" data-loading="eager">
-                <DotLottiePlayer src="/lottie/68ccb03396647e4ea44d0e70_Mycroft-NewHero_Animation-Product_v3.lottie" loop={false} autoplay={true} />
+                <DotLottiePlayer src="/lottie/68ccb03396647e4ea44d0e70_Mycroft-NewHero_Animation-Product_v3.lottie" loop={false} autoplay={true} width={914} height={582} />
               </div>
               <div className="hero-lottie2" data-animation-type="lottie" data-src="/lottie/67f56c6d524ef488b85de4cf_41bb36e873a57100a34698c90d7ab4f6_Mycroft-Product_Animation-HERO2_v1.lottie" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="6" data-loading="eager">
-                <DotLottiePlayer src="/lottie/67f56c6d524ef488b85de4cf_41bb36e873a57100a34698c90d7ab4f6_Mycroft-Product_Animation-HERO2_v1.lottie" loop={false} autoplay={true} />
+                <DotLottiePlayer src="/lottie/67f56c6d524ef488b85de4cf_41bb36e873a57100a34698c90d7ab4f6_Mycroft-Product_Animation-HERO2_v1.lottie" loop={false} autoplay={true} width={316} height={383} />
               </div>
             </div>
           </div>

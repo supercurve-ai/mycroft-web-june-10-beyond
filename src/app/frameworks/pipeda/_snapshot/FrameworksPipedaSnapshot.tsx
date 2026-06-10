@@ -52,7 +52,7 @@ export function FrameworksPipedaSnapshot() {
                               <div style={{"opacity": "0"}} className="dial-tile-background"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
                               <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/6a024deb258a325bf770f90a_Compliance-Dial_80.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
-                                <DotLottiePlayer src="/lottie/6a024deb258a325bf770f90a_Compliance-Dial_80.json" loop={false} autoplay={false} />
+                                <DotLottiePlayer src="/lottie/6a024deb258a325bf770f90a_Compliance-Dial_80.json" loop={false} autoplay={false} width={500} height={500} playOnView={750} />
                               </div>
                               <div className="body-text-small color_white font_600 underline fw_dial">
                                 GDPR →
@@ -65,7 +65,7 @@ export function FrameworksPipedaSnapshot() {
                               <div style={{"opacity": "0"}} className="dial-tile-background"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
                               <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/6a024deb4cd221655fea0562_Compliance-Dial_70.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
-                                <DotLottiePlayer src="/lottie/6a024deb4cd221655fea0562_Compliance-Dial_70.json" loop={false} autoplay={false} />
+                                <DotLottiePlayer src="/lottie/6a024deb4cd221655fea0562_Compliance-Dial_70.json" loop={false} autoplay={false} width={500} height={500} playOnView={1250} />
                               </div>
                               <div className="body-text-small color_white font_600 underline fw_dial">
                                 SOC 2 →
@@ -77,7 +77,7 @@ export function FrameworksPipedaSnapshot() {
                               <div style={{"opacity": "0"}} className="dial-tile-background"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
                               <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/6a024deb6496e3c316c4eb82_Compliance-Dial_30.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
-                                <DotLottiePlayer src="/lottie/6a024deb6496e3c316c4eb82_Compliance-Dial_30.json" loop={false} autoplay={false} />
+                                <DotLottiePlayer src="/lottie/6a024deb6496e3c316c4eb82_Compliance-Dial_30.json" loop={false} autoplay={false} width={500} height={500} playOnView={1750} />
                               </div>
                               <div className="body-text-small color_white font_600 underline fw_dial">
                                 ISO 27001 →

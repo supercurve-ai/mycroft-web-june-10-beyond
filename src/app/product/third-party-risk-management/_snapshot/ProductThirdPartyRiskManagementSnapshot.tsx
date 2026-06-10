@@ -9,6 +9,32 @@ import { ProductThirdPartyRiskManagementSection1 } from "./ProductThirdPartyRisk
 import { ProductThirdPartyRiskManagementSection3 } from "./ProductThirdPartyRiskManagementSection3";
 import { ProductThirdPartyRiskManagementSection4 } from "./ProductThirdPartyRiskManagementSection4";
 import { ProductThirdPartyRiskManagementSection5 } from "./ProductThirdPartyRiskManagementSection5";
+import { ScrollFeatureSlider, type ScrollFeatureSlide } from "@/app/_shared/ScrollFeatureSlider";
+
+const thirdPartyRiskSlides: ScrollFeatureSlide[] = [
+  {
+    heading: "TPRM dashboard",
+    body: "Our dashboard provides an overview of assessment statuses, showing the number of completed versus incomplete evaluations and includes a breakdown of vendor criticality to prioritize your focus –helping you efficiently monitor, prioritize, and manage third-party risks.",
+    image: {
+      src: "/assets/product-dashboard.webp",
+      srcSet:
+        "/assets/product-dashboard-p-500.webp 500w, /assets/product-dashboard-p-800.webp 800w, /assets/product-dashboard-p-1080.webp 1080w, /assets/product-dashboard.webp 1352w",
+      sizes: "(max-width: 767px) 100vw, 676px",
+      width: 676,
+    },
+  },
+  {
+    heading: "Assessment checklist",
+    body: "Our platform allows users to select a vendor and access a tailored checklist of actionable steps. Completing these actions ensures the vendor meets your security and compliance standards, streamlining the onboarding and risk mitigation processes.",
+    image: {
+      src: "/assets/product-checklist.webp",
+      srcSet:
+        "/assets/product-checklist-p-500.webp 500w, /assets/product-checklist-p-800.webp 800w, /assets/product-checklist-p-1080.webp 1080w, /assets/product-checklist.webp 1352w",
+      sizes: "(max-width: 767px) 100vw, 676px",
+      width: 676,
+    },
+  },
+];
 
 /**
  * Faithful React port of the Webflow https://mycroft.io/product/third-party-risk-management page. DOM + classes mirror
@@ -31,72 +57,11 @@ export function ProductThirdPartyRiskManagementSnapshot() {
                 <div className="container-xl">
                   <div className="padding-btm medium">
                     <div className="scroll-slider-outer">
-                      <section id="audit-compliance" className="scroll-slider-inner">
-                        <div className="enumeration-container">
-                          <div className="enumeration-counter">
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration1" style={{"willChange": "opacity", "opacity": "1"}}>
-                                1
-                                <br />
-                              </div>
-                            </div>
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration2" style={{"willChange": "opacity", "opacity": "0"}}>
-                                2
-                                <br />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="body-text-medium _75_rg">
-                            /
-                          </div>
-                          <div className="body-text-medium _75_rg">
-                            2
-                          </div>
-                        </div>
-                        <div className="features-row static" style={{"willChange": "opacity", "opacity": "0"}}>
-                          <div className="features-text">
-                            <h4 className="h4_v2 color_rg">
-                              Assessment checklist
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Our dashboard provides an overview of assessment statuses, showing the number of completed versus incomplete evaluations and includes a breakdown of vendor criticality to prioritize your focus –helping you efficiently monitor, prioritize, and manage third-party risks.
-                            </div>
-                          </div>
-                          <div className="features-img-container">
-                            <img src="/assets/product-frameworks.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-frameworks-p-500.webp 500w, /assets/product-frameworks-p-800.webp 800w, /assets/product-frameworks-p-1080.webp 1080w, /assets/product-frameworks.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide1">
-                          <div className="features-text slide1" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "1"}}>
-                            <h4 className="h4_v2 color_rg">
-                              TPRM dashboard
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Our dashboard provides an overview of assessment statuses, showing the number of completed versus incomplete evaluations and includes a breakdown of vendor criticality to prioritize your focus –helping you efficiently monitor, prioritize, and manage third-party risks.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide1" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "1"}}>
-                            <img src="/assets/product-dashboard.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-dashboard-p-500.webp 500w, /assets/product-dashboard-p-800.webp 800w, /assets/product-dashboard-p-1080.webp 1080w, /assets/product-dashboard.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide2">
-                          <div className="features-text slide2 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 40px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <h4 className="h4_v2 color_rg">
-                              Assessment checklist
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Our platform allows users to select a vendor and access a tailored checklist of actionable steps. Completing these actions ensures the vendor meets your security and compliance standards, streamlining the onboarding and risk mitigation processes.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide2 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(-40px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <img src="/assets/product-checklist.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-checklist-p-500.webp 500w, /assets/product-checklist-p-800.webp 800w, /assets/product-checklist-p-1080.webp 1080w, /assets/product-checklist.webp 1352w" className="features-img" />
-                          </div>
-                        </div>
+                      <ScrollFeatureSlider id="audit-compliance" slides={thirdPartyRiskSlides}>
                         <ButtonLarge href="/demo" velvet shine>
                           Book a demo
                         </ButtonLarge>
-                      </section>
+                      </ScrollFeatureSlider>
                       <div className="btm-tab">
                         <div className="shape-triangle _75_eg flipped mirrored smaller_mobile w-embed">
                           <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34 38" xmlSpace="preserve">

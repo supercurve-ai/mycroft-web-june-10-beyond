@@ -26,7 +26,10 @@ export type ScrollFeatureSlide = {
  * verbatim [keyframe%, value] list; values are interpolated linearly and
  * held flat before the first / after the last keyframe.
  *
- * The timelines encode exactly 3 slides.
+ * The 2-slide variant (action lists "a-117" features2-scroll-desktop /
+ * "a-118" features2-scroll-mobile, used with `.scroll-container-outer
+ * ._2_features`) shares the slide-1 timing and drops the final slide:
+ * slide 2 fades in and holds.
  */
 type Track = ReadonlyArray<readonly [number, number]>;
 type SlideTracks = {
@@ -93,6 +96,53 @@ const MOBILE: Timeline = {
   ],
 };
 
+const DESKTOP_2: Timeline = {
+  enums: [
+    [[0, 1], [28, 1], [29, 0]],
+    [[28, 0], [29, 1], [58, 1]],
+  ],
+  slides: [
+    {
+      textOpacity: [[0, 1], [26, 1], [30, 0]],
+      textY: [[0, 0], [26, 0], [30, -40]],
+      imgOpacity: [[26, 1], [27, 0]],
+      imgX: [[26, 0], [27, 40]],
+    },
+    {
+      textOpacity: [[30, 0], [32, 1], [57, 1]],
+      textY: [[30, 40], [32, 0], [57, 0]],
+      imgOpacity: [[30, 0], [32, 1], [57, 1]],
+      imgX: [[30, -40], [32, 0], [57, 0]],
+    },
+  ],
+};
+
+const MOBILE_2: Timeline = {
+  enums: [
+    [[0, 1], [18, 1], [19, 0]],
+    [[18, 0], [19, 1], [38, 1]],
+  ],
+  slides: [
+    {
+      textOpacity: [[0, 1], [16, 1], [20, 0]],
+      textY: [[0, 0], [16, 0], [20, -40]],
+      imgOpacity: [[16, 1], [17, 0]],
+      imgX: [[16, 0], [17, 40]],
+    },
+    {
+      textOpacity: [[20, 0], [22, 1], [37, 1]],
+      textY: [[20, 40], [22, 0], [37, 0]],
+      imgOpacity: [[20, 0], [22, 1], [37, 1]],
+      imgX: [[20, -40], [22, 0], [37, 0]],
+    },
+  ],
+};
+
+const timelinesFor = (slideCount: number) =>
+  slideCount <= 2
+    ? { desktop: DESKTOP_2, mobile: MOBILE_2 }
+    : { desktop: DESKTOP, mobile: MOBILE };
+
 // IX2 smoothing: 40 → rendered position chases the raw scroll progress by
 // max(1 - 40/100, 0.01) per animation frame.
 const CHASE = Math.max(1 - 0.4, 0.01);
@@ -135,6 +185,7 @@ export function ScrollFeatureSlider({
   children?: ReactNode;
 }) {
   const sectionRef = useRef<HTMLElement>(null);
+  const initial = timelinesFor(slides.length).desktop;
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -161,8 +212,9 @@ export function ScrollFeatureSlider({
       raw = total > 0 ? Math.min(Math.max(vh - rect.top, 0), total) / total : 0;
     };
 
+    const tls = timelinesFor(slides.length);
     const apply = () => {
-      const tl = mql.matches ? MOBILE : DESKTOP;
+      const tl = mql.matches ? tls.mobile : tls.desktop;
       const v = pos * 100;
       parts.forEach((p, i) => {
         const tr = tl.slides[i];
@@ -219,7 +271,7 @@ export function ScrollFeatureSlider({
             <div key={i} className="enumeration-absolute">
               <div
                 className={`body-text-medium _75_rg enumeration${i + 1}`}
-                style={{ willChange: "opacity", opacity: sample(DESKTOP.enums[i], 0) }}
+                style={{ willChange: "opacity", opacity: sample(initial.enums[i], 0) }}
               >
                 {i + 1}
                 <br />
@@ -236,7 +288,7 @@ export function ScrollFeatureSlider({
         <FeatureRowContent slide={slides[0]} />
       </div>
       {slides.map((slide, i) => {
-        const tr = DESKTOP.slides[i];
+        const tr = initial.slides[i];
         return (
           <div
             key={i}

@@ -20,13 +20,24 @@ export function ResourcesCollection1List() {
         ))}
       </div>
       {visible < resourcesCollection1Data.length ? (
-        <div className="w-pagination-wrapper">
+        <div
+          role="navigation"
+          aria-label="List"
+          className="w-pagination-wrapper padding-top medium"
+        >
           <button
             type="button"
+            aria-label="Next Page"
             className="w-pagination-next btn-large"
             onClick={() => setVisible((v) => v + 4)}
           >
-            {"More"}
+            <div className="btn-text-large w-inline-block">{"More"}</div>
+            <img
+              src="/assets/arrow-icon-v2.svg"
+              loading="lazy"
+              alt=""
+              className="btn-arrow-large"
+            />
           </button>
         </div>
       ) : null}
