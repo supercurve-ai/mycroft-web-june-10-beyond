@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
 import { NavLink } from "./NavLink";
 
@@ -201,6 +201,23 @@ function NavDropdown({ id, label, open, onToggle, onClose, children }: {
   onClose: () => void;
   children: ReactNode;
 }) {
+  // the original IX2 close action fades the list out over 150ms before
+  // hiding it — .wf-closing stays on for that long after `open` drops
+  const [closing, setClosing] = useState(false);
+  const wasOpen = useRef(false);
+  useEffect(() => {
+    const was = wasOpen.current;
+    wasOpen.current = open;
+    if (open) {
+      setClosing(false);
+      return;
+    }
+    if (!was) return;
+    setClosing(true);
+    const t = setTimeout(() => setClosing(false), 150);
+    return () => clearTimeout(t);
+  }, [open]);
+
   return (
     <div data-delay="0" data-hover="false" className={`nav-link-dropdown w-dropdown${open ? " wf-open" : ""}`}>
       <div
@@ -225,7 +242,7 @@ function NavDropdown({ id, label, open, onToggle, onClose, children }: {
         <div className="dropdown-icon w-icon-dropdown-toggle" aria-hidden="true" style={frozenIcon}></div>
       </div>
       <nav
-        className={`nav-submenu w-dropdown-list${open ? " w--open wf-open" : ""}`}
+        className={`nav-submenu w-dropdown-list${open ? " w--open wf-open" : closing ? " wf-closing" : ""}`}
         id={`w-dropdown-list-${id}`}
         aria-labelledby={`w-dropdown-toggle-${id}`}
         style={{ display: "none", opacity: 0 }}

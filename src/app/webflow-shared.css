@@ -13952,31 +13952,91 @@ figcaption {
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) !important;
     transition: none !important; }
 }
-/* dropdowns: reveal the list the React toggle opens */
-.w-dropdown-list.wf-open { display: block !important; opacity: 1 !important; }
+/* ── nav dropdown + hover animations, reproducing the original site's IX2
+   action lists exactly (extracted from the published webflow.js bundle;
+   see reference/webflow-ix2/). a-141/a-149 = product/solutions open,
+   a-142/a-152 = close, a-139/a-140 = tile hover, a-145/a-146 = link hover,
+   a-48/a-49 = text-link arrow. ── */
+/* open: the list appears and fades in over 150ms (open, group 2) */
+.w-dropdown-list.wf-open {
+  display: block !important;
+  opacity: 1 !important;
+  transition: opacity 150ms ease;
+}
+/* close: the list fades out over 150ms while the tiles hold their final
+   state (close, group 0); SiteNav keeps .wf-closing on for the fade, then
+   everything snaps back to the hidden inline styles (close, group 1) */
+.w-dropdown-list.wf-closing {
+  display: block !important;
+  opacity: 0 !important;
+  transition: opacity 150ms ease;
+}
 /* nav submenu tiles were captured frozen in their IX2 pre-animation state
-   (opacity 0, offset down) — animate them to their final state on open */
+   (opacity 0, offset 20px down). IX2 groups run sequentially, so the tile
+   stagger (open, group 3) only starts once the 150ms list fade (group 2)
+   has finished: each tile moves to 0 over 250ms and fades in over 200ms
+   (ease), 50ms apart in DOM order, the first one at 150ms */
 .w-dropdown-list.wf-open .sub-product-tile,
-.w-dropdown-list.wf-open .solution-tile {
+.w-dropdown-list.wf-open .solution-tile,
+.w-dropdown-list.wf-closing .sub-product-tile,
+.w-dropdown-list.wf-closing .solution-tile {
   opacity: 1 !important;
   transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
     rotateZ(0deg) skew(0deg, 0deg) !important;
-  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-/* product tile hover: the colored panel slides up behind the text (IX2 hover) */
+.w-dropdown-list.wf-open .sub-product-tile,
+.w-dropdown-list.wf-open .solution-tile {
+  transition: transform 250ms ease, opacity 200ms ease;
+  transition-delay: 150ms;
+}
+/* nth-of-type counts only the <a> tiles, skipping the .mobile-hr <div>s */
+.w-dropdown-list.wf-open :is(.sub-product-tile, .solution-tile):nth-of-type(2) { transition-delay: 200ms; }
+.w-dropdown-list.wf-open :is(.sub-product-tile, .solution-tile):nth-of-type(3) { transition-delay: 250ms; }
+.w-dropdown-list.wf-open :is(.sub-product-tile, .solution-tile):nth-of-type(4) { transition-delay: 300ms; }
+.w-dropdown-list.wf-open :is(.sub-product-tile, .solution-tile):nth-of-type(5) { transition-delay: 350ms; }
+.w-dropdown-list.wf-open :is(.sub-product-tile, .solution-tile):nth-of-type(6) { transition-delay: 400ms; }
+.w-dropdown-list.wf-open :is(.sub-product-tile, .solution-tile):nth-of-type(7) { transition-delay: 450ms; }
+.w-dropdown-list.wf-open :is(.sub-product-tile, .solution-tile):nth-of-type(8) { transition-delay: 500ms; }
+.w-dropdown-list.wf-open :is(.sub-product-tile, .solution-tile):nth-of-type(9) { transition-delay: 550ms; }
+/* the open transitions start from the hidden inline styles; without
+   @starting-style nothing animates after display:none → block (older
+   browsers simply show the menu instantly) */
+@starting-style {
+  .w-dropdown-list.wf-open { opacity: 0 !important; }
+  .w-dropdown-list.wf-open .sub-product-tile,
+  .w-dropdown-list.wf-open .solution-tile {
+    opacity: 0 !important;
+    transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) !important;
+  }
+}
+/* product tile hover: the colored panel slides up behind the text —
+   in over 300ms (opacity) / 350ms (move), out over 200ms, all ease */
 .sub-product-tile .product-tile-hov {
-  transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 200ms ease, transform 200ms ease;
 }
 .sub-product-tile:hover .product-tile-hov {
   opacity: 1 !important;
   transform: translate3d(0, 0, 0) !important;
+  transition: opacity 300ms ease, transform 350ms ease;
 }
-/* text-link arrow nudges right on hover (IX2 animated 0 → 3px) */
-.text-link.link_embed .arrow-icon-small { transition: transform 0.3s ease; }
-.text-link.link_embed:hover .arrow-icon-small { transform: translate3d(3px, 0, 0); }
-/* chevron flips while its dropdown is open */
-.dropdown-trigger .dropdown-icon { transition: transform 0.3s ease; }
+/* nav links: text tints blueberry-wine on hover, 250ms ease each way */
+.nav-link-item .nav-link_v3,
+.nav-link-dropdown .nav-link_v3 {
+  transition: color 250ms ease;
+}
+.nav-link-item:hover .nav-link_v3,
+.nav-link-dropdown:hover .nav-link_v3 {
+  color: var(--palette--colours--blueberry-wine);
+}
+/* text-link arrow nudges 0 → 3px: 200ms ease-in on hover, 200ms ease-out back */
+.text-link .arrow-icon-small { transition: transform 200ms cubic-bezier(0, 0, 0.58, 1); }
+.text-link:hover .arrow-icon-small {
+  transform: translate3d(3px, 0, 0);
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+}
+/* chevron flips 180° over 150ms while its dropdown is open */
+.dropdown-trigger .dropdown-icon { transition: transform 150ms ease; }
 .dropdown-trigger.w--open .dropdown-icon { transform: rotateZ(180deg) !important; }
 /* custom mobile menu (navbar_v3 uses .hamburger-lockup, not .w-nav-button) */
 .w-nav.wf-nav-open .nav-submenu-mobile { display: block; }

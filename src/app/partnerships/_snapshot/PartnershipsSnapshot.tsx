@@ -5,6 +5,43 @@ import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { PartnershipsSection1 } from "./PartnershipsSection1";
 import { PartnershipsSection2 } from "./PartnershipsSection2";
+import { ScrollFeatureSlider, type ScrollFeatureSlide } from "../../_shared/ScrollFeatureSlider";
+
+const partnerSlides: ScrollFeatureSlide[] = [
+  {
+    heading: "MSP partners",
+    body: "Partnering with Mycroft positions you at the forefront of the cybersecurity landscape. With our cutting-edge technology and comprehensive suite of security solutions, you can enhance your offerings and deliver unparalleled protection to your clients.",
+    image: {
+      src: "/assets/msp-partners.webp",
+      srcSet:
+        "/assets/msp-partners-p-500.webp 500w, /assets/msp-partners-p-800.webp 800w, /assets/msp-partners-p-1080.webp 1080w, /assets/msp-partners.webp 1320w",
+      sizes: "(max-width: 479px) 100vw, 676px",
+      width: 676,
+    },
+  },
+  {
+    heading: "Tech partners",
+    body: "Collaborate with leading tech providers and leverage complementary strengths, streamline processes, and innovate faster. Tech partnerships with Mycroft enable seamless integration of diverse tools and platforms.",
+    image: {
+      src: "/assets/tech-partners.webp",
+      srcSet:
+        "/assets/tech-partners-p-500.webp 500w, /assets/tech-partners-p-800.webp 800w, /assets/tech-partners-p-1080.webp 1080w, /assets/tech-partners.webp 1320w",
+      sizes: "(max-width: 479px) 100vw, 676px",
+      width: 676,
+    },
+  },
+  {
+    heading: "Auditors",
+    body: "Join Mycroft’s network of verified auditors and work with customers that value real compliance and security an exceed industry standards. With Mycroft, you gain a strategic ally committed to safeguarding long-term resilience in an increasingly complex digital landscape.",
+    image: {
+      src: "/assets/auditors.webp",
+      srcSet:
+        "/assets/auditors-p-500.webp 500w, /assets/auditors-p-800.webp 800w, /assets/auditors-p-1080.webp 1080w, /assets/auditors.webp 1320w",
+      sizes: "(max-width: 479px) 100vw, 676px",
+      width: 676,
+    },
+  },
+];
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io/partnerships page. DOM + classes mirror
@@ -26,90 +63,11 @@ export function PartnershipsSnapshot() {
                 <div className="container-xl">
                   <div className="padding-btm medium">
                     <div className="scroll-slider-outer">
-                      <section id="audit-compliance" className="scroll-slider-inner">
-                        <div className="enumeration-container">
-                          <div className="enumeration-counter">
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration1" style={{"willChange": "opacity", "opacity": "1"}}>
-                                1
-                                <br />
-                              </div>
-                            </div>
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration2" style={{"willChange": "opacity", "opacity": "0"}}>
-                                2
-                                <br />
-                              </div>
-                            </div>
-                            <div className="enumeration-absolute">
-                              <div className="body-text-medium _75_rg enumeration3" style={{"willChange": "opacity", "opacity": "0"}}>
-                                3
-                              </div>
-                            </div>
-                          </div>
-                          <div className="body-text-medium _75_rg">
-                            /
-                          </div>
-                          <div className="body-text-medium _75_rg">
-                            3
-                          </div>
-                        </div>
-                        <div className="features-row static" style={{"willChange": "opacity", "opacity": "0"}}>
-                          <div className="features-text">
-                            <h4 className="h4_v2 color_rg">
-                              Remote device wipe
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Partnering with Mycroft positions you at the forefront of the cybersecurity landscape. With our cutting-edge technology and comprehensive suite of security solutions, you can enhance your offerings and deliver unparalleled protection to your clients.
-                            </div>
-                          </div>
-                          <div className="features-img-container">
-                            <img src="/assets/msp-partners.webp" loading="lazy" width="676" sizes="(max-width: 479px) 100vw, 676px" alt="" srcSet="/assets/msp-partners-p-500.webp 500w, /assets/msp-partners-p-800.webp 800w, /assets/msp-partners-p-1080.webp 1080w, /assets/msp-partners.webp 1320w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide1">
-                          <div className="features-text slide1" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "1"}}>
-                            <h4 className="h4_v2 color_rg">
-                              MSP partners
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Partnering with Mycroft positions you at the forefront of the cybersecurity landscape. With our cutting-edge technology and comprehensive suite of security solutions, you can enhance your offerings and deliver unparalleled protection to your clients.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide1" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "1"}}>
-                            <img src="/assets/msp-partners.webp" loading="lazy" width="676" sizes="(max-width: 479px) 100vw, 676px" alt="" srcSet="/assets/msp-partners-p-500.webp 500w, /assets/msp-partners-p-800.webp 800w, /assets/msp-partners-p-1080.webp 1080w, /assets/msp-partners.webp 1320w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide2">
-                          <div className="features-text slide2 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 40px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <h4 className="h4_v2 color_rg">
-                              Tech partners
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Collaborate with leading tech providers and leverage complementary strengths, streamline processes, and innovate faster. Tech partnerships with Mycroft enable seamless integration of diverse tools and platforms.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide2 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(-40px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <img src="/assets/tech-partners.webp" loading="lazy" width="676" sizes="(max-width: 479px) 100vw, 676px" alt="" srcSet="/assets/tech-partners-p-500.webp 500w, /assets/tech-partners-p-800.webp 800w, /assets/tech-partners-p-1080.webp 1080w, /assets/tech-partners.webp 1320w" className="features-img" />
-                          </div>
-                        </div>
-                        <div className="features-row absolute slide3">
-                          <div className="features-text slide3 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(0px, 40px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <h4 className="h4_v2 color_rg">
-                              Auditors
-                            </h4>
-                            <div className="body-text-large smaller_tablet">
-                              Join Mycroft’s network of verified auditors and work with customers that value real compliance and security an exceed industry standards. With Mycroft, you gain a strategic ally committed to safeguarding long-term resilience in an increasingly complex digital landscape.
-                            </div>
-                          </div>
-                          <div className="features-img-container slide3 wf-reveal" style={{"willChange": "transform, opacity", "transform": "translate3d(-40px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "opacity": "0", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                            <img src="/assets/auditors.webp" loading="lazy" width="676" sizes="(max-width: 479px) 100vw, 676px" alt="" srcSet="/assets/auditors-p-500.webp 500w, /assets/auditors-p-800.webp 800w, /assets/auditors-p-1080.webp 1080w, /assets/auditors.webp 1320w" className="features-img" />
-                          </div>
-                        </div>
+                      <ScrollFeatureSlider id="audit-compliance" slides={partnerSlides}>
                         <ButtonLarge href="#hero" velvet shine current>
                           Talk to our team
                         </ButtonLarge>
-                      </section>
+                      </ScrollFeatureSlider>
                       <div className="btm-tab">
                         <div className="shape-triangle _75_eg flipped mirrored smaller_mobile w-embed">
                           <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34 38" xmlSpace="preserve">

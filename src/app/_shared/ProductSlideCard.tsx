@@ -13,7 +13,8 @@ export type ProductSlide = {
 };
 
 type ProductSlideCardProps = ProductSlide & {
-  /** false while the card sits on a hidden slide: removes it from the a11y tree */
+  /** false while the card sits on a hidden slide: plays the exit state of the
+   *  cover/Lottie animations and removes the card from the a11y tree */
   active?: boolean;
 };
 
@@ -48,12 +49,28 @@ export function ProductSlideCard({
         </div>
       </div>
       <div className={`slider__right-pane image-${image}`}>
-        {/* reveal cover — kept at 0% until the entrance animation is built */}
+        {/* white cover wipes off the artwork on entry (original IX2 timing:
+            in 800ms inOutQuart, out 400ms ease-in-out) */}
         <div
           className="slider__image-cover"
-          style={{ width: "600px", height: "0%" }}
+          style={{
+            width: "600px",
+            height: active ? "0%" : "100%",
+            transition: active
+              ? "height 800ms cubic-bezier(0.77, 0, 0.175, 1)"
+              : "height 400ms ease-in-out",
+          }}
         ></div>
-        <div className="slider-lottie">
+        {/* Lottie fades in after the cover wipe (500ms delay), out quickly */}
+        <div
+          className="slider-lottie"
+          style={{
+            opacity: active ? 1 : 0,
+            transition: active
+              ? "opacity 500ms ease-in 500ms"
+              : "opacity 350ms ease-in",
+          }}
+        >
           <DotLottiePlayer src={lottieSrc} loop={true} autoplay={true} />
         </div>
       </div>

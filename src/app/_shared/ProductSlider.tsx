@@ -16,6 +16,8 @@ type ProductSliderProps = {
  * mask and crossfaded by index. Advance by clicking the card itself, the
  * prev/next arrows, or wait for autoplay (which stops on first interaction).
  * Markup/class names mirror the original so webflow-shared.css applies.
+ * Timings/easings reproduce the original site's IX2 "Product Slider IN/OUT"
+ * interactions (slide drift + fade here; cover wipe + Lottie fade in the card).
  */
 export function ProductSlider({
   slides,
@@ -82,8 +84,12 @@ export function ProductSlider({
                   position: "absolute",
                   inset: 0,
                   opacity: active ? 1 : 0,
+                  transform: active ? "translateX(0px)" : "translateX(-20px)",
                   visibility: active ? "visible" : "hidden",
-                  transition: "opacity 0.4s ease, visibility 0.4s ease",
+                  // hold visibility until the 400ms exit animation finishes
+                  transition: active
+                    ? "transform 500ms ease-in-out, opacity 400ms ease-in-out, visibility 0s"
+                    : "transform 400ms ease-in-out, opacity 400ms ease-in-out, visibility 0s linear 400ms",
                 }}
               >
                 <ProductSlideCard {...slide} active={active} />
