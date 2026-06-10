@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
 import { NavLink } from "./NavLink";
 
@@ -202,21 +202,21 @@ function NavDropdown({ id, label, open, onToggle, onClose, children }: {
   children: ReactNode;
 }) {
   // the original IX2 close action fades the list out over 150ms before
-  // hiding it — .wf-closing stays on for that long after `open` drops
+  // hiding it — .wf-closing stays on for that long after `open` drops.
+  // `closing` must be derived during render (not in an effect) so the very
+  // first frame after closing still shows the list; an effect would run
+  // after the hidden state has already painted and the fade would never play.
   const [closing, setClosing] = useState(false);
-  const wasOpen = useRef(false);
+  const [prevOpen, setPrevOpen] = useState(open);
+  if (open !== prevOpen) {
+    setPrevOpen(open);
+    setClosing(!open);
+  }
   useEffect(() => {
-    const was = wasOpen.current;
-    wasOpen.current = open;
-    if (open) {
-      setClosing(false);
-      return;
-    }
-    if (!was) return;
-    setClosing(true);
+    if (!closing) return;
     const t = setTimeout(() => setClosing(false), 150);
     return () => clearTimeout(t);
-  }, [open]);
+  }, [closing]);
 
   return (
     <div data-delay="0" data-hover="false" className={`nav-link-dropdown w-dropdown${open ? " wf-open" : ""}`}>
