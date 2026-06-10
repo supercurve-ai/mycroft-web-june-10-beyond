@@ -1,5 +1,6 @@
 import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
+import { ComplianceSection } from "../../_shared/ComplianceSection";
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io/thank-you page. DOM + classes mirror
@@ -32,52 +33,10 @@ export function ThankYouSnapshot() {
           </div>
         </header>
         <div className="color-rg">
-          <div className="page-padding">
-            <div className="container-large">
-              <div className="padding-top large">
-                <div className="padding-btm large">
-                  <div className="container-flex vertical">
-                    <div className="compliance-col-left">
-                      <div className="eyebrow-label-small compliance-margins">
-                        <div className="eyebrow-small color_mint">
-                          Compliance
-                        </div>
-                      </div>
-                    </div>
-                    <div className="padding-btm xsmall">
-                      <div className="container-flex center_align_y-axis horizontal_tablet left_align_tablet">
-                        <div className="compliance-col-left">
-                          <div className="container-flex vertical mobile_portrait_center">
-                            <h4 className="h4_v2 color_white">
-                              Real enterprise security, compliance next.
-                            </h4>
-                            <div className="padding-top xxxs">
-                              <div className="body-text-medium text_40earlgrey">
-                                We help you navigate SOC 2, PIPEDA, GDPR, HIPAA, CMMC, FedRAMP, FedRAMP 20X and other frameworks that we stay on top of.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="compliance-badges-container">
-                          <div className="badge-grid">
-                            <div id="w-node-c5775c98-62c7-c779-c723-9daca99683eb-a99683d7" className="badge-row">
-                              <img loading="lazy" src="/assets/mycroft-soc2-badge.svg" alt="" className="compliance-badge-img" />
-                              <img loading="lazy" src="/assets/mycroft-hipaa-badge.svg" alt="" className="compliance-badge-img" />
-                            </div>
-                            <div id="w-node-c5775c98-62c7-c779-c723-9daca99683ee-a99683d7" className="badge-row">
-                              <img loading="lazy" src="/assets/mycroft-gdpr-badge.svg" alt="" className="compliance-badge-img" />
-                              <img loading="lazy" src="/assets/mycroft-iso-badge.svg" alt="" className="compliance-badge-img" />
-                            </div>
-                            <img loading="lazy" src="/assets/mycroft-euai-badge.svg" alt="" className="compliance-badge-img last-child" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ComplianceSection
+            heading="Real enterprise security, compliance next."
+            body="We help you navigate SOC 2, PIPEDA, GDPR, HIPAA, CMMC, FedRAMP, FedRAMP 20X and other frameworks that we stay on top of."
+          />
         </div>
         <SiteFooter />
       </main>

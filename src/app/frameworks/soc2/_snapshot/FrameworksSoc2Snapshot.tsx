@@ -1,7 +1,4 @@
 import { CtaSection } from "@/app/_shared/CtaSection";
-import { ButtonLarge } from "@/app/_shared/ButtonLarge";
-import Link from "next/link";
-import { DotLottiePlayer } from "../../../_shared/DotLottiePlayer";
 import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { FrameworksSoc2Section1 } from "./FrameworksSoc2Section1";
@@ -9,6 +6,7 @@ import { FrameworksSoc2Section2 } from "./FrameworksSoc2Section2";
 import { FrameworksSoc2Section3 } from "./FrameworksSoc2Section3";
 import { FrameworksSoc2Section4 } from "./FrameworksSoc2Section4";
 import { FrameworksSoc2Section5 } from "./FrameworksSoc2Section5";
+import { UnlockFrameworksSection } from "@/app/_shared/UnlockFrameworksSection";
 
 /**
  * Faithful React port of the Webflow https://mycroft.io/frameworks/soc2 page. DOM + classes mirror
@@ -25,81 +23,14 @@ export function FrameworksSoc2Snapshot() {
         <FrameworksSoc2Section2 />
         <FrameworksSoc2Section3 />
         <FrameworksSoc2Section4 />
-        <div className="negative-margin-wrapper reduce_top">
-          <section id="Features" className="section_v2 color_smoke">
-            <div className="page-padding">
-              <div className="padding-top xl">
-                <div className="container-medium tab_mob_100">
-                  <div className="container-small narrower_desktop">
-                    <div className="container-flex vertical">
-                      <h2 className="h2_v2 color_white text_center">
-                        Unlock other frameworks
-                      </h2>
-                      <div className="padding-top xxxs">
-                        <div className="text-dek-m color_40eg text_center">
-                          Achieve SOC 2 with Mycroft and take advantage of the head start gained in other industry frameworks.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="padding-top small">
-                    <div className="padding-btm large">
-                      <div className="container-flex vertical">
-                        <div className="w-layout-grid fw-dials-grid">
-                          <Link href="/frameworks/iso27001" className="fw-tile-link w-inline-block">
-                            <div className="fw-dial-tile">
-                              <div className="fw-vertical-hr"></div>
-                              <div style={{"opacity": "0"}} className="dial-tile-background"></div>
-                              <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
-                              <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/69ebbfa0ca4351761bab59f1_Compliance-Dial_35.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="3" data-loading="eager">
-                                <DotLottiePlayer src="/lottie/69ebbfa0ca4351761bab59f1_Compliance-Dial_35.json" loop={false} autoplay={false} width={500} height={500} playOnView={750} />
-                              </div>
-                              <div className="body-text-small color_white font_600 underline fw_dial">
-                                ISO 27001 →
-                              </div>
-                            </div>
-                          </Link>
-                          <Link href="/frameworks/hipaa" className="fw-tile-link w-inline-block">
-                            <div className="fw-dial-tile">
-                              <div className="fw-vertical-hr"></div>
-                              <div style={{"opacity": "0"}} className="dial-tile-background"></div>
-                              <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
-                              <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/69ebcb3ae646a22194c4af4d_Compliance-Dial_65.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="3" data-loading="eager">
-                                <DotLottiePlayer src="/lottie/69ebcb3ae646a22194c4af4d_Compliance-Dial_65.json" loop={false} autoplay={false} width={500} height={500} playOnView={1250} />
-                              </div>
-                              <div className="body-text-small color_white font_600 underline fw_dial">
-                                HIPAA →
-                              </div>
-                            </div>
-                          </Link>
-                          <Link href="/frameworks/fedramp" className="fw-tile-link w-inline-block">
-                            <div className="fw-dial-tile">
-                              <div style={{"opacity": "0"}} className="dial-tile-background"></div>
-                              <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
-                              <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/69ebcb579b02affc99069e64_Compliance-Dial_55.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="3" data-loading="eager">
-                                <DotLottiePlayer src="/lottie/69ebcb579b02affc99069e64_Compliance-Dial_55.json" loop={false} autoplay={false} width={500} height={500} playOnView={1750} />
-                              </div>
-                              <div className="body-text-small color_white font_600 underline fw_dial">
-                                FedRAMP →
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                        <div className="container-flex vertical center">
-                          <div className="padding-top small flex_center">
-                            <ButtonLarge href="/demo" shine>
-                              Book a demo
-                            </ButtonLarge>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
+        <UnlockFrameworksSection
+          blurb="Achieve SOC 2 with Mycroft and take advantage of the head start gained in other industry frameworks."
+          dials={[
+            { href: "/frameworks/iso27001", label: "ISO 27001", lottie: "/lottie/69ebbfa0ca4351761bab59f1_Compliance-Dial_35.json" },
+            { href: "/frameworks/hipaa", label: "HIPAA", lottie: "/lottie/69ebcb3ae646a22194c4af4d_Compliance-Dial_65.json" },
+            { href: "/frameworks/fedramp", label: "FedRAMP", lottie: "/lottie/69ebcb579b02affc99069e64_Compliance-Dial_55.json" },
+          ]}
+        />
         <FrameworksSoc2Section5 />
         <CtaSection variant="lamp" />
       </main>

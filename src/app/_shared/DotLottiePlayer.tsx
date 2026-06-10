@@ -18,11 +18,12 @@ type Props = {
   width?: number;
   height?: number;
   /**
-   * Play once each time the element scrolls into view, starting after this
-   * many ms (IX2 SCROLL_INTO_VIEW lottie actions, e.g. the frameworks
-   * compliance dials, a-122/125/126: reset to frame 0, then play after the
-   * stagger delay). Scrolling out of view rewinds so the spin-up replays on
-   * the next pass. Reduced-motion users see the final frame instead.
+   * Play once the first time the element scrolls into view, starting after
+   * this many ms (the stagger delay from the IX2 SCROLL_INTO_VIEW lottie
+   * actions, e.g. the frameworks compliance dials, a-122/125/126), then hold
+   * the final frame — leaving view does NOT rewind, so later passes show the
+   * finished state. (The original site replayed on every pass; play-once is
+   * deliberate.) Reduced-motion users see the final frame immediately.
    */
   playOnView?: number;
 };
@@ -51,14 +52,14 @@ export function DotLottiePlayer({ src, loop = false, autoplay = true, width, hei
     const io = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         if (timer) clearTimeout(timer);
-        timer = setTimeout(() => whenLoaded(() => instance.play()), playOnView);
-      } else {
-        if (timer) clearTimeout(timer);
+        timer = setTimeout(() => {
+          io.disconnect();
+          whenLoaded(() => instance.play());
+        }, playOnView);
+      } else if (timer) {
+        // left view before the stagger delay elapsed: try again next pass
+        clearTimeout(timer);
         timer = null;
-        if (instance.isLoaded) {
-          instance.pause();
-          instance.setFrame(0);
-        }
       }
     });
     io.observe(canvas);
