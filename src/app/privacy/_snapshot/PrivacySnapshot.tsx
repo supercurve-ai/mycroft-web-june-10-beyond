@@ -1,5 +1,5 @@
 import { SiteNav } from "../../_shared/SiteNav";
-import { SiteFooter3 } from "../../_shared/SiteFooter3";
+import { SiteFooter } from "../../_shared/SiteFooter";
 import { PrivacySection1 } from "./PrivacySection1";
 import { PrivacySection2 } from "./PrivacySection2";
 
@@ -16,7 +16,7 @@ export function PrivacySnapshot() {
       <main id="main" className="page-main nav_v2">
         <PrivacySection1 />
         <PrivacySection2 />
-        <SiteFooter3 />
+        <SiteFooter />
       </main>
     </div>
   );

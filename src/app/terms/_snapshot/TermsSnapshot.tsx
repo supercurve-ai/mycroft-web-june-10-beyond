@@ -1,5 +1,5 @@
 import { SiteNav } from "../../_shared/SiteNav";
-import { SiteFooter2 } from "../../_shared/SiteFooter2";
+import { SiteFooter } from "../../_shared/SiteFooter";
 import { TermsSection1 } from "./TermsSection1";
 import { TermsSection2 } from "./TermsSection2";
 
@@ -16,7 +16,7 @@ export function TermsSnapshot() {
       <main id="main" className="page-main nav_v2">
         <TermsSection1 />
         <TermsSection2 />
-        <SiteFooter2 />
+        <SiteFooter />
       </main>
     </div>
   );

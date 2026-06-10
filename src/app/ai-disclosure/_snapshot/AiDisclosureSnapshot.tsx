@@ -1,5 +1,5 @@
 import { SiteNav } from "../../_shared/SiteNav";
-import { SiteFooter4 } from "../../_shared/SiteFooter4";
+import { SiteFooter } from "../../_shared/SiteFooter";
 import { AiDisclosureSection1 } from "./AiDisclosureSection1";
 import { AiDisclosureSection2 } from "./AiDisclosureSection2";
 
@@ -16,7 +16,7 @@ export function AiDisclosureSnapshot() {
       <main id="main" className="page-main nav_v2">
         <AiDisclosureSection1 />
         <AiDisclosureSection2 />
-        <SiteFooter4 />
+        <SiteFooter />
       </main>
     </div>
   );
