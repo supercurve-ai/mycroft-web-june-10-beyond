@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThirdPartyScripts } from "./_shared/ThirdPartyScripts";
+import { GtmNoScript, ThirdPartyScripts } from "./_shared/ThirdPartyScripts";
 import { CursorGlow } from "./_shared/CursorGlow";
 
 /**
@@ -46,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <GtmNoScript />
         {children}
         <CursorGlow />
         <ThirdPartyScripts />

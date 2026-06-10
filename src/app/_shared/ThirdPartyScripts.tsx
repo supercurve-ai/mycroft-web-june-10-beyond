@@ -9,17 +9,42 @@ import Script from "next/script";
 export function ThirdPartyScripts() {
   return (
     <>
+      {/* CookieYes consent banner — loads first so it can gate the trackers below */}
+      <Script
+        id="cookieyes"
+        src="https://cdn-cookieyes.com/client_data/a916ae047a70f15c42c4e90f/script.js"
+        strategy="beforeInteractive"
+      />
       {/* Google Tag Manager (GTM-5PVJPRF5) */}
       <Script id="wf-gtm" strategy="afterInteractive">{`
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5PVJPRF5');
       `}</Script>
-      {/* Google Analytics 4 (G-FNCLGSLK7E) */}
+      {/* Google Tag Manager — second container (GTM-MWV93GLK) */}
+      <Script id="wf-gtm-2" strategy="afterInteractive">{`
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MWV93GLK');
+      `}</Script>
+      {/* Google Analytics 4 (G-FNCLGSLK7E) + Google Ads (AW-17711905757) */}
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-FNCLGSLK7E" strategy="afterInteractive" />
       <Script id="wf-ga4" strategy="afterInteractive">{`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
         gtag('js', new Date());
         gtag('config', 'G-FNCLGSLK7E');
+        gtag('config', 'AW-17711905757');
+
+        // Google Ads delayed-navigation helper: fires the lead-form conversion
+        // event, then navigates. Referenced from link onclick handlers.
+        window.gtagSendEvent = function (url) {
+          var callback = function () {
+            if (typeof url === 'string') { window.location = url; }
+          };
+          gtag('event', 'conversion_event_submit_lead_form_2', {
+            'event_callback': callback,
+            'event_timeout': 2000
+          });
+          return false;
+        };
       `}</Script>
       {/* Microsoft Clarity (wfseo666us) */}
       <Script id="wf-clarity" strategy="afterInteractive">{`
@@ -27,6 +52,54 @@ export function ThirdPartyScripts() {
       `}</Script>
       {/* HubSpot (45783254) — tracking + forms/chat loader */}
       <Script id="hs-script-loader" src="https://js.hs-scripts.com/45783254.js" strategy="afterInteractive" />
+      {/* PostHog (proxied through h.mycroft.io) */}
+      <Script id="wf-posthog" strategy="afterInteractive">{`
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group identify setPersonProperties setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags resetGroups onFeatureFlags addFeatureFlagsHandler onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_GtosxRdOMMmu5RXHrz4Y00qhNP1jk1j9CAb6WcuBP5W', {
+          api_host: 'https://h.mycroft.io',
+          ui_host: 'https://us.posthog.com',
+          defaults: '2026-01-30'
+        });
+      `}</Script>
+      {/* RB2B visitor identification (1N5W0HM2VMO5) */}
+      <Script id="wf-reb2b" strategy="afterInteractive">{`
+        !function () {var reb2b = window.reb2b = window.reb2b || [];if (reb2b.invoked) return;reb2b.invoked = true;reb2b.methods = ["identify", "collect"];reb2b.factory = function (method) {return function () {var args = Array.prototype.slice.call(arguments);args.unshift(method);reb2b.push(args);return reb2b;};};for (var i = 0; i < reb2b.methods.length; i++) {var key = reb2b.methods[i];reb2b[key] = reb2b.factory(key);}reb2b.load = function (key) {var script = document.createElement("script");script.type = "text/javascript";script.async = true;script.src = "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/" + key + "/1N5W0HM2VMO5.js.gz";var first = document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script, first);};reb2b.SNIPPET_VERSION = "1.0.1";reb2b.load("1N5W0HM2VMO5");}();
+      `}</Script>
+      {/* Claydar (cvOLom811d) */}
+      <Script src="https://static.claydar.com/init.v1.js?id=cvOLom811d" strategy="afterInteractive" />
+      {/* Pierview analytics (pv_117_9yb3hvwq) */}
+      <Script src="https://www.pierview.ai/pierview-analytics.js?id=pv_117_9yb3hvwq" strategy="afterInteractive" />
+      {/* GrowSumo / PartnerStack (proxied through try.mycroft.io) */}
+      <Script id="wf-growsumo" strategy="afterInteractive">{`
+        (function() {var gs = document.createElement('script');gs.src = 'https://try.mycroft.io/pr/js';gs.type = 'text/javascript';gs.async = 'true';gs.onload = gs.onreadystatechange = function() {var rs = this.readyState;if (rs && rs != 'complete' && rs != 'loaded') return;try {growsumo._initialize('pk_70tCwluPGfprivFbqNRViRr0CipFGsdZ', ["try.mycroft.io"]); if (typeof(growsumoInit) === 'function') {growsumoInit();}} catch (e) {}};var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gs, s);})();
+      `}</Script>
+    </>
+  );
+}
+
+/**
+ * GTM <noscript> fallbacks from the original site's footer code.
+ * Rendered as the first children of <body> in the root layout.
+ */
+export function GtmNoScript() {
+  return (
+    <>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5PVJPRF5"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        />
+      </noscript>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MWV93GLK"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        />
+      </noscript>
     </>
   );
 }
