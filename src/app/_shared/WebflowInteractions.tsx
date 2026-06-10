@@ -68,6 +68,64 @@ export function WebflowInteractions() {
       }
     }
 
+    // ── scroll scrubs (IX2 "while scrolling in view") ────────────────────────
+    // Unlike .wf-reveal (one-shot), these elements' opacity/translateX are a
+    // pure function of scroll position, so the animation runs in reverse when
+    // scrolling back up — matching the original SCROLLING_IN_VIEW continuous
+    // actions. Progress: 0 = element top at viewport bottom, 100 = element
+    // bottom at viewport top. data-wf-scrub="start,end" gives the keyframe
+    // range in progress-%; values are exponentially smoothed (IX2 smoothing
+    // 50). Opacity interpolates linearly, x with ease-in, per the original
+    // action lists (a-30/31/32).
+    const scrubs = Array.from(
+      document.querySelectorAll<HTMLElement>(".wf-scrub:not([data-wf-scrubbed])"),
+    );
+    if (scrubs.length && !reduce && !mobile) {
+      scrubs.forEach((el) => el.setAttribute("data-wf-scrubbed", ""));
+      const items = scrubs.map((el) => {
+        const [start = 0, end = 100] = (el.dataset.wfScrub ?? "")
+          .split(",")
+          .map(Number);
+        return { el, start, end, value: -1 };
+      });
+      const easeIn = (t: number) => t * t;
+      let raf = 0;
+      const frame = () => {
+        const vh = window.innerHeight;
+        let settling = false;
+        for (const it of items) {
+          const r = it.el.getBoundingClientRect();
+          const progress = ((vh - r.top) / (vh + r.height)) * 100;
+          const target = Math.min(
+            1,
+            Math.max(0, (progress - it.start) / (it.end - it.start)),
+          );
+          let next =
+            it.value < 0 ? target : it.value + (target - it.value) * 0.5;
+          if (Math.abs(target - next) < 0.001) next = target;
+          else settling = true;
+          if (next !== it.value) {
+            it.value = next;
+            it.el.style.opacity = String(next);
+            it.el.style.transform = `translate3d(${50 * (1 - easeIn(next))}px, 0px, 0px)`;
+          }
+        }
+        raf = settling ? requestAnimationFrame(frame) : 0;
+      };
+      const kick = () => {
+        if (!raf) raf = requestAnimationFrame(frame);
+      };
+      window.addEventListener("scroll", kick, { passive: true });
+      window.addEventListener("resize", kick);
+      kick();
+      cleanups.push(() => {
+        window.removeEventListener("scroll", kick);
+        window.removeEventListener("resize", kick);
+        if (raf) cancelAnimationFrame(raf);
+        scrubs.forEach((el) => el.removeAttribute("data-wf-scrubbed"));
+      });
+    }
+
     // ── tabs ─────────────────────────────────────────────────────────────────
     document
       .querySelectorAll<HTMLElement>(".w-tabs:not([data-wf-tabs])")
