@@ -14,14 +14,14 @@ export function FrameworksSoc2Section2() {
                 </div>
               </div>
               <h2 className="h2_v2 color_rg text_center">
-                Mycroft’s AI platform solutions to
+                Mycroft’s AI platform solutions to{" "}
                 <span className="no-wrap">
                   SOC 2
                 </span>
               </h2>
               <div className="padding-top xxs">
                 <div className="text-dek-l text_center">
-                  A snapshot on how our platform features answer specific needs for
+                  A snapshot on how our platform features answer specific needs for{" "}
                   <span className="no-wrap">
                     SOC 2
                   </span>

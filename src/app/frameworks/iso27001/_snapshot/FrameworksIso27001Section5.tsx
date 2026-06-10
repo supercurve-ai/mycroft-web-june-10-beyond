@@ -16,44 +16,44 @@ export function FrameworksIso27001Section5() {
                     Frequently asked questions
                   </h3>
                   <div className="text-dek-l text_40eg">
-                    Answers that help customers with
+                    Answers that help customers with{" "}
                     <span className="no-wrap">
                       ISO 27001
-                    </span>
+                    </span>{" "}
                     compliance
                   </div>
                 </div>
-                <FaqItem question={<>What is
+                <FaqItem question={<>What is{" "}
                           <span className="no-wrap">
                             ISO 27001?
                           </span></>} first>
                   <span className="no-wrap">
                         ISO 27001
-                      </span>
+                      </span>{" "}
                       is an international standard for information security management systems (ISMS), focused on managing and reducing risk.
                 </FaqItem>
-                <FaqItem question={<>Who needs
+                <FaqItem question={<>Who needs{" "}
                           <span className="no-wrap">
                             ISO 27001
-                          </span>
+                          </span>{" "}
                           certification?</>}>
-                  Organizations working with enterprise or global clients often require
+                  Organizations working with enterprise or global clients often require{" "}
                       <span className="no-wrap">
                         ISO 27001
-                      </span>
+                      </span>{" "}
                       to demonstrate strong security practices.
                 </FaqItem>
                 <FaqItem question="What is an ISMS?">
                   An ISMS is a structured system for managing sensitive information, including policies, controls, and risk management processes.
                 </FaqItem>
-                <FaqItem question={<>How long does
+                <FaqItem question={<>How long does{" "}
                           <span className="no-wrap">
                             ISO 27001
-                          </span>
+                          </span>{" "}
                           certification take?</>}>
                   Typically 3–9 months depending on organizational maturity and scope.
                 </FaqItem>
-                <FaqItem question={<>How does Mycroft help with
+                <FaqItem question={<>How does Mycroft help with{" "}
                           <span className="no-wrap">
                             ISO 27001?
                           </span></>} last>

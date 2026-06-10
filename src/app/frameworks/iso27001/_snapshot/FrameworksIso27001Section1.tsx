@@ -17,14 +17,14 @@ export function FrameworksIso27001Section1() {
                 <h1 className="h3_v2 color_rg">
                   <span className="no-wrap">
                     ISO 27001
-                  </span>
+                  </span>{" "}
                   compliance, built for global organizations
                 </h1>
                 <div className="text-dek-m">
-                  Mycroft’s Risk Operations Center removes the operational burden, helping you achieve
+                  Mycroft’s Risk Operations Center removes the operational burden, helping you achieve{" "}
                   <span className="no-wrap">
                     ISO 27001
-                  </span>
+                  </span>{" "}
                   certification and strengthen your information security program.
                 </div>
               </div>
@@ -53,17 +53,17 @@ export function FrameworksIso27001Section1() {
                     <div className="padding-btm xsmall">
                       <div className="container-flex vertical center text_center">
                         <h3 className="h3_v2 color_white">
-                          Why
+                          Why{" "}
                           <span className="no-wrap">
                             ISO 27001
-                          </span>
+                          </span>{" "}
                           matters to you
                         </h3>
                         <div className="padding-top xxs">
                           <div className="text-dek-m color_40eg">
                             <span className="no-wrap">
                               ISO 27001
-                            </span>
+                            </span>{" "}
                             provides a globally recognized framework for managing information security risks and protecting sensitive data.
                           </div>
                         </div>
@@ -85,7 +85,7 @@ export function FrameworksIso27001Section1() {
                       <div className="body-text-small color_mint smaller">
                         <span className="no-wrap">
                           ISO 27001
-                        </span>
+                        </span>{" "}
                         certification demonstrates strong security practices to customers and partners worldwide.
                       </div>
                     </div>

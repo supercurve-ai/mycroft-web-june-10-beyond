@@ -15,17 +15,17 @@ export function FrameworksSoc2Section1() {
               </div>
               <div className="hero-copy hero_padding_med">
                 <h1 className="h3_v2 color_rg">
-                  Proper
+                  Proper{" "}
                   <span className="no-wrap">
                     SOC 2
-                  </span>
+                  </span>{" "}
                   compliance, accredited auditor approved
                 </h1>
                 <div className="text-dek-m">
-                  Mycroft’s Risk Operations Center eliminates the busywork, helping you achieve
+                  Mycroft’s Risk Operations Center eliminates the busywork, helping you achieve{" "}
                   <span className="no-wrap">
                     SOC 2
-                  </span>
+                  </span>{" "}
                   compliance the right way.
                 </div>
               </div>

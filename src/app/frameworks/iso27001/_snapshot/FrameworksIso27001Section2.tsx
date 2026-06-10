@@ -14,17 +14,17 @@ export function FrameworksIso27001Section2() {
                 </div>
               </div>
               <h2 className="h2_v2 color_rg text_center">
-                Mycroft’s AI platform solutions for
+                Mycroft’s AI platform solutions for{" "}
                 <span className="no-wrap">
                   ISO 27001
                 </span>
               </h2>
               <div className="padding-top xxs">
                 <div className="text-dek-l text_center">
-                  A unified platform designed to operationalize
+                  A unified platform designed to operationalize{" "}
                   <span className="no-wrap">
                     ISO 27001
-                  </span>
+                  </span>{" "}
                   requirements without adding internal workload.
                 </div>
               </div>

@@ -14,7 +14,7 @@ export function FrameworksIso42001Section2() {
                 </div>
               </div>
               <h2 className="h2_v2 color_rg text_center">
-                Mycroft’s AI platform solutions for
+                Mycroft’s AI platform solutions for{" "}
                 <span className="no-wrap">
                   ISO 42001
                 </span>

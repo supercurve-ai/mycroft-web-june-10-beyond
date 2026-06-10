@@ -50,7 +50,7 @@ export function HomeSection7() {
               <h2 className="h2_v2 color_rg text_center">
                 Mycroft’s versatility:
                 <br />
-                your security stack in
+                your security stack in{" "}
                 <span className="no-wrap">
                   5 pillars
                 </span>

@@ -16,10 +16,10 @@ export function FrameworksCpraSection5() {
                     Frequently asked questions
                   </h3>
                   <div className="text-dek-l text_40eg">
-                    Answers that help customers with
+                    Answers that help customers with{" "}
                     <span className="no-wrap">
                       CPRA/CCPA
-                    </span>
+                    </span>{" "}
                     compliance
                   </div>
                 </div>

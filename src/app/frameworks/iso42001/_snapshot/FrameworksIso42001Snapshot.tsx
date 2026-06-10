@@ -37,10 +37,10 @@ export function FrameworksIso42001Snapshot() {
                       </h2>
                       <div className="padding-top xxxs">
                         <div className="text-dek-m color_40eg text_center">
-                          Achieve
+                          Achieve{" "}
                           <span className="no-wrap">
                             ISO 42001
-                          </span>
+                          </span>{" "}
                           compliance with Mycroft and take advantage of the head start gained in other industry frameworks.
                         </div>
                       </div>

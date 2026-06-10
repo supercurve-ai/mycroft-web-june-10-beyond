@@ -6,7 +6,7 @@ export function FrameworksIso42001Section3() {
         <div className="container-small">
           <div className="container-flex vertical center text_center gap_xs">
             <h3 className="h3_v2 color_rg">
-              Additional features for
+              Additional features for{" "}
               <span className="no-wrap">
                 ISO 42001
               </span>

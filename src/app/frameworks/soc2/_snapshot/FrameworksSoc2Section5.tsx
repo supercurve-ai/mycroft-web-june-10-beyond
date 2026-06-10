@@ -19,42 +19,42 @@ export function FrameworksSoc2Section5() {
                     Answers that help customers with SOC 2 compliance
                   </div>
                 </div>
-                <FaqItem question={<>What is
+                <FaqItem question={<>What is{" "}
                           <span className="no-wrap">
                             SOC 2
-                          </span>
+                          </span>{" "}
                           and who needs it?</>} first>
                   SOC 2 is an independent CPA attestation that a service organization’s controls meet Trust Services Criteria (security, availability, processing integrity, confidentiality, privacy). SaaS/cloud providers, managed service providers, and any vendor that stores or processes customer data commonly pursue SOC 2 to meet buyer and contractual expectations.
                 </FaqItem>
-                <FaqItem question={<>What’s the difference between
+                <FaqItem question={<>What’s the difference between{" "}
                           <span className="no-wrap">
                             SOC 2
-                          </span>
-                          Type I and
+                          </span>{" "}
+                          Type I and{" "}
                           <span className="no-wrap">
                             SOC 2
-                          </span>
+                          </span>{" "}
                           Type II?</>}>
                   Type I reports on control design at a specific point in time. Type II reports on control operating effectiveness over a period (commonly 3–12 months). Customers and enterprise buyers usually request Type II for stronger assurance.
                 </FaqItem>
-                <FaqItem question={<>How long and costly is
+                <FaqItem question={<>How long and costly is{" "}
                           <span className="no-wrap">
                             SOC 2
-                          </span>
+                          </span>{" "}
                           compliance?</>}>
                   Time and cost vary by scope and maturity. Typical timelines: 1–3 months to prepare baseline controls and Type I; 6–12+ months to collect evidence for a Type II. Costs include internal effort, tooling, and external CPA audit fees; automation and focused scope lower both time and expense.
                 </FaqItem>
-                <FaqItem question={<>What features of a
+                <FaqItem question={<>What features of a{" "}
                           <span className="no-wrap">
                             SOC 2
-                          </span>
+                          </span>{" "}
                           solution speed compliance?</>}>
                   Automated evidence collection and testing, control templates mapped to Trust Services Criteria, policy and control generators, integrations with cloud and security tooling, centralized evidence storage with tamper-evident metadata, and auditor-ready reporting — all reduce manual work and audit friction.
                 </FaqItem>
-                <FaqItem question={<>Will
+                <FaqItem question={<>Will{" "}
                           <span className="no-wrap">
                             SOC 2
-                          </span>
+                          </span>{" "}
                           replace other regulatory requirements (PCI, HIPAA, FedRAMP)?</>} last>
                   No. SOC 2 provides buyer assurance but does not substitute for mandatory, prescriptive regulations like PCI or HIPAA. Use SOC 2 alongside or mapped to those frameworks where appropriate; some controls can be reused across reports.
                       <br />

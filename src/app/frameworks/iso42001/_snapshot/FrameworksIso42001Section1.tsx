@@ -17,14 +17,14 @@ export function FrameworksIso42001Section1() {
                 <h1 className="h3_v2 color_rg">
                   <span className="no-wrap">
                     ISO 42001
-                  </span>
+                  </span>{" "}
                   compliance, built for AI governance
                 </h1>
                 <div className="text-dek-m">
-                  Mycroft’s Risk Operations Center removes the operational burden, helping you implement responsible AI practices and meet
+                  Mycroft’s Risk Operations Center removes the operational burden, helping you implement responsible AI practices and meet{" "}
                   <span className="no-wrap">
                     ISO 42001
-                  </span>
+                  </span>{" "}
                   requirements.
                 </div>
               </div>
@@ -53,17 +53,17 @@ export function FrameworksIso42001Section1() {
                     <div className="padding-btm xsmall">
                       <div className="container-flex vertical center text_center">
                         <h3 className="h3_v2 color_white">
-                          Why
+                          Why{" "}
                           <span className="no-wrap">
                             ISO 42001
-                          </span>
+                          </span>{" "}
                           matters to you
                         </h3>
                         <div className="padding-top xxs">
                           <div className="text-dek-m color_40eg">
                             <span className="no-wrap">
                               ISO 42001
-                            </span>
+                            </span>{" "}
                             provides a framework for managing AI systems responsibly, addressing risk, transparency, and governance.
                           </div>
                         </div>

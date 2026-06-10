@@ -16,43 +16,43 @@ export function FrameworksIso42001Section5() {
                     Frequently asked questions
                   </h3>
                   <div className="text-dek-l text_40eg">
-                    Answers that help customers with
+                    Answers that help customers with{" "}
                     <span className="no-wrap">
                       ISO 42001
-                    </span>
+                    </span>{" "}
                     compliance
                   </div>
                 </div>
-                <FaqItem question={<>What is
+                <FaqItem question={<>What is{" "}
                           <span className="no-wrap">
                             ISO 42001?
                           </span></>} first>
                   <span className="no-wrap">
                         ISO 42001
-                      </span>
+                      </span>{" "}
                       is a framework for managing artificial intelligence systems responsibly, focusing on governance, risk, and transparency.
                 </FaqItem>
-                <FaqItem question={<>Who needs
+                <FaqItem question={<>Who needs{" "}
                           <span className="no-wrap">
                             ISO 42001?
                           </span></>}>
                   Organizations developing or using AI systems that need to demonstrate responsible AI practices and prepare for emerging regulations.
                 </FaqItem>
-                <FaqItem question={<>What does
+                <FaqItem question={<>What does{" "}
                           <span className="no-wrap">
                             ISO 42001
-                          </span>
+                          </span>{" "}
                           cover?</>}>
                   It covers AI risk management, model governance, data usage, and oversight of AI systems.
                 </FaqItem>
-                <FaqItem question={<>Is
+                <FaqItem question={<>Is{" "}
                           <span className="no-wrap">
                             ISO 42001
-                          </span>
+                          </span>{" "}
                           required?</>}>
                   While not yet mandatory, it is becoming increasingly important as governments introduce AI regulations.
                 </FaqItem>
-                <FaqItem question={<>How does Mycroft help with
+                <FaqItem question={<>How does Mycroft help with{" "}
                           <span className="no-wrap">
                             ISO 42001?
                           </span></>} last>
