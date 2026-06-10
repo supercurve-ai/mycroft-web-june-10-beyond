@@ -1,9 +1,9 @@
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { FaqsSection1 } from "./FaqsSection1";
 import { FaqsSection2 } from "./FaqsSection2";
 import { FaqsSection3 } from "./FaqsSection3";
-import { FaqsSection4 } from "./FaqsSection4";
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io/faqs page. DOM + classes mirror
@@ -26,7 +26,7 @@ export function FaqsSnapshot() {
           <div className="overlap-block transparent"></div>
         </div>
         <FaqsSection3 />
-        <FaqsSection4 />
+        <CtaSection variant="fireplace" />
       </main>
       <SiteFooter />
     </div>

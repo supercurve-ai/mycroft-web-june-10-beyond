@@ -1,14 +1,14 @@
+import { TrustedBySection } from "@/app/_shared/LogoMarquee";
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { ProductThirdPartyRiskManagementCollection1 } from "./ProductThirdPartyRiskManagementCollection1";
 import { productThirdPartyRiskManagementCollection1Data } from "./ProductThirdPartyRiskManagementCollection1.data";
-import Link from "next/link";
+import { ButtonLarge } from "@/app/_shared/ButtonLarge";
 import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { ProductThirdPartyRiskManagementSection1 } from "./ProductThirdPartyRiskManagementSection1";
-import { ProductThirdPartyRiskManagementSection2 } from "./ProductThirdPartyRiskManagementSection2";
 import { ProductThirdPartyRiskManagementSection3 } from "./ProductThirdPartyRiskManagementSection3";
 import { ProductThirdPartyRiskManagementSection4 } from "./ProductThirdPartyRiskManagementSection4";
 import { ProductThirdPartyRiskManagementSection5 } from "./ProductThirdPartyRiskManagementSection5";
-import { ProductThirdPartyRiskManagementSection6 } from "./ProductThirdPartyRiskManagementSection6";
 
 /**
  * Faithful React port of the Webflow https://mycroft.io/product/third-party-risk-management page. DOM + classes mirror
@@ -22,7 +22,7 @@ export function ProductThirdPartyRiskManagementSnapshot() {
       <SiteNav />
       <main id="main" className="page-content">
         <ProductThirdPartyRiskManagementSection1 />
-        <ProductThirdPartyRiskManagementSection2 />
+        <TrustedBySection btm="rg" />
         <ProductThirdPartyRiskManagementSection3 />
         <div className="scroll-container-outer _2_features">
           <div className="scroll-container-inner">
@@ -93,13 +93,9 @@ export function ProductThirdPartyRiskManagementSnapshot() {
                             <img src="/assets/product-checklist.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-checklist-p-500.webp 500w, /assets/product-checklist-p-800.webp 800w, /assets/product-checklist-p-1080.webp 1080w, /assets/product-checklist.webp 1352w" className="features-img" />
                           </div>
                         </div>
-                        <Link href="/demo" className="btn-large color_velvet w-inline-block">
-                          <div className="btn-text-large color_mint">
-                            Book a demo
-                          </div>
-                          <img src="/assets/arrow-icon-mint-v1.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                          <div className="hero-btn-shine darker" style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}}></div>
-                        </Link>
+                        <ButtonLarge href="/demo" velvet shine>
+                          Book a demo
+                        </ButtonLarge>
                       </section>
                       <div className="btm-tab">
                         <div className="shape-triangle _75_eg flipped mirrored smaller_mobile w-embed">
@@ -181,13 +177,9 @@ export function ProductThirdPartyRiskManagementSnapshot() {
                                 </div>
                               </div>
                             </div>
-                            <Link href="/demo" className="btn-large w-inline-block">
-                              <div className="btn-text-large">
-                                Book a demo
-                              </div>
-                              <img src="/assets/arrow-icon-v2.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                              <div style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} className="hero-btn-shine"></div>
-                            </Link>
+                            <ButtonLarge href="/demo" shine>
+                              Book a demo
+                            </ButtonLarge>
                           </div>
                         </div>
                       </div>
@@ -235,7 +227,7 @@ export function ProductThirdPartyRiskManagementSnapshot() {
           </section>
         </div>
         <ProductThirdPartyRiskManagementSection5 />
-        <ProductThirdPartyRiskManagementSection6 />
+        <CtaSection variant="lamp" />
       </main>
       <SiteFooter />
     </div>

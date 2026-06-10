@@ -1,3 +1,5 @@
+import { CtaSection } from "@/app/_shared/CtaSection";
+import { ButtonLarge } from "@/app/_shared/ButtonLarge";
 import Link from "next/link";
 import { DotLottiePlayer } from "../../../_shared/DotLottiePlayer";
 import { SiteNav } from "../../../_shared/SiteNav";
@@ -7,7 +9,6 @@ import { FrameworksCpraSection2 } from "./FrameworksCpraSection2";
 import { FrameworksCpraSection3 } from "./FrameworksCpraSection3";
 import { FrameworksCpraSection4 } from "./FrameworksCpraSection4";
 import { FrameworksCpraSection5 } from "./FrameworksCpraSection5";
-import { FrameworksCpraSection6 } from "./FrameworksCpraSection6";
 
 /**
  * Faithful React port of the Webflow https://mycroft.io/frameworks/cpra page. DOM + classes mirror
@@ -86,13 +87,9 @@ export function FrameworksCpraSnapshot() {
                         </div>
                         <div className="container-flex vertical center">
                           <div className="padding-top small flex_center">
-                            <Link href="/demo" className="btn-large w-inline-block">
-                              <div className="btn-text-large">
-                                Book a demo
-                              </div>
-                              <img src="/assets/arrow-icon-v2.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                              <div style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} className="hero-btn-shine"></div>
-                            </Link>
+                            <ButtonLarge href="/demo" shine>
+                              Book a demo
+                            </ButtonLarge>
                           </div>
                         </div>
                       </div>
@@ -104,7 +101,7 @@ export function FrameworksCpraSnapshot() {
           </section>
         </div>
         <FrameworksCpraSection5 />
-        <FrameworksCpraSection6 />
+        <CtaSection variant="fireplace" />
       </main>
       <SiteFooter />
     </div>

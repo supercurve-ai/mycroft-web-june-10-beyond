@@ -1,7 +1,8 @@
+import { TrustedBySection } from "@/app/_shared/LogoMarquee";
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { SiteNav } from "../_shared/SiteNav";
 import { SiteFooter } from "../_shared/SiteFooter";
 import { HomeSection1 } from "./HomeSection1";
-import { HomeSection2 } from "./HomeSection2";
 import { HomeSection3 } from "./HomeSection3";
 import { HomeSection4 } from "./HomeSection4";
 import { HomeSection5 } from "./HomeSection5";
@@ -9,7 +10,6 @@ import { HomeSection6 } from "./HomeSection6";
 import { HomeSection7 } from "./HomeSection7";
 import { HomeSection8 } from "./HomeSection8";
 import { HomeSection9 } from "./HomeSection9";
-import { HomeSection10 } from "./HomeSection10";
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io page. DOM + classes mirror
@@ -31,7 +31,7 @@ export function HomeSnapshot() {
       <SiteNav />
       <main id="main" className="page-content">
         <HomeSection1 />
-        <HomeSection2 />
+        <TrustedBySection />
         <HomeSection3 />
         <HomeSection4 />
         <HomeSection5 />
@@ -39,7 +39,7 @@ export function HomeSnapshot() {
         <HomeSection7 />
         <HomeSection8 />
         <HomeSection9 />
-        <HomeSection10 />
+        <CtaSection variant="lamp" />
       </main>
       <SiteFooter />
     </div>

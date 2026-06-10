@@ -1,14 +1,14 @@
+import { TrustedBySection } from "@/app/_shared/LogoMarquee";
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { ProductCloudSecurityCollection1 } from "./ProductCloudSecurityCollection1";
 import { productCloudSecurityCollection1Data } from "./ProductCloudSecurityCollection1.data";
-import Link from "next/link";
+import { ButtonLarge } from "@/app/_shared/ButtonLarge";
 import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { ProductCloudSecuritySection1 } from "./ProductCloudSecuritySection1";
-import { ProductCloudSecuritySection2 } from "./ProductCloudSecuritySection2";
 import { ProductCloudSecuritySection3 } from "./ProductCloudSecuritySection3";
 import { ProductCloudSecuritySection4 } from "./ProductCloudSecuritySection4";
 import { ProductCloudSecuritySection5 } from "./ProductCloudSecuritySection5";
-import { ProductCloudSecuritySection6 } from "./ProductCloudSecuritySection6";
 
 /**
  * Faithful React port of the Webflow https://mycroft.io/product/cloud-security page. DOM + classes mirror
@@ -22,7 +22,7 @@ export function ProductCloudSecuritySnapshot() {
       <SiteNav />
       <main id="main" className="page-content">
         <ProductCloudSecuritySection1 />
-        <ProductCloudSecuritySection2 />
+        <TrustedBySection btm="rg" />
         <ProductCloudSecuritySection3 />
         <div className="scroll-container-outer">
           <div className="scroll-container-inner">
@@ -111,13 +111,9 @@ export function ProductCloudSecuritySnapshot() {
                             <img src="/assets/product-remediation.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-remediation-p-500.webp 500w, /assets/product-remediation-p-800.webp 800w, /assets/product-remediation-p-1080.webp 1080w, /assets/product-remediation.webp 1352w" className="features-img" />
                           </div>
                         </div>
-                        <Link href="/demo" className="btn-large color_velvet w-inline-block">
-                          <div className="btn-text-large color_mint">
-                            Book a demo
-                          </div>
-                          <img src="/assets/arrow-icon-mint-v1.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                          <div className="hero-btn-shine darker" style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}}></div>
-                        </Link>
+                        <ButtonLarge href="/demo" velvet shine>
+                          Book a demo
+                        </ButtonLarge>
                       </section>
                       <div className="btm-tab">
                         <div className="shape-triangle _75_eg flipped mirrored smaller_mobile w-embed">
@@ -200,13 +196,9 @@ export function ProductCloudSecuritySnapshot() {
                                 </div>
                               </div>
                             </div>
-                            <Link href="/demo" className="btn-large w-inline-block">
-                              <div className="btn-text-large">
-                                Book a demo
-                              </div>
-                              <img src="/assets/arrow-icon-v2.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                              <div style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} className="hero-btn-shine"></div>
-                            </Link>
+                            <ButtonLarge href="/demo" shine>
+                              Book a demo
+                            </ButtonLarge>
                           </div>
                         </div>
                       </div>
@@ -254,7 +246,7 @@ export function ProductCloudSecuritySnapshot() {
           </section>
         </div>
         <ProductCloudSecuritySection5 />
-        <ProductCloudSecuritySection6 />
+        <CtaSection variant="fireplace" />
       </main>
       <SiteFooter />
     </div>

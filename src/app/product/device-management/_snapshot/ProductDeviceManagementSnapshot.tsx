@@ -1,14 +1,14 @@
+import { TrustedBySection } from "@/app/_shared/LogoMarquee";
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { ProductDeviceManagementCollection1 } from "./ProductDeviceManagementCollection1";
 import { productDeviceManagementCollection1Data } from "./ProductDeviceManagementCollection1.data";
-import Link from "next/link";
+import { ButtonLarge } from "@/app/_shared/ButtonLarge";
 import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { ProductDeviceManagementSection1 } from "./ProductDeviceManagementSection1";
-import { ProductDeviceManagementSection2 } from "./ProductDeviceManagementSection2";
 import { ProductDeviceManagementSection3 } from "./ProductDeviceManagementSection3";
 import { ProductDeviceManagementSection4 } from "./ProductDeviceManagementSection4";
 import { ProductDeviceManagementSection5 } from "./ProductDeviceManagementSection5";
-import { ProductDeviceManagementSection6 } from "./ProductDeviceManagementSection6";
 
 /**
  * Faithful React port of the Webflow https://mycroft.io/product/device-management page. DOM + classes mirror
@@ -22,7 +22,7 @@ export function ProductDeviceManagementSnapshot() {
       <SiteNav />
       <main id="main" className="page-content">
         <ProductDeviceManagementSection1 />
-        <ProductDeviceManagementSection2 />
+        <TrustedBySection btm="rg" />
         <ProductDeviceManagementSection3 />
         <div className="scroll-container-outer">
           <div className="scroll-container-inner">
@@ -111,13 +111,9 @@ export function ProductDeviceManagementSnapshot() {
                             <img src="/assets/product-devicewipe.webp" loading="lazy" width="676" sizes="(max-width: 767px) 100vw, 676px" alt="" srcSet="/assets/product-devicewipe-p-500.webp 500w, /assets/product-devicewipe-p-800.webp 800w, /assets/product-devicewipe-p-1080.webp 1080w, /assets/product-devicewipe.webp 1352w" className="features-img" />
                           </div>
                         </div>
-                        <Link href="/demo" className="btn-large color_velvet w-inline-block">
-                          <div className="btn-text-large color_mint">
-                            Book a demo
-                          </div>
-                          <img src="/assets/arrow-icon-mint-v1.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                          <div className="hero-btn-shine darker" style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}}></div>
-                        </Link>
+                        <ButtonLarge href="/demo" velvet shine>
+                          Book a demo
+                        </ButtonLarge>
                       </section>
                       <div className="btm-tab">
                         <div className="shape-triangle _75_eg flipped mirrored smaller_mobile w-embed">
@@ -199,13 +195,9 @@ export function ProductDeviceManagementSnapshot() {
                                 </div>
                               </div>
                             </div>
-                            <Link href="/demo" className="btn-large w-inline-block">
-                              <div className="btn-text-large">
-                                Book a demo
-                              </div>
-                              <img src="/assets/arrow-icon-v2.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                              <div style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} className="hero-btn-shine"></div>
-                            </Link>
+                            <ButtonLarge href="/demo" shine>
+                              Book a demo
+                            </ButtonLarge>
                           </div>
                         </div>
                       </div>
@@ -253,7 +245,7 @@ export function ProductDeviceManagementSnapshot() {
           </section>
         </div>
         <ProductDeviceManagementSection5 />
-        <ProductDeviceManagementSection6 />
+        <CtaSection variant="fireplace" />
       </main>
       <SiteFooter />
     </div>

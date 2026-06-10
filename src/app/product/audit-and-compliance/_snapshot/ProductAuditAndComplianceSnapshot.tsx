@@ -1,14 +1,14 @@
+import { TrustedBySection } from "@/app/_shared/LogoMarquee";
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { ProductAuditAndComplianceCollection1 } from "./ProductAuditAndComplianceCollection1";
 import { productAuditAndComplianceCollection1Data } from "./ProductAuditAndComplianceCollection1.data";
-import Link from "next/link";
+import { ButtonLarge } from "@/app/_shared/ButtonLarge";
 import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { ProductAuditAndComplianceSection1 } from "./ProductAuditAndComplianceSection1";
-import { ProductAuditAndComplianceSection2 } from "./ProductAuditAndComplianceSection2";
 import { ProductAuditAndComplianceSection3 } from "./ProductAuditAndComplianceSection3";
 import { ProductAuditAndComplianceSection4 } from "./ProductAuditAndComplianceSection4";
 import { ProductAuditAndComplianceSection5 } from "./ProductAuditAndComplianceSection5";
-import { ProductAuditAndComplianceSection6 } from "./ProductAuditAndComplianceSection6";
 
 /**
  * Faithful React port of the Webflow https://mycroft.io/product/audit-and-compliance page. DOM + classes mirror
@@ -22,7 +22,7 @@ export function ProductAuditAndComplianceSnapshot() {
       <SiteNav />
       <main id="main" className="page-content">
         <ProductAuditAndComplianceSection1 />
-        <ProductAuditAndComplianceSection2 />
+        <TrustedBySection btm="rg" />
         <ProductAuditAndComplianceSection3 />
         <div className="scroll-container-outer">
           <div className="scroll-container-inner">
@@ -111,13 +111,9 @@ export function ProductAuditAndComplianceSnapshot() {
                             <img src="/assets/product-automation.webp" loading="lazy" width="676" sizes="(max-width: 479px) 100vw, 676px" alt="" srcSet="/assets/product-automation-p-500.webp 500w, /assets/product-automation-p-800.webp 800w, /assets/product-automation-p-1080.webp 1080w, /assets/product-automation.webp 1352w" className="features-img" />
                           </div>
                         </div>
-                        <Link href="/demo" className="btn-large color_velvet w-inline-block">
-                          <div className="btn-text-large color_mint">
-                            Book a demo
-                          </div>
-                          <img src="/assets/arrow-icon-mint-v1.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                          <div className="hero-btn-shine darker" style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}}></div>
-                        </Link>
+                        <ButtonLarge href="/demo" velvet shine>
+                          Book a demo
+                        </ButtonLarge>
                       </section>
                       <div className="btm-tab">
                         <div className="shape-triangle _75_eg flipped mirrored smaller_mobile w-embed">
@@ -199,13 +195,9 @@ export function ProductAuditAndComplianceSnapshot() {
                                 </div>
                               </div>
                             </div>
-                            <Link href="/demo" className="btn-large w-inline-block">
-                              <div className="btn-text-large">
-                                Book a demo
-                              </div>
-                              <img src="/assets/arrow-icon-v2.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                              <div style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} className="hero-btn-shine"></div>
-                            </Link>
+                            <ButtonLarge href="/demo" shine>
+                              Book a demo
+                            </ButtonLarge>
                           </div>
                         </div>
                       </div>
@@ -253,7 +245,7 @@ export function ProductAuditAndComplianceSnapshot() {
           </section>
         </div>
         <ProductAuditAndComplianceSection5 />
-        <ProductAuditAndComplianceSection6 />
+        <CtaSection variant="lamp" />
       </main>
       <SiteFooter />
     </div>

@@ -13972,6 +13972,9 @@ figcaption {
   opacity: 1 !important;
   transform: translate3d(0, 0, 0) !important;
 }
+/* text-link arrow nudges right on hover (IX2 animated 0 → 3px) */
+.text-link.link_embed .arrow-icon-small { transition: transform 0.3s ease; }
+.text-link.link_embed:hover .arrow-icon-small { transform: translate3d(3px, 0, 0); }
 /* chevron flips while its dropdown is open */
 .dropdown-trigger .dropdown-icon { transition: transform 0.3s ease; }
 .dropdown-trigger.w--open .dropdown-icon { transform: rotateZ(180deg) !important; }

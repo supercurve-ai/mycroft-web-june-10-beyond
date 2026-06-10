@@ -1,8 +1,8 @@
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { IntegrationsSection1 } from "./IntegrationsSection1";
 import { IntegrationsSection2 } from "./IntegrationsSection2";
-import { IntegrationsSection3 } from "./IntegrationsSection3";
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io/integrations page. DOM + classes mirror
@@ -17,7 +17,7 @@ export function IntegrationsSnapshot() {
       <main id="main" className="page-content">
         <IntegrationsSection1 />
         <IntegrationsSection2 />
-        <IntegrationsSection3 />
+        <CtaSection variant="lamp" />
       </main>
       <SiteFooter />
     </div>

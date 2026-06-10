@@ -1,3 +1,4 @@
+import { ButtonLarge } from "@/app/_shared/ButtonLarge";
 import { PartnershipsCollection1 } from "./PartnershipsCollection1";
 import { partnershipsCollection1Data } from "./PartnershipsCollection1.data";
 import { SiteNav } from "../../_shared/SiteNav";
@@ -105,13 +106,9 @@ export function PartnershipsSnapshot() {
                             <img src="/assets/auditors.webp" loading="lazy" width="676" sizes="(max-width: 479px) 100vw, 676px" alt="" srcSet="/assets/auditors-p-500.webp 500w, /assets/auditors-p-800.webp 800w, /assets/auditors-p-1080.webp 1080w, /assets/auditors.webp 1320w" className="features-img" />
                           </div>
                         </div>
-                        <a href="#hero" className="btn-large color_velvet w-inline-block w--current">
-                          <div className="btn-text-large color_mint">
-                            Talk to our team
-                          </div>
-                          <img src="/assets/arrow-icon-mint-v1.svg" loading="lazy" style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} alt="" className="btn-arrow-large" />
-                          <div className="hero-btn-shine darker" style={{"transform": "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}}></div>
-                        </a>
+                        <ButtonLarge href="#hero" velvet shine current>
+                          Talk to our team
+                        </ButtonLarge>
                       </section>
                       <div className="btm-tab">
                         <div className="shape-triangle _75_eg flipped mirrored smaller_mobile w-embed">

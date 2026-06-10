@@ -1,10 +1,10 @@
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { AboutSection1 } from "./AboutSection1";
 import { AboutSection2 } from "./AboutSection2";
 import { AboutSection3 } from "./AboutSection3";
 import { AboutSection4 } from "./AboutSection4";
-import { AboutSection5 } from "./AboutSection5";
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io/about page. DOM + classes mirror
@@ -21,7 +21,7 @@ export function AboutSnapshot() {
         <AboutSection2 />
         <AboutSection3 />
         <AboutSection4 />
-        <AboutSection5 />
+        <CtaSection variant="fireplace" />
       </main>
       <SiteFooter />
     </div>

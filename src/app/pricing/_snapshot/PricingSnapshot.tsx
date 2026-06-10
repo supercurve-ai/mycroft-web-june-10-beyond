@@ -1,3 +1,4 @@
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { PricingSection1 } from "./PricingSection1";
@@ -5,7 +6,6 @@ import { PricingSection2 } from "./PricingSection2";
 import { PricingSection3 } from "./PricingSection3";
 import { PricingSection4 } from "./PricingSection4";
 import { PricingSection5 } from "./PricingSection5";
-import { PricingSection6 } from "./PricingSection6";
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io/pricing page. DOM + classes mirror
@@ -23,7 +23,7 @@ export function PricingSnapshot() {
         <PricingSection3 />
         <PricingSection4 />
         <PricingSection5 />
-        <PricingSection6 />
+        <CtaSection variant="fireplace" />
       </main>
       <SiteFooter />
     </div>

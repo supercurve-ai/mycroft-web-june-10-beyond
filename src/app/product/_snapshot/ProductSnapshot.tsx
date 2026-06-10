@@ -1,8 +1,8 @@
+import { TrustedBySection } from "@/app/_shared/LogoMarquee";
 import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { ProductSection1 } from "./ProductSection1";
 import { ProductSection2 } from "./ProductSection2";
-import { ProductSection3 } from "./ProductSection3";
 import { ProductSection4 } from "./ProductSection4";
 import { ProductSection5 } from "./ProductSection5";
 
@@ -19,7 +19,7 @@ export function ProductSnapshot() {
       <main id="main" className="page-content">
         <ProductSection1 />
         <ProductSection2 />
-        <ProductSection3 />
+        <TrustedBySection btm="earlgrey40" />
         <ProductSection4 />
         <ProductSection5 />
       </main>

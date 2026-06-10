@@ -1,10 +1,10 @@
+import { CtaSection } from "@/app/_shared/CtaSection";
 import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { ResourcesSection1 } from "./ResourcesSection1";
 import { ResourcesSection2 } from "./ResourcesSection2";
 import { ResourcesSection3 } from "./ResourcesSection3";
 import { ResourcesSection4 } from "./ResourcesSection4";
-import { ResourcesSection5 } from "./ResourcesSection5";
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io/resources page. DOM + classes mirror
@@ -28,7 +28,7 @@ export function ResourcesSnapshot() {
           <div className="overlap-block transparent"></div>
         </div>
         <ResourcesSection4 />
-        <ResourcesSection5 />
+        <CtaSection variant="fireplace" />
       </main>
       <SiteFooter />
     </div>
