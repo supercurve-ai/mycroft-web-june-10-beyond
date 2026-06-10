@@ -64,6 +64,15 @@ export function WebflowInteractions() {
     // menu when the click lands outside the dropdown; Escape closes too; and a
     // click on any link inside the list closes it (the common "dropdown of
     // links to other pages" pattern — iteration-2 req 3).
+    // Opening one dropdown closes any other open one explicitly — the toggle's
+    // stopPropagation keeps the outside-click handler from doing it.
+    const closeDropdown = (dd: HTMLElement) => {
+      dd.classList.remove("wf-open");
+      const t = dd.querySelector<HTMLElement>(".w-dropdown-toggle");
+      t?.classList.remove("w--open");
+      t?.setAttribute("aria-expanded", "false");
+      dd.querySelector(".w-dropdown-list")?.classList.remove("w--open", "wf-open");
+    };
     document
       .querySelectorAll<HTMLElement>(".w-dropdown:not([data-wf-dd])")
       .forEach((dd) => {
@@ -72,13 +81,13 @@ export function WebflowInteractions() {
         const list = dd.querySelector<HTMLElement>(".w-dropdown-list");
         if (!toggle || !list) return;
         const isOpen = () => list.classList.contains("wf-open");
-        const close = () => {
-          dd.classList.remove("wf-open");
-          toggle.classList.remove("w--open");
-          list.classList.remove("w--open", "wf-open");
-          toggle.setAttribute("aria-expanded", "false");
-        };
+        const close = () => closeDropdown(dd);
         const open = () => {
+          document
+            .querySelectorAll<HTMLElement>(".w-dropdown.wf-open")
+            .forEach((other) => {
+              if (other !== dd) closeDropdown(other);
+            });
           dd.classList.add("wf-open");
           toggle.classList.add("w--open");
           list.classList.add("w--open", "wf-open");
