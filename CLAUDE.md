@@ -7,8 +7,9 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
 
 - `src/app/<route>/page.tsx` — one folder per page (the home page is
   `src/app/page.tsx`); each composes section components from `_snapshot/`.
-- `src/app/_shared/` — components shared across pages: `SiteNav*`,
-  `SiteFooter*`, `WebflowInteractions` (dropdowns/tabs/sliders/reveals),
+- `src/app/_shared/` — components shared across pages: `SiteNav` (self-contained,
+  manages its own dropdowns/hamburger with React state), `SiteFooter`, `NavLink`
+  (current-page-aware link), `WebflowInteractions` (tabs/sliders/reveals/lightbox),
   `ThirdPartyScripts` (re-wired analytics/pixels), `DotLottiePlayer`.
 - `src/app/webflow-shared.css` — the captured global Webflow stylesheet.
   `src/app/<route>/<route>.css` — page-specific CSS. Don't rewrite these to
@@ -25,7 +26,8 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
    user whether the page should be findable by Google before finishing.
 2. **New blog posts:** use the `add-blog-post` skill (or `/add-blog-post`).
 3. Keep `WebflowInteractions` mounted on every page that uses Webflow widget
-   markup (dropdowns, sliders, tabs) — it wires those after hydration.
+   markup (sliders, tabs, scroll reveals, lightboxes) — it wires those after
+   hydration. The nav/footer don't need it.
 4. Set `NEXT_PUBLIC_SITE_URL` to the production domain before launch so the
    sitemap + metadata point at the right host.
 5. **No Webflow dependencies.** The client is leaving Webflow, so this site

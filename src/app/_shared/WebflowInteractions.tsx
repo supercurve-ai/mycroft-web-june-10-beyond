@@ -10,15 +10,14 @@ import { useEffect } from "react";
  *   • scroll-reveal  (.wf-reveal)            — IX2 "scroll into view" fade/slide
  *                                              (desktop only — on mobile the
  *                                              elements render in final state)
- *   • dropdowns      (.w-dropdown)           — click toggle + outside-click close
- *                                              + Escape + close-on-navigate +
- *                                              hover-open for data-hover menus
- *   • mobile nav     (.w-nav-button)         — hamburger toggle
  *   • tabs           (.w-tabs)               — .w-tab-link ↔ .w-tab-pane
  *   • sliders        (.w-slider)             — arrows + dots + autoplay + swipe,
  *                                              works for 1-per-view AND
  *                                              N-per-view carousels
  *   • lightbox       (.w-lightbox)           — click thumbnail → fullscreen overlay
+ *
+ * The site nav's dropdowns and hamburger menu are NOT wired here — SiteNav is
+ * a self-contained client component that manages them with React state.
  *
  * Behavior is approximate, not pixel/timing-exact (accepted tradeoff — see the
  * product requirements). Everything is idempotent and cleans up on unmount.
@@ -40,7 +39,6 @@ export function WebflowInteractions() {
     // disabled entirely: elements just render in their final state
     // (iteration-2 req 11). The CSS media query covers paint-before-JS too.
     const mobile = window.matchMedia("(max-width: 767px)").matches;
-    const canHover = window.matchMedia("(hover: hover)").matches;
 
     // ── scroll reveals ───────────────────────────────────────────────────────
     const reveals = Array.from(
@@ -69,129 +67,6 @@ export function WebflowInteractions() {
         cleanups.push(() => io.disconnect());
       }
     }
-
-    // ── dropdowns (nav menus) ────────────────────────────────────────────────
-    // Click toggles the open class; a document-level click handler closes the
-    // menu when the click lands outside the dropdown; Escape closes too; and a
-    // click on any link inside the list closes it (the common "dropdown of
-    // links to other pages" pattern — iteration-2 req 3).
-    // Opening one dropdown closes any other open one explicitly — the toggle's
-    // stopPropagation keeps the outside-click handler from doing it.
-    const closeDropdown = (dd: HTMLElement) => {
-      dd.classList.remove("wf-open");
-      const t = dd.querySelector<HTMLElement>(".w-dropdown-toggle");
-      t?.classList.remove("w--open");
-      t?.setAttribute("aria-expanded", "false");
-      dd.querySelector(".w-dropdown-list")?.classList.remove("w--open", "wf-open");
-    };
-    document
-      .querySelectorAll<HTMLElement>(".w-dropdown:not([data-wf-dd])")
-      .forEach((dd) => {
-        dd.setAttribute("data-wf-dd", "");
-        const toggle = dd.querySelector<HTMLElement>(".w-dropdown-toggle");
-        const list = dd.querySelector<HTMLElement>(".w-dropdown-list");
-        if (!toggle || !list) return;
-        const isOpen = () => list.classList.contains("wf-open");
-        const close = () => closeDropdown(dd);
-        const open = () => {
-          document
-            .querySelectorAll<HTMLElement>(".w-dropdown.wf-open")
-            .forEach((other) => {
-              if (other !== dd) closeDropdown(other);
-            });
-          dd.classList.add("wf-open");
-          toggle.classList.add("w--open");
-          list.classList.add("w--open", "wf-open");
-          toggle.setAttribute("aria-expanded", "true");
-        };
-        toggle.setAttribute("aria-haspopup", "menu");
-        const onToggle = (e: Event) => {
-          e.preventDefault();
-          e.stopPropagation();
-          if (isOpen()) close();
-          else open();
-        };
-        toggle.addEventListener("click", onToggle);
-        const onDoc = (e: MouseEvent) => {
-          if (!dd.contains(e.target as Node)) close();
-        };
-        document.addEventListener("click", onDoc);
-        const onKey = (e: KeyboardEvent) => {
-          if (e.key === "Escape" && isOpen()) close();
-        };
-        document.addEventListener("keydown", onKey);
-        // navigating away via a dropdown link should close the menu (Next
-        // client-side routing keeps this component mounted)
-        const onListClick = (e: MouseEvent) => {
-          if ((e.target as HTMLElement).closest("a")) close();
-        };
-        list.addEventListener("click", onListClick);
-        // Webflow's hover-open variant (data-hover="true") — only where a real
-        // pointer exists; touch devices fall back to click.
-        const hoverTimers: ReturnType<typeof setTimeout>[] = [];
-        let onEnter: (() => void) | null = null;
-        let onLeave: (() => void) | null = null;
-        if (dd.getAttribute("data-hover") === "true" && canHover) {
-          const delay = Number(dd.getAttribute("data-delay")) || 0;
-          onEnter = () => open();
-          onLeave = () => {
-            hoverTimers.push(setTimeout(close, delay));
-          };
-          dd.addEventListener("mouseenter", onEnter);
-          dd.addEventListener("mouseleave", onLeave);
-        }
-        cleanups.push(() => {
-          dd.removeAttribute("data-wf-dd");
-          toggle.removeEventListener("click", onToggle);
-          document.removeEventListener("click", onDoc);
-          document.removeEventListener("keydown", onKey);
-          list.removeEventListener("click", onListClick);
-          if (onEnter) dd.removeEventListener("mouseenter", onEnter);
-          if (onLeave) dd.removeEventListener("mouseleave", onLeave);
-          hoverTimers.forEach(clearTimeout);
-        });
-      });
-
-    // ── mobile nav (hamburger) ───────────────────────────────────────────────
-    document
-      .querySelectorAll<HTMLElement>(".w-nav:not([data-wf-nav])")
-      .forEach((nav) => {
-        nav.setAttribute("data-wf-nav", "");
-        // navbar_v3 uses a custom IX2-driven hamburger (.hamburger-lockup /
-        // .nav-submenu-mobile) instead of Webflow's standard nav widget
-        const button = nav.querySelector<HTMLElement>(
-          ".w-nav-button, .hamburger-lockup",
-        );
-        const menu = nav.querySelector<HTMLElement>(
-          ".w-nav-menu, .nav-submenu-mobile",
-        );
-        if (!button || !menu) return;
-        const setOpen = (open: boolean) => {
-          nav.classList.toggle("wf-nav-open", open);
-          button.classList.toggle("w--open", open);
-          menu.classList.toggle("w--nav-menu-open", open);
-          button.setAttribute("aria-expanded", String(open));
-          document.body.style.overflow = open ? "hidden" : "";
-        };
-        const onClick = (e: Event) => {
-          e.preventDefault(); // the hamburger is an <a href="#">
-          setOpen(!nav.classList.contains("wf-nav-open"));
-        };
-        button.addEventListener("click", onClick);
-        // navigating via a menu link closes the panel (client-side routing
-        // keeps the nav mounted)
-        const onMenuClick = (e: MouseEvent) => {
-          const a = (e.target as HTMLElement).closest("a");
-          if (a && !a.closest(".w-dropdown-toggle")) setOpen(false);
-        };
-        menu.addEventListener("click", onMenuClick);
-        cleanups.push(() => {
-          nav.removeAttribute("data-wf-nav");
-          button.removeEventListener("click", onClick);
-          menu.removeEventListener("click", onMenuClick);
-          document.body.style.overflow = "";
-        });
-      });
 
     // ── tabs ─────────────────────────────────────────────────────────────────
     document
