@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Frameworks | GDPR compliance, built for real-world execution",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve and maintain GDPR compliance with confidence.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a02510434d7890f916be899_Frameworks-GDPR-Meta_v1.jpg"],
+    images: ["/assets/frameworks-gdpr-meta-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Frameworks | GDPR compliance, built for real-world execution",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve and maintain GDPR compliance with confidence.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a02510434d7890f916be899_Frameworks-GDPR-Meta_v1.jpg"],
+    images: ["/assets/frameworks-gdpr-meta-v1.jpg"],
   },
 };
 

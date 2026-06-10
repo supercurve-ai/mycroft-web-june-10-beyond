@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { DotLottiePlayer } from "../../../_shared/DotLottiePlayer";
-import { SiteNav12 } from "../../../_shared/SiteNav12";
+import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { FrameworksFedrampSection1 } from "./FrameworksFedrampSection1";
 import { FrameworksFedrampSection2 } from "./FrameworksFedrampSection2";
@@ -18,7 +18,7 @@ export function FrameworksFedrampSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh color_rg">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav12 />
+      <SiteNav />
       <main id="main" className="page-content">
         <FrameworksFedrampSection1 />
         <FrameworksFedrampSection2 />
@@ -50,7 +50,7 @@ export function FrameworksFedrampSnapshot() {
                               <div className="fw-vertical-hr"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-background"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
-                              <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a024debf8f4c2f14b879e15_Compliance-Dial_60.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
+                              <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/6a024debf8f4c2f14b879e15_Compliance-Dial_60.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
                                 <DotLottiePlayer src="/lottie/6a024debf8f4c2f14b879e15_Compliance-Dial_60.json" loop={false} autoplay={false} />
                               </div>
                               <div className="body-text-small color_white font_600 underline fw_dial">
@@ -63,7 +63,7 @@ export function FrameworksFedrampSnapshot() {
                               <div className="fw-vertical-hr"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-background"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
-                              <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a024deb018a84831eff1a49_Compliance-Dial_25.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
+                              <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/6a024deb018a84831eff1a49_Compliance-Dial_25.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
                                 <DotLottiePlayer src="/lottie/6a024deb018a84831eff1a49_Compliance-Dial_25.json" loop={false} autoplay={false} />
                               </div>
                               <div className="body-text-small color_white font_600 underline fw_dial">
@@ -75,7 +75,7 @@ export function FrameworksFedrampSnapshot() {
                             <div className="fw-dial-tile">
                               <div style={{"opacity": "0"}} className="dial-tile-background"></div>
                               <div style={{"opacity": "0"}} className="dial-tile-stroke"></div>
-                              <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a024deb1effe22026547e2f_Compliance-Dial_15.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
+                              <div data-is-ix2-target="1" className="fw-dial-lottie" data-animation-type="lottie" data-src="/lottie/6a024deb1effe22026547e2f_Compliance-Dial_15.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
                                 <DotLottiePlayer src="/lottie/6a024deb1effe22026547e2f_Compliance-Dial_15.json" loop={false} autoplay={false} />
                               </div>
                               <div className="body-text-small color_white font_600 underline fw_dial">

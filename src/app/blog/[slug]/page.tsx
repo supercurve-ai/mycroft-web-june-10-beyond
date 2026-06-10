@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getBlogSlugs, getBlogSource, getBlogMeta } from "@/lib/blog";
 import { renderMdx } from "@/lib/mdx";
 import { mdxComponents } from "@/components/mdx-components";
-import { SiteNav22 } from "@/app/_shared/SiteNav22";
+import { SiteNav } from "@/app/_shared/SiteNav";
 import { SiteFooter } from "@/app/_shared/SiteFooter";
 
 export function generateStaticParams() {
@@ -25,7 +25,7 @@ export default async function BlogPage({ params }: { params: Promise<{ slug: str
   const fm = frontmatter as { title?: string; date?: string; author?: string; coverImage?: string };
   return (
     <>
-      <SiteNav22 />
+      <SiteNav />
       <article className="mdx-article" style={{ maxWidth: 760, margin: "0 auto", padding: "4rem 1.25rem" }}>
         {fm.coverImage ? (
            

@@ -1,4 +1,4 @@
-import { SiteNav20 } from "../../_shared/SiteNav20";
+import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { AboutSection1 } from "./AboutSection1";
 import { AboutSection2 } from "./AboutSection2";
@@ -15,7 +15,7 @@ export function AboutSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav20 />
+      <SiteNav />
       <main id="main" className="page-content">
         <AboutSection1 />
         <AboutSection2 />

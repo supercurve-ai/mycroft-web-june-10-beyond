@@ -1,4 +1,4 @@
-import { SiteNav23 } from "../../_shared/SiteNav23";
+import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { ResourcesSection1 } from "./ResourcesSection1";
 import { ResourcesSection2 } from "./ResourcesSection2";
@@ -15,7 +15,7 @@ export function ResourcesSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav23 />
+      <SiteNav />
       <main id="main" className="page-content">
         <ResourcesSection1 />
         <ResourcesSection2 />

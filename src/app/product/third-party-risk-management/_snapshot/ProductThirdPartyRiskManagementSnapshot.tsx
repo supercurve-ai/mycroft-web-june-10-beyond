@@ -1,7 +1,7 @@
 import { ProductThirdPartyRiskManagementCollection1 } from "./ProductThirdPartyRiskManagementCollection1";
 import { productThirdPartyRiskManagementCollection1Data } from "./ProductThirdPartyRiskManagementCollection1.data";
 import Link from "next/link";
-import { SiteNav7 } from "../../../_shared/SiteNav7";
+import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { ProductThirdPartyRiskManagementSection1 } from "./ProductThirdPartyRiskManagementSection1";
 import { ProductThirdPartyRiskManagementSection2 } from "./ProductThirdPartyRiskManagementSection2";
@@ -19,7 +19,7 @@ export function ProductThirdPartyRiskManagementSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh color_rg">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav7 />
+      <SiteNav />
       <main id="main" className="page-content">
         <ProductThirdPartyRiskManagementSection1 />
         <ProductThirdPartyRiskManagementSection2 />

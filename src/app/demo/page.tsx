@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Book a Demo | Learn more about how our platform can optimize your security and compliance posture",
     description: "Book a personalized demo of Mycroft’s security and compliance platform to see threat prevention, compliance tools, automated incident response, and team workflows in action. Schedule a free walkthrough today.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b97d3b380076be7613_dd6983ac27e1cfd2522a77fecd11afd8_Mycroft%E2%80%93META-img%20demo.webp"],
+    images: ["/assets/mycroft-meta-img-demo.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Book a Demo | Learn more about how our platform can optimize your security and compliance posture",
     description: "Book a personalized demo of Mycroft’s security and compliance platform to see threat prevention, compliance tools, automated incident response, and team workflows in action. Schedule a free walkthrough today.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b97d3b380076be7613_dd6983ac27e1cfd2522a77fecd11afd8_Mycroft%E2%80%93META-img%20demo.webp"],
+    images: ["/assets/mycroft-meta-img-demo.webp"],
   },
 };
 

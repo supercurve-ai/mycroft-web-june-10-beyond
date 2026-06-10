@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Third-Party Risk Management",
     description: "Our platform provides visibility and control over external vulnerabilities, helping your organization stay secure, compliant, and protected from outside threats.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6984b04d6b4a1a6a9b3d57bb_3rdPartyRisk-META-img_v1.jpg"],
+    images: ["/assets/3rdpartyrisk-meta-img-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Third-Party Risk Management",
     description: "Our platform provides visibility and control over external vulnerabilities, helping your organization stay secure, compliant, and protected from outside threats.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6984b04d6b4a1a6a9b3d57bb_3rdPartyRisk-META-img_v1.jpg"],
+    images: ["/assets/3rdpartyrisk-meta-img-v1.jpg"],
   },
 };
 

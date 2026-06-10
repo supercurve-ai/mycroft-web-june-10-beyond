@@ -1,4 +1,4 @@
-import { SiteNav22 } from "../../_shared/SiteNav22";
+import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { FaqsSection1 } from "./FaqsSection1";
 import { FaqsSection2 } from "./FaqsSection2";
@@ -14,7 +14,7 @@ export function FaqsSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav22 />
+      <SiteNav />
       <main id="main" className="page-content">
         <FaqsSection1 />
         <FaqsSection2 />

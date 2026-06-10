@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Frameworks | Proper SOC 2 compliance, accredited auditor approved",
     description: "Mycroft’s Risk Operations Center eliminates the busywork, helping you achieve SOC 2 compliance the right way.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a024aa9af67f6b16d2afa0d_0c8cbca17c7eeeb2cbaf0d910b09040a_Frameworks-SOC2-Meta_v1.jpg"],
+    images: ["/assets/frameworks-soc2-meta-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Frameworks | Proper SOC 2 compliance, accredited auditor approved",
     description: "Mycroft’s Risk Operations Center eliminates the busywork, helping you achieve SOC 2 compliance the right way.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a024aa9af67f6b16d2afa0d_0c8cbca17c7eeeb2cbaf0d910b09040a_Frameworks-SOC2-Meta_v1.jpg"],
+    images: ["/assets/frameworks-soc2-meta-v1.jpg"],
   },
 };
 

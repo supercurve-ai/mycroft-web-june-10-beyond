@@ -1,7 +1,7 @@
 import { ProductDeviceManagementCollection1 } from "./ProductDeviceManagementCollection1";
 import { productDeviceManagementCollection1Data } from "./ProductDeviceManagementCollection1.data";
 import Link from "next/link";
-import { SiteNav6 } from "../../../_shared/SiteNav6";
+import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { ProductDeviceManagementSection1 } from "./ProductDeviceManagementSection1";
 import { ProductDeviceManagementSection2 } from "./ProductDeviceManagementSection2";
@@ -19,7 +19,7 @@ export function ProductDeviceManagementSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh color_rg">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav6 />
+      <SiteNav />
       <main id="main" className="page-content">
         <ProductDeviceManagementSection1 />
         <ProductDeviceManagementSection2 />

@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Frameworks | CPRA compliance, built on CCPA, ready for what’s next",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet CPRA requirements and manage consumer data with confidence.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a0327f18ccdb346062a00fe_377f044f7ba80ec86f88e938332ce836_Frameworks-CRPA-Meta_v2.jpg"],
+    images: ["/assets/frameworks-crpa-meta-v2.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Frameworks | CPRA compliance, built on CCPA, ready for what’s next",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet CPRA requirements and manage consumer data with confidence.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a0327f18ccdb346062a00fe_377f044f7ba80ec86f88e938332ce836_Frameworks-CRPA-Meta_v2.jpg"],
+    images: ["/assets/frameworks-crpa-meta-v2.jpg"],
   },
 };
 

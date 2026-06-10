@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Frameworks | FedRAMP compliance, built for cloud providers",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve FedRAMP authorization and operate securely in the public sector.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a0276d415c1f710d6473479_Frameworks-FedRAMP-Meta_v1.jpg"],
+    images: ["/assets/frameworks-fedramp-meta-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Frameworks | FedRAMP compliance, built for cloud providers",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve FedRAMP authorization and operate securely in the public sector.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a0276d415c1f710d6473479_Frameworks-FedRAMP-Meta_v1.jpg"],
+    images: ["/assets/frameworks-fedramp-meta-v1.jpg"],
   },
 };
 

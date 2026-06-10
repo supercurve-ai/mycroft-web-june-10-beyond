@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Product | A fully integrated Security stack",
     description: "Learn more about Mycroft’s automated platform and how our robust stack of security products will save precious engineering time.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b94636a356a2d2a8db_67dc4d2d6401e2047c11f251bd22d684_Mycroft%E2%80%93META-img%20product.webp"],
+    images: ["/assets/mycroft-meta-img-product.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Product | A fully integrated Security stack",
     description: "Learn more about Mycroft’s automated platform and how our robust stack of security products will save precious engineering time.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b94636a356a2d2a8db_67dc4d2d6401e2047c11f251bd22d684_Mycroft%E2%80%93META-img%20product.webp"],
+    images: ["/assets/mycroft-meta-img-product.webp"],
   },
 };
 

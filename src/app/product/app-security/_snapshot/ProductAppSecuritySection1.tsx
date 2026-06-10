@@ -24,7 +24,7 @@ export function ProductAppSecuritySection1() {
             </div>
             <div className="col-hero-right appsec">
               <div className="hero-imgs cloudsec">
-                <div data-wf-lottie-load="true" className="prod-hero1" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6983ebfba8c65ffb32948f63_AppSecurity-Hero_v1.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="12" data-loading="eager">
+                <div data-wf-lottie-load="true" className="prod-hero1" data-animation-type="lottie" data-src="/lottie/6983ebfba8c65ffb32948f63_AppSecurity-Hero_v1.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="12" data-loading="eager">
                   <DotLottiePlayer src="/lottie/6983ebfba8c65ffb32948f63_AppSecurity-Hero_v1.lottie" loop={true} autoplay={true} />
                 </div>
               </div>

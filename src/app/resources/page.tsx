@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Resources | Learn how you can strengthen your security and compliance knowledge",
     description: "Explore Mycroft resources for expert insights on cybersecurity, compliance, threat trends, and practical guides to help teams protect data and improve security posture. Learn how customers have achieved security and compliance with Mycroft, unlocking enterprise opportunities.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6920eb0e51f1ed2c55426562_Mycroft%E2%80%93META-img%20resources.webp"],
+    images: ["/assets/mycroft-meta-img-resources.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Resources | Learn how you can strengthen your security and compliance knowledge",
     description: "Explore Mycroft resources for expert insights on cybersecurity, compliance, threat trends, and practical guides to help teams protect data and improve security posture. Learn how customers have achieved security and compliance with Mycroft, unlocking enterprise opportunities.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6920eb0e51f1ed2c55426562_Mycroft%E2%80%93META-img%20resources.webp"],
+    images: ["/assets/mycroft-meta-img-resources.webp"],
   },
 };
 

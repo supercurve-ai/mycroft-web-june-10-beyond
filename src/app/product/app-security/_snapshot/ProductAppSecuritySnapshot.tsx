@@ -1,7 +1,7 @@
 import { ProductAppSecurityCollection1 } from "./ProductAppSecurityCollection1";
 import { productAppSecurityCollection1Data } from "./ProductAppSecurityCollection1.data";
 import Link from "next/link";
-import { SiteNav5 } from "../../../_shared/SiteNav5";
+import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { ProductAppSecuritySection1 } from "./ProductAppSecuritySection1";
 import { ProductAppSecuritySection2 } from "./ProductAppSecuritySection2";
@@ -19,7 +19,7 @@ export function ProductAppSecuritySnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh color_rg">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav5 />
+      <SiteNav />
       <main id="main" className="page-content">
         <ProductAppSecuritySection1 />
         <ProductAppSecuritySection2 />

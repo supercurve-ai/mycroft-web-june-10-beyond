@@ -1,6 +1,6 @@
 import { PartnershipsCollection1 } from "./PartnershipsCollection1";
 import { partnershipsCollection1Data } from "./PartnershipsCollection1.data";
-import { SiteNav17 } from "../../_shared/SiteNav17";
+import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { PartnershipsSection1 } from "./PartnershipsSection1";
 import { PartnershipsSection2 } from "./PartnershipsSection2";
@@ -14,7 +14,7 @@ export function PartnershipsSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh color_rg">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav17 />
+      <SiteNav />
       <main id="main" className="page-content">
         <PartnershipsSection1 />
         <PartnershipsSection2 />

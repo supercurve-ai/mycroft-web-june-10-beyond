@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Privacy Policy | Our privacy policy details how we collect, use, and share information",
     description: "Mycroft is committed to protecting your privacy.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691388ee55317c134df32b4b_c4312d5b59910770021808ac0bcbba2e_Mycroft%E2%80%93META-img%20privacy.webp"],
+    images: ["/assets/mycroft-meta-img-privacy.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Privacy Policy | Our privacy policy details how we collect, use, and share information",
     description: "Mycroft is committed to protecting your privacy.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691388ee55317c134df32b4b_c4312d5b59910770021808ac0bcbba2e_Mycroft%E2%80%93META-img%20privacy.webp"],
+    images: ["/assets/mycroft-meta-img-privacy.webp"],
   },
 };
 

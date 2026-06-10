@@ -52,7 +52,7 @@ export function ProductSection4() {
                       </div>
                     </div>
                     <div className="product-feature-img wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8abc1880145b8880ee64_AuditCompliance_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8abc1880145b8880ee64_AuditCompliance_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
                         <DotLottiePlayer src="/lottie/68cb8abc1880145b8880ee64_AuditCompliance_v2.lottie" loop={false} autoplay={false} />
                       </div>
                     </div>
@@ -61,7 +61,7 @@ export function ProductSection4() {
                 <section id="cloud-security" className="product-feature even-child">
                   <Link href="/product/cloud-security" className="product-feature link_block even-child w-inline-block">
                     <div className="product-feature-img img-left wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(-100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8bf5fbee380cfd1cc505_CloudSecurity_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8bf5fbee380cfd1cc505_CloudSecurity_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
                         <DotLottiePlayer src="/lottie/68cb8bf5fbee380cfd1cc505_CloudSecurity_v2.lottie" loop={false} autoplay={false} />
                       </div>
                     </div>
@@ -106,7 +106,7 @@ export function ProductSection4() {
                       </div>
                     </div>
                     <div className="product-feature-img wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8c56ad76da070bd27894_AppSecurity_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8c56ad76da070bd27894_AppSecurity_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
                         <DotLottiePlayer src="/lottie/68cb8c56ad76da070bd27894_AppSecurity_v2.lottie" loop={false} autoplay={false} />
                       </div>
                     </div>
@@ -115,7 +115,7 @@ export function ProductSection4() {
                 <section id="threat-management" className="product-feature even-child">
                   <Link href="/product/device-management" className="product-feature link_block even-child w-inline-block">
                     <div className="product-feature-img img-left wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(-100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8c6691e1f0cbbf1d9550_ThreatManagement_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8c6691e1f0cbbf1d9550_ThreatManagement_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
                         <DotLottiePlayer src="/lottie/68cb8c6691e1f0cbbf1d9550_ThreatManagement_v2.lottie" loop={false} autoplay={false} />
                       </div>
                     </div>
@@ -160,7 +160,7 @@ export function ProductSection4() {
                       </div>
                     </div>
                     <div className="product-feature-img wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
-                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8c8fe1d100b0bcefb3d1_AgenticAI_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8c8fe1d100b0bcefb3d1_AgenticAI_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
                         <DotLottiePlayer src="/lottie/68cb8c8fe1d100b0bcefb3d1_AgenticAI_v2.lottie" loop={false} autoplay={false} />
                       </div>
                     </div>

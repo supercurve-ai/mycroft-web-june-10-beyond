@@ -1,4 +1,4 @@
-import { SiteNav19 } from "../../_shared/SiteNav19";
+import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { PricingSection1 } from "./PricingSection1";
 import { PricingSection2 } from "./PricingSection2";
@@ -16,7 +16,7 @@ export function PricingSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav19 />
+      <SiteNav />
       <main id="main" className="page-content">
         <PricingSection1 />
         <PricingSection2 />

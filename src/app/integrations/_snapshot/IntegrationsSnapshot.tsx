@@ -1,4 +1,4 @@
-import { SiteNav22 } from "../../_shared/SiteNav22";
+import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { IntegrationsSection1 } from "./IntegrationsSection1";
 import { IntegrationsSection2 } from "./IntegrationsSection2";
@@ -13,7 +13,7 @@ export function IntegrationsSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav22 />
+      <SiteNav />
       <main id="main" className="page-content">
         <IntegrationsSection1 />
         <IntegrationsSection2 />

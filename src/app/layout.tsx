@@ -8,20 +8,28 @@ import { ThirdPartyScripts } from "./_shared/ThirdPartyScripts";
  * off the same selectors; favicons + site metadata come from the
  * captured <head>.
  */
+/**
+ * Resolves relative metadata URLs (og:image, twitter:image) to absolute ones —
+ * social scrapers require absolute URLs. Set NEXT_PUBLIC_SITE_URL to the
+ * production domain of THIS deployment (defaults to the cloned site's origin).
+ */
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.mycroft.io";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Mycroft — Partnerships: Join the Mycroft partnership network",
   description: "Expand your business opportunities and empower your customers to thrive securely through Mycroft partnerships.",
   openGraph: {
     title: "Mycroft — Partnerships: Join the Mycroft partnership network",
     description: "Expand your business opportunities and empower your customers to thrive securely through Mycroft partnerships.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/698255562e14609c57eb7a7a_Mycroft%E2%80%93META-img%20partnerships.webp"],
+    images: ["/assets/mycroft-meta-img-partnerships.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft — Partnerships: Join the Mycroft partnership network",
     description: "Expand your business opportunities and empower your customers to thrive securely through Mycroft partnerships.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/698255562e14609c57eb7a7a_Mycroft%E2%80%93META-img%20partnerships.webp"],
+    images: ["/assets/mycroft-meta-img-partnerships.webp"],
   },
   icons: {
     icon: [{ url: "/icons/32x32.png", type: "image/x-icon" }],

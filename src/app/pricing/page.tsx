@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Pricing | Find the right pricing package for your security program",
     description: "Mycroft offers pricing packages to help you achieve and maintain your security and compliance program with enterprise level standards across the board.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b9e423c2cff28b3982_a6d1a81e05e2e18c20e2ff9161bd98ee_Mycroft%E2%80%93META-img%20pricing.webp"],
+    images: ["/assets/mycroft-meta-img-pricing.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Pricing | Find the right pricing package for your security program",
     description: "Mycroft offers pricing packages to help you achieve and maintain your security and compliance program with enterprise level standards across the board.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b9e423c2cff28b3982_a6d1a81e05e2e18c20e2ff9161bd98ee_Mycroft%E2%80%93META-img%20pricing.webp"],
+    images: ["/assets/mycroft-meta-img-pricing.webp"],
   },
 };
 

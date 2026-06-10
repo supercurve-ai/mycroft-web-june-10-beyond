@@ -1,4 +1,4 @@
-import { SiteNav22 } from "../../_shared/SiteNav22";
+import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter2 } from "../../_shared/SiteFooter2";
 import { TermsSection1 } from "./TermsSection1";
 import { TermsSection2 } from "./TermsSection2";
@@ -12,7 +12,7 @@ export function TermsSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav22 />
+      <SiteNav />
       <main id="main" className="page-main nav_v2">
         <TermsSection1 />
         <TermsSection2 />

@@ -24,10 +24,10 @@ export function ProductAuditAndComplianceSection1() {
             </div>
             <div className="col-hero-right cloudsec">
               <div style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "opacity": "1", "transformStyle": "preserve-3d"}} className="hero-imgs audit">
-                <div data-wf-lottie-load="true" className="audit-hero2" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6949a5fb44df7d0a2274c706_Compliance-Hero2_v3.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
+                <div data-wf-lottie-load="true" className="audit-hero2" data-animation-type="lottie" data-src="/lottie/6949a5fb44df7d0a2274c706_Compliance-Hero2_v3.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
                   <DotLottiePlayer src="/lottie/6949a5fb44df7d0a2274c706_Compliance-Hero2_v3.lottie" loop={true} autoplay={true} />
                 </div>
-                <div data-wf-lottie-load="true" className="audit-hero1" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6949a4ca9c890d99e1561496_Compliance-Hero1_v3.lottie" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
+                <div data-wf-lottie-load="true" className="audit-hero1" data-animation-type="lottie" data-src="/lottie/6949a4ca9c890d99e1561496_Compliance-Hero1_v3.lottie" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager">
                   <DotLottiePlayer src="/lottie/6949a4ca9c890d99e1561496_Compliance-Hero1_v3.lottie" loop={false} autoplay={true} />
                 </div>
               </div>

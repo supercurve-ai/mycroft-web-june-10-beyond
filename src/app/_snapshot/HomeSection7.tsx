@@ -59,7 +59,7 @@ export function HomeSection7() {
                         </div>
                         <div className="slider__right-pane image-1">
                           <div className="slider__image-cover" style={{"width": "600px", "height": "0%"}}></div>
-                          <div className="slider-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8abc1880145b8880ee64_AuditCompliance_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "1"}}>
+                          <div className="slider-lottie" data-animation-type="lottie" data-src="/lottie/68cb8abc1880145b8880ee64_AuditCompliance_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "1"}}>
                             <DotLottiePlayer src="/lottie/68cb8abc1880145b8880ee64_AuditCompliance_v2.lottie" loop={true} autoplay={true} />
                           </div>
                         </div>
@@ -91,7 +91,7 @@ export function HomeSection7() {
                         </div>
                         <div className="slider__right-pane image-2" aria-hidden="true">
                           <div className="slider__image-cover" aria-hidden="true" style={{"width": "600px", "height": "100%"}}></div>
-                          <div className="slider-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8bf5fbee380cfd1cc505_CloudSecurity_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "0"}} aria-hidden="true">
+                          <div className="slider-lottie" data-animation-type="lottie" data-src="/lottie/68cb8bf5fbee380cfd1cc505_CloudSecurity_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "0"}} aria-hidden="true">
                             <DotLottiePlayer src="/lottie/68cb8bf5fbee380cfd1cc505_CloudSecurity_v2.lottie" loop={true} autoplay={true} />
                           </div>
                         </div>
@@ -123,7 +123,7 @@ export function HomeSection7() {
                         </div>
                         <div className="slider__right-pane image-3" aria-hidden="true">
                           <div className="slider__image-cover" aria-hidden="true" style={{"width": "600px", "height": "100%"}}></div>
-                          <div className="slider-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8c56ad76da070bd27894_AppSecurity_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "0"}} aria-hidden="true">
+                          <div className="slider-lottie" data-animation-type="lottie" data-src="/lottie/68cb8c56ad76da070bd27894_AppSecurity_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "0"}} aria-hidden="true">
                             <DotLottiePlayer src="/lottie/68cb8c56ad76da070bd27894_AppSecurity_v2.lottie" loop={true} autoplay={true} />
                           </div>
                         </div>
@@ -155,7 +155,7 @@ export function HomeSection7() {
                         </div>
                         <div className="slider__right-pane image-4" aria-hidden="true">
                           <div className="slider__image-cover" aria-hidden="true" style={{"width": "600px", "height": "100%"}}></div>
-                          <div className="slider-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8c6691e1f0cbbf1d9550_ThreatManagement_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "0"}} aria-hidden="true">
+                          <div className="slider-lottie" data-animation-type="lottie" data-src="/lottie/68cb8c6691e1f0cbbf1d9550_ThreatManagement_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "0"}} aria-hidden="true">
                             <DotLottiePlayer src="/lottie/68cb8c6691e1f0cbbf1d9550_ThreatManagement_v2.lottie" loop={true} autoplay={true} />
                           </div>
                         </div>
@@ -187,7 +187,7 @@ export function HomeSection7() {
                         </div>
                         <div className="slider__right-pane image-5" aria-hidden="true">
                           <div className="slider__image-cover" aria-hidden="true" style={{"width": "600px", "height": "100%"}}></div>
-                          <div className="slider-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/68cb8c8fe1d100b0bcefb3d1_AgenticAI_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "0"}} aria-hidden="true">
+                          <div className="slider-lottie" data-animation-type="lottie" data-src="/lottie/68cb8c8fe1d100b0bcefb3d1_AgenticAI_v2.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="eager" style={{"opacity": "0"}} aria-hidden="true">
                             <DotLottiePlayer src="/lottie/68cb8c8fe1d100b0bcefb3d1_AgenticAI_v2.lottie" loop={true} autoplay={true} />
                           </div>
                         </div>

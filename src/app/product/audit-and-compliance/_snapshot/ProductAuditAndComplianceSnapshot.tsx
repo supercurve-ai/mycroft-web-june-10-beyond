@@ -1,7 +1,7 @@
 import { ProductAuditAndComplianceCollection1 } from "./ProductAuditAndComplianceCollection1";
 import { productAuditAndComplianceCollection1Data } from "./ProductAuditAndComplianceCollection1.data";
 import Link from "next/link";
-import { SiteNav3 } from "../../../_shared/SiteNav3";
+import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { ProductAuditAndComplianceSection1 } from "./ProductAuditAndComplianceSection1";
 import { ProductAuditAndComplianceSection2 } from "./ProductAuditAndComplianceSection2";
@@ -19,7 +19,7 @@ export function ProductAuditAndComplianceSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh color_rg">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav3 />
+      <SiteNav />
       <main id="main" className="page-content">
         <ProductAuditAndComplianceSection1 />
         <ProductAuditAndComplianceSection2 />

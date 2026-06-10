@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Frameworks | ISO 42001 compliance, built for AI governance",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you implement responsible AI practices and meet ISO 42001 requirements.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a032c0d44eaa04e9b9c1719_Frameworks-ISO42001-Meta_v1.jpg"],
+    images: ["/assets/frameworks-iso42001-meta-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Frameworks | ISO 42001 compliance, built for AI governance",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you implement responsible AI practices and meet ISO 42001 requirements.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a032c0d44eaa04e9b9c1719_Frameworks-ISO42001-Meta_v1.jpg"],
+    images: ["/assets/frameworks-iso42001-meta-v1.jpg"],
   },
 };
 

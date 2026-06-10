@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Frameworks | HIPAA compliance, built for healthcare organizations",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet HIPAA requirements and protect sensitive health information with confidence.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a0289d8b5193c05a10a05f8_Frameworks-HIPAA-Meta_v1.jpg"],
+    images: ["/assets/frameworks-hipaa-meta-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Frameworks | HIPAA compliance, built for healthcare organizations",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet HIPAA requirements and protect sensitive health information with confidence.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a0289d8b5193c05a10a05f8_Frameworks-HIPAA-Meta_v1.jpg"],
+    images: ["/assets/frameworks-hipaa-meta-v1.jpg"],
   },
 };
 

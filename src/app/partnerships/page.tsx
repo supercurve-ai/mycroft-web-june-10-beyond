@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft — Partnerships: Join the Mycroft partnership network",
     description: "Expand your business opportunities and empower your customers to thrive securely through Mycroft partnerships.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/698255562e14609c57eb7a7a_Mycroft%E2%80%93META-img%20partnerships.webp"],
+    images: ["/assets/mycroft-meta-img-partnerships.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft — Partnerships: Join the Mycroft partnership network",
     description: "Expand your business opportunities and empower your customers to thrive securely through Mycroft partnerships.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/698255562e14609c57eb7a7a_Mycroft%E2%80%93META-img%20partnerships.webp"],
+    images: ["/assets/mycroft-meta-img-partnerships.webp"],
   },
 };
 

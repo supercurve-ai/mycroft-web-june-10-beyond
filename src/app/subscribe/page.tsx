@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Subscribe",
     description: "Subscribe to read in depth industry updates, deep dives, and Mike’s thoughts",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/696822f65b4a7c6f91907e37_Mycroft%E2%80%93META-img%20subscribe.webp"],
+    images: ["/assets/mycroft-meta-img-subscribe.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Subscribe",
     description: "Subscribe to read in depth industry updates, deep dives, and Mike’s thoughts",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/696822f65b4a7c6f91907e37_Mycroft%E2%80%93META-img%20subscribe.webp"],
+    images: ["/assets/mycroft-meta-img-subscribe.webp"],
   },
 };
 

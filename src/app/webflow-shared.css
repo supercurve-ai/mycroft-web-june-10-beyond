@@ -13954,6 +13954,35 @@ figcaption {
 }
 /* dropdowns: reveal the list the React toggle opens */
 .w-dropdown-list.wf-open { display: block !important; opacity: 1 !important; }
+/* nav submenu tiles were captured frozen in their IX2 pre-animation state
+   (opacity 0, offset down) — animate them to their final state on open */
+.w-dropdown-list.wf-open .sub-product-tile,
+.w-dropdown-list.wf-open .solution-tile {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+    rotateZ(0deg) skew(0deg, 0deg) !important;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/* product tile hover: the colored panel slides up behind the text (IX2 hover) */
+.sub-product-tile .product-tile-hov {
+  transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.sub-product-tile:hover .product-tile-hov {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+/* chevron flips while its dropdown is open */
+.dropdown-trigger .dropdown-icon { transition: transform 0.3s ease; }
+.dropdown-trigger.w--open .dropdown-icon { transform: rotateZ(180deg) !important; }
+/* custom mobile menu (navbar_v3 uses .hamburger-lockup, not .w-nav-button) */
+.w-nav.wf-nav-open .nav-submenu-mobile { display: block; }
+.hamburger-top, .hamburger-mid, .hamburger-btm {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.wf-nav-open .hamburger-top { transform: translateY(8px) rotate(45deg); }
+.wf-nav-open .hamburger-mid { opacity: 0; }
+.wf-nav-open .hamburger-btm { transform: translateY(-8px) rotate(-45deg); }
 /* mobile nav: show the menu panel when the hamburger toggle opens it */
 @media (max-width: 991px) {
   .w-nav .w-nav-menu { display: none; }

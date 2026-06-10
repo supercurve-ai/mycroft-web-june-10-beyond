@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Cloud Security",
     description: "Our platform prioritizes deep, proactive security measures specifically designed for cloud-native architectures.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6983a0ca6546a1aa4d0771a9_CloudSecurity-META-img_v1.jpg"],
+    images: ["/assets/cloudsecurity-meta-img-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cloud Security",
     description: "Our platform prioritizes deep, proactive security measures specifically designed for cloud-native architectures.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6983a0ca6546a1aa4d0771a9_CloudSecurity-META-img_v1.jpg"],
+    images: ["/assets/cloudsecurity-meta-img-v1.jpg"],
   },
 };
 

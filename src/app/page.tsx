@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     title: "Mycroft | Security automated for enterprise standards",
     description: "Mycroft is the platform that serves as your virtual Security and Compliance officer, consolidating all your security needs, supported by experts.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b95115633900469030_6f2255eb9ff41bffe51f941f70897e8a_Mycroft%E2%80%93META-img%20home.webp"],
+    images: ["/assets/mycroft-meta-img-home.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft | Security automated for enterprise standards",
     description: "Mycroft is the platform that serves as your virtual Security and Compliance officer, consolidating all your security needs, supported by experts.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b95115633900469030_6f2255eb9ff41bffe51f941f70897e8a_Mycroft%E2%80%93META-img%20home.webp"],
+    images: ["/assets/mycroft-meta-img-home.webp"],
   },
 };
 

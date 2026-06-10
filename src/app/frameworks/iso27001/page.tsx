@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Frameworks | ISO 27001 compliance, built for global organizations",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve ISO 27001 certification and strengthen your information security program.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a0287201c44ff27079e77c0_Frameworks-ISO27001-Meta_v1.jpg"],
+    images: ["/assets/frameworks-iso27001-meta-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Frameworks | ISO 27001 compliance, built for global organizations",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve ISO 27001 certification and strengthen your information security program.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a0287201c44ff27079e77c0_Frameworks-ISO27001-Meta_v1.jpg"],
+    images: ["/assets/frameworks-iso27001-meta-v1.jpg"],
   },
 };
 

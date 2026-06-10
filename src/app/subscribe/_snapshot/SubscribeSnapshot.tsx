@@ -1,6 +1,6 @@
 import { SubscribeCollection1 } from "./SubscribeCollection1";
 import { subscribeCollection1Data } from "./SubscribeCollection1.data";
-import { SiteNav22 } from "../../_shared/SiteNav22";
+import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { SubscribeSection1 } from "./SubscribeSection1";
 import { SubscribeSection2 } from "./SubscribeSection2";
@@ -14,7 +14,7 @@ export function SubscribeSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav22 />
+      <SiteNav />
       <main id="main" className="page-content">
         <SubscribeSection1 />
         <SubscribeSection2 />

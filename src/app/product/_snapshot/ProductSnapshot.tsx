@@ -1,4 +1,4 @@
-import { SiteNav2 } from "../../_shared/SiteNav2";
+import { SiteNav } from "../../_shared/SiteNav";
 import { SiteFooter } from "../../_shared/SiteFooter";
 import { ProductSection1 } from "./ProductSection1";
 import { ProductSection2 } from "./ProductSection2";
@@ -15,7 +15,7 @@ export function ProductSnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav2 />
+      <SiteNav />
       <main id="main" className="page-content">
         <ProductSection1 />
         <ProductSection2 />

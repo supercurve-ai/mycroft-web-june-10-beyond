@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft — About: Redefine how modern businesses stay secure.",
     description: "Allow companies to achieve enterprise grade security without building massive teams.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b930dfd21a8a570ed4_425a8555435e3eb7328f3da2e1997c02_Mycroft%E2%80%93META-img%20about.webp"],
+    images: ["/assets/mycroft-meta-img-about.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft — About: Redefine how modern businesses stay secure.",
     description: "Allow companies to achieve enterprise grade security without building massive teams.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/691377b930dfd21a8a570ed4_425a8555435e3eb7328f3da2e1997c02_Mycroft%E2%80%93META-img%20about.webp"],
+    images: ["/assets/mycroft-meta-img-about.webp"],
   },
 };
 

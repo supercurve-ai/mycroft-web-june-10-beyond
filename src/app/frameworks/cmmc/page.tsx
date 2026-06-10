@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Frameworks | CMMC compliance, built for defense contractors",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet all CMMC requirements and secure DoD contracts with confidence.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a02721ed0831d53a14a89ad_Frameworks-CMMC-Meta_v1.jpg"],
+    images: ["/assets/frameworks-cmmc-meta-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Frameworks | CMMC compliance, built for defense contractors",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet all CMMC requirements and secure DoD contracts with confidence.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a02721ed0831d53a14a89ad_Frameworks-CMMC-Meta_v1.jpg"],
+    images: ["/assets/frameworks-cmmc-meta-v1.jpg"],
   },
 };
 

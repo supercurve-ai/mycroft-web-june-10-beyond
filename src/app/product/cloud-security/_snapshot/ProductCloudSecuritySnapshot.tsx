@@ -1,7 +1,7 @@
 import { ProductCloudSecurityCollection1 } from "./ProductCloudSecurityCollection1";
 import { productCloudSecurityCollection1Data } from "./ProductCloudSecurityCollection1.data";
 import Link from "next/link";
-import { SiteNav4 } from "../../../_shared/SiteNav4";
+import { SiteNav } from "../../../_shared/SiteNav";
 import { SiteFooter } from "../../../_shared/SiteFooter";
 import { ProductCloudSecuritySection1 } from "./ProductCloudSecuritySection1";
 import { ProductCloudSecuritySection2 } from "./ProductCloudSecuritySection2";
@@ -19,7 +19,7 @@ export function ProductCloudSecuritySnapshot() {
   return (
     <div className="page-wrapper u-minh-100vh color_rg">
       <div className="styles__global-embed-code w-embed"></div>
-      <SiteNav4 />
+      <SiteNav />
       <main id="main" className="page-content">
         <ProductCloudSecuritySection1 />
         <ProductCloudSecuritySection2 />

@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Audit and compliance",
     description: "Explore how Mycroft’s platform can get you compliant fast.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/69839e3de5e78f566784970c_Audit_Compliance-META-img_v1.jpg"],
+    images: ["/assets/audit-compliance-meta-img-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Audit and compliance",
     description: "Explore how Mycroft’s platform can get you compliant fast.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/69839e3de5e78f566784970c_Audit_Compliance-META-img_v1.jpg"],
+    images: ["/assets/audit-compliance-meta-img-v1.jpg"],
   },
 };
 

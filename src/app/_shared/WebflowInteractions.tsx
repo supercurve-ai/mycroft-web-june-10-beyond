@@ -136,19 +136,37 @@ export function WebflowInteractions() {
       .querySelectorAll<HTMLElement>(".w-nav:not([data-wf-nav])")
       .forEach((nav) => {
         nav.setAttribute("data-wf-nav", "");
-        const button = nav.querySelector<HTMLElement>(".w-nav-button");
-        const menu = nav.querySelector<HTMLElement>(".w-nav-menu");
+        // navbar_v3 uses a custom IX2-driven hamburger (.hamburger-lockup /
+        // .nav-submenu-mobile) instead of Webflow's standard nav widget
+        const button = nav.querySelector<HTMLElement>(
+          ".w-nav-button, .hamburger-lockup",
+        );
+        const menu = nav.querySelector<HTMLElement>(
+          ".w-nav-menu, .nav-submenu-mobile",
+        );
         if (!button || !menu) return;
-        const onClick = () => {
-          const open = nav.classList.toggle("wf-nav-open");
+        const setOpen = (open: boolean) => {
+          nav.classList.toggle("wf-nav-open", open);
           button.classList.toggle("w--open", open);
           menu.classList.toggle("w--nav-menu-open", open);
           button.setAttribute("aria-expanded", String(open));
           document.body.style.overflow = open ? "hidden" : "";
         };
+        const onClick = (e: Event) => {
+          e.preventDefault(); // the hamburger is an <a href="#">
+          setOpen(!nav.classList.contains("wf-nav-open"));
+        };
         button.addEventListener("click", onClick);
+        // navigating via a menu link closes the panel (client-side routing
+        // keeps the nav mounted)
+        const onMenuClick = (e: MouseEvent) => {
+          const a = (e.target as HTMLElement).closest("a");
+          if (a && !a.closest(".w-dropdown-toggle")) setOpen(false);
+        };
+        menu.addEventListener("click", onMenuClick);
         cleanups.push(() => {
           button.removeEventListener("click", onClick);
+          menu.removeEventListener("click", onMenuClick);
           document.body.style.overflow = "";
         });
       });

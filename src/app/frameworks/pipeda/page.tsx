@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft Frameworks | PIPEDA compliance, built for Canadian businesses",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet PIPEDA requirements and manage personal data responsibly at scale.",
     type: "website",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a026d23b637d5ae866cadb2_Frameworks-PIPEDA-Meta_v1.jpg"],
+    images: ["/assets/frameworks-pipeda-meta-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Frameworks | PIPEDA compliance, built for Canadian businesses",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet PIPEDA requirements and manage personal data responsibly at scale.",
-    images: ["https://cdn.prod.website-files.com/6696985a1d3e81308169d89c/6a026d23b637d5ae866cadb2_Frameworks-PIPEDA-Meta_v1.jpg"],
+    images: ["/assets/frameworks-pipeda-meta-v1.jpg"],
   },
 };
 
