@@ -14021,14 +14021,27 @@ figcaption {
   transform: translate3d(0, 0, 0) !important;
   transition: opacity 300ms ease, transform 350ms ease;
 }
-/* nav links: text tints blueberry-wine on hover, 250ms ease each way */
-.nav-link-item .nav-link_v3,
-.nav-link-dropdown .nav-link_v3 {
-  transition: color 250ms ease;
+/* nav links, desktop (≥992px): the yellow highlight bar slides in from the
+   left behind the text, 500ms outQuart each way (a-129/a-130) */
+@media (min-width: 992px) {
+  .nav-text-highlight {
+    transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .nav-link-item:hover .nav-text-highlight {
+    transform: translate3d(0%, 0, 0) !important;
+  }
 }
-.nav-link-item:hover .nav-link_v3,
-.nav-link-dropdown:hover .nav-link_v3 {
-  color: var(--palette--colours--blueberry-wine);
+/* nav links, mobile menu (≤991px): text tints blueberry-wine on hover,
+   250ms ease each way (a-145/a-146 run on medium/small/tiny only) */
+@media (max-width: 991px) {
+  .nav-link-item .nav-link_v3,
+  .nav-link-dropdown .nav-link_v3 {
+    transition: color 250ms ease;
+  }
+  .nav-link-item:hover .nav-link_v3,
+  .nav-link-dropdown:hover .nav-link_v3 {
+    color: var(--palette--colours--blueberry-wine);
+  }
 }
 /* text-link arrow nudges 0 → 3px: 200ms ease-in on hover, 200ms ease-out back */
 .text-link .arrow-icon-small { transition: transform 200ms cubic-bezier(0, 0, 0.58, 1); }
