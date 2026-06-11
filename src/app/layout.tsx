@@ -16,22 +16,12 @@ import { CursorGlow } from "./_shared/CursorGlow";
  */
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.mycroft.io";
 
+/* No site-wide title/description defaults: every page defines its own
+   metadata, and the original site has none on pages like /terms and
+   /thank-you — a layout default would leak onto them. */
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Mycroft — Partnerships: Join the Mycroft partnership network",
-  description: "Expand your business opportunities and empower your customers to thrive securely through Mycroft partnerships.",
-  openGraph: {
-    title: "Mycroft — Partnerships: Join the Mycroft partnership network",
-    description: "Expand your business opportunities and empower your customers to thrive securely through Mycroft partnerships.",
-    type: "website",
-    images: ["/assets/mycroft-meta-img-partnerships.webp"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mycroft — Partnerships: Join the Mycroft partnership network",
-    description: "Expand your business opportunities and empower your customers to thrive securely through Mycroft partnerships.",
-    images: ["/assets/mycroft-meta-img-partnerships.webp"],
-  },
+  title: "Mycroft",
   icons: {
     icon: [{ url: "/icons/32x32.png", type: "image/x-icon" }],
     apple: [{ url: "/icons/256x256.png" }],
