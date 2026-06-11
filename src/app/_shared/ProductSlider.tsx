@@ -75,9 +75,13 @@ export function ProductSlider({
         onFocus={() => setFocused(true)}
         onBlur={onBlur}
       >
+        {/* grid-stacked (not absolutely positioned) so the slides keep giving
+            the mask a height on mobile, where .product-slider drops to
+            height:auto — the tallest slide sizes the mask, like the original */}
         <div
           className="slider-mask w-slider-mask"
           id="w-slider-mask-0"
+          style={{ display: "grid" }}
           onClick={onMaskClick}
         >
           {slides.map((slide, i) => {
@@ -90,8 +94,7 @@ export function ProductSlider({
                 aria-label={`${i + 1} of ${slides.length}`}
                 aria-hidden={active ? undefined : true}
                 style={{
-                  position: "absolute",
-                  inset: 0,
+                  gridArea: "1 / 1",
                   opacity: active ? 1 : 0,
                   transform: active ? "translateX(0px)" : "translateX(-20px)",
                   visibility: active ? "visible" : "hidden",
