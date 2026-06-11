@@ -14159,7 +14159,10 @@ section:has(.btn-large.hero:hover) .hero-img-glow-hover { opacity: 1 !important;
   transition: transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .wf-nav-open .hamburger-top { transform: translateY(9px) rotate(45deg); }
-.wf-nav-open .hamburger-mid { opacity: 0; }
+/* scaleX(0) on top of the IX2 fade: on real iOS hardware the composited
+   3px bar can ghost at opacity 0 (its left/right tips peek past the X), so
+   collapse it to zero width as well. */
+.wf-nav-open .hamburger-mid { opacity: 0; transform: scaleX(0); }
 .wf-nav-open .hamburger-btm { transform: translateY(-9px) rotate(-45deg); }
 /* mobile nav: show the menu panel when the hamburger toggle opens it */
 @media (max-width: 991px) {
