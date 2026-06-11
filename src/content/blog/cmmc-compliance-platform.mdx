@@ -37,7 +37,7 @@ Here’s a breakdown:
 | --- | --- | --- | --- |
 | **Level 1: Foundational** | 17 | Annual self-assessment | Contractors handling FCI |
 | **Level 2: Advanced** | 110 | Third-party C3PAO assessment **(most contracts fall here)** | Contractors handling CUI |
-| **Level 3:Expert** | 110+ | Government-led Defense Industrial Base Cybersecurity Assessment Center (DIBCAC) assessment | Contractors supporting the most critical DoD programs |
+| **Level 3:**<br/>**Expert** | 110+ | Government-led&nbsp;Defense Industrial Base Cybersecurity Assessment Center (DIBCAC) assessment | Contractors supporting the most critical DoD programs |
 
 CMMC Level 1 focuses on basic cyber hygiene and requires adherence to 17 security practices derived from NIST SP 800-171 controls, whereas CMMC Level 3, the highest level of certification, focuses on advanced cybersecurity practices to detect and respond to highly sophisticated cyberattacks, also known as Advanced Persistent Threats (APTs).
 
@@ -122,9 +122,9 @@ The right platform depends entirely on which CMMC level your contracts require. 
 
 | **CMMC level** | **Applies to** | **Practices** | **Assessment type** | **What your platform must handle** |
 | --- | --- | --- | --- | --- |
-| **Level 1: Foundational** | FCI contractors | 17 | Annual self-assessment | Policy documentation   Basic control tracking   Annual affirmation workflow |
-| **Level 2: Advanced** | CUI contractors | 110   (NIST SP 800-171) | Third-party C3PAO assessment | Automated evidence collection   Plan of action and milestones (POA&amp;M) management   Continuous monitoring   CUI data flow mapping   C3PAO-ready evidence packages |
-| **Level 3:Expert** | Critical DoD programs | 110+   (NIST SP 800-172) | Government-led DIBCAC assessment | All Level 2 capabilities plus: Advanced threat detection   Incident response workflows   DIBCAC coordination |
+| **Level 1: Foundational** | FCI contractors | 17 | Annual self-assessment | Policy documentation<br/>Basic control tracking<br/>Annual affirmation workflow |
+| **Level 2: Advanced** | CUI contractors | 110<br/>(NIST SP 800-171) | Third-party C3PAO assessment | Automated evidence collection<br/>Plan of action and milestones (POA&amp;M) management<br/>Continuous monitoring<br/>CUI data flow mapping<br/>C3PAO-ready evidence packages |
+| **Level 3:**<br/>**Expert** | Critical DoD programs | 110+<br/>(NIST SP 800-172) | Government-led DIBCAC assessment | All Level 2 capabilities plus: Advanced threat detection<br/>Incident response workflows<br/>DIBCAC coordination |
 
 
 ### Where most platforms break down
@@ -171,7 +171,17 @@ Most contractors pursuing CMMC also carry concurrent obligations. A platform tha
 
 The following platforms represent the range of options currently in the market. Each is evaluated against the six capabilities above. Here’s a side-by-side comparison of each:
 
-<table><colgroup><col></col><col></col><col></col><col></col><col></col><col></col></colgroup><tbody><tr><td>Capability</td><td>Mycroft</td><td>Vanta</td><td>Drata</td><td>Paramify</td><td>Sprinto</td></tr><tr><td>Native continuous monitoring</td><td>✓</td><td>◐</td><td>◐</td><td>◐</td><td>◐</td></tr><tr><td>C3PAO assessment readiness</td><td>✓</td><td>✗</td><td>✗</td><td>◐</td><td>✗</td></tr><tr><td>CUI data flow mapping</td><td>✓</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td></tr><tr><td>Compliance automation / auto-remediation</td><td>✓</td><td>◐</td><td>✗</td><td>✗</td><td>◐</td></tr><tr><td>Supply chain / TPRM coverage</td><td>✓</td><td>◐</td><td>◐</td><td>✗</td><td>◐</td></tr><tr><td>Multi-framework cross-mapping</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Managed operations (e.g., Mycroft ROC model)</td><td>✓</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td></tr><tr><td colSpan={6}>✓ Native ◐ Partial or integration-dependent ✗ Not included</td></tr></tbody></table>
+| Capability | Mycroft | Vanta | Drata | Paramify | Sprinto |
+| --- | :---: | :---: | :---: | :---: | :---: |
+| Native continuous monitoring | <Check /> | <Partial /> | <Partial /> | <Partial /> | <Partial /> |
+| C3PAO assessment readiness | <Check /> | <Cross /> | <Cross /> | <Partial /> | <Cross /> |
+| CUI data flow mapping | <Check /> | <Cross /> | <Cross /> | <Cross /> | <Cross /> |
+| Compliance automation / auto-remediation | <Check /> | <Partial /> | <Cross /> | <Cross /> | <Partial /> |
+| Supply chain / TPRM coverage | <Check /> | <Partial /> | <Partial /> | <Cross /> | <Partial /> |
+| Multi-framework cross-mapping | <Check /> | <Check /> | <Check /> | <Check /> | <Check /> |
+| Managed operations (e.g., Mycroft ROC model) | <Check /> | <Cross /> | <Cross /> | <Cross /> | <Cross /> |
+
+<Check />&nbsp;Native &nbsp; &nbsp;<Partial />&nbsp;Partial or integration-dependent &nbsp; &nbsp;<Cross />&nbsp;Not included
 
 
 ### Mycroft
@@ -218,9 +228,9 @@ The right CMMC compliance platform depends on your level, your team, and the sco
 
 | **Your situation** | **What you actually need** | **Platform fit** |
 | --- | --- | --- |
-| **Level 1 — Basic documentation needed** | Policy tracking   Annual self-assessment workflow   Minimal operational overhead | Vanta or Drata — lightweight GRC tool |
-| **Level 2 — Existing security team** | Evidence automation   Continuous monitoring dashboards   C3PAO-ready reporting | Vanta or Drata — but budget separately for scanning, MDR, and TPRM tools |
-| **Level 2 — Lean team (0–2 security staff)** | Evidence   Remediation   C3PAO prep   Monitoring without adding headcount   (i.e., A platform that operates the program, not just tracks it) | Mycroft — full-stack operations platform |
+| **Level 1 — Basic documentation needed** | Policy tracking<br/>Annual self-assessment workflow<br/>Minimal operational overhead | Vanta or Drata — lightweight GRC tool |
+| **Level 2 — Existing security team** | Evidence automation<br/>Continuous monitoring dashboards<br/>C3PAO-ready reporting | Vanta or Drata — but budget separately for scanning, MDR, and TPRM tools |
+| **Level 2 — Lean team (0–2 security staff)** | Evidence<br/>Remediation<br/>C3PAO prep<br/>Monitoring without adding headcount<br/>(i.e., A platform that operates the program, not just tracks it) | Mycroft — full-stack operations platform |
 | **CMMC + FedRAMP or SOC 2 simultaneously** | Multi-framework cross-mapping so one evidence set serves multiple audits | Mycroft — native cross-mapping across CMMC, FedRAMP, SOC 2, ISO 27001, HIPAA |
 | **Prime contractor managing subcontractor compliance** | Vendor assessment workflows, subcontractor monitoring, supply chain visibility | **Mycroft — Built-in TPRM (note that most GRC-only platforms treat this as an add-on or don't include it)** |
 

@@ -124,6 +124,23 @@ body {
   -o-font-smoothing: antialiased;
 }
 
+/* Tables in article rich text. Webflow's stylesheet has no table rules, so
+   raw HTML tables in MDX posts render unstyled without these. Values match
+   the GFM-table overrides in src/components/mdx-components.tsx (markdown
+   pipe tables get inline styles there; the `>` child selector keeps the
+   margin off those, which sit inside an overflow wrapper that already has it). */
+.rich-text-v2 > table { margin: 1.5em 0; }
+.rich-text-v2 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.rich-text-v2 th,
+.rich-text-v2 td {
+  border: 1px solid currentColor;
+  padding: 8px 12px;
+  text-align: left;
+}
+
 /* Remove top/bottom margins on rich text first/last children */
 .w-richtext > :first-child { margin-top: 0; }
 .w-richtext > :last-child,

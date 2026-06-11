@@ -21,4 +21,15 @@ export const mdxComponents = {
     <td {...props} style={{ border: "1px solid currentColor", padding: "8px 12px",
       ...props.style }} />
   ),
+  // Colored comparison-table symbols (palette tokens from tokens.css).
+  // Usage in MDX: <Check />, <Partial />, <Cross />
+  Check: () => (
+    <span aria-label="Yes" style={{ color: "var(--color-velvet-green)", fontWeight: 700 }}>✓</span>
+  ),
+  Partial: () => (
+    <span aria-label="Partial" style={{ color: "var(--color-smoke)" }}>◐</span>
+  ),
+  Cross: () => (
+    <span aria-label="No" style={{ color: "var(--color-ember)", fontWeight: 700 }}>✗</span>
+  ),
 };
