@@ -132,20 +132,52 @@ body {
 ul, ol { list-style: revert; }
 
 /* Tables in article rich text. Webflow's stylesheet has no table rules, so
-   raw HTML tables in MDX posts render unstyled without these. Values match
-   the GFM-table overrides in src/components/mdx-components.tsx (markdown
-   pipe tables get inline styles there; the `>` child selector keeps the
-   margin off those, which sit inside an overflow wrapper that already has it). */
+   tables in MDX posts (markdown pipe tables and raw HTML alike) are styled
+   here. The original site styled its one blog table with pasted-in word-
+   processor CSS (gray header band, lighter section-divider rows, hairline
+   grid); these rules reproduce that look with the Mycroft palette. Markdown
+   pipe tables sit inside an overflow wrapper added by mdx-components.tsx
+   that already carries the margin — the `>` child selector keeps raw HTML
+   tables matched without doubling it. */
 .rich-text-v2 > table { margin: 1.5em 0; }
 .rich-text-v2 table {
   width: 100%;
   border-collapse: collapse;
+  background-color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.45;
 }
 .rich-text-v2 th,
 .rich-text-v2 td {
-  border: 1px solid currentColor;
-  padding: 8px 12px;
+  border: 1px solid var(--color-earl-grey);
+  padding: 0.625rem 0.875rem;
   text-align: left;
+  vertical-align: top;
+}
+.rich-text-v2 thead th {
+  background-color: var(--color-earl-grey-75);
+  color: var(--color-racing-green);
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+}
+/* Full-width spanning cells read as section dividers within the table. */
+.rich-text-v2 tbody td[colspan] {
+  background-color: var(--color-earl-grey-40);
+  font-weight: 600;
+}
+/* Comparison/checklist tables: columns 3+ hold ✓/✗ marks — center them.
+   Opt in per table in MDX with <table className="comparison-table">. */
+.rich-text-v2 .comparison-table tbody td:nth-child(n + 3):not([colspan]) {
+  text-align: center;
+}
+/* Wide tables scroll sideways on small screens instead of bursting the page. */
+@media screen and (max-width: 767px) {
+  .rich-text-v2 table {
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 /* Remove top/bottom margins on rich text first/last children */

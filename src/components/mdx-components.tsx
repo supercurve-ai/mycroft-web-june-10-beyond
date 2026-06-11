@@ -6,20 +6,13 @@ export const mdxComponents = {
      
     <img {...props} alt={props.alt ?? ""} style={{ maxWidth: "100%", height: "auto" }} />
   ),
-  // Webflow rich text has no native tables, so its stylesheet won't style
-  // them — give GFM tables sane defaults that inherit the site's fonts.
+  // GFM pipe tables only need the scroll wrapper; the visual styling lives
+  // in tokens.css (.rich-text-v2 table …) so markdown and raw HTML tables
+  // in posts look the same.
   table: (props: ComponentProps<"table">) => (
     <div style={{ overflowX: "auto", margin: "1.5em 0" }}>
-      <table {...props} style={{ width: "100%", borderCollapse: "collapse", ...props.style }} />
+      <table {...props} />
     </div>
-  ),
-  th: (props: ComponentProps<"th">) => (
-    <th {...props} style={{ border: "1px solid currentColor", padding: "8px 12px",
-      textAlign: "left", ...props.style }} />
-  ),
-  td: (props: ComponentProps<"td">) => (
-    <td {...props} style={{ border: "1px solid currentColor", padding: "8px 12px",
-      ...props.style }} />
   ),
   // Colored comparison-table symbols (palette tokens from tokens.css).
   // Usage in MDX: <Check />, <Partial />, <Cross />
