@@ -52,27 +52,51 @@ export function WebflowInteractions() {
       if (reduce || mobile) {
         reveals.forEach((el) => el.classList.add("is-revealed"));
       } else {
+        // IX2's SCROLL_INTO_VIEW re-fires every time the element enters the
+        // viewport — from either scroll direction — because each trigger
+        // re-applies the action list's initial-state group instantly before
+        // animating. Two observers reproduce that: one reveals at the usual
+        // threshold, the other snaps the element back to its hidden state
+        // (without animating — it's fully off-screen by then) once it has
+        // left the viewport, so the reveal replays on the next entry.
         const io = new IntersectionObserver(
-          (entries, obs) => {
+          (entries) => {
             for (const entry of entries) {
               if (entry.isIntersecting) {
                 entry.target.classList.add("is-revealed");
-                obs.unobserve(entry.target);
               }
             }
           },
           { threshold: 0.15, rootMargin: "0px 0px -10% 0px" },
         );
-        reveals.forEach((el) => io.observe(el));
-        cleanups.push(() => io.disconnect());
+        const reset = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            const el = entry.target as HTMLElement;
+            if (entry.isIntersecting || !el.classList.contains("is-revealed"))
+              continue;
+            const prev = el.style.transition;
+            el.style.transition = "none";
+            el.classList.remove("is-revealed");
+            void el.offsetWidth; // flush styles so the reset doesn't animate
+            el.style.transition = prev;
+          }
+        });
+        reveals.forEach((el) => {
+          io.observe(el);
+          reset.observe(el);
+        });
+        cleanups.push(() => {
+          io.disconnect();
+          reset.disconnect();
+        });
       }
     }
 
     // ── scroll scrubs (IX2 "while scrolling in view") ────────────────────────
-    // Unlike .wf-reveal (one-shot), these elements' opacity/translateX are a
-    // pure function of scroll position, so the animation runs in reverse when
-    // scrolling back up — matching the original SCROLLING_IN_VIEW continuous
-    // actions. Progress: 0 = element top at viewport bottom, 100 = element
+    // Unlike .wf-reveal (threshold-triggered), these elements' opacity/
+    // translateX are a pure function of scroll position, so the animation runs
+    // in reverse when scrolling back up — matching the original
+    // SCROLLING_IN_VIEW continuous actions. Progress: 0 = element top at viewport bottom, 100 = element
     // bottom at viewport top. data-wf-scrub="start,end" gives the keyframe
     // range in progress-%; values are exponentially smoothed (IX2 smoothing
     // 50). Opacity interpolates linearly, x with ease-in, per the original
