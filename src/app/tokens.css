@@ -124,6 +124,13 @@ body {
   -o-font-smoothing: antialiased;
 }
 
+/* List markers. Tailwind's preflight sets `list-style: none` on every ul/ol;
+   the original Webflow site relied on the browser defaults (disc/decimal,
+   circle/square when nested). `revert` rolls the property back to those UA
+   defaults. Components that want marker-less lists (.w-list-unstyled,
+   .demo-ul, .pricing-ul) still win — their class rules outrank this. */
+ul, ol { list-style: revert; }
+
 /* Tables in article rich text. Webflow's stylesheet has no table rules, so
    raw HTML tables in MDX posts render unstyled without these. Values match
    the GFM-table overrides in src/components/mdx-components.tsx (markdown
