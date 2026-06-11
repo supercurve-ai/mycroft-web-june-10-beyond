@@ -7,6 +7,17 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   images: { unoptimized: true },
+  // Let phones/tablets on the local network load the dev server's JS — Next
+  // blocks dev assets for non-localhost hosts by default, which made pages
+  // render but never hydrate (dead hamburger menu etc.) when testing on a
+  // physical phone. Private-range IPs only; does not affect production.
+  allowedDevOrigins: [
+    "192.168.*.*",
+    "10.*.*.*",
+    "172.16.*.*",
+    "192.168.4.59",
+    "10.10.98.18",
+  ],
   // Pin the tracing root to this app so a parent monorepo lockfile doesn't
   // confuse Next's workspace-root inference.
   outputFileTracingRoot: __dirname,
