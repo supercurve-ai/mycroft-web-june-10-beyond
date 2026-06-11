@@ -33,7 +33,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="footer-text-mice">
-          © 2026 Mycroft Technologies Inc. All rights reserved.
+          © {new Date().getFullYear()} Mycroft Technologies Inc. All rights reserved.
         </div>
       </div>
     </footer>

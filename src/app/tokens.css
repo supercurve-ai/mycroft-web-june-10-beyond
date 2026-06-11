@@ -242,3 +242,9 @@ ul, ol { list-style: revert; }
 .scroll { animation: scroll 80s linear infinite; }
 .reverse { animation-direction: reverse; }
 .logosoup-mini_img { -webkit-transform: translateZ(0); }
+
+/* Webflow's `.text-right` (a padding variant of .product-text, used by the
+   alternating feature rows on /product and /frameworks/*) collides with
+   Tailwind's text-right utility, which right-aligns the copy. Restore the
+   Webflow behavior: the block sits right, its text stays left-aligned. */
+.product-text.text-right { text-align: left; }
