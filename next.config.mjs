@@ -32,6 +32,8 @@ const nextConfig = {
       { source: "/staging-pages/cloud-security", destination: "/product/cloud-security", permanent: true },
       { source: "/staging-pages/audit-and-compliance", destination: "/product/audit-and-compliance", permanent: true },
       { source: "/blog", destination: "/resources", permanent: true },
+      // Trust center lives on the app subdomain.
+      { source: "/security", destination: "https://app.mycroft.io/trust/mycroft", permanent: true },
       // The Webflow rules below pointed at staging/archive pages that were
       // never published and don't exist in this clone (/staging-pages/*-v2,
       // /site-archive/old-home, and /resources-v2 -> /blog which itself
