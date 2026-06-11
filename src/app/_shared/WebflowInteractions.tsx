@@ -100,7 +100,10 @@ export function WebflowInteractions() {
     // bottom at viewport top. data-wf-scrub="start,end" gives the keyframe
     // range in progress-%; values are exponentially smoothed (IX2 smoothing
     // 50). Opacity interpolates linearly, x with ease-in, per the original
-    // action lists (a-30/31/32).
+    // action lists (a-30/31/32). On pages too short to scroll the element all
+    // the way past the viewport top (e.g. /demo, where the badges sit just
+    // above the footer), the end keyframe is capped at the progress reachable
+    // at max scroll so the animation still completes at the page bottom.
     const scrubs = Array.from(
       document.querySelectorAll<HTMLElement>(".wf-scrub:not([data-wf-scrubbed])"),
     );
@@ -116,14 +119,22 @@ export function WebflowInteractions() {
       let raf = 0;
       const frame = () => {
         const vh = window.innerHeight;
+        const scrollLeft = Math.max(
+          0,
+          document.documentElement.scrollHeight - vh - window.scrollY,
+        );
         let settling = false;
         for (const it of items) {
           const r = it.el.getBoundingClientRect();
           const progress = ((vh - r.top) / (vh + r.height)) * 100;
-          const target = Math.min(
-            1,
-            Math.max(0, (progress - it.start) / (it.end - it.start)),
-          );
+          const maxProgress = progress + (scrollLeft / (vh + r.height)) * 100;
+          const end = Math.min(it.end, maxProgress);
+          const target =
+            end > it.start
+              ? Math.min(1, Math.max(0, (progress - it.start) / (end - it.start)))
+              : progress > it.start
+                ? 1
+                : 0;
           let next =
             it.value < 0 ? target : it.value + (target - it.value) * 0.5;
           if (Math.abs(target - next) < 0.001) next = target;
