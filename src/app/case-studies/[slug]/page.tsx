@@ -20,6 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const meta = getCaseStudiesMeta(slug);
   return { title: meta.title, description: meta.excerpt,
     openGraph: { title: meta.title, description: meta.excerpt,
+      images: meta.coverImage ? [meta.coverImage] : undefined },
+    twitter: { card: "summary_large_image", title: meta.title, description: meta.excerpt,
       images: meta.coverImage ? [meta.coverImage] : undefined } };
 }
 
