@@ -381,7 +381,10 @@ export function SiteNav() {
               aria-expanded={mobileOpen}
               onClick={(e) => {
                 e.preventDefault();
-                setMobileOpen((open) => !open);
+                // closing the menu also collapses any open dropdown, so it
+                // reopens in a clean state
+                if (mobileOpen) setOpenDropdown(null);
+                setMobileOpen(!mobileOpen);
               }}
             >
               <div className="hamburger-top"></div>
