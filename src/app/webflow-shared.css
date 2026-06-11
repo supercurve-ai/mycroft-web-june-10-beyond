@@ -2096,6 +2096,33 @@ textarea.w-input, textarea.w-select {
   font-display: swap;
 }
 
+/* Legacy fonts (deprecated Webflow primary/secondary) — still used by the
+   v1 rich-text pages (/terms, /privacy). Formerly loaded from Google Fonts;
+   self-hosted variable woff2s now. */
+@font-face {
+  font-family: Inter;
+  src: url("/fonts/Inter-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Libre Baskerville;
+  src: url("/fonts/LibreBaskerville-Regular.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Libre Baskerville;
+  src: url("/fonts/LibreBaskerville-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --type--body--font: var(--type-all-fonts--secondary-font-depreciated);
   --palette--colours--unblack: var(--color-unblack);
@@ -6834,6 +6861,10 @@ figcaption {
 }
 
 .blog-container {
+  /* width is required: as a flex item of .container-flex.blog (align-items:
+     flex-start) it would otherwise shrink-wrap to max-content and overflow
+     small screens. */
+  width: 100%;
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
@@ -14111,6 +14142,12 @@ figcaption {
    0.25 → 1, 350ms inOutQuad both ways */
 .hero-img-glow-hover { transition: opacity 350ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 section:has(.btn-large.hero:hover) .hero-img-glow-hover { opacity: 1 !important; }
+/* frameworks dial lottie: the wrapper sized itself from the lottie's
+   intrinsic width (an SVG on the original site, a canvas here), but the
+   canvas's width:100% style makes that circular and WebKit resolves it to
+   0 — the dials vanished in Safari. An explicit width breaks the cycle;
+   max-width 227px and aspect-ratio still cap it as before. */
+.fw-dial-lottie { width: 100%; }
 /* frameworks dial tiles: background + stroke fade in over 350ms ease,
    out over 250ms ease */
 .fw-tile-link .dial-tile-background,

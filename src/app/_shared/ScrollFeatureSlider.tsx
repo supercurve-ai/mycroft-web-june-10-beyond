@@ -282,10 +282,18 @@ export function ScrollFeatureSlider({
         <div className="body-text-medium _75_rg">/</div>
         <div className="body-text-medium _75_rg">{slides.length}</div>
       </div>
-      {/* Invisible in-flow copy of the first slide: gives the sticky card its height,
-          since the real slides are absolutely positioned on top of it. */}
-      <div className="features-row static" style={{ willChange: "opacity", opacity: 0 }} aria-hidden>
-        <FeatureRowContent slide={slides[0]} />
+      {/* Invisible in-flow copies of every slide, stacked in one grid cell: they
+          give the sticky card the height of its tallest slide, since the real
+          slides are absolutely positioned on top of them. */}
+      <div
+        style={{ display: "grid", width: "100%", opacity: 0, pointerEvents: "none" }}
+        aria-hidden
+      >
+        {slides.map((slide, i) => (
+          <div key={i} className="features-row static" style={{ gridArea: "1 / 1" }}>
+            <FeatureRowContent slide={slide} />
+          </div>
+        ))}
       </div>
       {slides.map((slide, i) => {
         const tr = initial.slides[i];

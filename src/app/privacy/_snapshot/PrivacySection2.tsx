@@ -231,7 +231,7 @@ export function PrivacySection2() {
                 </li>
               </ul>
               <p>
-                To exercise these rights, contact us at
+                To exercise these rights, contact us at{" "}
                 <a href="mailto:privacy@mycroft.io">
                   privacy@mycroft.io
                 </a>
@@ -285,7 +285,7 @@ export function PrivacySection2() {
                   Data Processing Agreement (DPA)
                 </strong>
                 <br />
-                For more detailed information on how we handle data processing and/or to execute a Data Processing Agreement (DPA) please reach out to
+                For more detailed information on how we handle data processing and/or to execute a Data Processing Agreement (DPA) please reach out to{" "}
                 <a href="mailto:privacy@mycroft.io">
                   privacy@mycroft.io
                 </a>
@@ -323,7 +323,7 @@ export function PrivacySection2() {
                   Contact Us
                 </strong>
                 <br />
-                If you have any questions about this Privacy Policy, please contact us at
+                If you have any questions about this Privacy Policy, please contact us at{" "}
                 <a href="mailto:privacy@mycroft.io">
                   privacy@mycroft.io
                 </a>

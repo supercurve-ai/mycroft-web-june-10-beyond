@@ -172,11 +172,23 @@ ul, ol { list-style: revert; }
 .rich-text-v2 .comparison-table tbody td:nth-child(n + 3):not([colspan]) {
   text-align: center;
 }
-/* Wide tables scroll sideways on small screens instead of bursting the page. */
+/* On small screens, squeeze tables to the viewport like the original site —
+   every column stays visible (the ✓ columns especially) instead of hiding
+   behind a sideways scroll nobody discovers. `overflow-wrap: anywhere`
+   factors into the table's min-content sizing, so long words break rather
+   than forcing the table wider than the screen. The overflow wrapper from
+   mdx-components.tsx stays as a fallback for tables that still can't fit. */
 @media screen and (max-width: 767px) {
   .rich-text-v2 table {
-    display: block;
-    overflow-x: auto;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+  }
+  .rich-text-v2 th,
+  .rich-text-v2 td {
+    padding: 0.5rem 0.4375rem;
+    overflow-wrap: anywhere;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 }
 

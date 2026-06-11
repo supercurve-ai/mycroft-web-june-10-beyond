@@ -1,0 +1,553 @@
+---
+title: "SOC 2 compliance: The complete guide for 2026"
+slug: "soc-2-compliance"
+excerpt: "SOC 2 compliance proves your security to enterprise customers. Learn what SOC 2 attestation requires, realistic timelines and costs, and how to avoid checkbox compliance theater."
+coverImage: "/assets/soc-2-compliance-the-complete-guide-for-2026.webp"
+date: "2026-02-04"
+author: "Mike Kim"
+authorImage: "/assets/mikekim2025.png"
+readingTime: "10 min read"
+---
+
+### Quick definition: SOC 2 compliance
+
+SOC 2 compliance is a security framework that validates how service organizations protect sensitive customer data. Developed by the AICPA (American Institute of Certified Public Accountants), SOC 2 attestation provides third-party verification of security controls across five Trust Service Criteria.
+
+**Important terminology note:** While many people say "SOC 2 certification," the technically correct term is "SOC 2 attestation." A CPA firm attests to your controls rather than certifying them. Throughout this guide, we'll use the proper terminology, though you'll encounter both terms in practice.
+
+SOC 2 has become table stakes for B2B SaaS companies selling to enterprise customers. But here's what most guides won't tell you: Getting the attestation is the easy part. Maintaining compliance year-round without derailing your engineering team is where most companies struggle.
+
+I've been on both sides of this process. As a former UI auditor (yes, I literally audited AWS), I've seen what works and what creates expensive compliance theater. At [Mycroft](https://www.mycroft.io/product), we've now completed 60+ SOC 2 audits with customers, and I can tell you the gap between "passing the audit" and "actually being secure" is wider than most realize.
+
+## What is SOC 2 compliance?
+
+SOC 2 (System and Organization Controls 2) is a voluntary framework that evaluates an organization's data security controls and how well service organizations protect customer data. Unlike regulations like [HIPAA](https://www.hhs.gov/hipaa/index.html) or [GDPR](https://gdpr-info.eu/) that mandate specific security practices, SOC 2 provides flexibility in how you implement controls—as long as you can prove they're effective.
+
+For B2B SaaS companies, SOC 2 attestation is effectively mandatory. Enterprise buyers won't sign contracts without it, and procurement teams treat it as a minimum security requirement.
+
+One point of terminology: SOC 2 isn’t technically a “certification”—it’s an attestation, an independent auditor’s opinion on your controls. That said, plenty of people colloquially say “SOC 2 certified,” and everyone in the industry knows what they mean.
+
+### Two types of SOC 2 reports
+
+The [AICPA](https://www.aicpa-cima.com/) offers two levels of SOC 2 attestation, each serving different business needs and buyer requirements. Understanding which type you need—and when—saves significant time and cost.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Type I</th>
+      <th style={{ backgroundColor: "var(--color-earl-grey)" }}>Type II</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>What it proves</strong></td>
+      <td>Controls are properly designed at a specific point in time</td>
+      <td>Controls operate effectively over a period of time</td>
+    </tr>
+    <tr>
+      <td><strong>Timeline</strong></td>
+      <td>4-6 weeks after controls are implemented</td>
+      <td>3-12 months observation period + audit</td>
+    </tr>
+    <tr>
+      <td><strong>What it validates</strong></td>
+      <td>Design only</td>
+      <td>Design AND operational effectiveness</td>
+    </tr>
+    <tr>
+      <td><strong>Best for</strong></td>
+      <td>Early-stage companies proving basic security credibility</td>
+      <td>Enterprise buyers, especially in regulated industries</td>
+    </tr>
+    <tr>
+      <td><strong>Audit depth</strong></td>
+      <td>Point-in-time assessment</td>
+      <td>Continuous operation over 3-12</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Type I: Proves your security controls exist and are properly designed at a specific point in time
+
+Type I attestation validates that you've implemented appropriate security controls and that they're designed correctly to meet SOC 2 requirements. Think of it as a snapshot—the auditor examines your controls at a specific moment and confirms they're built properly.
+
+The timeline is typically 4-6 weeks after you've implemented all required controls. The auditor tests control design through documentation review, system walkthroughs, and configuration checks. They're not testing whether controls work consistently over time—just that they exist and are appropriately designed.
+
+Type I works well for early-stage companies that need to prove basic security credibility to close initial enterprise deals. It's faster and less expensive than Type II, making it an accessible first step for startups entering enterprise markets.
+
+#### Type II: Proves your controls are operating effectively over time
+
+Type II attestation goes further by validating that your controls don't just exist—they work consistently over an extended period. This requires an observation period (minimum 3 months, typically 6-12 months) during which auditors test control operation through sampling.
+
+The auditor collects evidence throughout the observation period:
+
+- Access logs
+- Security monitoring records
+- Change management approvals
+- Training completion
+- Incident response documentation
+
+They're validating that controls operated effectively every single day, not just when you knew an audit was coming.
+
+Type II is what most enterprise buyers eventually require, especially in regulated industries like healthcare, finance, and government. It demonstrates operational maturity and proves you maintain security standards consistently, not just for the audit.
+
+Most companies start with Type I to prove their controls exist and are well-designed, then pursue Type II once they've demonstrated consistent operation over time.
+
+## The five Trust Service Criteria: What SOC 2 actually evaluates
+
+SOC 2 audits assess your controls across up to five Trust Service Criteria. Security is mandatory; the others are optional based on what's relevant to your services:
+
+### 1. Security (mandatory)
+
+Protection against unauthorized access—the foundation of every SOC 2 audit. Security covers:
+
+- Access controls (who can access what systems and data)
+- Network security (firewalls, segmentation, intrusion detection)
+- Encryption (data at rest and in transit)
+- System monitoring (logging, alerting, SIEM)
+- Incident response (detection, containment, remediation)
+
+Every SOC 2 audit includes Security because it's fundamental to protecting customer data. The other criteria build on this foundation, but a service organization's controls for Security must be present and properly implemented before auditors will even consider the optional criteria.
+
+### 2. Availability (optional)
+
+System uptime and performance commitments. Availability evaluates whether your services remain accessible and functional when customers need them. This includes:
+
+- Infrastructure monitoring (uptime tracking, performance metrics)
+- Disaster recovery (failover capabilities, backup systems)
+- Business continuity planning (documented procedures for major outages)
+- Incident response capabilities specific to availability issues
+
+Include Availability if your SLA commitments or customer expectations require high uptime. If you're promising 99.9% availability or operating mission-critical systems, auditors will want to see evidence you can actually deliver on those commitments.
+
+### 3. Processing integrity (optional)
+
+Systems process data completely, accurately, and in a timely manner. Processing Integrity covers:
+
+- Data validation (input validation, error checking)
+- Error handling (detection, logging, correction)
+- Quality assurance processes (testing, monitoring)
+- Completeness checks (ensuring no data is lost or corrupted during processing)
+
+This criterion matters most for companies handling financial transactions, healthcare records, or other scenarios where data accuracy is critical. If incorrect processing creates regulatory risk or customer harm, you'll want Processing Integrity in scope.
+
+### 4. Confidentiality (optional)
+
+Protection of confidential information beyond basic security controls. While Security covers access controls for all data, Confidentiality addresses how you handle information specifically designated as confidential—trade secrets, proprietary algorithms, sensitive data like customer business information that goes beyond standard PII.
+
+Confidentiality includes data classification schemes (how you label and track confidential data), NDAs and contractual commitments, encryption standards beyond baseline security, and access restrictions that limit confidential data to specific roles or individuals.
+
+### 5. Privacy (optional)
+
+Personal information collection, use, retention, and disclosure practices. Privacy aligns with regulations like [GDPR](https://gdpr-info.eu/), [CCPA](https://oag.ca.gov/privacy/ccpa), and other data protection frameworks. It covers:
+
+- Privacy notices (how you inform users about data practices)
+- Consent management (obtaining and tracking permissions)
+- Data subject rights (access, deletion, portability)
+- Retention policies (how long you keep personal data and when you delete it)
+
+Include Privacy if you're handling European customer data (GDPR requirements), California consumer data (CCPA), or if customers specifically require privacy attestation as part of their vendor risk management.
+
+## Why SOC 2 compliance matters for B2B SaaS companies
+
+I've watched deals die because of missing SOC 2 reports. Not because the company wasn't secure, but because they couldn't prove it to procurement teams who won't engage without third-party validation.
+
+SOC 2 attestation isn't just a nice-to-have for enterprise sales. It's the difference between getting meetings with Fortune 500 buyers and getting filtered out before your first conversation.
+
+### Opens enterprise revenue opportunities
+
+SOC 2 attestation removes a critical sales objection. Enterprise procurement teams use it as a filter; no SOC 2 often means no conversation. For B2B SaaS companies, this directly impacts revenue:
+
+- Often a mandatory procurement checkbox for Fortune 500 buyers
+- Accelerates sales cycles by eliminating security review delays
+- Required for partnerships with security-conscious organizations
+
+### Demonstrates security maturity
+
+Third-party validation matters. SOC 2 attestation proves you're not running "security theater"—you have documented controls that an independent CPA firm has verified. This builds customer trust in ways self-attestation cannot.
+
+### Provides a competitive advantage
+
+In crowded markets, SOC 2 attestation differentiates you from competitors who lack validation. I've seen companies close deals specifically because they had SOC 2 and their competitor didn't, even when the competitor's actual security was comparable. The attestation signals maturity and investment in security that resonates with enterprise buyers.
+
+### Forces good security hygiene
+
+The audit process formalizes security policies, establishes baseline controls across your stack, and creates accountability. Even if enterprise sales weren't a driver, SOC 2 pushes companies toward better security practices.
+
+But here's what most articles won't tell you: SOC 2 alone isn't a complete security program. It's one framework focused primarily on compliance requirements. Real security requires covering all five security pillars: compliance, cloud security, application security, device management, and third-party risk.
+
+## The step-by-step guide to achieving SOC 2 compliance
+
+I've guided dozens of companies through their first SOC 2 audit. The ones who succeed share common patterns: They prepare thoroughly, scope strategically, establish strong internal controls, and build for continuous compliance from day one—not just for passing a one-time audit.
+
+The companies that struggle? They treat SOC 2 as a checkbox exercise, rush through preparation, and optimize for the audit rather than for actual security. They pass, then scramble again 12 months later because nothing was built to last.
+
+![](/assets/inline-4.webp)
+
+Here's the playbook that actually works:
+
+### Prep: Gather your documentation and ensure audit readiness
+
+Before engaging an auditor, you need foundational security infrastructure and documentation in place. Trying to implement controls during the audit creates delays, increases costs, and often results in findings that block attestation.
+
+| **Category**  | **Requirements**  |
+| --- | --- |
+| Infrastructure | ✅ Single sign-on (SSO) implemented across all tools |
+| Infrastructure | ✅ Multi-factor authentication (MFA) enforced for all users |
+| Infrastructure | ✅ Centralized logging and monitoring (SIEM or equivalent) |
+| Infrastructure | ✅ Endpoint protection and device management (MDM) |
+| Infrastructure | ✅ Cloud infrastructure with security groups and access controls |
+| Infrastructure | ✅ Version control and code review process |
+| Infrastructure | ✅ Backup and disaster recovery procedures |
+| Infrastructure | ✅ Vendor management process and contracts |
+| Documention | ✅ Information security policy |
+| Documention | ✅ Access control policy |
+| Documention | ✅ Incident response plan |
+| Documention | ✅ Business continuity and disaster recovery plan |
+| Documention | ✅ Risk assessment process |
+| Documention | ✅ Security awareness training program |
+| Documention | ✅ Change management procedures |
+| Documention | ✅ Data classification and handling policy |
+| Organizational | ✅ Dedicated owner for compliance program (doesn't have to be full-time) |
+| Organizational | ✅ Executive sponsorship and budget approval |
+| Organizational | ✅ Cross-functional collaboration (engineering, IT, security, legal) |
+| Organizational | ✅ Decision on scope, TSC, and timeline |
+| Organizational | ✅ Auditor selection and engagement |
+
+### 1. Define your audit scope
+
+**Determine which Trust Service Criteria apply**
+
+Start with Security (mandatory) for Type I. Add Availability, Processing Integrity, Confidentiality, or Privacy based on customer requirements and what's relevant to your service.
+
+Be strategic here. Each additional criterion increases audit complexity and cost. Only include criteria that customers actually require or that provide competitive advantage.
+
+**Map in-scope systems and data**
+
+Define exactly what's being audited:
+
+- Which applications and infrastructure components?
+- Where does customer data live and flow?
+- What's explicitly out of scope?
+
+Scoping too broadly on your first audit increases complexity, cost, and timeline. Start narrow (core production systems, Security only), then expand as needed.
+
+### 2. Conduct a gap assessment
+
+**Evaluate existing controls against SOC 2 requirements**
+
+Document what controls you already have in place:
+
+- Access management and authentication
+- Network security and segmentation
+- Monitoring and logging
+- Incident response capabilities
+- Change management processes
+- Vendor risk management
+- Security training programs
+
+**Identify remediation priorities**
+
+Found gaps between your current state and SOC 2 requirements? Don't panic—every company has them. The key is strategic prioritization:
+
+| **Priority**  | **Description**  | **Examples**  |
+| --- | --- | --- |
+| **Urgent**  | Critical gaps that completely block attestation. These are non-negotiable and must be addressed before the audit begins. | Missing MFA<br/>No logging infrastructure<br/>No incident response plan |
+| **High**  | Quick wins that demonstrate security maturity with minimal effort | Enabling security features already available in your tools<br/>Documenting informal processes you're already following<br/>Implementing training programs that can be completed quickly. |
+| **Last**  | Finally, plan longer-term fixes that require significant engineering time or architectural changes. These might extend your timeline but are necessary for a strong security posture. Be realistic about resource requirements and communicate timeline implications to stakeholders early. |  |
+
+### 3. Implement required controls
+
+**Common controls most companies need**
+
+Here's where the rubber meets the road. You've identified the gaps—now you need to actually implement the controls that will pass audit testing. This isn't just about checking boxes; it's about building security infrastructure that actually protects your customers.
+
+- **Access management:** SSO, MFA, role-based access controls, regular access reviews
+- **Network security:** Firewalls, intrusion detection/prevention, network segmentation
+- **Endpoint protection:** MDM, antivirus, disk encryption, patch management
+- **Change management:** Code review, deployment controls, rollback procedures
+- **Monitoring and logging:** Centralized logging, security event monitoring, log retention
+- **Incident response:** Documented procedures, testing, communication plans
+- **Vendor management:** Security assessments, contracts, ongoing monitoring
+- **Security training:** Onboarding, annual refresher, phishing simulations
+
+Most compliance tools can monitor these controls. Few can actually implement and manage them. This is where I see companies hit the wall. They buy a GRC platform expecting it to "automate everything," then realize someone still needs to configure those integrations, tune the monitoring rules, remediate the findings, and maintain it all. The platform gives you visibility—but you still need people to do the work.
+
+At [Mycroft](https://www.mycroft.io/), we built the Risk Operations Center specifically to solve this gap. The platform provides the automation and monitoring, but our forward-deployed engineers handle the operational burden—implementing controls, managing remediation, and interfacing with auditors. Your engineering team stays focused on product, not compliance tasks.
+
+### 4. Choose and engage an auditor
+
+**Select a qualified CPA firm**
+
+Not all audit firms are created equal. You want SOC 2 specialists who understand your industry, work with companies at your stage, and can move at reasonable speed without cutting corners.
+
+Look for firms with deep SOC 2 experience in B2B SaaS. Check references from similar companies—ask about responsiveness, timeline predictability, and how they handle edge cases. Ensure they're AICPA-approved and have relevant industry credentials.
+
+Avoid firms that promise unrealistic timelines ("SOC 2 in two weeks!") or charge suspiciously low fees. Quality audits take time, and you get what you pay for. A cheap audit that results in qualification or findings costs more than paying appropriate rates upfront.
+
+**Top audit firms for SOC 2**
+
+- **Prescient Assurance:** Specialist in early-stage and mid-market SaaS companies
+- **A-LIGN, Johanson Group, Sensiba:** Strong mid-market practices
+- **Big Four (Deloitte, PwC, EY, KPMG):** Enterprise-focused, often overkill for startups
+
+[Mycroft](https://www.mycroft.io/) maintains preferred vendor status with multiple audit firms. We know what auditors expect and how to prepare evidence that passes review on the first attempt.
+
+### 5. Prepare for and complete the audit
+
+You've implemented controls, chosen your auditor, and kicked off the engagement. Now comes the evidence collection and audit fieldwork—the process that separates companies who prepared properly from those who tried to cut corners.
+
+**Evidence collection and organization**
+
+Auditors will request 50-100+ pieces of evidence:
+
+- System screenshots and configurations
+- Policy documents and procedures
+- Training records and acknowledgments
+- Access reviews and change logs
+- Incident reports and resolutions
+- Vendor assessments and contracts
+
+**Auditor fieldwork**
+
+The audit firm will:
+
+- Test your controls through sampling
+- Interview management and key personnel
+- Walk through critical processes
+- Validate evidence authenticity
+- Identify any exceptions or findings
+- Common audit findings and how to address them
+
+### 6. Maintain compliance year-round
+
+This is where most companies struggle: You optimized for passing the audit, but controls need continuous operation and monitoring. Evidence collection can't stop. New employees, systems, and vendors require ongoing management. Quarterly or annual re-certification requires the same rigor you just completed.
+
+**The continuous compliance challenge**
+
+I've seen this pattern dozens of times: Company gets SOC 2, everyone celebrates, engineering returns to product work, compliance program withers. Eleven months later, panic sets in because re-certification is approaching, and nothing's been maintained.
+
+This approach wastes engineering time on repeated manual work, creates compliance drift that goes unnoticed for months, leaves you vulnerable between audit periods, and generates stress and distraction during re-certification.
+
+The companies that get this right build for continuous compliance from day one. They automate evidence collection, implement continuous monitoring, integrate remediation into existing workflows, and—critically—they either staff for ongoing compliance operations or partner with a Risk Operations Center that handles it for them.
+
+## The SOC 2 reality: Why most companies approach it wrong
+
+Let me be direct: Most companies waste time and money on SOC 2 because they believe the marketing promises from compliance tool vendors.
+
+"Get compliant in weeks!" "Automate everything!" "No engineering time required!"
+
+These claims aren't technically lies—they're just misleading about what "automated" actually means in practice.
+
+**The standard path to SOC 2**
+
+1. Hire a consultant or buy a compliance tool
+2. Get promised "fast and easy compliance"
+3. Discover it still requires significant engineering time
+4. Rush to get audit-ready
+5. Pass the audit... then scramble again next year
+
+**The problem with this approach**
+
+"Fast and easy" tools still need someone to configure, maintain, and remediate findings. Engineering resources get diverted from product work to compliance work. You optimize for passing the audit, not for actual security. The result? "Checkbox compliance"—certified on paper, vulnerable in practice.
+
+### The problem with "checkbox compliance" (and how to avoid it)
+
+I've audited companies with perfect SOC 2 reports that had terrible security. I've also seen companies with strong security struggle to pass audits because they couldn't document their controls properly.
+
+The gap between "compliant" and "secure" is real, and it's wider than most people realize.
+
+**What checkbox compliance looks like:**
+
+- ✅ Controls exist on paper
+- ✅ Automated checks are green
+- ✅ Evidence is collected
+- ✅ Audit passes
+
+**What it doesn't guarantee:**
+
+- ❌ Controls are effective in practice
+- ❌ Engineers understand security context
+- ❌ Remediation happens quickly
+- ❌ You're actually secure, not just compliant
+
+**Why this happens:** 
+
+Most compliance tools optimize for "audit readiness," not operational security. They give you dashboards and automated checks, but someone still needs to:
+
+- Configure and tune integrations
+- Contextualize alerts and prioritize remediation
+- Handle exceptions and edge cases
+- Interface with auditors and manage timelines
+- Maintain policies and update controls
+
+This is the gap between compliance automation and compliance operations. Tools alone don't solve this; you need an operating model that combines automation with intelligence and hands-on operational support.
+
+That's why we built [Mycroft](https://www.mycroft.io/) differently. The platform provides automation and AI-powered contextualization, but the Risk Operations Center provides the operational support that actually makes compliance work. You're not buying software and hoping your team figures it out—you're partnering with security practitioners who run the program for yo
+
+## A better approach: SOC 2 as part of *comprehensive* security
+
+Here's the uncomfortable truth: SOC 2 attestation proves you meet minimum compliance standards. It doesn't prove you're actually secure.
+
+I've seen too many companies treat SOC 2 as their entire security strategy. They pass the audit, celebrate, and assume they're protected. Then they get breached—despite being "SOC 2 compliant"—because compliance frameworks only cover part of what real security requires.
+
+**What SOC 2 *doesn't* address**
+
+SOC 2 focuses on controls and compliance. It doesn't cover:
+
+- **Continuous security posture management:** SOC 2 is point-in-time or periodic. Real security requires real-time visibility and response.
+- **Real-time threat detection and response:** Compliance frameworks don't detect active attacks or zero-day vulnerabilities.
+- **Application security beyond access controls:** Code vulnerabilities, dependency risks, and secure development practices often fall outside SOC 2 scope.
+- **Comprehensive third-party risk management:** SOC 2 requires vendor oversight, but doesn't provide continuous monitoring of vendor security posture.
+
+**Cloud-native infrastructure security:** Modern cloud environments need continuous configuration scanning, not just annual reviews.
+
+![](/assets/inline-5.webp)
+
+**The five security pillars every company needs** 
+
+Real security requires coverage across five interconnected pillars:
+
+1. **Audit & compliance** (SOC 2, ISO 27001, etc.): Frameworks that validate your controls meet industry standards. Necessary for enterprise sales, but not sufficient for actual security.
+2. **Cloud security** (infrastructure scanning, misconfiguration detection): Continuous monitoring of cloud resources for misconfigurations, excessive permissions, exposed data, and other infrastructure vulnerabilities.
+3. **Application security** (code scanning, vulnerability management): Identifying and remediating vulnerabilities in your application code, dependencies, and development processes before they're exploited.
+4. **Device management** (endpoint protection, MDM, monitoring): Securing employee devices, enforcing configuration standards, monitoring for threats, and maintaining visibility into your endpoint ecosystem.
+5. **Third-Party Risk Management** (vendor assessments, continuous monitoring): Evaluating vendor and business partner security posture, monitoring for changes or incidents, and managing the ongoing risk third parties introduce to your environment
+
+| **Approach**  | **Result**  |
+| --- | --- |
+| **Traditional**: Stitch together 5-10 point solutions across these pillars | Fragmented visibility, operational complexity, high cost ($150K+ annually) |
+| **Consolidated**: Single platform + Risk Operations Center managing all five | Unified visibility, automated operations, lower cost (~$50-70K annually) |
+
+[Mycroft](https://www.mycroft.io/) consolidates your entire security stack into one platform with agentic AI and forward-deployed engineers who operate it for you. SOC 2 becomes one framework among many—managed continuously without consuming your engineering resources. You get comprehensive security, not just compliance checkbox theater.
+
+### How Mycroft handles SOC 2 compliance
+
+I spent years as an auditor watching companies struggle with compliance. The tools existed, the frameworks were clear, but companies still wasted massive engineering time and money because nobody solved the operational problem.
+
+That's why we built [Mycroft](https://www.mycroft.io/) as a Risk Operations Center, not just another GRC platform. Most tools give you a platform for compliance automation. Mycroft provides a Risk Operations Center that handles compliance end-to-end—automation plus the people who actually run your program.
+
+What this means in practice:
+
+| Mycroft’s approach to SOC 2 compliance |  |
+| --- | --- |
+| **Before the audit**  | Gap assessment and control implementation guidance<br/>Automated evidence collection across your entire stack<br/>AI agents that contextualize findings and prioritize remediation<br/>Forward-deployed engineers who handle the operational burden |
+| **During the audit**  | Risk Operations Center interfaces with auditors on your behalf<br/>Evidence requests handled and fulfilled automatically<br/>Management responses drafted and coordinated<br/>Your team stays focused on product work |
+| **After the audit**  | Continuous monitoring and evidence collection<br/>Proactive alerting when controls drift or fail<br/>Automated remediation workflows integrated with your tools<br/>Year-round audit readiness without manual scrambling |
+
+### Real results from customers:
+
+The difference between platforms and operations shows up in customer outcomes. Companies working with Mycroft achieve SOC 2 faster, with less engineering time, and maintain compliance continuously—not just during audit periods.
+
+- [Weave](https://www.mycroft.io/case-studies/weave) achieved SOC 2 Type I in 6 weeks from kickoff and closed $750K in deals requiring SOC 2 attestation. "Mycroft's 5-in-1 platform seamlessly consolidated our entire security stack, eliminating the need for multiple point solutions and endless checklists," says Adam Cohen, CEO.
+- [SMASHSEND](https://www.mycroft.io/case-studies/smashsend) completed SOC 2 Type II in 90 days with a 2-person team, unlocking a $500K enterprise pipeline. "We had two options: hire a security team or work with Mycroft," explains CEO Matt Gillin. "Mycroft was the obvious choice—they handled everything while we stayed focused on building product."
+- [Wisedocs](https://www.mycroft.io/case-studies/wisedocs) reduced security overhead by 70% and saved $100K+ annually vs. the traditional approach of stitching together multiple vendors.
+
+**The difference:** Real security, not just checkbox compliance. SOC 2 managed continuously without derailing your engineering team.
+
+[Book a demo today](https://www.mycroft.io/demo) to see how Mycroft's Risk Operations Center can handle your entire compliance program—from audit prep to continuous monitoring.
+
+## FAQs
+
+### What is SOC 2 compliance?
+
+SOC 2 compliance means your organization has completed a SOC 2 audit and received an attestation report from an independent CPA firm. This report validates that your security controls meet the AICPA's Trust Service Criteria for protecting customer data. Note: The proper term is "SOC 2 attestation" rather than "certification," though both are used colloquially.
+
+### How long does it take to get SOC 2 compliant?
+
+Type I attestation typically takes 3-6 months from initial preparation to report issuance, assuming you're starting from scratch. Type II requires an additional 3-12 month observation period to demonstrate consistent control operation. Companies with existing security programs and the right operational support can achieve Type I in 4-8 weeks.
+
+### What are some SOC 2 compliance mistakes (and how can I avoid them)?
+
+Common mistakes include:
+
+Scoping too broadly on your first audit
+
+  - Solution: Start narrow with core systems and Security only
+
+Treating it as a one-time project instead of an ongoing program
+
+  - Solution: Build for continuous compliance from day one
+
+Expecting tools to "automate everything" without operational support
+
+  - Solution: You need either in-house expertise or a Risk Operations Center
+
+Optimizing for the audit instead of real security
+
+  - Solution: Implement controls that actually reduce risk, not just check boxes.
+
+### What's the difference between SOC 2 Type I and Type II?
+
+Type I validates that security controls are properly designed at a specific point in time (4-6 week audit). Type II validates both the design and operating effectiveness of controls over a period of time, usually 3-12 months (requires observation period plus audit). Type I proves your controls exist and are well-designed; Type II proves they consistently work as intended.
+
+### Do I need SOC 2 Type I or Type II?
+
+Start with Type I to prove your controls exist and are properly designed. Most enterprise customers eventually require Type II to validate ongoing operational effectiveness. Type II is mandatory for highly regulated industries (healthcare, finance) and security-conscious enterprise buyers. Plan to complete Type I first, then pursue Type II after demonstrating 3-12 months of consistent control operation.
+
+### How much does SOC 2 compliance cost?
+
+Total first-year costs typically range from $50,000-$185,000 including audit fees ($15K-$50K), tooling and services ($50K-$100K+), and internal resource time. Consolidated approaches like Mycroft's Risk Operations Center reduce costs by replacing fragmented point solutions with a unified platform and operational support.
+
+### What are the five Trust Service Criteria in SOC 2?
+
+The five Trust Service Criteria are:
+
+1. Security (mandatory)—protection against unauthorized access
+2. Availability (optional)—system uptime and performance
+3. Processing Integrity (optional)—data processing accuracy and completeness
+4. Confidentiality (optional)—protection of confidential information
+5. Privacy (optional)—personal information handling per privacy frameworks like GDPR
+
+### Can I get SOC 2 in 30 days?
+
+No. Claims of "SOC 2 in weeks" are misleading. While the final audit might take 4-6 weeks, you need months of preparation beforehand to implement controls, collect evidence, and demonstrate operational readiness. Companies starting from scratch typically need 3-6 months minimum to reach Type I attestation. Accelerated timelines (6-8 weeks) are possible with existing security infrastructure and operational support from a Risk Operations Center.
+
+### What controls are required for SOC 2 compliance?
+
+Common SOC 2 controls include:
+
+- Access management (SSO, MFA, role-based access)
+- Network security (firewalls, intrusion detection)
+- Endpoint protection (MDM, antivirus, encryption)
+- Change management (code review, deployment controls)
+- Monitoring and logging (centralized logging, event monitoring)
+- Incident response (documented procedures, testing)
+- Vendor management (security assessments, contracts)
+- Security training (onboarding, annual refresher)
+
+Specific controls vary based on your scope and Trust Service Criteria selection.
+
+### Do I need a compliance tool to get SOC 2?
+
+No, but compliance tools significantly reduce manual work and audit risk. You can manage SOC 2 with spreadsheets and manual evidence collection, but this doesn't scale and increases the likelihood of missing evidence or failing audits. Compliance automation platforms or Risk Operations Centers streamline evidence collection, control monitoring, and audit preparation—reducing engineering time spent on compliance by 50-70%.
+
+### How do I maintain SOC 2 compliance?
+
+Maintaining SOC 2 compliance requires continuous control operation, evidence collection, monitoring, and annual re-certification. Most companies struggle because they optimized for the initial audit, not long-term operations.
+
+Effective maintenance requires:
+
+- Automated evidence collection
+- Continuous control monitoring
+- Proactive alerting for drift or failures
+- Remediation workflows integrated with your tools
+- Operational support to handle day-to-day compliance tasks
+
+Automated platforms or Risk Operations Centers make compliance continuous rather than periodic.
+
+### Is SOC 2 attestation worth it?
+
+Yes, if you sell B2B SaaS to enterprise customers. SOC 2 is often mandatory for procurement and directly impacts revenue by removing a common sales objection. However, attestation alone isn't sufficient; you need real security across all five security pillars (compliance, cloud security, application security, device management, third-party risk), not just checkbox compliance theater.
+
+### How does SOC 2 compare to ISO 27001?
+
+Both validate information security management, but SOC 2 is US-focused and audited by CPAs, while ISO 27001 is an international standard certified by accredited bodies.
+
+Key differences:
+
+- **ISO 27001** is more prescriptive about required controls and follows a formal ISMS (Information Security Management System) framework
+- **SOC 2** offers more flexibility in control implementation
+
+Many companies pursue both—SOC 2 for US enterprise sales, ISO 27001 for global markets and European customers who prefer international standards.
