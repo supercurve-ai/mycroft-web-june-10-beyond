@@ -14120,14 +14120,47 @@ section:has(.btn-large.hero:hover) .hero-img-glow-hover { opacity: 1 !important;
   opacity: 1 !important;
   transition-duration: 350ms;
 }
-/* custom mobile menu (navbar_v3 uses .hamburger-lockup, not .w-nav-button) */
-.w-nav.wf-nav-open .nav-submenu-mobile { display: block; }
-.hamburger-top, .hamburger-mid, .hamburger-btm {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+/* custom mobile menu (navbar_v3 uses .hamburger-lockup, not .w-nav-button).
+   Animation matches the original IX2 spec (a-147 "Show Mobile Menu NEW" /
+   a-157 "Close Mobile Menu NEW"): panel slides from translateY(-100%) over
+   380ms easeIn; hamburger arms rotate ±45° / travel ±9px and the middle bar
+   fades over 300ms inOutQuad. The original toggles display:none around the
+   slide; visibility with a 380ms exit delay reproduces that and lets one
+   class drive both directions. */
+@media (max-width: 991px) {
+  .w-nav .nav-submenu-mobile {
+    display: block;
+    visibility: hidden;
+    transition: visibility 0s linear 380ms;
+  }
+  .w-nav.wf-nav-open .nav-submenu-mobile {
+    visibility: visible;
+    transition-delay: 0s;
+  }
+  .nav-submenu-mobile .submenu-mobile.scrollable-submenu {
+    transform: translateY(-100%);
+    transition: transform 380ms cubic-bezier(0.42, 0, 1, 1); /* IX2 easeIn */
+  }
+  .wf-nav-open .nav-submenu-mobile .submenu-mobile.scrollable-submenu {
+    transform: translateY(0);
+  }
+  /* The visible burger icon is only ~30×21px and Safari/WebKit doesn't snap
+     near-miss taps to it like Chromium does, so on real phones most thumb
+     taps land outside it and the menu feels dead. Pad the hit area to
+     ≥44×44 (negative margin keeps the icon in the same visual spot). */
+  .hamburger-lockup {
+    padding: 14px 12px;
+    margin: -14px -12px;
+    touch-action: manipulation;
+  }
 }
-.wf-nav-open .hamburger-top { transform: translateY(8px) rotate(45deg); }
+.hamburger-top, .hamburger-mid, .hamburger-btm {
+  /* IX2 inOutQuad */
+  transition: transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wf-nav-open .hamburger-top { transform: translateY(9px) rotate(45deg); }
 .wf-nav-open .hamburger-mid { opacity: 0; }
-.wf-nav-open .hamburger-btm { transform: translateY(-8px) rotate(-45deg); }
+.wf-nav-open .hamburger-btm { transform: translateY(-9px) rotate(-45deg); }
 /* mobile nav: show the menu panel when the hamburger toggle opens it */
 @media (max-width: 991px) {
   .w-nav .w-nav-menu { display: none; }
