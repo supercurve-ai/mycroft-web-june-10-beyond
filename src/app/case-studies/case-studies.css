@@ -40,6 +40,20 @@
   }
 }
 
+/* --- Article pull quotes ---
+   The original Webflow rich text puts quote text directly inside
+   <blockquote>, which .cs-richtext blockquote styles at 2.5rem Newsreader.
+   Our MDX pipeline wraps the text in a <p>, which would otherwise pick up
+   the 1.375rem .cs-richtext p body styles — make the <p> transparent. --- */
+.cs-richtext blockquote p {
+  margin-bottom: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
+}
+
 /* --- Closing quote mark on the testimonial pullquote --- */
 .pullquote-text.cs_pq::after {
   content: "”";
