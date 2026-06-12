@@ -1,0 +1,112 @@
+---
+name: add-blog-post
+description: Publish a new blog post from a content brief (PDF, doc, or pasted text). Creates the MDX file, the post's image folder, the sitemap entry, and cross-links — and reports any missing content before finishing. Use when the user says "add this blog post", "publish this article", or provides a blog content brief.
+---
+
+# Add a blog post
+
+Turn a content brief into a published post. Briefs usually arrive as a PDF/doc
+with SERP notes, a suggested URL, title tag, meta description, author, and the
+article body with editorial markers like `[H1]`, `[Subhead]`, `[Definition block:]`,
+`[Pull quote suggestion:]`, `[CTA]`, `[Visual asset suggestion]`.
+
+## Where things go
+
+| Artifact | Location |
+| --- | --- |
+| Post body | `src/content/blog/<slug>.mdx` (filename IS the slug/route) |
+| Hero + post images | `public/assets/blog/<slug>/` — hero named `<slug>.webp` (or .jpg) |
+| Sitemap entry | `src/app/sitemap.ts` — add `/blog/<slug>` alphabetically within the blog block |
+
+The slug comes from the brief's "Suggested URL" (the path after `/blog/`).
+If no URL is suggested, kebab-case the title and confirm with the user.
+
+## Frontmatter
+
+```yaml
+---
+title: "..."            # used as BOTH the <title> tag and the on-page H1
+slug: "<slug>"          # must match the filename
+excerpt: "..."          # the brief's meta description; also the on-page subhead
+coverImage: "/assets/blog/<slug>/<slug>.webp"
+date: "YYYY-MM-DD"      # today unless the brief specifies
+author: "Mike Kim"
+authorImage: "/assets/team/mikekim2025.png"   # verify the file exists for other authors
+readingTime: "N min read"                # ~220 words/min, rounded
+---
+```
+
+If the brief gives a different H1 and title tag, there is only ONE title field —
+prefer the title tag (it usually matches the slug keyword) if the brief lists the
+question-form as an approved ALT headline; otherwise ask the user which to use.
+
+## Converting the brief to MDX
+
+- No H1 in the body — the page renders `title` as the H1. Start at `## TLDR:`.
+- Drop the byline/subhead from the body (frontmatter covers them).
+- `[Definition block:]` → keep as `**[Definition block:]** ...` (site convention).
+- Pull quotes → markdown `> ` blockquote with attribution.
+- Tables → GFM tables; use `<br/>` for in-cell line breaks and `&amp;` for `&`
+  in words like `POA&amp;M` (MDX parses raw `&`... entities are safer).
+- Comparison-matrix glyphs → `<Check />`, `<Partial />`, `<Cross />`
+  (provided by `src/components/mdx-components.tsx`).
+- FAQ section → `## Frequently asked questions` with `### ` per question.
+  Never copy literal editorial markers like `[H2]` into the body.
+- Yellow/green highlights in the brief are reviewer marks — transcribe the text,
+  ignore the highlighting.
+- CTA → bold markdown link, usually to `/demo`; "see how Mycroft helps" links
+  usually go to the relevant `/frameworks/...` or `/product/...` page.
+
+## Links
+
+- Internal links use relative paths (`/blog/...`, `/case-studies/...`, `/demo`).
+- A brief often references sibling posts. For each reference, check
+  `src/content/blog/` — link it if the post exists; if it does NOT exist, leave
+  the title as plain text (convention: it gets linked when that post ships) and
+  include it in the warnings report.
+- After publishing, search existing posts for plain-text mentions of THIS post's
+  title and convert them to links (`grep -rl "<title fragment>" src/content/blog/`).
+- External citations: link to the canonical source (federalregister.gov, NIST,
+  vendor research). Never link to or hotlink from `cdn.prod.website-files.com`
+  or any Webflow-hosted URL.
+
+## Images
+
+1. Create `public/assets/blog/<slug>/`.
+2. If the user supplied a hero image, convert/copy it in as `<slug>.webp`.
+3. If NOT supplied, copy the most topical existing image from `public/assets/`
+   as a clearly-flagged placeholder under the correct name — the post must
+   still build and render — and warn (see below).
+4. In-article images suggested by the brief (`[Visual asset suggestion]`) that
+   don't exist: implement tables/quotes in markdown where possible; otherwise
+   note them in the warnings report.
+
+## Verify
+
+- `pnpm build` must pass; confirm `.next/server/app/blog/<slug>.html` exists
+  and the sitemap body contains the new URL. (Never build while a `pnpm start`
+  server is running.)
+- `grep -rl "cdn.prod.website-files.com" src/` must not list the new file.
+
+## ⚠️ Required: content completeness report
+
+ALWAYS end by giving the user a short report. Check every item; list each
+failing one with what's needed to fix it. If everything passes, say so.
+
+- **Hero image** — was a real image provided, or is a placeholder in
+  `public/assets/blog/<slug>/`? Placeholder = warn, with the exact file to replace.
+- **Title / excerpt / author / date** — any missing from the brief? Anything
+  invented or assumed (e.g., today's date, estimated reading time)?
+- **Title tag vs H1 mismatch** — if the brief wanted them different, state which
+  one was used and that the site has a single title field.
+- **Unresolvable internal links** — sibling posts referenced but not yet written
+  (left as plain text); name each so they can be linked later.
+- **Author image** — does `authorImage` point at an existing file? New authors
+  need a headshot added to `public/assets/`.
+- **Missing visual assets** — brief-suggested graphics that couldn't be created.
+- **Leftover editorial markers** — confirm no `[H1]`/`[H2]`/`[ALT]`/highlight
+  artifacts made it into the MDX.
+- **Anything skipped or ambiguous** in the brief (truncated text, broken
+  citations, "to be written" notes).
+
+Do not silently fill gaps: every assumption goes in the report.
