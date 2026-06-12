@@ -1,4 +1,4 @@
-import type { FrameworkPageData } from "../_shared/FrameworkPage";
+import type { FrameworkPageData } from "../_shared/framework-page";
 import { jorgeSmashsend } from "../_shared/testimonials";
 
 export const gdpr: FrameworkPageData = {

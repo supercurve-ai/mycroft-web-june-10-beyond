@@ -1,7 +1,7 @@
-import { FaqItem } from "@/components/Accordion";
-import { ProductHero } from "../_shared/ProductHero";
-import { ProductBenefits } from "../_shared/ProductBenefits";
-import type { ProductSubpageContent } from "../_shared/ProductSubpage";
+import { FaqItem } from "@/components/accordion";
+import { ProductHero } from "../_shared/product-hero";
+import { ProductBenefits } from "../_shared/product-benefits";
+import type { ProductSubpageContent } from "../_shared/product-subpage";
 
 /** Everything page-specific about /product/app-security. */
 export const appSecurityContent: ProductSubpageContent = {

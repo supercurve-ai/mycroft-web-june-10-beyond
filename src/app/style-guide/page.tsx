@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { type as type_, color, component } from "@/lib/tokens";
-import { ButtonLarge } from "@/components/ButtonLarge";
+import { ButtonLarge } from "@/components/button-large";
 
 /**
  * /style-guide — internal reference for the Mycroft token system
@@ -333,7 +333,7 @@ export default function StyleGuidePage() {
             <div className="rounded-card border border-earl-grey-60 p-6">
               <p className="text-[14px] font-medium mb-1">ButtonLarge (site CTA)</p>
               <p className="text-[12px] text-smoke mb-5">
-                src/components/ButtonLarge.tsx — captured <CodeChip>.btn-large</CodeChip> markup
+                src/components/button-large.tsx — captured <CodeChip>.btn-large</CodeChip> markup
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <ButtonLarge href="/demo">Book a demo</ButtonLarge>

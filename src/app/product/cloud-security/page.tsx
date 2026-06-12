@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { WebflowInteractions } from "@/components/WebflowInteractions";
-import { ProductSubpage } from "../_shared/ProductSubpage";
+import { WebflowInteractions } from "@/components/webflow-interactions";
+import { ProductSubpage } from "../_shared/product-subpage";
 import { cloudSecurityContent } from "./content";
 
 export const metadata: Metadata = {

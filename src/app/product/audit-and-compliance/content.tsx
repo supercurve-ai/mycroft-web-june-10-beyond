@@ -1,7 +1,7 @@
-import { FaqItem } from "@/components/Accordion";
-import { AuditHero } from "./AuditHero";
-import { ComplianceCarousel } from "./ComplianceCarousel";
-import type { ProductSubpageContent } from "../_shared/ProductSubpage";
+import { FaqItem } from "@/components/accordion";
+import { AuditHero } from "./audit-hero";
+import { ComplianceCarousel } from "./compliance-carousel";
+import type { ProductSubpageContent } from "../_shared/product-subpage";
 
 /** Everything page-specific about /product/audit-and-compliance. */
 export const auditAndComplianceContent: ProductSubpageContent = {

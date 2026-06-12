@@ -1,4 +1,4 @@
-import type { Testimonial } from "./FrameworkPage";
+import type { Testimonial } from "./framework-page";
 
 /**
  * The three client-testimonial variants used across the /frameworks/* pages.

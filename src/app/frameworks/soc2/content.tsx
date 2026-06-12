@@ -1,4 +1,4 @@
-import type { FrameworkPageData } from "../_shared/FrameworkPage";
+import type { FrameworkPageData } from "../_shared/framework-page";
 import { steveIntegratrace } from "../_shared/testimonials";
 
 const Soc2 = ({ children = "SOC 2" }: { children?: string }) => (

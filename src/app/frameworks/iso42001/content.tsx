@@ -1,4 +1,4 @@
-import type { FrameworkPageData } from "../_shared/FrameworkPage";
+import type { FrameworkPageData } from "../_shared/framework-page";
 import { adamWeave } from "../_shared/testimonials";
 
 const Iso42001 = ({ children = "ISO 42001" }: { children?: string }) => (

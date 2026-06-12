@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { ProductPageContent } from "./_sections/ProductPageContent";
-import { WebflowInteractions } from "@/components/WebflowInteractions";
+import { ProductPageContent } from "./_sections/product-page-content";
+import { WebflowInteractions } from "@/components/webflow-interactions";
 
 export const metadata: Metadata = {
   title: "Mycroft Product | A fully integrated Security stack",

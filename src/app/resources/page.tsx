@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { ResourcesPageContent } from "./_sections/ResourcesPageContent";
-import { WebflowInteractions } from "@/components/WebflowInteractions";
+import { ResourcesPageContent } from "./_sections/resources-page-content";
+import { WebflowInteractions } from "@/components/webflow-interactions";
 
 export const metadata: Metadata = {
   title: "Mycroft Resources | Learn how you can strengthen your security and compliance knowledge",

@@ -10,13 +10,13 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
   which composes the descriptively named section components in that folder
   (e.g. `HomeHero`, `PricingPlans`; renamed June 2026 from the cloner's
   `_snapshot/<Page>SectionN` scheme).
-- `src/app/frameworks/_shared/FrameworkPage.tsx` — the shared template behind
+- `src/app/frameworks/_shared/framework-page.tsx` — the shared template behind
   all nine `/frameworks/*` pages (their per-page snapshots were consolidated
   June 2026, pixel-parity verified). Each route keeps only a `content.tsx`
   (that framework's copy, images, FAQ, testimonial pick) and a thin
   `page.tsx`. Edit copy in `content.tsx`; edit layout once in the template;
   a new framework page = new folder with those two files + a sitemap entry.
-- `src/app/product/_shared/ProductSubpage.tsx` — the same treatment for the
+- `src/app/product/_shared/product-subpage.tsx` — the same treatment for the
   five `/product/*` subpages (consolidated June 2026, pixel-parity verified),
   with `ProductHero`/`ProductBenefits` for the standard hero and 3-up benefits
   sections. Each route keeps a `content.tsx` + thin `page.tsx`;
@@ -90,7 +90,7 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
 4. Set `NEXT_PUBLIC_SITE_URL` to the production domain before launch so the
    sitemap + metadata point at the right host. Also set `ZAPIER_WEBHOOK_URL`
    (see `.env.example`) — without it the "Book a demo" form
-   (`src/components/BookDemoForm.tsx` → `/api/demo-form`) drops every lead
+   (`src/components/book-demo-form.tsx` → `/api/demo-form`) drops every lead
    with a 503.
 5. **No Webflow dependencies.** The client is leaving Webflow, so this site
    must not rely on anything Webflow-hosted. Never add a new reference to

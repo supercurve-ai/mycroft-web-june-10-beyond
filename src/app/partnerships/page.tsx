@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { PartnershipsPageContent } from "./_sections/PartnershipsPageContent";
-import { WebflowInteractions } from "@/components/WebflowInteractions";
+import { PartnershipsPageContent } from "./_sections/partnerships-page-content";
+import { WebflowInteractions } from "@/components/webflow-interactions";
 
 export const metadata: Metadata = {
   title: "Mycroft — Partnerships: Join the Mycroft partnership network",

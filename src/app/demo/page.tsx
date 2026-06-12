@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { DemoPageContent } from "./_sections/DemoPageContent";
-import { WebflowInteractions } from "@/components/WebflowInteractions";
+import { DemoPageContent } from "./_sections/demo-page-content";
+import { WebflowInteractions } from "@/components/webflow-interactions";
 
 export const metadata: Metadata = {
   title: "Mycroft Book a Demo | Learn more about how our platform can optimize your security and compliance posture",

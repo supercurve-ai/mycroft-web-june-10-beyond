@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { AiDisclosurePageContent } from "./_sections/AiDisclosurePageContent";
-import { WebflowInteractions } from "@/components/WebflowInteractions";
+import { AiDisclosurePageContent } from "./_sections/ai-disclosure-page-content";
+import { WebflowInteractions } from "@/components/webflow-interactions";
 
 export const metadata: Metadata = {
   title: "AI Disclosure",

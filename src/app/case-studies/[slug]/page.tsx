@@ -5,10 +5,10 @@ import { notFound } from "next/navigation";
 import { caseStudies } from "@/lib/content";
 import { renderMdx } from "@/lib/mdx";
 import { caseStudyMdxComponents } from "@/components/case-study-mdx";
-import { SiteNav } from "@/components/SiteNav";
-import { SiteFooter } from "@/components/SiteFooter";
-import { CtaSection } from "@/components/CtaSection";
-import { CaseStudyInteractions } from "./CaseStudyInteractions";
+import { SiteNav } from "@/components/site-nav";
+import { SiteFooter } from "@/components/site-footer";
+import { CtaSection } from "@/components/cta-section";
+import { CaseStudyInteractions } from "./case-study-interactions";
 
 export function generateStaticParams() {
   return caseStudies.getSlugs().map((slug) => ({ slug }));

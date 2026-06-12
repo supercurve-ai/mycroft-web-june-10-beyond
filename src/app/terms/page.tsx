@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { TermsPageContent } from "./_sections/TermsPageContent";
-import { WebflowInteractions } from "@/components/WebflowInteractions";
+import { TermsPageContent } from "./_sections/terms-page-content";
+import { WebflowInteractions } from "@/components/webflow-interactions";
 
 export const metadata: Metadata = {
   title: "terms",

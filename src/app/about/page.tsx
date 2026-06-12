@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { AboutPageContent } from "./_sections/AboutPageContent";
-import { WebflowInteractions } from "@/components/WebflowInteractions";
+import { AboutPageContent } from "./_sections/about-page-content";
+import { WebflowInteractions } from "@/components/webflow-interactions";
 
 export const metadata: Metadata = {
   title: "Mycroft — About: Redefine how modern businesses stay secure.",

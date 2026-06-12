@@ -1,4 +1,4 @@
-import type { FrameworkPageData } from "../_shared/FrameworkPage";
+import type { FrameworkPageData } from "../_shared/framework-page";
 import { adamWeave } from "../_shared/testimonials";
 
 export const pipeda: FrameworkPageData = {

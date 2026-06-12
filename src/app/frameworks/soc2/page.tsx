@@ -1,4 +1,4 @@
-import { FrameworkPage, frameworkMetadata } from "../_shared/FrameworkPage";
+import { FrameworkPage, frameworkMetadata } from "../_shared/framework-page";
 import { soc2 } from "./content";
 
 export const metadata = frameworkMetadata(soc2);
