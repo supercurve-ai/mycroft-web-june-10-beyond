@@ -28,7 +28,7 @@ export function PricingSection5() {
                       delay={0}
                       eyebrow="PRIVACY & SECURITY"
                       imageBase="mycroft-features1-v2"
-                      icon="/assets/crest-icon.svg"
+                      icon="/assets/icons/crest-icon.svg"
                       smallLabel
                       title={<><strong>No performative security</strong><br /></>}
                       body="No more security theater. Enhance your security and compliance posture to enterprise requirements with all the solutions you need – from your laptops to your policies."
@@ -37,7 +37,7 @@ export function PricingSection5() {
                       delay={250}
                       eyebrow="ARTIFICIAL INTELLIGENCE"
                       imageBase="mycroft-features2-v1"
-                      icon="/assets/gear-icon.svg"
+                      icon="/assets/icons/gear-icon.svg"
                       smallLabel
                       title="Autonomous compliance"
                       body="With Mycroft’s AI Agents, your security and compliance programs are managed autonomously — leveraging your integrations to respond, automate and scale seamlessly."
@@ -46,7 +46,7 @@ export function PricingSection5() {
                       delay={500}
                       eyebrow="MANAGED REMEDIATIONS"
                       imageBase="mycroft-features3-v1"
-                      icon="/assets/push-icon.svg"
+                      icon="/assets/icons/push-icon.svg"
                       title={<strong>Time saved, time gained</strong>}
                       body="Mycroft contextualizes and can automatically remediate issues on your behalf, allowing you to spend your resources more efficiently."
                     />
@@ -54,7 +54,7 @@ export function PricingSection5() {
                       delay={750}
                       eyebrow="EXPERT-LED SUPPORT"
                       imageBase="mycroft-features4-v1"
-                      icon="/assets/star-icon.svg"
+                      icon="/assets/icons/star-icon.svg"
                       title="Real experts, always here"
                       body="Mycroft's customer success team are made of security and compliance experts, watching your environment 24/7/365, supported by your AI Security and Compliance Officer."
                     />

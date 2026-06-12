@@ -9,27 +9,27 @@ export const iso27001: FrameworkPageData = {
   meta: {
     title: "Mycroft Frameworks | ISO 27001 compliance, built for global organizations",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve ISO 27001 certification and strengthen your information security program.",
-    image: "/assets/frameworks-iso27001-meta-v1.jpg",
+    image: "/assets/meta/frameworks-iso27001-meta-v1.jpg",
   },
   hero: {
     title: <><Iso27001 /> compliance, built for global organizations</>,
     dek: <>Mycroft’s Risk Operations Center removes the operational burden, helping you achieve <Iso27001 /> certification and strengthen your information security program.</>,
-    badge: { src: "/assets/iso27-badge.svg", alt: "" },
+    badge: { src: "/assets/badges/iso27-badge.svg", alt: "" },
     whyTitle: <>Why <Iso27001 /> matters to you</>,
     whyDek: <><Iso27001 /> provides a globally recognized framework for managing information security risks and protecting sensitive data.</>,
     features: [
       {
-        icon: "/assets/megaphone.svg",
+        icon: "/assets/icons/megaphone.svg",
         title: "Global credibility",
         copy: <><Iso27001 /> certification demonstrates strong security practices to customers and partners worldwide.</>,
       },
       {
-        icon: "/assets/folder-icon.svg",
+        icon: "/assets/icons/folder-icon.svg",
         title: "Structured risk management",
         copy: "Identify, assess, and mitigate information security risks systematically.",
       },
       {
-        icon: "/assets/datalock-icon.svg",
+        icon: "/assets/icons/datalock-icon.svg",
         title: "Enterprise readiness",
         copy: "Certification is often required to work with large organizations and international clients.",
       },

@@ -37,7 +37,7 @@ export function PartnershipsSection2() {
             <div className="w-full pb-(--sizing--rem--8-5rem) max-tablet:pb-(--sizing--rem--6-5rem) max-landscape:pb-(--sizing--rem--4-5rem) max-portrait:pb-(--sizing--rem--3-5rem)">
               <div className="w-layout-grid features-3up">
                 <div className="feature-item">
-                  <img src="/assets/puzzle-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
+                  <img src="/assets/icons/puzzle-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
                   <div className="container-flex vertical center text_center">
                     <div className="h6 color_mint">
                       Collaborative growth
@@ -50,7 +50,7 @@ export function PartnershipsSection2() {
                   </div>
                 </div>
                 <div className="feature-item">
-                  <img src="/assets/markets-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
+                  <img src="/assets/icons/markets-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
                   <div className="container-flex vertical center text_center">
                     <div className="h6 color_mint">
                       Revenue potential
@@ -63,7 +63,7 @@ export function PartnershipsSection2() {
                   </div>
                 </div>
                 <div className="feature-item">
-                  <img src="/assets/checkmark-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
+                  <img src="/assets/icons/checkmark-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
                   <div className="container-flex vertical center text_center">
                     <div className="h6 color_mint">
                       Shared Vision for Security

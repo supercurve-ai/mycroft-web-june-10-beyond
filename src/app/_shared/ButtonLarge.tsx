@@ -58,7 +58,7 @@ export function ButtonLarge({
         {children}
       </div>
       <img
-        src={velvet ? "/assets/arrow-icon-mint-v1.svg" : "/assets/arrow-icon-v2.svg"}
+        src={velvet ? "/assets/icons/arrow-icon-mint-v1.svg" : "/assets/icons/arrow-icon-v2.svg"}
         loading="lazy"
         alt=""
         className="btn-arrow-large"

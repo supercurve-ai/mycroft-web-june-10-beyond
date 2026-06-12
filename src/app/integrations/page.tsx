@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     title: "Mycroft — Integrations: Powered by our AI Agents.",
     description: "With over 150+ native-integrations supported today with deep visibility into your AWS, Azure, and GCP environments and codebases hosted on GitHub, GitLab, and BitBucket, our platform meets you where you work.",
     type: "website",
-    images: ["/assets/mycroft-meta-img-x2.jpg"],
+    images: ["/assets/meta/mycroft-meta-img-x2.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft — Integrations: Powered by our AI Agents.",
     description: "With over 150+ native-integrations supported today with deep visibility into your AWS, Azure, and GCP environments and codebases hosted on GitHub, GitLab, and BitBucket, our platform meets you where you work.",
-    images: ["/assets/mycroft-meta-img-x2.jpg"],
+    images: ["/assets/meta/mycroft-meta-img-x2.jpg"],
   },
 };
 

@@ -42,14 +42,14 @@ export function ComplianceSection({
                   <div className="compliance-badges-container">
                     <div className="badge-grid">
                       <div id="w-node-c442fe5e-097a-6d54-a573-f4f73a4115fb-3a4115e6" className="badge-row">
-                        <ScrubBadge src="/assets/mycroft-soc2-badge.svg" range="5,15" />
-                        <ScrubBadge src="/assets/mycroft-hipaa-badge.svg" range="10,20" />
+                        <ScrubBadge src="/assets/badges/mycroft-soc2-badge.svg" range="5,15" />
+                        <ScrubBadge src="/assets/badges/mycroft-hipaa-badge.svg" range="10,20" />
                       </div>
                       <div id="w-node-c442fe5e-097a-6d54-a573-f4f73a4115fe-3a4115e6" className="badge-row">
-                        <ScrubBadge src="/assets/mycroft-gdpr-badge.svg" range="15,25" />
-                        <ScrubBadge src="/assets/mycroft-iso-badge.svg" range="20,30" />
+                        <ScrubBadge src="/assets/badges/mycroft-gdpr-badge.svg" range="15,25" />
+                        <ScrubBadge src="/assets/badges/mycroft-iso-badge.svg" range="20,30" />
                       </div>
-                      <ScrubBadge src="/assets/mycroft-euai-badge.svg" range="25,38" last />
+                      <ScrubBadge src="/assets/badges/mycroft-euai-badge.svg" range="25,38" last />
                     </div>
                   </div>
                 </div>

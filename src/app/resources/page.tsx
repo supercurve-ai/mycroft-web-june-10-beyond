@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     title: "Mycroft Resources | Learn how you can strengthen your security and compliance knowledge",
     description: "Explore Mycroft resources for expert insights on cybersecurity, compliance, threat trends, and practical guides to help teams protect data and improve security posture. Learn how customers have achieved security and compliance with Mycroft, unlocking enterprise opportunities.",
     type: "website",
-    images: ["/assets/mycroft-meta-img-resources.webp"],
+    images: ["/assets/meta/mycroft-meta-img-resources.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Resources | Learn how you can strengthen your security and compliance knowledge",
     description: "Explore Mycroft resources for expert insights on cybersecurity, compliance, threat trends, and practical guides to help teams protect data and improve security posture. Learn how customers have achieved security and compliance with Mycroft, unlocking enterprise opportunities.",
-    images: ["/assets/mycroft-meta-img-resources.webp"],
+    images: ["/assets/meta/mycroft-meta-img-resources.webp"],
   },
 };
 

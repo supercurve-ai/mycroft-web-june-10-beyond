@@ -20,17 +20,17 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       dek="Strong third-party risk management identifies vulnerabilities, enforces security standards, and monitors risks continuously to protect your organization from external threats."
       features={[
         {
-          icon: "/assets/folder-icon.svg",
+          icon: "/assets/icons/folder-icon.svg",
           title: "Early identification of vulnerabilities",
           body: "It helps you assess and identify potential security gaps in third-party vendors before they can be exploited, reducing the risk of breaches.",
         },
         {
-          icon: "/assets/seal-icon.svg",
+          icon: "/assets/icons/seal-icon.svg",
           title: "Enforcement of security standards",
           body: "It ensures that all external partners adhere to your company's security protocols and compliance requirements, preventing weak links in your security chain.",
         },
         {
-          icon: "/assets/eye-icon.svg",
+          icon: "/assets/icons/eye-icon.svg",
           title: "Continuous monitoring",
           body: "Ongoing oversight of third parties allows proactive detection of emerging threats or changes in risk levels, enabling timely responses to minimize potential security incidents.",
         },
@@ -42,9 +42,9 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       heading: "TPRM dashboard",
       body: "Our dashboard provides an overview of assessment statuses, showing the number of completed versus incomplete evaluations and includes a breakdown of vendor criticality to prioritize your focus –helping you efficiently monitor, prioritize, and manage third-party risks.",
       image: {
-        src: "/assets/product-dashboard.webp",
+        src: "/assets/screenshots/product-dashboard.webp",
         srcSet:
-          "/assets/product-dashboard-p-500.webp 500w, /assets/product-dashboard-p-800.webp 800w, /assets/product-dashboard-p-1080.webp 1080w, /assets/product-dashboard.webp 1352w",
+          "/assets/screenshots/product-dashboard-p-500.webp 500w, /assets/screenshots/product-dashboard-p-800.webp 800w, /assets/screenshots/product-dashboard-p-1080.webp 1080w, /assets/screenshots/product-dashboard.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -53,9 +53,9 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       heading: "Assessment checklist",
       body: "Our platform allows users to select a vendor and access a tailored checklist of actionable steps. Completing these actions ensures the vendor meets your security and compliance standards, streamlining the onboarding and risk mitigation processes.",
       image: {
-        src: "/assets/product-checklist.webp",
+        src: "/assets/screenshots/product-checklist.webp",
         srcSet:
-          "/assets/product-checklist-p-500.webp 500w, /assets/product-checklist-p-800.webp 800w, /assets/product-checklist-p-1080.webp 1080w, /assets/product-checklist.webp 1352w",
+          "/assets/screenshots/product-checklist-p-500.webp 500w, /assets/screenshots/product-checklist-p-800.webp 800w, /assets/screenshots/product-checklist-p-1080.webp 1080w, /assets/screenshots/product-checklist.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -67,8 +67,8 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
     items: [
       {
         img: {
-          src: "/assets/features-img2.webp",
-          srcSet: "/assets/features-img2-p-500.webp 500w, /assets/features-img2-p-800.webp 800w, /assets/features-img2-p-1080.webp 1080w, /assets/features-img2.webp 1125w",
+          src: "/assets/screenshots/features-img2.webp",
+          srcSet: "/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w",
           width: "562.5",
           sizes: "(max-width: 767px) 100vw, 563px",
         },
@@ -77,8 +77,8 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/feature-risktriage-v1.webp",
-          srcSet: "/assets/feature-risktriage-v1-p-500.webp 500w, /assets/feature-risktriage-v1-p-800.webp 800w, /assets/feature-risktriage-v1-p-1080.webp 1080w, /assets/feature-risktriage-v1.webp 1128w",
+          src: "/assets/screenshots/feature-risktriage-v1.webp",
+          srcSet: "/assets/screenshots/feature-risktriage-v1-p-500.webp 500w, /assets/screenshots/feature-risktriage-v1-p-800.webp 800w, /assets/screenshots/feature-risktriage-v1-p-1080.webp 1080w, /assets/screenshots/feature-risktriage-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -87,8 +87,8 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/feature-automatedworkflows-v1.webp",
-          srcSet: "/assets/feature-automatedworkflows-v1-p-500.webp 500w, /assets/feature-automatedworkflows-v1-p-800.webp 800w, /assets/feature-automatedworkflows-v1-p-1080.webp 1080w, /assets/feature-automatedworkflows-v1.webp 1128w",
+          src: "/assets/screenshots/feature-automatedworkflows-v1.webp",
+          srcSet: "/assets/screenshots/feature-automatedworkflows-v1-p-500.webp 500w, /assets/screenshots/feature-automatedworkflows-v1-p-800.webp 800w, /assets/screenshots/feature-automatedworkflows-v1-p-1080.webp 1080w, /assets/screenshots/feature-automatedworkflows-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -102,14 +102,14 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
     theme: "_75mint",
     imgTint: "_30terra",
     img: {
-      src: "/assets/ilya-cropped-mono-img.webp",
-      srcSet: "/assets/ilya-cropped-mono-img-p-500.webp 500w, /assets/ilya-cropped-mono-img.webp 600w",
+      src: "/assets/customers/ilya-cropped-mono-img.webp",
+      srcSet: "/assets/customers/ilya-cropped-mono-img-p-500.webp 500w, /assets/customers/ilya-cropped-mono-img.webp 600w",
       sizes: "(max-width: 479px) 100vw, 215px",
     },
     quote: "Effortless SOC 2 compliance, worry-free experience. They handle all the parts of SOC 2, so I don’t have to worry about the details.”",
     name: "Ilya Tkachov",
     role: "Co-founder of wispbit",
-    logo: { src: "/assets/wispbit-mono-v2.svg" },
+    logo: { src: "/assets/logos/wispbit-mono-v2.svg" },
   },
   faq: (
     <>

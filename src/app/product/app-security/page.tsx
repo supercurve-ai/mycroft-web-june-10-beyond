@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "App Security",
     description: "Our platform identifies vulnerabilities early, continuously monitor threats, and keeps your apps protected around the clock.",
     type: "website",
-    images: ["/assets/appsecurity-meta-img-v1.jpg"],
+    images: ["/assets/meta/appsecurity-meta-img-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "App Security",
     description: "Our platform identifies vulnerabilities early, continuously monitor threats, and keeps your apps protected around the clock.",
-    images: ["/assets/appsecurity-meta-img-v1.jpg"],
+    images: ["/assets/meta/appsecurity-meta-img-v1.jpg"],
   },
 };
 

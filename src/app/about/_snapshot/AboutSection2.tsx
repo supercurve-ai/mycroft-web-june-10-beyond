@@ -13,7 +13,7 @@ export function AboutSection2() {
                   <h3 className="h3_v2 color_white">
                     About Mycroft
                   </h3>
-                  <img src="/assets/chair-lockup-static.webp" loading="lazy" sizes="(max-width: 752px) 100vw, 752px" srcSet="/assets/chair-lockup-static-p-500.webp 500w, /assets/chair-lockup-static.webp 752w" alt="" className="about-img" />
+                  <img src="/assets/decor/chair-lockup-static.webp" loading="lazy" sizes="(max-width: 752px) 100vw, 752px" srcSet="/assets/decor/chair-lockup-static-p-500.webp 500w, /assets/decor/chair-lockup-static.webp 752w" alt="" className="about-img" />
                 </div>
                 <div className="about-col-right">
                   <div className="text-dek-l text_white">

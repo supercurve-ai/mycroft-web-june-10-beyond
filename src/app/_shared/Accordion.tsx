@@ -128,7 +128,7 @@ export function AccordionItem({
           <strong>{question}</strong>
         </h4>
         <img
-          src="/assets/arrow-icon.svg"
+          src="/assets/icons/arrow-icon.svg"
           loading="lazy"
           width={25}
           alt=""

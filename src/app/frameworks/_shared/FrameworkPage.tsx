@@ -105,7 +105,7 @@ function reveal(x: number, y: number, delayMs: number): CSSProperties {
 }
 
 const solutionSrcSet = (base: string) =>
-  `/assets/${base}-p-500.webp 500w, /assets/${base}-p-800.webp 800w, /assets/${base}-p-1080.webp 1080w, /assets/${base}.webp 1360w`;
+  `/assets/screenshots/${base}-p-500.webp 500w, /assets/screenshots/${base}-p-800.webp 800w, /assets/screenshots/${base}-p-1080.webp 1080w, /assets/screenshots/${base}.webp 1360w`;
 
 function Triangle() {
   return (
@@ -246,7 +246,7 @@ function SolutionsSection({ d }: { d: FrameworkPageData }) {
                   );
                   const img = (
                     <div className={even ? "product-feature-img img-left wf-reveal" : "product-feature-img wf-reveal"} style={reveal(even ? -100 : 100, 0, 0)}>
-                      <img src={`/assets/${card.img.base}.webp`} loading="lazy" width={card.img.width} sizes={card.img.sizes} alt="" srcSet={solutionSrcSet(card.img.base)} className="fw-features-img" />
+                      <img src={`/assets/screenshots/${card.img.base}.webp`} loading="lazy" width={card.img.width} sizes={card.img.sizes} alt="" srcSet={solutionSrcSet(card.img.base)} className="fw-features-img" />
                     </div>
                   );
                   return (
@@ -342,8 +342,8 @@ function FaqSection({ d }: { d: FrameworkPageData }) {
         <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
           <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
             <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
-              <img src="/assets/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
-              <img src="/assets/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
+              <img src="/assets/icons/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
+              <img src="/assets/icons/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
               <div className="container-flex faq_container">
                 <div className="faq-hed-flex">
                   <h3 className="h3_v2 color_white">

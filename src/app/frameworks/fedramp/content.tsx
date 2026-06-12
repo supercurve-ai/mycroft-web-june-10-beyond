@@ -5,27 +5,27 @@ export const fedramp: FrameworkPageData = {
   meta: {
     title: "Mycroft Frameworks | FedRAMP compliance, built for cloud providers",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve FedRAMP authorization and operate securely in the public sector.",
-    image: "/assets/frameworks-fedramp-meta-v1.jpg",
+    image: "/assets/meta/frameworks-fedramp-meta-v1.jpg",
   },
   hero: {
     title: "FedRAMP compliance, built for cloud providers",
     dek: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve FedRAMP authorization and operate securely in the public sector.",
-    badge: { src: "/assets/fedramp-badge-2.svg", alt: "" },
+    badge: { src: "/assets/badges/fedramp-badge-2.svg", alt: "" },
     whyTitle: "Why FedRAMP matters to you",
     whyDek: "FedRAMP compliance is required for cloud service providers working with U.S. federal agencies, ensuring consistent security standards.",
     features: [
       {
-        icon: "/assets/markets-icon.svg",
+        icon: "/assets/icons/markets-icon.svg",
         title: "Access federal markets",
         copy: "FedRAMP authorization is mandatory to sell cloud services to government agencies.",
       },
       {
-        icon: "/assets/seal-icon.svg",
+        icon: "/assets/icons/seal-icon.svg",
         title: "Standardized security framework",
         copy: "Align with NIST-based controls to demonstrate strong security posture.",
       },
       {
-        icon: "/assets/stamp.svg",
+        icon: "/assets/icons/stamp.svg",
         title: "Accelerate procurement cycles",
         copy: "Pre-approved compliance reduces friction in government sales.",
       },

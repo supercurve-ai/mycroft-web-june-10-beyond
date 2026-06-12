@@ -54,16 +54,16 @@ export function FeatureTileSmall({
             {eyebrow}
           </div>
         </div>
-        <img src="/assets/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape small_feature" />
+        <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape small_feature" />
       </div>
       <div className="feature-tile-content-small">
         <img
-          src={`/assets/${imageBase}.webp`}
+          src={`/assets/screenshots/${imageBase}.webp`}
           loading="lazy"
           width="512"
           sizes="(max-width: 479px) 100vw, 512px"
           alt=""
-          srcSet={`/assets/${imageBase}-p-500.webp 500w, /assets/${imageBase}-p-800.webp 800w, /assets/${imageBase}.webp 1024w`}
+          srcSet={`/assets/screenshots/${imageBase}-p-500.webp 500w, /assets/screenshots/${imageBase}-p-800.webp 800w, /assets/screenshots/${imageBase}.webp 1024w`}
           className="feature-tile-img"
         />
         <div className={smallLabel ? "feature-small-tile-label" : "feature-tile-label"}>

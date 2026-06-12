@@ -5,27 +5,27 @@ export const cpra: FrameworkPageData = {
   meta: {
     title: "Mycroft Frameworks | CPRA compliance, built on CCPA, ready for what’s next",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet CPRA requirements and manage consumer data with confidence.",
-    image: "/assets/frameworks-crpa-meta-v2.jpg",
+    image: "/assets/meta/frameworks-crpa-meta-v2.jpg",
   },
   hero: {
     title: "CPRA compliance, built on CCPA, ready for what’s next",
     dek: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet CPRA requirements and manage consumer data with confidence.",
-    badge: { src: "/assets/crpa-badge-2.svg", alt: "" },
+    badge: { src: "/assets/badges/crpa-badge-2.svg", alt: "" },
     whyTitle: "Why CPRA/CCPA matters to you",
     whyDek: "CPRA builds on the foundation of CCPA, expanding consumer rights, increasing enforcement, and introducing stricter requirements for data governance and accountability.",
     features: [
       {
-        icon: "/assets/datalock-icon.svg",
+        icon: "/assets/icons/datalock-icon.svg",
         title: "Expanded beyond CCPA",
         copy: "CPRA enhances CCPA by introducing new rights such as correction of personal data, limits on sensitive data use, and stronger obligations for businesses handling consumer information.",
       },
       {
-        icon: "/assets/eye-icon.svg",
+        icon: "/assets/icons/eye-icon.svg",
         title: "Stronger enforcement and accountability",
         copy: "The California Privacy Protection Agency enforces CPRA requirements, increasing regulatory scrutiny and the need for operational readiness.",
       },
       {
-        icon: "/assets/settings.svg",
+        icon: "/assets/icons/settings.svg",
         title: "Operational complexity at scale",
         copy: "Managing consumer rights, disclosures, and data usage across systems requires structured processes beyond what CCPA alone demanded.",
       },

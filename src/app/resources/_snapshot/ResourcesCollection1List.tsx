@@ -33,7 +33,7 @@ export function ResourcesCollection1List() {
           >
             <div className="btn-text-large w-inline-block">{"More"}</div>
             <img
-              src="/assets/arrow-icon-v2.svg"
+              src="/assets/icons/arrow-icon-v2.svg"
               loading="lazy"
               alt=""
               className="btn-arrow-large"

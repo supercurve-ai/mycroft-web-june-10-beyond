@@ -5,27 +5,27 @@ export const gdpr: FrameworkPageData = {
   meta: {
     title: "Mycroft Frameworks | GDPR compliance, built for real-world execution",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve and maintain GDPR compliance with confidence.",
-    image: "/assets/frameworks-gdpr-meta-v1.jpg",
+    image: "/assets/meta/frameworks-gdpr-meta-v1.jpg",
   },
   hero: {
     title: "GDPR compliance, built for real-world execution",
     dek: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve and maintain GDPR compliance with confidence.",
-    badge: { src: "/assets/gdpr-badge-2.svg", alt: "" },
+    badge: { src: "/assets/badges/gdpr-badge-2.svg", alt: "" },
     whyTitle: "Why GDPR matters to you",
     whyDek: "GDPR compliance demonstrates your commitment to data privacy, reduces regulatory risk, and enables you to operate confidently in global markets.",
     features: [
       {
-        icon: "/assets/warning-icon.svg",
+        icon: "/assets/icons/warning-icon.svg",
         title: "Regulatory and financial risk",
         copy: "GDPR violations can result in fines of up to 4% of global annual revenue. Strong compliance reduces exposure and protects your business.",
       },
       {
-        icon: "/assets/checkmark-icon.svg",
+        icon: "/assets/icons/checkmark-icon.svg",
         title: "Customer trust and data protection",
         copy: "Customers expect transparency and control over their data. GDPR compliance strengthens trust and supports enterprise sales.",
       },
       {
-        icon: "/assets/markets-icon.svg",
+        icon: "/assets/icons/markets-icon.svg",
         title: "Global market access",
         copy: "GDPR is the standard for handling EU data. Compliance enables expansion into European markets and partnerships.",
       },

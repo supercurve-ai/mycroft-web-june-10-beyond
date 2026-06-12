@@ -17,7 +17,7 @@ export function ResourcesCollection1({ item }: { item: ResourcesCollection1Item 
           </div>
         </div>
         <div className="blog-card-author">
-          <img src="/assets/mikekim2025.png" loading="lazy" alt="Mike Kim" className="blog-author-picture" />
+          <img src="/assets/team/mikekim2025.png" loading="lazy" alt="Mike Kim" className="blog-author-picture" />
           <div className="blog-author-info">
             <div className="body-text-medium is-semi-bold">
               Mike Kim

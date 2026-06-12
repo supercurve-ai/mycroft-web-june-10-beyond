@@ -20,7 +20,7 @@ export function PricingSection3() {
             <div className="pullquote-content">
               <div className="container-flex pullquote_container">
                 <div className="pullquote-img-container">
-                  <img width="215" sizes="215px" alt="" src="/assets/jorge-cropped-mono-img.webp" loading="lazy" srcSet="/assets/jorge-cropped-mono-img-p-500.webp 500w, /assets/jorge-cropped-mono-img.webp 600w" className="pullquote-img" />
+                  <img width="215" sizes="215px" alt="" src="/assets/customers/jorge-cropped-mono-img.webp" loading="lazy" srcSet="/assets/customers/jorge-cropped-mono-img-p-500.webp 500w, /assets/customers/jorge-cropped-mono-img.webp 600w" className="pullquote-img" />
                 </div>
                 <div className="container-flex pullquote_right">
                   <div className="pullquote-text hanging_quote">
@@ -36,7 +36,7 @@ export function PricingSection3() {
                     <div className="pullquote-title">
                       CEO of Smashsend
                     </div>
-                    <img loading="lazy" src="/assets/smashsend-logo-mono.svg" alt="" />
+                    <img loading="lazy" src="/assets/logos/smashsend-logo-mono.svg" alt="" />
                   </div>
                 </div>
               </div>

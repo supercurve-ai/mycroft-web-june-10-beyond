@@ -21,7 +21,7 @@ export function AboutSection3() {
                       Co-founder, CEO
                     </div>
                   </div>
-                  <img src="/assets/mike-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/mike-2-p-500.webp 500w, /assets/mike-2-p-800.webp 800w, /assets/mike-2.webp 840w" className="founder-img" />
+                  <img src="/assets/team/mike-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/team/mike-2-p-500.webp 500w, /assets/team/mike-2-p-800.webp 800w, /assets/team/mike-2.webp 840w" className="founder-img" />
                 </div>
                 <div className="founder-tile-btm">
                   <div className="founder-body">
@@ -55,7 +55,7 @@ export function AboutSection3() {
                       Co-founder, PRODUCT & DESIGN
                     </div>
                   </div>
-                  <img src="/assets/jon-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/jon-2-p-500.webp 500w, /assets/jon-2-p-800.webp 800w, /assets/jon-2.webp 840w" className="founder-img" />
+                  <img src="/assets/team/jon-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/team/jon-2-p-500.webp 500w, /assets/team/jon-2-p-800.webp 800w, /assets/team/jon-2.webp 840w" className="founder-img" />
                 </div>
                 <div className="founder-tile-btm">
                   <div className="founder-body">
@@ -89,7 +89,7 @@ export function AboutSection3() {
                       Co-founder, Engineering
                     </div>
                   </div>
-                  <img src="/assets/jan-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/jan-2-p-500.webp 500w, /assets/jan-2-p-800.webp 800w, /assets/jan-2.webp 840w" className="founder-img" />
+                  <img src="/assets/team/jan-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/team/jan-2-p-500.webp 500w, /assets/team/jan-2-p-800.webp 800w, /assets/team/jan-2.webp 840w" className="founder-img" />
                 </div>
                 <div className="founder-tile-btm">
                   <div className="founder-body">

@@ -27,12 +27,12 @@ export function HomeSection5() {
                           PRIVACY & SECURITY
                         </div>
                       </div>
-                      <img src="/assets/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
+                      <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
                     </div>
                     <div className="feature-tile-content">
-                      <img src="/assets/wgyc-1-no-performative-security.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/wgyc-1-no-performative-security-p-500.webp 500w, /assets/wgyc-1-no-performative-security-p-800.webp 800w, /assets/wgyc-1-no-performative-security-p-1080.webp 1080w, /assets/wgyc-1-no-performative-security.webp 1128w" className="feature-tile-img" />
+                      <img src="/assets/photos/wgyc-1-no-performative-security.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/photos/wgyc-1-no-performative-security-p-500.webp 500w, /assets/photos/wgyc-1-no-performative-security-p-800.webp 800w, /assets/photos/wgyc-1-no-performative-security-p-1080.webp 1080w, /assets/photos/wgyc-1-no-performative-security.webp 1128w" className="feature-tile-img" />
                       <div className="feature-tile-label">
-                        <img src="/assets/crest-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
+                        <img src="/assets/icons/crest-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
                         <h6 className="h6 color_rg">
                           <strong>
                             No performative security
@@ -53,12 +53,12 @@ export function HomeSection5() {
                           ARTIFICIAL INTELLIGENCE
                         </div>
                       </div>
-                      <img src="/assets/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
+                      <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
                     </div>
                     <div className="feature-tile-content">
-                      <img src="/assets/features-img2.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/features-img2-p-500.webp 500w, /assets/features-img2-p-800.webp 800w, /assets/features-img2-p-1080.webp 1080w, /assets/features-img2.webp 1125w" className="feature-tile-img" />
+                      <img src="/assets/screenshots/features-img2.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w" className="feature-tile-img" />
                       <div className="feature-tile-label">
-                        <img src="/assets/gear-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
+                        <img src="/assets/icons/gear-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
                         <h6 className="h6 color_rg">
                           Autonomous compliance
                         </h6>
@@ -77,12 +77,12 @@ export function HomeSection5() {
                           MANAGED REMEDIATIONS
                         </div>
                       </div>
-                      <img src="/assets/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
+                      <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
                     </div>
                     <div className="feature-tile-content">
-                      <img src="/assets/features-img3.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/features-img3-p-500.webp 500w, /assets/features-img3-p-800.webp 800w, /assets/features-img3-p-1080.webp 1080w, /assets/features-img3.webp 1128w" className="feature-tile-img" />
+                      <img src="/assets/screenshots/features-img3.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/screenshots/features-img3-p-500.webp 500w, /assets/screenshots/features-img3-p-800.webp 800w, /assets/screenshots/features-img3-p-1080.webp 1080w, /assets/screenshots/features-img3.webp 1128w" className="feature-tile-img" />
                       <div className="feature-tile-label">
-                        <img src="/assets/push-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
+                        <img src="/assets/icons/push-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
                         <h6 className="h6 color_rg">
                           <strong>
                             Time saved, time gained
@@ -103,12 +103,12 @@ export function HomeSection5() {
                           EXPERT-LED SUPPORT
                         </div>
                       </div>
-                      <img src="/assets/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
+                      <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
                     </div>
                     <div className="feature-tile-content">
-                      <img src="/assets/wgyc-4-real-experts-always-here.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/wgyc-4-real-experts-always-here-p-500.webp 500w, /assets/wgyc-4-real-experts-always-here-p-800.webp 800w, /assets/wgyc-4-real-experts-always-here-p-1080.webp 1080w, /assets/wgyc-4-real-experts-always-here.webp 1128w" className="feature-tile-img" />
+                      <img src="/assets/photos/wgyc-4-real-experts-always-here.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/photos/wgyc-4-real-experts-always-here-p-500.webp 500w, /assets/photos/wgyc-4-real-experts-always-here-p-800.webp 800w, /assets/photos/wgyc-4-real-experts-always-here-p-1080.webp 1080w, /assets/photos/wgyc-4-real-experts-always-here.webp 1128w" className="feature-tile-img" />
                       <div className="feature-tile-label">
-                        <img src="/assets/star-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
+                        <img src="/assets/icons/star-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
                         <h6 className="h6 color_rg">
                           Real experts, always here
                         </h6>

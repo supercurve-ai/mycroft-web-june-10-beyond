@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     title: "Mycroft Pricing | Find the right pricing package for your security program",
     description: "Mycroft offers pricing packages to help you achieve and maintain your security and compliance program with enterprise level standards across the board.",
     type: "website",
-    images: ["/assets/mycroft-meta-img-pricing.webp"],
+    images: ["/assets/meta/mycroft-meta-img-pricing.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Pricing | Find the right pricing package for your security program",
     description: "Mycroft offers pricing packages to help you achieve and maintain your security and compliance program with enterprise level standards across the board.",
-    images: ["/assets/mycroft-meta-img-pricing.webp"],
+    images: ["/assets/meta/mycroft-meta-img-pricing.webp"],
   },
 };
 

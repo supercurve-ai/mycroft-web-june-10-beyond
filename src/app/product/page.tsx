@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     title: "Mycroft Product | A fully integrated Security stack",
     description: "Learn more about Mycroft’s automated platform and how our robust stack of security products will save precious engineering time.",
     type: "website",
-    images: ["/assets/mycroft-meta-img-product.webp"],
+    images: ["/assets/meta/mycroft-meta-img-product.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft Product | A fully integrated Security stack",
     description: "Learn more about Mycroft’s automated platform and how our robust stack of security products will save precious engineering time.",
-    images: ["/assets/mycroft-meta-img-product.webp"],
+    images: ["/assets/meta/mycroft-meta-img-product.webp"],
   },
 };
 

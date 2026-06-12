@@ -21,7 +21,7 @@ export function HomeSection8() {
               <div className="pullquote-content tint_50bw">
                 <div className="container-flex pullquote_container">
                   <div className="pullquote-img-container tint_75mint">
-                    <img width="215" loading="lazy" alt="" src="/assets/adam-cropped-mono-img.webp" sizes="(max-width: 479px) 100vw, 215px" srcSet="/assets/adam-cropped-mono-img-p-500.webp 500w, /assets/adam-cropped-mono-img.webp 600w" className="pullquote-img" />
+                    <img width="215" loading="lazy" alt="" src="/assets/customers/adam-cropped-mono-img.webp" sizes="(max-width: 479px) 100vw, 215px" srcSet="/assets/customers/adam-cropped-mono-img-p-500.webp 500w, /assets/customers/adam-cropped-mono-img.webp 600w" className="pullquote-img" />
                   </div>
                   <div className="container-flex pullquote_right">
                     <div className="pullquote-text hanging_quote">
@@ -37,7 +37,7 @@ export function HomeSection8() {
                       <div className="pullquote-title">
                         CEO of WEAVE
                       </div>
-                      <img width="114" loading="lazy" alt="" src="/assets/weave-logo.svg" />
+                      <img width="114" loading="lazy" alt="" src="/assets/logos/weave-logo.svg" />
                     </div>
                   </div>
                 </div>

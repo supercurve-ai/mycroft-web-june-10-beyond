@@ -5,27 +5,27 @@ export const pipeda: FrameworkPageData = {
   meta: {
     title: "Mycroft Frameworks | PIPEDA compliance, built for Canadian businesses",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet PIPEDA requirements and manage personal data responsibly at scale.",
-    image: "/assets/frameworks-pipeda-meta-v1.jpg",
+    image: "/assets/meta/frameworks-pipeda-meta-v1.jpg",
   },
   hero: {
     title: "PIPEDA compliance, built for Canadian businesses",
     dek: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet PIPEDA requirements and manage personal data responsibly at scale.",
-    badge: { src: "/assets/pipeda-badge-2.svg", alt: "" },
+    badge: { src: "/assets/badges/pipeda-badge-2.svg", alt: "" },
     whyTitle: "Why PIPEDA matters to you",
     whyDek: "PIPEDA compliance ensures responsible data handling, builds customer trust, and protects your organization from regulatory and reputational risk.",
     features: [
       {
-        icon: "/assets/warning-icon.svg",
+        icon: "/assets/icons/warning-icon.svg",
         title: "Legal and regulatory obligation",
         copy: "PIPEDA governs how organizations collect, use, and disclose personal information in Canada. Compliance reduces risk of investigations, penalties, and enforcement actions.",
       },
       {
-        icon: "/assets/checkmark-icon.svg",
+        icon: "/assets/icons/checkmark-icon.svg",
         title: "Customer trust and transparency",
         copy: "Customers expect clear data practices and control over their information. PIPEDA compliance strengthens credibility and supports long-term relationships.",
       },
       {
-        icon: "/assets/markets-icon.svg",
+        icon: "/assets/icons/markets-icon.svg",
         title: "Business and partnership readiness",
         copy: "Organizations working with enterprise clients or handling sensitive data are expected to demonstrate strong privacy practices aligned with PIPEDA.",
       },

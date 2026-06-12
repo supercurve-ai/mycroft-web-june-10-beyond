@@ -15,7 +15,7 @@ export function HomeSection1() {
                     <div className="eyebrow-small tint_40eg">
                       Announcement: Seed raise of $3.5M USD
                     </div>
-                    <img src="/assets/arrow-icon-white.svg" loading="lazy" alt="" />
+                    <img src="/assets/icons/arrow-icon-white.svg" loading="lazy" alt="" />
                   </div>
                 </a>
                 <h1 className="h1_v2 hero_hed tablet:max-[1200px]:text-[5vw]! tablet:max-[1200px]:mb-[2vw]!">

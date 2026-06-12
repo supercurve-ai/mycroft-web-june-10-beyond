@@ -9,27 +9,27 @@ export const soc2: FrameworkPageData = {
   meta: {
     title: "Mycroft Frameworks | Proper SOC 2 compliance, accredited auditor approved",
     description: "Mycroft’s Risk Operations Center eliminates the busywork, helping you achieve SOC 2 compliance the right way.",
-    image: "/assets/frameworks-soc2-meta-v1.jpg",
+    image: "/assets/meta/frameworks-soc2-meta-v1.jpg",
   },
   hero: {
     title: <>Proper <Soc2 /> compliance, accredited auditor approved</>,
     dek: <>Mycroft’s Risk Operations Center eliminates the busywork, helping you achieve <Soc2 /> compliance the right way.</>,
-    badge: { src: "/assets/soc-badge.svg", alt: "Mycroft SOC 2 compliance badge." },
+    badge: { src: "/assets/badges/soc-badge.svg", alt: "Mycroft SOC 2 compliance badge." },
     whyTitle: "Why SOC 2 matters to you",
     whyDek: "Achieving SOC 2 compliance proves your organization takes data security, privacy, and operational controls seriously.",
     features: [
       {
-        icon: "/assets/megaphone.svg",
+        icon: "/assets/icons/megaphone.svg",
         title: "Customer and market demand",
         copy: "Many SaaS customers and enterprise buyers explicitly request SOC 2 reports as part of vendor risk assessments or procurement.",
       },
       {
-        icon: "/assets/stamp.svg",
+        icon: "/assets/icons/stamp.svg",
         title: "Attestation by an independent CPA",
         copy: "SOC 2 is an auditor attestation (AICPA) issued by licensed CPA firms. That third‑party attestation is trusted by risk and finance teams.",
       },
       {
-        icon: "/assets/settings.svg",
+        icon: "/assets/icons/settings.svg",
         title: "Flexibile, criteria-based controls",
         copy: "SOC 2 lets you design controls appropriate to your environment and business risks rather than following rigid technical mandates.",
       },

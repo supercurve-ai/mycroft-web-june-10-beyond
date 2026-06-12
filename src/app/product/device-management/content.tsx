@@ -20,17 +20,17 @@ export const deviceManagementContent: ProductSubpageContent = {
       dek="Integrating device management into your security stack helps secure endpoints, prevent vulnerabilities, and strengthen your overall cybersecurity posture."
       features={[
         {
-          icon: "/assets/checkmark-icon.svg",
+          icon: "/assets/icons/checkmark-icon.svg",
           title: "Vulnerability prevention",
           body: "MDM allows for the deployment of critical updates and patches remotely, which mitigates the risk of exploitation from known vulnerabilities.",
         },
         {
-          icon: "/assets/userlock-icon.svg",
+          icon: "/assets/icons/userlock-icon.svg",
           title: "Access control",
           body: "MDM ensures only authorized users and devices can access sensitive data and systems by allowing organizations to define specific permissions for users.",
         },
         {
-          icon: "/assets/datalock-icon.svg",
+          icon: "/assets/icons/datalock-icon.svg",
           title: "Data protection",
           body: "Effective device management safeguards data through encryption, remote wipe, and policy enforcement, safeguarding critical information and maintaining compliance.",
         },
@@ -42,9 +42,9 @@ export const deviceManagementContent: ProductSubpageContent = {
       heading: "Device dashboard",
       body: "Mycroft's platform feature offers a comprehensive dashboard with insights into each device, displaying specifications, status, and compliance. It conducts regular compliance checks to ensure all devices meet security standards.",
       image: {
-        src: "/assets/product-devicedashboard.webp",
+        src: "/assets/screenshots/product-devicedashboard.webp",
         srcSet:
-          "/assets/product-devicedashboard-p-500.webp 500w, /assets/product-devicedashboard-p-800.webp 800w, /assets/product-devicedashboard-p-1080.webp 1080w, /assets/product-devicedashboard.webp 1352w",
+          "/assets/screenshots/product-devicedashboard-p-500.webp 500w, /assets/screenshots/product-devicedashboard-p-800.webp 800w, /assets/screenshots/product-devicedashboard-p-1080.webp 1080w, /assets/screenshots/product-devicedashboard.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -53,9 +53,9 @@ export const deviceManagementContent: ProductSubpageContent = {
       heading: "Remote device locking",
       body: "Our platform lets you remotely lock a device in case of theft or security incidents, safeguarding sensitive data from unauthorized access. Quick remote lock actions help reduce data breach risks, protecting your company's information.",
       image: {
-        src: "/assets/product-devicelocking.webp",
+        src: "/assets/screenshots/product-devicelocking.webp",
         srcSet:
-          "/assets/product-devicelocking-p-500.webp 500w, /assets/product-devicelocking-p-800.webp 800w, /assets/product-devicelocking-p-1080.webp 1080w, /assets/product-devicelocking.webp 1352w",
+          "/assets/screenshots/product-devicelocking-p-500.webp 500w, /assets/screenshots/product-devicelocking-p-800.webp 800w, /assets/screenshots/product-devicelocking-p-1080.webp 1080w, /assets/screenshots/product-devicelocking.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -64,9 +64,9 @@ export const deviceManagementContent: ProductSubpageContent = {
       heading: "Remote device wipe",
       body: "Mycroft's platform feature allows users to  erase sensitive data from lost or stolen devices, ensuring data protection and regulatory compliance, while minimizing data breach risks. This tool empowers businesses to maintain control over mobile assets and enhance overall security.",
       image: {
-        src: "/assets/product-devicewipe.webp",
+        src: "/assets/screenshots/product-devicewipe.webp",
         srcSet:
-          "/assets/product-devicewipe-p-500.webp 500w, /assets/product-devicewipe-p-800.webp 800w, /assets/product-devicewipe-p-1080.webp 1080w, /assets/product-devicewipe.webp 1352w",
+          "/assets/screenshots/product-devicewipe-p-500.webp 500w, /assets/screenshots/product-devicewipe-p-800.webp 800w, /assets/screenshots/product-devicewipe-p-1080.webp 1080w, /assets/screenshots/product-devicewipe.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -78,8 +78,8 @@ export const deviceManagementContent: ProductSubpageContent = {
     items: [
       {
         img: {
-          src: "/assets/feature-dataencryption-v1.webp",
-          srcSet: "/assets/feature-dataencryption-v1-p-500.webp 500w, /assets/feature-dataencryption-v1-p-800.webp 800w, /assets/feature-dataencryption-v1-p-1080.webp 1080w, /assets/feature-dataencryption-v1.webp 1128w",
+          src: "/assets/screenshots/feature-dataencryption-v1.webp",
+          srcSet: "/assets/screenshots/feature-dataencryption-v1-p-500.webp 500w, /assets/screenshots/feature-dataencryption-v1-p-800.webp 800w, /assets/screenshots/feature-dataencryption-v1-p-1080.webp 1080w, /assets/screenshots/feature-dataencryption-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -88,8 +88,8 @@ export const deviceManagementContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/features-img2.webp",
-          srcSet: "/assets/features-img2-p-500.webp 500w, /assets/features-img2-p-800.webp 800w, /assets/features-img2-p-1080.webp 1080w, /assets/features-img2.webp 1125w",
+          src: "/assets/screenshots/features-img2.webp",
+          srcSet: "/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w",
           width: "562.5",
           sizes: "(max-width: 767px) 100vw, 563px",
         },
@@ -98,8 +98,8 @@ export const deviceManagementContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/feature-policyenforcement-v1.webp",
-          srcSet: "/assets/feature-policyenforcement-v1-p-500.webp 500w, /assets/feature-policyenforcement-v1-p-800.webp 800w, /assets/feature-policyenforcement-v1-p-1080.webp 1080w, /assets/feature-policyenforcement-v1.webp 1128w",
+          src: "/assets/screenshots/feature-policyenforcement-v1.webp",
+          srcSet: "/assets/screenshots/feature-policyenforcement-v1-p-500.webp 500w, /assets/screenshots/feature-policyenforcement-v1-p-800.webp 800w, /assets/screenshots/feature-policyenforcement-v1-p-1080.webp 1080w, /assets/screenshots/feature-policyenforcement-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -113,14 +113,14 @@ export const deviceManagementContent: ProductSubpageContent = {
     theme: "_75terra",
     imgTint: "blueberry",
     img: {
-      src: "/assets/steve-cropped-mono-img.webp",
-      srcSet: "/assets/steve-cropped-mono-img-p-500.webp 500w, /assets/steve-cropped-mono-img.webp 600w",
+      src: "/assets/customers/steve-cropped-mono-img.webp",
+      srcSet: "/assets/customers/steve-cropped-mono-img-p-500.webp 500w, /assets/customers/steve-cropped-mono-img.webp 600w",
       sizes: "(max-width: 479px) 100vw, 215px",
     },
     quote: "Mycroft provided us with the best  guidance through our SOC 2 process. We knew we were in good hands from the beginning.”",
     name: "Steve Emmanuel",
     role: "CEO & Co-founder of integratrace",
-    logo: { src: "/assets/integratrace-logo.svg" },
+    logo: { src: "/assets/logos/integratrace-logo.svg" },
   },
   faq: (
     <>

@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="container-flex space-between footer-content">
           <div className="container-flex vertical space-between">
             <div className="container-flex footer-menu">
-              <img loading="lazy" src="/assets/mycroft-lockup-white-v3.svg" alt="Mycroft logotype" className="footer-img" />
+              <img loading="lazy" src="/assets/brand/mycroft-lockup-white-v3.svg" alt="Mycroft logotype" className="footer-img" />
               <div className="container-flex footer-menu-items">
                 <NavLink href="/terms" target="_blank" className="footer-link_v2">
                   Terms
@@ -26,10 +26,10 @@ export function SiteFooter() {
             </div>
           </div>
           <div className="container-flex footer-badges">
-            <img loading="lazy" src="/assets/footer-badge-soc2-v2.svg" alt="" className="footer-badge_v2" />
-            <img loading="lazy" src="/assets/footer-badge-gdpr-v2.svg" alt="" className="footer-badge_v2" />
-            <img loading="lazy" src="/assets/footer-badge-hipaa-v2.svg" alt="" className="footer-badge_v2" />
-            <img loading="lazy" src="/assets/footer-badge-pipeda-v2.svg" alt="" className="footer-badge_v2" />
+            <img loading="lazy" src="/assets/badges/footer-badge-soc2-v2.svg" alt="" className="footer-badge_v2" />
+            <img loading="lazy" src="/assets/badges/footer-badge-gdpr-v2.svg" alt="" className="footer-badge_v2" />
+            <img loading="lazy" src="/assets/badges/footer-badge-hipaa-v2.svg" alt="" className="footer-badge_v2" />
+            <img loading="lazy" src="/assets/badges/footer-badge-pipeda-v2.svg" alt="" className="footer-badge_v2" />
           </div>
         </div>
         <div className="footer-text-mice">

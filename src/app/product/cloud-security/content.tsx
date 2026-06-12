@@ -20,17 +20,17 @@ export const cloudSecurityContent: ProductSubpageContent = {
       dek="While many solutions claim to secure your cloud environment, our product delivers true cloud security built for today’s dynamic, multi-cloud world."
       features={[
         {
-          icon: "/assets/checkmark-icon.svg",
+          icon: "/assets/icons/checkmark-icon.svg",
           title: "Protection of sensitive data",
           body: "Cloud services often handle sensitive information such as customer data, intellectual property, and financial records.",
         },
         {
-          icon: "/assets/warning-icon.svg",
+          icon: "/assets/icons/warning-icon.svg",
           title: "Regulatory compliance",
           body: "Cloud security is essential to meet the legal requirements for industry compliance, avoiding hefty fines or legal penalties.",
         },
         {
-          icon: "/assets/lock-icon.svg",
+          icon: "/assets/icons/lock-icon.svg",
           title: "Preventing unauthorized access",
           body: (
             <>
@@ -47,9 +47,9 @@ export const cloudSecurityContent: ProductSubpageContent = {
       heading: "Cloud scan",
       body: "Our platform continuously scans your cloud environment, delivering comprehensive security findings, providing clear insights into your security posture, allowing you to quickly identify and prioritize vulnerabilities based on their importance and scope.",
       image: {
-        src: "/assets/product-automatedscan.webp",
+        src: "/assets/screenshots/product-automatedscan.webp",
         srcSet:
-          "/assets/product-automatedscan-p-500.webp 500w, /assets/product-automatedscan-p-800.webp 800w, /assets/product-automatedscan-p-1080.webp 1080w, /assets/product-automatedscan.webp 1352w",
+          "/assets/screenshots/product-automatedscan-p-500.webp 500w, /assets/screenshots/product-automatedscan-p-800.webp 800w, /assets/screenshots/product-automatedscan-p-1080.webp 1080w, /assets/screenshots/product-automatedscan.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -58,9 +58,9 @@ export const cloudSecurityContent: ProductSubpageContent = {
       heading: "Automated scan",
       body: "Configure our platform to automatically scan your cloud security environment regularly, providing continuous oversight without manual effort. It features a customized dashboard that consolidates findings, displaying security issues, severity, and affected regions or services.",
       image: {
-        src: "/assets/product-automatedscan-2.webp",
+        src: "/assets/screenshots/product-automatedscan-2.webp",
         srcSet:
-          "/assets/product-automatedscan-p-500-2.webp 500w, /assets/product-automatedscan-p-800-2.webp 800w, /assets/product-automatedscan-p-1080-2.webp 1080w, /assets/product-automatedscan-2.webp 1352w",
+          "/assets/screenshots/product-automatedscan-p-500-2.webp 500w, /assets/screenshots/product-automatedscan-p-800-2.webp 800w, /assets/screenshots/product-automatedscan-p-1080-2.webp 1080w, /assets/screenshots/product-automatedscan-2.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -69,9 +69,9 @@ export const cloudSecurityContent: ProductSubpageContent = {
       heading: "Remediation",
       body: "Our platform not only identifies cloud security failed findings but also provides actionable remediation suggestions tailored to each issue. With our proactive recommendations, you can streamline your remediation process and ensure your cloud environment remains secure, compliant, and resilient.",
       image: {
-        src: "/assets/product-remediation.webp",
+        src: "/assets/screenshots/product-remediation.webp",
         srcSet:
-          "/assets/product-remediation-p-500.webp 500w, /assets/product-remediation-p-800.webp 800w, /assets/product-remediation-p-1080.webp 1080w, /assets/product-remediation.webp 1352w",
+          "/assets/screenshots/product-remediation-p-500.webp 500w, /assets/screenshots/product-remediation-p-800.webp 800w, /assets/screenshots/product-remediation-p-1080.webp 1080w, /assets/screenshots/product-remediation.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -88,8 +88,8 @@ export const cloudSecurityContent: ProductSubpageContent = {
     items: [
       {
         img: {
-          src: "/assets/features-img2.webp",
-          srcSet: "/assets/features-img2-p-500.webp 500w, /assets/features-img2-p-800.webp 800w, /assets/features-img2-p-1080.webp 1080w, /assets/features-img2.webp 1125w",
+          src: "/assets/screenshots/features-img2.webp",
+          srcSet: "/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w",
           width: "562.5",
           sizes: "(max-width: 767px) 100vw, 563px",
         },
@@ -98,8 +98,8 @@ export const cloudSecurityContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/features-img3.webp",
-          srcSet: "/assets/features-img3-p-500.webp 500w, /assets/features-img3-p-800.webp 800w, /assets/features-img3-p-1080.webp 1080w, /assets/features-img3.webp 1128w",
+          src: "/assets/screenshots/features-img3.webp",
+          srcSet: "/assets/screenshots/features-img3-p-500.webp 500w, /assets/screenshots/features-img3-p-800.webp 800w, /assets/screenshots/features-img3-p-1080.webp 1080w, /assets/screenshots/features-img3.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -108,8 +108,8 @@ export const cloudSecurityContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/feature-reporting-v1.webp",
-          srcSet: "/assets/feature-reporting-v1-p-500.webp 500w, /assets/feature-reporting-v1-p-800.webp 800w, /assets/feature-reporting-v1-p-1080.webp 1080w, /assets/feature-reporting-v1.webp 1128w",
+          src: "/assets/screenshots/feature-reporting-v1.webp",
+          srcSet: "/assets/screenshots/feature-reporting-v1-p-500.webp 500w, /assets/screenshots/feature-reporting-v1-p-800.webp 800w, /assets/screenshots/feature-reporting-v1-p-1080.webp 1080w, /assets/screenshots/feature-reporting-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -123,14 +123,14 @@ export const cloudSecurityContent: ProductSubpageContent = {
     theme: "_75mint",
     imgTint: "_30terra",
     img: {
-      src: "/assets/ilya-cropped-mono-img.webp",
-      srcSet: "/assets/ilya-cropped-mono-img-p-500.webp 500w, /assets/ilya-cropped-mono-img.webp 600w",
+      src: "/assets/customers/ilya-cropped-mono-img.webp",
+      srcSet: "/assets/customers/ilya-cropped-mono-img-p-500.webp 500w, /assets/customers/ilya-cropped-mono-img.webp 600w",
       sizes: "(max-width: 479px) 100vw, 215px",
     },
     quote: "Effortless SOC 2 compliance, worry-free experience. They handle all the parts of SOC 2, so I don’t have to worry about the details.”",
     name: "Ilya Tkachov",
     role: "Co-founder of wispbit",
-    logo: { src: "/assets/wispbit-mono-v2.svg" },
+    logo: { src: "/assets/logos/wispbit-mono-v2.svg" },
   },
   faq: (
     <>

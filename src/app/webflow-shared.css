@@ -2560,13 +2560,13 @@ figcaption {
 }
 
 .section.u-bg-wallpaper {
-  background-image: url("/assets/background-wallpaper-2.webp");
+  background-image: url("/assets/decor/background-wallpaper-2.webp");
   background-position: 0 0;
   background-size: cover;
 }
 
 .section.u-bg-wallpaper.nav_v2 {
-  background-image: linear-gradient(#0e2a2abf, #1b535340), url("/assets/product-tile-background-rg.jpg");
+  background-image: linear-gradient(#0e2a2abf, #1b535340), url("/assets/decor/product-tile-background-rg.jpg");
   background-position: 0 0, 0 0;
   background-size: auto, cover;
   margin-top: 0;
@@ -3331,14 +3331,14 @@ figcaption {
 
 .hero-background.pattern_product {
   z-index: 2;
-  background-image: linear-gradient(#36284500, #4f366199 60%, var(--color-aubergine)), url("/assets/mycroft-pattern3-lavender-v1.webp");
+  background-image: linear-gradient(#36284500, #4f366199 60%, var(--color-aubergine)), url("/assets/decor/mycroft-pattern3-lavender-v1.webp");
   background-position: 0 0, 50% 0;
   background-size: auto, 240px;
 }
 
 .hero-background.pattern_pixels {
   z-index: 1;
-  background-image: url("/assets/pixels-greyscale.webp");
+  background-image: url("/assets/decor/pixels-greyscale.webp");
   background-position: 50% 0;
   background-size: 800px;
   background-attachment: fixed;
@@ -3411,7 +3411,7 @@ figcaption {
   opacity: .06;
   /* static webp tile of the original animated gif's first frame (629KB -> 59KB);
      at opacity .06 the grain animation was imperceptible */
-  background-image: url("/assets/backgroundnoise.gif");
+  background-image: url("/assets/decor/backgroundnoise.gif");
   background-position: 50%;
   background-size: 20%;
   background-attachment: fixed;
@@ -3424,14 +3424,14 @@ figcaption {
 
 .hero-background.pattern_audit {
   z-index: 2;
-  background-image: linear-gradient(120deg, #ffe5e059, #ffe5e0cc), url("/assets/newpixels-lavender.webp");
+  background-image: linear-gradient(120deg, #ffe5e059, #ffe5e0cc), url("/assets/decor/newpixels-lavender.webp");
   background-position: 0 0, 50% 0;
   background-size: auto, 1440px;
 }
 
 .hero-background.pattern_cloudsec {
   z-index: 2;
-  background-image: linear-gradient(120deg, #dbe8ff59, #dbe8ffcc), url("/assets/newpixels-bluegrey.webp");
+  background-image: linear-gradient(120deg, #dbe8ff59, #dbe8ffcc), url("/assets/decor/newpixels-bluegrey.webp");
   background-position: 0 0, 50% 0;
   background-size: auto, 1440px;
 }
@@ -3443,7 +3443,7 @@ figcaption {
 
 .hero-background.pattern_appsec {
   z-index: 2;
-  background-image: linear-gradient(120deg, #dad6ff73, #dad6ffcc), url("/assets/newpixels-blueberry.webp");
+  background-image: linear-gradient(120deg, #dad6ff73, #dad6ffcc), url("/assets/decor/newpixels-blueberry.webp");
   background-position: 0 0, 50% 0;
   background-size: auto, 1440px;
 }
@@ -3460,14 +3460,14 @@ figcaption {
 
 .hero-background.pattern_devmng {
   z-index: 2;
-  background-image: linear-gradient(120deg, #ece1c159, #ece1c1cc), url("/assets/newpixels-gold.webp");
+  background-image: linear-gradient(120deg, #ece1c159, #ece1c1cc), url("/assets/decor/newpixels-gold.webp");
   background-position: 0 0, 50% 0;
   background-size: auto, 1440px;
 }
 
 .hero-background.pattern_tprm {
   z-index: 2;
-  background-image: linear-gradient(120deg, #e1dfd366, #e1dfd3cc), url("/assets/newpixels-sand.webp");
+  background-image: linear-gradient(120deg, #e1dfd366, #e1dfd3cc), url("/assets/decor/newpixels-sand.webp");
   background-position: 0 0, 50% 0;
   background-size: auto, 1440px;
 }
@@ -3480,7 +3480,7 @@ figcaption {
 .hero-background.fw_grid {
   z-index: 1;
   opacity: .45;
-  background-image: url("/assets/frameworks-grid-repeat.svg");
+  background-image: url("/assets/decor/frameworks-grid-repeat.svg");
   background-position: 50%;
   background-size: 58px;
   background-attachment: fixed;
@@ -4584,7 +4584,7 @@ figcaption {
 
 .cta-background.smoke-pattern {
   z-index: 2;
-  background-image: linear-gradient(180deg, var(--palette--colours--smoke), #72838780 20%, #6e7f7f00), url("/assets/mycroft-pattern2-grey-v1.webp");
+  background-image: linear-gradient(180deg, var(--palette--colours--smoke), #72838780 20%, #6e7f7f00), url("/assets/decor/mycroft-pattern2-grey-v1.webp");
   background-position: 0 0, 50% 0;
   background-size: auto, 240px;
   background-attachment: scroll, scroll;
@@ -4633,7 +4633,7 @@ figcaption {
 .pullquote-img-container {
   aspect-ratio: 1;
   background-color: var(--palette--colours--glow);
-  background-image: url("/assets/dots-repeat-60.webp");
+  background-image: url("/assets/decor/dots-repeat-60.webp");
   background-position: 50%;
   background-size: 24px;
   border-radius: 100%;
@@ -4645,12 +4645,12 @@ figcaption {
 
 .pullquote-img-container.terracotta {
   background-color: var(--palette--colours--terracotta);
-  background-image: url("/assets/dots-repeat-60-terracotta.webp");
+  background-image: url("/assets/decor/dots-repeat-60-terracotta.webp");
 }
 
 .pullquote-img-container.tint_75mint {
   background-color: var(--palette--tints--75-mint);
-  background-image: url("/assets/dots-repeat-50-mint.webp");
+  background-image: url("/assets/decor/dots-repeat-50-mint.webp");
 }
 
 .pullquote-img-container.cs_var {
@@ -4661,14 +4661,14 @@ figcaption {
 
 .pullquote-img-container._30terra {
   background-color: #eac2ba;
-  background-image: linear-gradient(#eac2ba4d, #eac2ba4d), url("/assets/dots-repeat-60-terracotta.webp");
+  background-image: linear-gradient(#eac2ba4d, #eac2ba4d), url("/assets/decor/dots-repeat-60-terracotta.webp");
   background-position: 0 0, 50%;
   background-size: auto, 24px;
 }
 
 .pullquote-img-container.blueberry {
   background-color: #eac2ba;
-  background-image: url("/assets/dots-repeat-50-blueberry.webp"), linear-gradient(#9a96ee, #9a96ee);
+  background-image: url("/assets/decor/dots-repeat-50-blueberry.webp"), linear-gradient(#9a96ee, #9a96ee);
   background-position: 50%, 0 0;
   background-size: 24px, auto;
 }
@@ -5205,7 +5205,7 @@ figcaption {
 .demo-ul-item {
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  background-image: url("/assets/blue-checkmark.svg");
+  background-image: url("/assets/icons/blue-checkmark.svg");
   background-position: 1px 1px;
   background-repeat: no-repeat;
   background-size: 24px;
@@ -5274,7 +5274,7 @@ figcaption {
 .pricing-ul-item {
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  background-image: url("/assets/check-bullet.svg");
+  background-image: url("/assets/icons/check-bullet.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 26px;
@@ -5417,7 +5417,7 @@ figcaption {
   border-width: 2px;
   border-color: var(--palette--colours--white);
   background-color: var(--palette--tints--75-mint);
-  background-image: url("/assets/dots-repeat-50-mint.webp");
+  background-image: url("/assets/decor/dots-repeat-50-mint.webp");
   background-position: 0 0;
   background-size: 24px;
   border-top-left-radius: 6px;
@@ -5734,7 +5734,7 @@ figcaption {
 }
 
 .slider__right-pane.image-1 {
-  background-image: linear-gradient(#cdcaf799, #cdcaf7bf 55%, #cdcaf7), url("/assets/product-tile-background-blue.jpg");
+  background-image: linear-gradient(#cdcaf799, #cdcaf7bf 55%, #cdcaf7), url("/assets/decor/product-tile-background-blue.jpg");
   background-position: 0 0, 0 0;
   background-repeat: repeat, repeat;
   background-size: auto, 600px;
@@ -5742,28 +5742,28 @@ figcaption {
 }
 
 .slider__right-pane.image-2 {
-  background-image: linear-gradient(#b4ffe499, #b4ffe4bf 55%, #b4ffe4), url("/assets/product-tile-background-lightgreen.jpg");
+  background-image: linear-gradient(#b4ffe499, #b4ffe4bf 55%, #b4ffe4), url("/assets/decor/product-tile-background-lightgreen.jpg");
   background-position: 0 0, 0 0;
   background-repeat: repeat, repeat;
   background-size: auto, 600px;
 }
 
 .slider__right-pane.image-3 {
-  background-image: linear-gradient(#c09cd499, #c09cd4bf 55%, #d0aee4), url("/assets/product-tile-background-aubergine.jpg");
+  background-image: linear-gradient(#c09cd499, #c09cd4bf 55%, #d0aee4), url("/assets/decor/product-tile-background-aubergine.jpg");
   background-position: 0 0, 0 0;
   background-repeat: repeat, repeat;
   background-size: auto, 600px;
 }
 
 .slider__right-pane.image-4 {
-  background-image: linear-gradient(#b4ffe499, #b4ffe4bf 55%, #d9fff1), url("/assets/product-tile-background-rg.jpg");
+  background-image: linear-gradient(#b4ffe499, #b4ffe4bf 55%, #d9fff1), url("/assets/decor/product-tile-background-rg.jpg");
   background-position: 0 0, 0 0;
   background-repeat: repeat, repeat;
   background-size: auto, 600px;
 }
 
 .slider__right-pane.image-5 {
-  background-image: linear-gradient(#fff8e499, #fff8e4bf 55%, #fff8e4), url("/assets/product-tile-background-gold.jpg");
+  background-image: linear-gradient(#fff8e499, #fff8e4bf 55%, #fff8e4), url("/assets/decor/product-tile-background-gold.jpg");
   background-position: 0 0, 0 0;
   background-repeat: repeat, repeat;
   background-size: auto, 600px;
@@ -6281,7 +6281,7 @@ figcaption {
   grid-column-gap: 2.5rem;
   grid-row-gap: 2.5rem;
   border: 5px solid var(--palette--tints--75-earl-grey);
-  background-image: url("/assets/gridpattern.png"), linear-gradient(180deg, #a39cb3, #bfc6d5 50%, var(--palette--tints--75-earl-grey) 90%);
+  background-image: url("/assets/decor/gridpattern.png"), linear-gradient(180deg, #a39cb3, #bfc6d5 50%, var(--palette--tints--75-earl-grey) 90%);
   background-position: 50% 0, 0 0;
   background-size: 172px, auto;
   border-radius: 12px;
@@ -6417,7 +6417,7 @@ figcaption {
 }
 
 .subscribe-col-right {
-  background-image: url("/assets/newslettersubscribe-img.webp");
+  background-image: url("/assets/photos/newslettersubscribe-img.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 898px;
@@ -6704,7 +6704,7 @@ figcaption {
   z-index: 1;
   aspect-ratio: 1;
   opacity: .75;
-  background-image: url("/assets/dots-repeat-50-mint.webp");
+  background-image: url("/assets/decor/dots-repeat-50-mint.webp");
   background-position: 0 0;
   background-size: 26px;
   width: 29rem;
@@ -7844,7 +7844,7 @@ figcaption {
   }
 
   .pullquote-img-container._30terra {
-    background-image: linear-gradient(to bottom, null, null), url("/assets/dots-repeat-60-terracotta.webp");
+    background-image: linear-gradient(to bottom, null, null), url("/assets/decor/dots-repeat-60-terracotta.webp");
     background-size: auto, 20px;
   }
 
@@ -9291,7 +9291,7 @@ figcaption {
   }
 
   .pullquote-img-container._30terra {
-    background-image: linear-gradient(to bottom, null, null), url("/assets/dots-repeat-60-terracotta.webp");
+    background-image: linear-gradient(to bottom, null, null), url("/assets/decor/dots-repeat-60-terracotta.webp");
     background-size: auto, 18px;
   }
 

@@ -20,17 +20,17 @@ export const appSecurityContent: ProductSubpageContent = {
       dek="Mycroft's platform continuously monitors your applications for vulnerabilities, providing real-time insights and prioritized alerts to help you identify and fix security issues quickly."
       features={[
         {
-          icon: "/assets/lock-icon.svg",
+          icon: "/assets/icons/lock-icon.svg",
           title: "Protect customer data",
           body: "Securing your applications protects sensitive customer information, including financial details, contact information, and identity credentials, from breaches and theft.",
         },
         {
-          icon: "/assets/hands-icon.svg",
+          icon: "/assets/icons/hands-icon.svg",
           title: "Maintain trust",
           body: "Strong application security protects sensitive data from threats and demonstrates a commitment to user safety, reinforcing long-term relationships with your brand.",
         },
         {
-          icon: "/assets/markets-icon.svg",
+          icon: "/assets/icons/markets-icon.svg",
           title: "Ensure business continuity",
           body: "Comprehensive app security prevents disruptions caused by attacks, keeping your operations running smoothly.",
         },
@@ -42,9 +42,9 @@ export const appSecurityContent: ProductSubpageContent = {
       heading: "Application scan",
       body: "Mycroft's platform scans applications for security vulnerabilities, providing detailed, severity-categorized descriptions and tracking issues over time, helping your team prioritize fixes and strengthen application security.",
       image: {
-        src: "/assets/product-appscan.webp",
+        src: "/assets/screenshots/product-appscan.webp",
         srcSet:
-          "/assets/product-appscan-p-500.webp 500w, /assets/product-appscan-p-800.webp 800w, /assets/product-appscan-p-1080.webp 1080w, /assets/product-appscan.webp 1352w",
+          "/assets/screenshots/product-appscan-p-500.webp 500w, /assets/screenshots/product-appscan-p-800.webp 800w, /assets/screenshots/product-appscan-p-1080.webp 1080w, /assets/screenshots/product-appscan.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -53,9 +53,9 @@ export const appSecurityContent: ProductSubpageContent = {
       heading: "Automated scan",
       body: "Mycroft's platform automatically scans your applications on a regular schedule and generates a centralized dashboard that displays all the latest security issues, prioritized by severity and current status, enabling your team to easily identify critical vulnerabilities and track their resolution progress.",
       image: {
-        src: "/assets/product-autoscan.webp",
+        src: "/assets/screenshots/product-autoscan.webp",
         srcSet:
-          "/assets/product-autoscan-p-500.webp 500w, /assets/product-autoscan-p-800.webp 800w, /assets/product-autoscan-p-1080.webp 1080w, /assets/product-autoscan.webp 1352w",
+          "/assets/screenshots/product-autoscan-p-500.webp 500w, /assets/screenshots/product-autoscan-p-800.webp 800w, /assets/screenshots/product-autoscan-p-1080.webp 1080w, /assets/screenshots/product-autoscan.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -64,9 +64,9 @@ export const appSecurityContent: ProductSubpageContent = {
       heading: "Scan jobs",
       body: "Mycroft's platform enables you to create custom scans tailored to your application’s specific needs and risk areas, then consolidates the results into an easy-to-review dashboard, giving you clear visibility into vulnerabilities and security posture in one centralized location.",
       image: {
-        src: "/assets/product-scanjobs.webp",
+        src: "/assets/screenshots/product-scanjobs.webp",
         srcSet:
-          "/assets/product-scanjobs-p-500.webp 500w, /assets/product-scanjobs-p-800.webp 800w, /assets/product-scanjobs-p-1080.webp 1080w, /assets/product-scanjobs.webp 1352w",
+          "/assets/screenshots/product-scanjobs-p-500.webp 500w, /assets/screenshots/product-scanjobs-p-800.webp 800w, /assets/screenshots/product-scanjobs-p-1080.webp 1080w, /assets/screenshots/product-scanjobs.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -78,8 +78,8 @@ export const appSecurityContent: ProductSubpageContent = {
     items: [
       {
         img: {
-          src: "/assets/features-img2.webp",
-          srcSet: "/assets/features-img2-p-500.webp 500w, /assets/features-img2-p-800.webp 800w, /assets/features-img2-p-1080.webp 1080w, /assets/features-img2.webp 1125w",
+          src: "/assets/screenshots/features-img2.webp",
+          srcSet: "/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w",
           width: "562.5",
           sizes: "(max-width: 767px) 100vw, 563px",
         },
@@ -88,8 +88,8 @@ export const appSecurityContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/features-img3.webp",
-          srcSet: "/assets/features-img3-p-500.webp 500w, /assets/features-img3-p-800.webp 800w, /assets/features-img3-p-1080.webp 1080w, /assets/features-img3.webp 1128w",
+          src: "/assets/screenshots/features-img3.webp",
+          srcSet: "/assets/screenshots/features-img3-p-500.webp 500w, /assets/screenshots/features-img3-p-800.webp 800w, /assets/screenshots/features-img3-p-1080.webp 1080w, /assets/screenshots/features-img3.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -98,8 +98,8 @@ export const appSecurityContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/feature-reporting-v1.webp",
-          srcSet: "/assets/feature-reporting-v1-p-500.webp 500w, /assets/feature-reporting-v1-p-800.webp 800w, /assets/feature-reporting-v1-p-1080.webp 1080w, /assets/feature-reporting-v1.webp 1128w",
+          src: "/assets/screenshots/feature-reporting-v1.webp",
+          srcSet: "/assets/screenshots/feature-reporting-v1-p-500.webp 500w, /assets/screenshots/feature-reporting-v1-p-800.webp 800w, /assets/screenshots/feature-reporting-v1-p-1080.webp 1080w, /assets/screenshots/feature-reporting-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -113,14 +113,14 @@ export const appSecurityContent: ProductSubpageContent = {
     theme: "tint_50bw",
     imgTint: "tint_75mint",
     img: {
-      src: "/assets/adam-cropped-mono-img.webp",
-      srcSet: "/assets/adam-cropped-mono-img-p-500.webp 500w, /assets/adam-cropped-mono-img.webp 600w",
+      src: "/assets/customers/adam-cropped-mono-img.webp",
+      srcSet: "/assets/customers/adam-cropped-mono-img-p-500.webp 500w, /assets/customers/adam-cropped-mono-img.webp 600w",
       sizes: "(max-width: 479px) 100vw, 215px",
     },
     quote: "Mycroft's 5-in-1 platform seamlessly consolidated our entire security stack, eliminating the need for multiple point solutions and endless checklists.”",
     name: "Adam Cohen",
     role: "CEO of WEAVE",
-    logo: { src: "/assets/weave-logo.svg", width: "114" },
+    logo: { src: "/assets/logos/weave-logo.svg", width: "114" },
   },
   faq: (
     <>

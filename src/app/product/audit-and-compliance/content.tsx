@@ -12,9 +12,9 @@ export const auditAndComplianceContent: ProductSubpageContent = {
       heading: "Frameworks dashboard",
       body: "Our security frameworks dashboard offers a clear view of various security frameworks and their completion statuses. Track progress across standards like SOC 2, GDPR, HIPAA, and ISO 27001 to ensure compliance with industry requirements.",
       image: {
-        src: "/assets/product-frameworks.webp",
+        src: "/assets/screenshots/product-frameworks.webp",
         srcSet:
-          "/assets/product-frameworks-p-500.webp 500w, /assets/product-frameworks-p-800.webp 800w, /assets/product-frameworks-p-1080.webp 1080w, /assets/product-frameworks.webp 1352w",
+          "/assets/screenshots/product-frameworks-p-500.webp 500w, /assets/screenshots/product-frameworks-p-800.webp 800w, /assets/screenshots/product-frameworks-p-1080.webp 1080w, /assets/screenshots/product-frameworks.webp 1352w",
         sizes: "(max-width: 479px) 100vw, 676px",
         width: 676,
       },
@@ -23,9 +23,9 @@ export const auditAndComplianceContent: ProductSubpageContent = {
       heading: "Custom controls",
       body: "Our platform lets users create custom security controls with Mycroft AI, enabling GRC engineers to design unique security measures beyond standard compliance. This feature addresses your organization's specific risks, enhancing your security posture compared to competitors.",
       image: {
-        src: "/assets/product-controls.webp",
+        src: "/assets/screenshots/product-controls.webp",
         srcSet:
-          "/assets/product-controls-p-500.webp 500w, /assets/product-controls-p-800.webp 800w, /assets/product-controls-p-1080.webp 1080w, /assets/product-controls.webp 1352w",
+          "/assets/screenshots/product-controls-p-500.webp 500w, /assets/screenshots/product-controls-p-800.webp 800w, /assets/screenshots/product-controls-p-1080.webp 1080w, /assets/screenshots/product-controls.webp 1352w",
         sizes: "(max-width: 479px) 100vw, 676px",
         width: 676,
       },
@@ -34,9 +34,9 @@ export const auditAndComplianceContent: ProductSubpageContent = {
       heading: "Automated tests and evidence",
       body: "Our platform automatically generates tailored tests for your custom controls and seamlessly collects evidence, simplifying compliance validation and ensuring your controls are consistently verified without manual effort.",
       image: {
-        src: "/assets/product-automation.webp",
+        src: "/assets/screenshots/product-automation.webp",
         srcSet:
-          "/assets/product-automation-p-500.webp 500w, /assets/product-automation-p-800.webp 800w, /assets/product-automation-p-1080.webp 1080w, /assets/product-automation.webp 1352w",
+          "/assets/screenshots/product-automation-p-500.webp 500w, /assets/screenshots/product-automation-p-800.webp 800w, /assets/screenshots/product-automation-p-1080.webp 1080w, /assets/screenshots/product-automation.webp 1352w",
         sizes: "(max-width: 479px) 100vw, 676px",
         width: 676,
       },
@@ -48,8 +48,8 @@ export const auditAndComplianceContent: ProductSubpageContent = {
     items: [
       {
         img: {
-          src: "/assets/features-img1.webp",
-          srcSet: "/assets/features-img1-p-500.webp 500w, /assets/features-img1-p-800.webp 800w, /assets/features-img1-p-1080.webp 1080w, /assets/features-img1.webp 1128w",
+          src: "/assets/screenshots/features-img1.webp",
+          srcSet: "/assets/screenshots/features-img1-p-500.webp 500w, /assets/screenshots/features-img1-p-800.webp 800w, /assets/screenshots/features-img1-p-1080.webp 1080w, /assets/screenshots/features-img1.webp 1128w",
           width: "564",
           sizes: "(max-width: 479px) 100vw, 564px",
         },
@@ -58,8 +58,8 @@ export const auditAndComplianceContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/features-img2.webp",
-          srcSet: "/assets/features-img2-p-500.webp 500w, /assets/features-img2-p-800.webp 800w, /assets/features-img2-p-1080.webp 1080w, /assets/features-img2.webp 1125w",
+          src: "/assets/screenshots/features-img2.webp",
+          srcSet: "/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w",
           width: "562.5",
           sizes: "(max-width: 479px) 100vw, 563px",
         },
@@ -68,8 +68,8 @@ export const auditAndComplianceContent: ProductSubpageContent = {
       },
       {
         img: {
-          src: "/assets/features-img3.webp",
-          srcSet: "/assets/features-img3-p-500.webp 500w, /assets/features-img3-p-800.webp 800w, /assets/features-img3-p-1080.webp 1080w, /assets/features-img3.webp 1128w",
+          src: "/assets/screenshots/features-img3.webp",
+          srcSet: "/assets/screenshots/features-img3-p-500.webp 500w, /assets/screenshots/features-img3-p-800.webp 800w, /assets/screenshots/features-img3-p-1080.webp 1080w, /assets/screenshots/features-img3.webp 1128w",
           width: "564",
           sizes: "(max-width: 479px) 100vw, 564px",
         },
@@ -81,14 +81,14 @@ export const auditAndComplianceContent: ProductSubpageContent = {
   pullquote: {
     labelTheme: "lavender",
     img: {
-      src: "/assets/jorge-cropped-mono-img.webp",
-      srcSet: "/assets/jorge-cropped-mono-img-p-500.webp 500w, /assets/jorge-cropped-mono-img.webp 600w",
+      src: "/assets/customers/jorge-cropped-mono-img.webp",
+      srcSet: "/assets/customers/jorge-cropped-mono-img-p-500.webp 500w, /assets/customers/jorge-cropped-mono-img.webp 600w",
       sizes: "215px",
     },
     quote: "With Mycroft, they have a deep expertise in security, which is not a feature but a core foundation of their platform.”",
     name: "Jorge Ferreiro",
     role: "CEO of Smashsend",
-    logo: { src: "/assets/smashsend-logo-mono.svg" },
+    logo: { src: "/assets/logos/smashsend-logo-mono.svg" },
   },
   faq: (
     <>

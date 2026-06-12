@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Device Management",
     description: "Our platform enforces security policies, monitors device health, and ensures compliance across all endpoints, keeping your business protected.",
     type: "website",
-    images: ["/assets/devicemanagement-meta-img-v1.jpg"],
+    images: ["/assets/meta/devicemanagement-meta-img-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Device Management",
     description: "Our platform enforces security policies, monitors device health, and ensures compliance across all endpoints, keeping your business protected.",
-    images: ["/assets/devicemanagement-meta-img-v1.jpg"],
+    images: ["/assets/meta/devicemanagement-meta-img-v1.jpg"],
   },
 };
 

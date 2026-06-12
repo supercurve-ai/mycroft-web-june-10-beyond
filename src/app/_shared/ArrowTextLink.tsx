@@ -19,7 +19,7 @@ export function ArrowTextLink({
         {children}
       </div>
       <img
-        src="/assets/arrow-icon-small-aubergine.svg"
+        src="/assets/icons/arrow-icon-small-aubergine.svg"
         alt=""
         className="arrow-icon-small"
       />

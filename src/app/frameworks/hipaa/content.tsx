@@ -5,27 +5,27 @@ export const hipaa: FrameworkPageData = {
   meta: {
     title: "Mycroft Frameworks | HIPAA compliance, built for healthcare organizations",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet HIPAA requirements and protect sensitive health information with confidence.",
-    image: "/assets/frameworks-hipaa-meta-v1.jpg",
+    image: "/assets/meta/frameworks-hipaa-meta-v1.jpg",
   },
   hero: {
     title: "HIPAA compliance, built for healthcare organizations",
     dek: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet HIPAA requirements and protect sensitive health information with confidence.",
-    badge: { src: "/assets/hipaa-badge-2.svg", alt: "" },
+    badge: { src: "/assets/badges/hipaa-badge-2.svg", alt: "" },
     whyTitle: "Why HIPAA matters to you",
     whyDek: "HIPAA compliance ensures the protection of protected health information (PHI), reduces regulatory risk, and enables you to work with healthcare providers and partners.",
     features: [
       {
-        icon: "/assets/userlock-icon.svg",
+        icon: "/assets/icons/userlock-icon.svg",
         title: "Protect sensitive health data",
         copy: "HIPAA establishes strict safeguards for PHI, reducing the risk of breaches and unauthorized access.",
       },
       {
-        icon: "/assets/warning-icon.svg",
+        icon: "/assets/icons/warning-icon.svg",
         title: "Avoid costly penalties",
         copy: "HIPAA violations can result in significant financial penalties and reputational damage. Strong compliance reduces exposure.",
       },
       {
-        icon: "/assets/hands-icon.svg",
+        icon: "/assets/icons/hands-icon.svg",
         title: "Enable healthcare partnerships",
         copy: "Healthcare providers, payers, and partners require HIPAA compliance before engaging with vendors and platforms.",
       },

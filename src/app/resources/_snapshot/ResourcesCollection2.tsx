@@ -11,7 +11,7 @@ export function ResourcesCollection2({ item }: { item: ResourcesCollection2Item 
               CASE STUDY
             </div>
           </div>
-          <img src="/assets/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
+          <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
         </div>
         <div className="feature-tile-content">
           <a href={item.href_0} className="w-inline-block">

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     title: "Subscribe",
     description: "Subscribe to read in depth industry updates, deep dives, and Mike’s thoughts",
     type: "website",
-    images: ["/assets/mycroft-meta-img-subscribe.webp"],
+    images: ["/assets/meta/mycroft-meta-img-subscribe.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Subscribe",
     description: "Subscribe to read in depth industry updates, deep dives, and Mike’s thoughts",
-    images: ["/assets/mycroft-meta-img-subscribe.webp"],
+    images: ["/assets/meta/mycroft-meta-img-subscribe.webp"],
   },
 };
 

@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Mycroft | Security automated for enterprise standards",
     description: "Mycroft is the platform that serves as your virtual Security and Compliance officer, consolidating all your security needs, supported by experts.",
     type: "website",
-    images: ["/assets/mycroft-meta-img-home.webp"],
+    images: ["/assets/meta/mycroft-meta-img-home.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mycroft | Security automated for enterprise standards",
     description: "Mycroft is the platform that serves as your virtual Security and Compliance officer, consolidating all your security needs, supported by experts.",
-    images: ["/assets/mycroft-meta-img-home.webp"],
+    images: ["/assets/meta/mycroft-meta-img-home.webp"],
   },
 };
 

@@ -9,27 +9,27 @@ export const iso42001: FrameworkPageData = {
   meta: {
     title: "Mycroft Frameworks | ISO 42001 compliance, built for AI governance",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you implement responsible AI practices and meet ISO 42001 requirements.",
-    image: "/assets/frameworks-iso42001-meta-v1.jpg",
+    image: "/assets/meta/frameworks-iso42001-meta-v1.jpg",
   },
   hero: {
     title: <><Iso42001 /> compliance, built for AI governance</>,
     dek: <>Mycroft’s Risk Operations Center removes the operational burden, helping you implement responsible AI practices and meet <Iso42001 /> requirements.</>,
-    badge: { src: "/assets/iso42-badge.svg", alt: "" },
+    badge: { src: "/assets/badges/iso42-badge.svg", alt: "" },
     whyTitle: <>Why <Iso42001 /> matters to you</>,
     whyDek: <><Iso42001 /> provides a framework for managing AI systems responsibly, addressing risk, transparency, and governance.</>,
     features: [
       {
-        icon: "/assets/seal-icon.svg",
+        icon: "/assets/icons/seal-icon.svg",
         title: "Responsible AI practices",
         copy: "Ensure your AI systems are developed and used ethically and transparently.",
       },
       {
-        icon: "/assets/folder-icon.svg",
+        icon: "/assets/icons/folder-icon.svg",
         title: "Risk management for AI",
         copy: "Identify and mitigate risks associated with AI models and data.",
       },
       {
-        icon: "/assets/datalock-icon.svg",
+        icon: "/assets/icons/datalock-icon.svg",
         title: "Regulatory readiness",
         copy: "Prepare for emerging AI regulations and standards globally.",
       },

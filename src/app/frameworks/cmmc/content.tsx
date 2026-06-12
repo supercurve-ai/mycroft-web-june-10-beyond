@@ -5,27 +5,27 @@ export const cmmc: FrameworkPageData = {
   meta: {
     title: "Mycroft Frameworks | CMMC compliance, built for defense contractors",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet all CMMC requirements and secure DoD contracts with confidence.",
-    image: "/assets/frameworks-cmmc-meta-v1.jpg",
+    image: "/assets/meta/frameworks-cmmc-meta-v1.jpg",
   },
   hero: {
     title: "CMMC compliance, built for defense contractors",
     dek: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet all CMMC requirements and secure DoD contracts with confidence.",
-    badge: { src: "/assets/cmmc-badge-2.svg", alt: "" },
+    badge: { src: "/assets/badges/cmmc-badge-2.svg", alt: "" },
     whyTitle: "Why CMMC matters to you",
     whyDek: "CMMC compliance is required to work with the U.S. Department of Defense and its contractors, ensuring your organization protects controlled unclassified information.",
     features: [
       {
-        icon: "/assets/stamp.svg",
+        icon: "/assets/icons/stamp.svg",
         title: "Protect contract eligibility",
         copy: "Without CMMC compliance, you cannot bid on or maintain DoD contracts. Certification at Level 1, 2, or 3 is required depending on the sensitivity of the work.",
       },
       {
-        icon: "/assets/lock-icon.svg",
+        icon: "/assets/icons/lock-icon.svg",
         title: "Safeguard sensitive data",
         copy: "CMMC enforces strict controls to protect controlled unclassified information from breaches and unauthorized access.",
       },
       {
-        icon: "/assets/hands-icon.svg",
+        icon: "/assets/icons/hands-icon.svg",
         title: "Strengthen competitive positioning",
         copy: "Organizations that achieve compliance faster gain an advantage in securing and retaining government contracts.",
       },

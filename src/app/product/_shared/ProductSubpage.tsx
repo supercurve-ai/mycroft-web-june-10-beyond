@@ -258,8 +258,8 @@ export function ProductSubpage(content: ProductSubpageContent) {
             <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
               <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
                 <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
-                  <img src="/assets/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
-                  <img src="/assets/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
+                  <img src="/assets/icons/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
+                  <img src="/assets/icons/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
                   <div className="container-flex faq_container">
                     <h3 className="h3_v2 color_white">
                       Frequently asked questions

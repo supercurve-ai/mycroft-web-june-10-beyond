@@ -33,18 +33,18 @@ export function CtaSection({ variant }: { variant: "fireplace" | "lamp" }) {
                 </div>
                 {variant === "fireplace" ? (
                   <div className="col-cta-right fireplace">
-                    <img src="/assets/fireplace-glowhover.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/fireplace-glowhover-p-500.webp 500w, /assets/fireplace-glowhover-p-800.webp 800w, /assets/fireplace-glowhover.webp 994w" className="cta-fireplace-glow-img" style={{ opacity: "0.5" }} />
-                    <img src="/assets/fireplace-hover.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/fireplace-hover-p-500.webp 500w, /assets/fireplace-hover-p-800.webp 800w, /assets/fireplace-hover.webp 994w" className="cta-fireplace-hover-img" style={{ opacity: "0" }} />
-                    <img src="/assets/fireplace.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/fireplace-p-500.webp 500w, /assets/fireplace-p-800.webp 800w, /assets/fireplace.webp 994w" />
+                    <img src="/assets/decor/fireplace-glowhover.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/decor/fireplace-glowhover-p-500.webp 500w, /assets/decor/fireplace-glowhover-p-800.webp 800w, /assets/decor/fireplace-glowhover.webp 994w" className="cta-fireplace-glow-img" style={{ opacity: "0.5" }} />
+                    <img src="/assets/decor/fireplace-hover.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/decor/fireplace-hover-p-500.webp 500w, /assets/decor/fireplace-hover-p-800.webp 800w, /assets/decor/fireplace-hover.webp 994w" className="cta-fireplace-hover-img" style={{ opacity: "0" }} />
+                    <img src="/assets/decor/fireplace.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/decor/fireplace-p-500.webp 500w, /assets/decor/fireplace-p-800.webp 800w, /assets/decor/fireplace.webp 994w" />
                   </div>
                 ) : (
                   <div className="col-cta-right">
                     <div className="cta-lamp-container">
-                      <img src="/assets/lamp2.webp" loading="lazy" width="240" alt="" className="cta-lamp-img" />
-                      <img src="/assets/glow2a.webp" loading="lazy" width="240" alt="" className="cta-glow2a-img" />
-                      <img src="/assets/glow2a.webp" loading="lazy" width="240" alt="" className="cta-glow2b-img" style={{ opacity: "0" }} />
+                      <img src="/assets/decor/lamp2.webp" loading="lazy" width="240" alt="" className="cta-lamp-img" />
+                      <img src="/assets/decor/glow2a.webp" loading="lazy" width="240" alt="" className="cta-glow2a-img" />
+                      <img src="/assets/decor/glow2a.webp" loading="lazy" width="240" alt="" className="cta-glow2b-img" style={{ opacity: "0" }} />
                     </div>
-                    <img src="/assets/chair-v4.webp" loading="lazy" width="398.5" sizes="(max-width: 479px) 100vw, 399px" alt="" srcSet="/assets/chair-v4-p-500.webp 500w, /assets/chair-v4.webp 797w" className="cta-chair-img" />
+                    <img src="/assets/decor/chair-v4.webp" loading="lazy" width="398.5" sizes="(max-width: 479px) 100vw, 399px" alt="" srcSet="/assets/decor/chair-v4-p-500.webp 500w, /assets/decor/chair-v4.webp 797w" className="cta-chair-img" />
                   </div>
                 )}
               </div>

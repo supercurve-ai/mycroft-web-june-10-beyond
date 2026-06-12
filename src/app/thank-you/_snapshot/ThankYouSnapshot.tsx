@@ -17,7 +17,7 @@ export function ThankYouSnapshot() {
           <div className="w-layout-blockcontainer wf-container w-container">
             <div className="row row-justify-center">
               <div className="col u-text-center">
-                <img src="/assets/chair.webp" loading="lazy" alt="" className="image-6" />
+                <img src="/assets/decor/chair.webp" loading="lazy" alt="" className="image-6" />
               </div>
             </div>
             <div className="row row-justify-center">

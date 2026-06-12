@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     title: "Audit and compliance",
     description: "Explore how Mycroft’s platform can get you compliant fast.",
     type: "website",
-    images: ["/assets/audit-compliance-meta-img-v1.jpg"],
+    images: ["/assets/meta/audit-compliance-meta-img-v1.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Audit and compliance",
     description: "Explore how Mycroft’s platform can get you compliant fast.",
-    images: ["/assets/audit-compliance-meta-img-v1.jpg"],
+    images: ["/assets/meta/audit-compliance-meta-img-v1.jpg"],
   },
 };
 
