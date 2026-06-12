@@ -1,0 +1,49 @@
+/** Testimonial section of /product. Ported from Webflow by the Webflow Cloner agent. */
+export function ProductTestimonial() {
+  return (
+    <section id="Testimonial" className="section_v2 split_background _40earlgrey_rg">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
+          <div className="pullquote-container">
+            <div className="container-flex align-top">
+              <div className="slant-label pullquote _75terra">
+                <div className="eyebrow-large whitespace-nowrap max-portrait:whitespace-nowrap">
+                  Client Testimonial
+                </div>
+              </div>
+              <div className="shape-triangle _75terra w-embed">
+                <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34 38" xmlSpace="preserve">
+                  <path fill="currentColor" d="M0,0l34,38H0V0z"></path>
+                </svg>
+              </div>
+            </div>
+            <div className="pullquote-content _75terra">
+              <div className="container-flex pullquote_container">
+                <div className="pullquote-img-container blueberry">
+                  <img width="215" loading="lazy" alt="" src="/assets/customers/steve-cropped-mono-img.webp" sizes="(max-width: 479px) 100vw, 215px" srcSet="/assets/customers/steve-cropped-mono-img-p-500.webp 500w, /assets/customers/steve-cropped-mono-img.webp 600w" className="pullquote-img" />
+                </div>
+                <div className="container-flex pullquote_right">
+                  <div className="pullquote-text hanging_quote">
+                    “
+                  </div>
+                  <div className="container-flex vertical">
+                    <div className="pullquote-text">
+                      Mycroft provided us with the best  guidance through our SOC 2 process. We knew we were in good hands from the beginning.”
+                    </div>
+                    <div className="pullquote-name">
+                      Steve Emmanuel
+                    </div>
+                    <div className="pullquote-title">
+                      CEO & Co-founder of integratrace
+                    </div>
+                    <img loading="lazy" src="/assets/logos/integratrace-logo.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

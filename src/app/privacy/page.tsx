@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PrivacySnapshot } from "./_snapshot/PrivacySnapshot";
+import { PrivacyPageContent } from "./_sections/PrivacyPageContent";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <>
-      <PrivacySnapshot />
+      <PrivacyPageContent />
       <WebflowInteractions />
     </>
   );

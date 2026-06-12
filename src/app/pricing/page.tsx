@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PricingSnapshot } from "./_snapshot/PricingSnapshot";
+import { PricingPageContent } from "./_sections/PricingPageContent";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   return (
     <>
-      <PricingSnapshot />
+      <PricingPageContent />
       <WebflowInteractions />
     </>
   );

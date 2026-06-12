@@ -1,0 +1,80 @@
+import { BookDemoForm } from "@/app/_shared/BookDemoForm";
+
+/** Hero section of /pricing. Ported from Webflow by the Webflow Cloner agent. */
+export function PricingHero() {
+  return (
+    <section id="hero" className="section-hero">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="container-xl">
+          <div className="hero-demo-container">
+            <div className="hero-demo-top">
+              <h3 className="h3_v2 color_mint">
+                Security and compliance made easy
+              </h3>
+              <div className="text-dek-m text_earlgrey40">
+                Achieve enterprise security with 24/7/365 monitoring in days vs. months
+              </div>
+            </div>
+            <div className="hero-demo-btm">
+              <div className="demo-col-left">
+                <div className="demo-eyebrow-container">
+                  <div className="eyebrow-large demo_cta">
+                    Book a demo now to learn more about our product:
+                  </div>
+                </div>
+                <ul role="list" className="demo-ul">
+                  <li className="demo-ul-item">
+                    <h6 className="h6 demo_cta">
+                      Full security and compliance stack
+                    </h6>
+                    <div className="body-text-medium">
+                      Mycroft combines all your security and compliance operations in one place – supporting your security, privacy and compliance from day one.
+                    </div>
+                  </li>
+                  <li className="demo-ul-item">
+                    <h6 className="h6 demo_cta">
+                      Your personalized Security and Compliance Officer
+                    </h6>
+                    <div className="body-text-medium">
+                      Scattered tools, manual workflows, and spreadsheet-driven audits are replaced with a single Agentic AI solution that acts as your Security and Compliance Officer.
+                    </div>
+                  </li>
+                  <li className="demo-ul-item">
+                    <h6 className="h6 demo_cta">
+                      Real experts, always available
+                    </h6>
+                    <div className="body-text-medium">
+                      Our Risk Operations Center monitors your environment, with seasoned experts who act as an extension to your team — anticipating risks, responding fast, and keeping you secure.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="demo-col-right">
+                <div className="demo-form-built">
+                  <BookDemoForm />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="z-index _10">
+          <div className="container-xs">
+            <div className="container-flex vertical">
+              <h3 className="h3_v2 color_rg text_center">
+                Plans for everyone
+              </h3>
+              <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
+                <div className="text-dek-m text_center">
+                  Find the right package for your security program
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="hero-background color_pricing"></div>
+      <div className="hero-background color_overlay_green"></div>
+      <div className="hero-background pattern_pixels"></div>
+    </section>
+  );
+}

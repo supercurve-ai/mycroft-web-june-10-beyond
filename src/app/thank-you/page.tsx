@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ThankYouSnapshot } from "./_snapshot/ThankYouSnapshot";
+import { ThankYouPageContent } from "./_sections/ThankYouPageContent";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <>
-      <ThankYouSnapshot />
+      <ThankYouPageContent />
       <WebflowInteractions />
     </>
   );

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AiDisclosureSnapshot } from "./_snapshot/AiDisclosureSnapshot";
+import { AiDisclosurePageContent } from "./_sections/AiDisclosurePageContent";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function AiDisclosurePage() {
   return (
     <>
-      <AiDisclosureSnapshot />
+      <AiDisclosurePageContent />
       <WebflowInteractions />
     </>
   );

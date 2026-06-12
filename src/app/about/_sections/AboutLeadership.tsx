@@ -1,0 +1,121 @@
+/** Leadership section of /about. Ported from Webflow by the Webflow Cloner agent. */
+export function AboutLeadership() {
+  return (
+    <section id="leadership" className="section_v2 tint_75rg">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
+          <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
+            <h2 className="h2_v2 color_white text_center">
+              Leadership
+            </h2>
+          </div>
+          <div className="w-full pb-(--sizing--rem--10rem) max-tablet:pb-(--sizing--rem--8rem) max-landscape:pb-(--sizing--rem--6rem) max-portrait:pb-(--sizing--rem--4-5rem)">
+            <div className="founder-grid">
+              <div className="founder-tile wf-scrub" data-wf-scrub="5,15" style={{"opacity": "0", "transform": "translate3d(50px, 0px, 0px)"}}>
+                <div className="founder-tile-top">
+                  <div className="founder-tile-mid">
+                    <h6 className="h6 founder_hed">
+                      Mike Kim
+                    </h6>
+                    <div className="eyebrow-small founder_subhed">
+                      Co-founder, CEO
+                    </div>
+                  </div>
+                  <img src="/assets/team/mike-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/team/mike-2-p-500.webp 500w, /assets/team/mike-2-p-800.webp 800w, /assets/team/mike-2.webp 840w" className="founder-img" />
+                </div>
+                <div className="founder-tile-btm">
+                  <div className="founder-body">
+                    With 12+ years in cybersecurity, Mike (CISA) has roots as a practitioner with deep domain experience with a network following success scaling SaaS companies and professional service firms, from pre-seed to F500.
+                    <br />
+                  </div>
+                  <div className="tile-indent">
+                    <div className="indent-shape-triangle tint_75rg y-rotate w-embed">
+                      <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12
+   " xmlSpace="preserve">
+                        <path fill="currentColor" d="M0,0l34,38H0V0z"></path>
+                      </svg>
+                    </div>
+                    <div className="indent-mid tint_75rg"></div>
+                    <div className="indent-shape-triangle tint_75rg w-embed">
+                      <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12
+   " xmlSpace="preserve">
+                        <path fill="currentColor" d="M0,0l34,38H0V0z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="founder-tile wf-scrub" data-wf-scrub="10,20" style={{"opacity": "0", "transform": "translate3d(50px, 0px, 0px)"}}>
+                <div className="founder-tile-top">
+                  <div className="founder-tile-mid">
+                    <h6 className="h6 founder_hed">
+                      Jon Mendes
+                    </h6>
+                    <div className="eyebrow-small founder_subhed">
+                      Co-founder, PRODUCT & DESIGN
+                    </div>
+                  </div>
+                  <img src="/assets/team/jon-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/team/jon-2-p-500.webp 500w, /assets/team/jon-2-p-800.webp 800w, /assets/team/jon-2.webp 840w" className="founder-img" />
+                </div>
+                <div className="founder-tile-btm">
+                  <div className="founder-body">
+                    Jon has 12+ years of experience as a product and design leader. Formerly a co-founder of PartnerStack (YC S15), he helped scale the partner tech company to over $20M+ ARR to Series B.
+                    <br />
+                  </div>
+                  <div className="tile-indent">
+                    <div className="indent-shape-triangle tint_75rg y-rotate w-embed">
+                      <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12
+   " xmlSpace="preserve">
+                        <path fill="currentColor" d="M0,0l34,38H0V0z"></path>
+                      </svg>
+                    </div>
+                    <div className="indent-mid tint_75rg"></div>
+                    <div className="indent-shape-triangle tint_75rg w-embed">
+                      <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12
+   " xmlSpace="preserve">
+                        <path fill="currentColor" d="M0,0l34,38H0V0z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="founder-tile wf-scrub" data-wf-scrub="15,25" style={{"opacity": "0", "transform": "translate3d(50px, 0px, 0px)"}}>
+                <div className="founder-tile-top">
+                  <div className="founder-tile-mid">
+                    <h6 className="h6 founder_hed">
+                      Jan Jedrasik
+                    </h6>
+                    <div className="eyebrow-small founder_subhed">
+                      Co-founder, Engineering
+                    </div>
+                  </div>
+                  <img src="/assets/team/jan-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/team/jan-2-p-500.webp 500w, /assets/team/jan-2-p-800.webp 800w, /assets/team/jan-2.webp 840w" className="founder-img" />
+                </div>
+                <div className="founder-tile-btm">
+                  <div className="founder-body">
+                    Jan (CISSP) is an engineering leader with more than seven years of experience in application security/infrastructure. As a CISSP, he leads software architecture, having built out an AI Security Operations Center.
+                  </div>
+                  <div className="tile-indent">
+                    <div className="indent-shape-triangle tint_75rg y-rotate w-embed">
+                      <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12
+   " xmlSpace="preserve">
+                        <path fill="currentColor" d="M0,0l34,38H0V0z"></path>
+                      </svg>
+                    </div>
+                    <div className="indent-mid tint_75rg"></div>
+                    <div className="indent-shape-triangle tint_75rg w-embed">
+                      <svg version="1.1" baseProfile="basic" id="Triangle" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12
+   " xmlSpace="preserve">
+                        <path fill="currentColor" d="M0,0l34,38H0V0z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

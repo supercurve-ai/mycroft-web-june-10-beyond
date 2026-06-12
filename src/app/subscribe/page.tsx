@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SubscribeSnapshot } from "./_snapshot/SubscribeSnapshot";
+import { SubscribePageContent } from "./_sections/SubscribePageContent";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function SubscribePage() {
   return (
     <>
-      <SubscribeSnapshot />
+      <SubscribePageContent />
       <WebflowInteractions />
     </>
   );

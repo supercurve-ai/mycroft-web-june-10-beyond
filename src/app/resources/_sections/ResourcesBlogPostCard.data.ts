@@ -1,0 +1,205 @@
+import type { ResourcesBlogPostItem } from "./ResourcesBlogPostCard";
+
+/** Data for the ResourcesBlogPostCard collection, parsed from the Webflow CMS items. Ported from Webflow by the Webflow Cloner agent. */
+export const resourcesBlogPosts: ResourcesBlogPostItem[] = [
+  {
+    "href_0": "/blog/whats-the-most-efficient-way-to-handle-cmmc-compliance-assessments",
+    "image_1": "/assets/blog/whats-the-most-efficient-way-to-handle-cmmc-compliance-assessments/whats-the-most-efficient-way-to-handle-cmmc-compliance-assessments.webp",
+    "image_2": "/assets/blog/whats-the-most-efficient-way-to-handle-cmmc-compliance-assessments/whats-the-most-efficient-way-to-handle-cmmc-compliance-assessments.webp 1599w",
+    "image_3": "What's the most efficient way to handle CMMC compliance assessments?",
+    "smaller_4": "What's the most efficient way to handle CMMC compliance assessments?",
+    "medium_5": "Handling CMMC compliance assessments efficiently starts long before a C3PAO is scheduled. Here’s a five-step framework for defense contractors of any size.",
+    "medium_6": "June 12, 2026",
+    "medium_7": "11 min read"
+  },
+  {
+    "href_0": "/blog/iso-27001-vs-cmmc",
+    "image_1": "/assets/blog/iso-27001-vs-cmmc/iso-27001-vs-cmmc.webp",
+    "image_2": "/assets/blog/iso-27001-vs-cmmc/iso-27001-vs-cmmc.webp 1611w",
+    "image_3": "ISO 27001 vs CMMC: Which certification does your company need?",
+    "smaller_4": "ISO 27001 vs CMMC: Which certification does your company need?",
+    "medium_5": "Despite some overlap, ISO 27001 and CMMC solve different problems. Here's how to tell which certification your company needs and when to pursue both.",
+    "medium_6": "June 12, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/cmmc-compliance-platform",
+    "image_1": "/assets/blog/cmmc-compliance-platform/343403.webp",
+    "image_2": "/assets/blog/cmmc-compliance-platform/343403-p-500.webp 500w, /assets/blog/cmmc-compliance-platform/343403.webp 720w",
+    "image_3": "CMMC compliance platforms: What to look for now that 48 CFR is in effect",
+    "smaller_4": "CMMC compliance platforms: What to look for now that 48 CFR is in effect",
+    "medium_5": "Here’s how to choose a CMMC compliance platform that operates your security program, not just documents it—and why 48 CFR enforcement changes the evaluation.",
+    "medium_6": "June 4, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/third-party-vendor-risk-management",
+    "image_1": "/assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail.webp",
+    "image_2": "/assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-500.webp 500w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-800.webp 800w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-1080.webp 1080w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-1600.webp 1600w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail.webp 1952w",
+    "image_3": "Third-party vendor risk management: the complete guide (and why most programs still fail)",
+    "smaller_4": "Third-party vendor risk management: the complete guide (and why most programs still fail)",
+    "medium_5": "Most TPRM programs fail not because companies don't care about security, but because the entire program lives in one person's head. Learn what third-party vendor risk management actually involves, where programs break down, and what a modern approach looks like.",
+    "medium_6": "May 26, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/vendor-risk-management-software",
+    "image_1": "/assets/blog/vendor-risk-management-software/vendor-risk-management-software.webp",
+    "image_2": "/assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-500.webp 500w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-800.webp 800w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-1080.webp 1080w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-1600.webp 1600w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software.webp 1952w",
+    "image_3": "Vendor risk management software: What to evaluate beyond the feature checklist",
+    "smaller_4": "Vendor risk management software: What to evaluate beyond the feature checklist",
+    "medium_5": "Most VRM comparisons stop at features. Learn how to evaluate vendor risk management software for how your team actually operates.",
+    "medium_6": "May 5, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/automate-user-acces-reviews",
+    "image_1": "/assets/blog/automate-user-acces-reviews/how-to-automate-user-access-reviews-without-creating-new-problems.webp",
+    "image_2": "/assets/blog/automate-user-acces-reviews/how-to-automate-user-access-reviews-without-creating-new-problems-p-500.webp 500w, /assets/blog/automate-user-acces-reviews/how-to-automate-user-access-reviews-without-creating-new-problems-p-800.webp 800w, /assets/blog/automate-user-acces-reviews/how-to-automate-user-access-reviews-without-creating-new-problems-p-1080.webp 1080w, /assets/blog/automate-user-acces-reviews/how-to-automate-user-access-reviews-without-creating-new-problems-p-1600.webp 1600w, /assets/blog/automate-user-acces-reviews/how-to-automate-user-access-reviews-without-creating-new-problems.webp 1952w",
+    "image_3": "How to automate user access reviews without creating new problems",
+    "smaller_4": "How to automate user access reviews without creating new problems",
+    "medium_5": "Most UAR tools automate the workflow. Nobody talks about who runs the program. Mike Kim, former EY auditor and Mycroft CEO, on what access review automation actually gets wrong, and how to build a program that holds up.",
+    "medium_6": "May 4, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/soc-2-automation",
+    "image_1": "/assets/blog/soc-2-automation/soc-2-automation-what-s-missing-and-how-to-fill-the-gap-mycroft.webp",
+    "image_2": "/assets/blog/soc-2-automation/soc-2-automation-what-s-missing-and-how-to-fill-the-gap-mycroft-p-500.webp 500w, /assets/blog/soc-2-automation/soc-2-automation-what-s-missing-and-how-to-fill-the-gap-mycroft-p-800.webp 800w, /assets/blog/soc-2-automation/soc-2-automation-what-s-missing-and-how-to-fill-the-gap-mycroft-p-1080.webp 1080w, /assets/blog/soc-2-automation/soc-2-automation-what-s-missing-and-how-to-fill-the-gap-mycroft-p-1600.webp 1600w, /assets/blog/soc-2-automation/soc-2-automation-what-s-missing-and-how-to-fill-the-gap-mycroft.webp 1952w",
+    "image_3": "SOC 2 automation: What works, what's missing, and how to fill the gap",
+    "smaller_4": "SOC 2 automation: What works, what's missing, and how to fill the gap",
+    "medium_5": "SOC 2 automation speeds up evidence collection, but it doesn't run your program. Here's what automation tools get right, where they fall short, and what it actually takes to stay compliant at scale.",
+    "medium_6": "March 17, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/security-audits-guide-2026",
+    "image_1": "/assets/blog/security-audits-guide-2026/security-audit-checklist-guide-2026-mycroft.webp",
+    "image_2": "/assets/blog/security-audits-guide-2026/security-audit-checklist-guide-2026-mycroft-p-500.webp 500w, /assets/blog/security-audits-guide-2026/security-audit-checklist-guide-2026-mycroft-p-800.webp 800w, /assets/blog/security-audits-guide-2026/security-audit-checklist-guide-2026-mycroft-p-1080.webp 1080w, /assets/blog/security-audits-guide-2026/security-audit-checklist-guide-2026-mycroft-p-1600.webp 1600w, /assets/blog/security-audits-guide-2026/security-audit-checklist-guide-2026-mycroft.webp 1952w",
+    "image_3": "Security audits: The complete guide (and how to stop dreading them)",
+    "smaller_4": "Security audits: The complete guide (and how to stop dreading them)",
+    "medium_5": "Security audits don't have to be annual scrambles. Learn what gets tested, how to prepare, and why continuous monitoring beats point-in-time panic.",
+    "medium_6": "March 2, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/security-orchestration-automation",
+    "image_1": "/assets/blog/security-orchestration-automation/what-is-security-orchestration-automation-and-response-soarand-why-most-implementations-fail.webp",
+    "image_2": "/assets/blog/security-orchestration-automation/what-is-security-orchestration-automation-and-response-soarand-why-most-implementations-fail-p-500.webp 500w, /assets/blog/security-orchestration-automation/what-is-security-orchestration-automation-and-response-soarand-why-most-implementations-fail-p-800.webp 800w, /assets/blog/security-orchestration-automation/what-is-security-orchestration-automation-and-response-soarand-why-most-implementations-fail-p-1080.webp 1080w, /assets/blog/security-orchestration-automation/what-is-security-orchestration-automation-and-response-soarand-why-most-implementations-fail-p-1600.webp 1600w, /assets/blog/security-orchestration-automation/what-is-security-orchestration-automation-and-response-soarand-why-most-implementations-fail.webp 1952w",
+    "image_3": "What is security orchestration, automation and response (SOAR)—and why most implementations fail",
+    "smaller_4": "What is security orchestration, automation and response (SOAR)—and why most implementations fail",
+    "medium_5": "Security orchestration automation connects your security tools and automates responses. But who maintains the playbooks? Here's what SOAR vendors don't tell you.",
+    "medium_6": "February 24, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/managed-compliance-services",
+    "image_1": "/assets/blog/managed-compliance-services/managed-compliance-services-why-the-traditional-model-is-broken-and-what-actually-works.webp",
+    "image_2": "/assets/blog/managed-compliance-services/managed-compliance-services-why-the-traditional-model-is-broken-and-what-actually-works-p-500.webp 500w, /assets/blog/managed-compliance-services/managed-compliance-services-why-the-traditional-model-is-broken-and-what-actually-works-p-800.webp 800w, /assets/blog/managed-compliance-services/managed-compliance-services-why-the-traditional-model-is-broken-and-what-actually-works-p-1080.webp 1080w, /assets/blog/managed-compliance-services/managed-compliance-services-why-the-traditional-model-is-broken-and-what-actually-works-p-1600.webp 1600w, /assets/blog/managed-compliance-services/managed-compliance-services-why-the-traditional-model-is-broken-and-what-actually-works.webp 1952w",
+    "image_3": "Managed compliance services: Why the traditional model is broken (and what actually works)",
+    "smaller_4": "Managed compliance services: Why the traditional model is broken (and what actually works)",
+    "medium_5": "Traditional managed compliance services cost $200K+ but still require your team's time. Here's why the old model fails—and what works instead.",
+    "medium_6": "February 19, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/ai-security-platform-buyers-guide",
+    "image_1": "/assets/blog/ai-security-platform-buyers-guide/ai-security-platform-2026-buyer-s-guide.webp",
+    "image_2": "/assets/blog/ai-security-platform-buyers-guide/ai-security-platform-2026-buyer-s-guide-p-500.webp 500w, /assets/blog/ai-security-platform-buyers-guide/ai-security-platform-2026-buyer-s-guide-p-800.webp 800w, /assets/blog/ai-security-platform-buyers-guide/ai-security-platform-2026-buyer-s-guide-p-1080.webp 1080w, /assets/blog/ai-security-platform-buyers-guide/ai-security-platform-2026-buyer-s-guide-p-1600.webp 1600w, /assets/blog/ai-security-platform-buyers-guide/ai-security-platform-2026-buyer-s-guide.webp 1952w",
+    "image_3": "AI Security Platform Buyer's Guide: How to Choose the Right Solution",
+    "smaller_4": "AI Security Platform Buyer's Guide: How to Choose the Right Solution",
+    "medium_5": "Evaluating AI security platforms? Learn the 8 criteria that matter, red flags to avoid, and how to separate real security from automation theater. Complete buyer's guide.",
+    "medium_6": "February 10, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/soc-2-compliance",
+    "image_1": "/assets/blog/soc-2-compliance/soc-2-compliance-the-complete-guide-for-2026.webp",
+    "image_2": "/assets/blog/soc-2-compliance/soc-2-compliance-the-complete-guide-for-2026-p-500.webp 500w, /assets/blog/soc-2-compliance/soc-2-compliance-the-complete-guide-for-2026-p-800.webp 800w, /assets/blog/soc-2-compliance/soc-2-compliance-the-complete-guide-for-2026-p-1080.webp 1080w, /assets/blog/soc-2-compliance/soc-2-compliance-the-complete-guide-for-2026-p-1600.webp 1600w, /assets/blog/soc-2-compliance/soc-2-compliance-the-complete-guide-for-2026.webp 1952w",
+    "image_3": "SOC 2 compliance: The complete guide for 2026",
+    "smaller_4": "SOC 2 compliance: The complete guide for 2026",
+    "medium_5": "SOC 2 compliance proves your security to enterprise customers. Learn what SOC 2 attestation requires, realistic timelines and costs, and how to avoid checkbox compliance theater.",
+    "medium_6": "February 4, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/compliance-automation-for-startups",
+    "image_1": "/assets/blog/compliance-automation-for-startups/compliance-automation-for-startups-get-enterprise-ready-without-hiring-a-security-team.webp",
+    "image_2": "/assets/blog/compliance-automation-for-startups/compliance-automation-for-startups-get-enterprise-ready-without-hiring-a-security-team-p-500.webp 500w, /assets/blog/compliance-automation-for-startups/compliance-automation-for-startups-get-enterprise-ready-without-hiring-a-security-team-p-800.webp 800w, /assets/blog/compliance-automation-for-startups/compliance-automation-for-startups-get-enterprise-ready-without-hiring-a-security-team-p-1080.webp 1080w, /assets/blog/compliance-automation-for-startups/compliance-automation-for-startups-get-enterprise-ready-without-hiring-a-security-team-p-1600.webp 1600w, /assets/blog/compliance-automation-for-startups/compliance-automation-for-startups-get-enterprise-ready-without-hiring-a-security-team.webp 1952w",
+    "image_3": "Compliance automation for startups: Get enterprise-ready without hiring a security team",
+    "smaller_4": "Compliance automation for startups: Get enterprise-ready without hiring a security team",
+    "medium_5": "Compliance automation for startups: Get SOC 2 ready in 8-12 weeks without hiring security staff. AI-powered implementation, not just monitoring.",
+    "medium_6": "January 27, 2026",
+    "medium_7": "10 min read"
+  },
+  {
+    "href_0": "/blog/how-to-eliminate-security-tool-sprawl",
+    "image_1": "/assets/blog/how-to-eliminate-security-tool-sprawl/how-to-eliminate-security-tool-sprawl-without-just-trading-one-problem-for-another.webp",
+    "image_2": "/assets/blog/how-to-eliminate-security-tool-sprawl/how-to-eliminate-security-tool-sprawl-without-just-trading-one-problem-for-another-p-500.webp 500w, /assets/blog/how-to-eliminate-security-tool-sprawl/how-to-eliminate-security-tool-sprawl-without-just-trading-one-problem-for-another-p-800.webp 800w, /assets/blog/how-to-eliminate-security-tool-sprawl/how-to-eliminate-security-tool-sprawl-without-just-trading-one-problem-for-another-p-1080.webp 1080w, /assets/blog/how-to-eliminate-security-tool-sprawl/how-to-eliminate-security-tool-sprawl-without-just-trading-one-problem-for-another-p-1600.webp 1600w, /assets/blog/how-to-eliminate-security-tool-sprawl/how-to-eliminate-security-tool-sprawl-without-just-trading-one-problem-for-another.webp 1952w",
+    "image_3": "How to eliminate security tool sprawl",
+    "smaller_4": "How to eliminate security tool sprawl",
+    "medium_5": "Security tool sprawl costs more than license fees. Learn how to reduce operational burden without just trading one consolidation problem for another.",
+    "medium_6": "January 20, 2026",
+    "medium_7": "8 min read"
+  },
+  {
+    "href_0": "/blog/continuous-compliance-monitoring-the-complete-guide",
+    "image_1": "/assets/blog/continuous-compliance-monitoring-the-complete-guide/continuous-compliance-monitoring-the-complete-guide.webp",
+    "image_2": "/assets/blog/continuous-compliance-monitoring-the-complete-guide/continuous-compliance-monitoring-the-complete-guide-p-500.webp 500w, /assets/blog/continuous-compliance-monitoring-the-complete-guide/continuous-compliance-monitoring-the-complete-guide-p-800.webp 800w, /assets/blog/continuous-compliance-monitoring-the-complete-guide/continuous-compliance-monitoring-the-complete-guide-p-1080.webp 1080w, /assets/blog/continuous-compliance-monitoring-the-complete-guide/continuous-compliance-monitoring-the-complete-guide-p-1600.webp 1600w, /assets/blog/continuous-compliance-monitoring-the-complete-guide/continuous-compliance-monitoring-the-complete-guide.webp 1952w",
+    "image_3": "Continuous Compliance Monitoring: The Complete Guide",
+    "smaller_4": "Continuous Compliance Monitoring: The Complete Guide",
+    "medium_5": "Stop scrambling for audits. Continuous compliance monitoring provides real-time visibility into your security posture. Here's how it works.",
+    "medium_6": "January 14, 2026",
+    "medium_7": "7 min read"
+  },
+  {
+    "href_0": "/blog/iso-27001-vs-soc-2-startups",
+    "image_1": "/assets/blog/iso-27001-vs-soc-2-startups/iso-27001-vs-soc-2.webp",
+    "image_2": "/assets/blog/iso-27001-vs-soc-2-startups/iso-27001-vs-soc-2-p-500.webp 500w, /assets/blog/iso-27001-vs-soc-2-startups/iso-27001-vs-soc-2-p-800.webp 800w, /assets/blog/iso-27001-vs-soc-2-startups/iso-27001-vs-soc-2-p-1080.webp 1080w, /assets/blog/iso-27001-vs-soc-2-startups/iso-27001-vs-soc-2-p-1600.webp 1600w, /assets/blog/iso-27001-vs-soc-2-startups/iso-27001-vs-soc-2.webp 1952w",
+    "image_3": "ISO 27001 vs SOC 2: Which security framework should your startup choose?",
+    "smaller_4": "ISO 27001 vs SOC 2: Which security framework should your startup choose?",
+    "medium_5": "Compare ISO 27001 vs SOC 2 for startups. Learn which security framework is better for US companies, cost differences, timelines, and why most startups should choose SOC 2 Type II over ISO 27001.",
+    "medium_6": "January 7, 2026",
+    "medium_7": "5 min read"
+  },
+  {
+    "href_0": "/blog/stealth-to-seed-mycrofts-ai-security-compliance-platform-backed-by-3-5m-led-by-luge-capital",
+    "image_1": "/assets/blog/stealth-to-seed-mycrofts-ai-security-compliance-platform-backed-by-3-5m-led-by-luge-capital/seed-raise.webp",
+    "image_2": "/assets/blog/stealth-to-seed-mycrofts-ai-security-compliance-platform-backed-by-3-5m-led-by-luge-capital/seed-raise-p-500.webp 500w, /assets/blog/stealth-to-seed-mycrofts-ai-security-compliance-platform-backed-by-3-5m-led-by-luge-capital/seed-raise-p-800.webp 800w, /assets/blog/stealth-to-seed-mycrofts-ai-security-compliance-platform-backed-by-3-5m-led-by-luge-capital/seed-raise-p-1080.webp 1080w, /assets/blog/stealth-to-seed-mycrofts-ai-security-compliance-platform-backed-by-3-5m-led-by-luge-capital/seed-raise.webp 1952w",
+    "image_3": "Stealth to seed: Mycroft’s AI security & compliance platform backed by $3.5M, led by Luge Capital",
+    "smaller_4": "Stealth to seed: Mycroft’s AI security & compliance platform backed by $3.5M, led by Luge Capital",
+    "medium_5": "Mycroft emerges from stealth with funding from Luge Capital, Brightspark Ventures, and Graphite Ventures to replace your entire security stack with a single agentic AI platform.",
+    "medium_6": "September 22, 2025",
+    "medium_7": "5 min read"
+  },
+  {
+    "href_0": "/blog/how-long-does-soc-2-take-a-realistic-breakdown-for-startups-and-saas",
+    "image_1": "/assets/blog/how-long-does-soc-2-take-a-realistic-breakdown-for-startups-and-saas/how-long-does-soc-2-take-hero.jpg",
+    "image_2": "/assets/blog/how-long-does-soc-2-take-a-realistic-breakdown-for-startups-and-saas/how-long-does-soc-2-take-hero-p-500.jpg 500w, /assets/blog/how-long-does-soc-2-take-a-realistic-breakdown-for-startups-and-saas/how-long-does-soc-2-take-hero-p-800.jpg 800w, /assets/blog/how-long-does-soc-2-take-a-realistic-breakdown-for-startups-and-saas/how-long-does-soc-2-take-hero-p-1080.jpg 1080w, /assets/blog/how-long-does-soc-2-take-a-realistic-breakdown-for-startups-and-saas/how-long-does-soc-2-take-hero-p-1600.jpg 1600w, /assets/blog/how-long-does-soc-2-take-a-realistic-breakdown-for-startups-and-saas/how-long-does-soc-2-take-hero.jpg 1952w",
+    "image_3": "How long does SOC 2 take? A realistic breakdown for startups and SaaS",
+    "smaller_4": "How long does SOC 2 take? A realistic breakdown for startups and SaaS",
+    "medium_5": "Get a straightforward breakdown of how long different elements of SOC 2 will take.",
+    "medium_6": "September 5, 2025",
+    "medium_7": "5 min read"
+  },
+  {
+    "href_0": "/blog/third-party-risk-management-for-enterprise-why-current-approaches-just-dont-work-anymore",
+    "image_1": "/assets/blog/third-party-risk-management-for-enterprise-why-current-approaches-just-dont-work-anymore/third-party-risk-management-for-enterprise-why-current-approaches-just-don-t-work-anymore.jpg",
+    "image_2": "/assets/blog/third-party-risk-management-for-enterprise-why-current-approaches-just-dont-work-anymore/third-party-risk-management-for-enterprise-why-current-approaches-just-don-t-work-anymore-p-500.jpg 500w, /assets/blog/third-party-risk-management-for-enterprise-why-current-approaches-just-dont-work-anymore/third-party-risk-management-for-enterprise-why-current-approaches-just-don-t-work-anymore-p-800.jpg 800w, /assets/blog/third-party-risk-management-for-enterprise-why-current-approaches-just-dont-work-anymore/third-party-risk-management-for-enterprise-why-current-approaches-just-don-t-work-anymore-p-1080.jpg 1080w, /assets/blog/third-party-risk-management-for-enterprise-why-current-approaches-just-dont-work-anymore/third-party-risk-management-for-enterprise-why-current-approaches-just-don-t-work-anymore-p-1600.jpg 1600w, /assets/blog/third-party-risk-management-for-enterprise-why-current-approaches-just-dont-work-anymore/third-party-risk-management-for-enterprise-why-current-approaches-just-don-t-work-anymore.jpg 1952w",
+    "image_3": "Third-party risk management for enterprise: why current approaches just don't work anymore",
+    "smaller_4": "Third-party risk management for enterprise: why current approaches just don't work anymore",
+    "medium_5": "Today's third-party risk management is broken. Here's how to fix it.",
+    "medium_6": "August 30, 2025",
+    "medium_7": "5 min read"
+  },
+  {
+    "href_0": "/blog/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond",
+    "image_1": "/assets/blog/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond.jpg",
+    "image_2": "/assets/blog/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond-p-500.jpg 500w, /assets/blog/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond-p-800.jpg 800w, /assets/blog/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond-p-1080.jpg 1080w, /assets/blog/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond-p-1600.jpg 1600w, /assets/blog/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond/understanding-cloud-security-in-the-ai-era-how-to-succeed-in-2026-and-beyond.jpg 1952w",
+    "image_3": "Understanding cloud security in the AI era: how to succeed in 2026 and beyond",
+    "smaller_4": "Understanding cloud security in the AI era: how to succeed in 2026 and beyond",
+    "medium_5": "The organizations that thrive in 2026 and beyond won’t treat security as a bottleneck. They’ll treat security as a connected system.",
+    "medium_6": "August 29, 2025",
+    "medium_7": "10 min read"
+  }
+];

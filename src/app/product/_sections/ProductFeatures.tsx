@@ -1,0 +1,142 @@
+import Link from "next/link";
+import { ArrowTextLink } from "@/app/_shared/ArrowTextLink";
+import { DotLottiePlayer } from "../../_shared/DotLottiePlayer";
+
+/** Product-features section of /product. Ported from Webflow by the Webflow Cloner agent. */
+export function ProductFeatures() {
+  return (
+    <section id="product-features" className="section_v2 tint_40eg overflow_hidden">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-200 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-none max-landscape:w-[92%] max-portrait:w-full">
+          <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
+            <div className="container-flex vertical">
+              <div className="eyebrow-label-small product">
+                <div className="eyebrow-small color_rg">
+                  PRoduct
+                </div>
+              </div>
+              <h2 className="h2_v2 color_rg text_center">
+                Mycroft’s versatility:
+                <br />
+                the 5-in-1 platform
+              </h2>
+              <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
+                <div className="text-dek-m text_center">
+                  Mycroft is the first platform to combine security and compliance stack with AI Agents that operate as your teammate. Achieve enterprise grade security without the overhead and massive team.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full max-w-300 ml-auto mr-auto">
+          <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
+            <div className="w-full pb-(--sizing--rem--4-5rem) max-tablet:pb-(--sizing--rem--3-5rem) max-landscape:pb-(--sizing--rem--2-5rem) max-portrait:pb-(--sizing--rem--1-5rem)">
+              <div className="product-container">
+                <section id="audit-compliance" className="product-feature">
+                  <Link href="/product/audit-and-compliance" className="product-feature link_block w-inline-block">
+                    <div className="product-text wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(-100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <h4 className="h4_v2 color_rg">
+                        Audit & compliance agents
+                      </h4>
+                      <div className="body-text-medium">
+                        Mycroft AI Agents continuously monitor your compliance posture against enterprise requirements for SOC 2, ISO 27001, GDPR, HIPAA, CMMC, FedRAMP, FedRAMP 20X and more. All integrated and cross-mapped to reduce unnecessary overhead.
+                      </div>
+                      <ArrowTextLink>
+                        Learn more
+                      </ArrowTextLink>
+                    </div>
+                    <div className="product-feature-img wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8abc1880145b8880ee64_AuditCompliance_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                        <DotLottiePlayer src="/lottie/68cb8abc1880145b8880ee64_AuditCompliance_v2.lottie" loop={false} autoplay={false} width={914} height={582} playOnReveal />
+                      </div>
+                    </div>
+                  </Link>
+                </section>
+                <section id="cloud-security" className="product-feature even-child">
+                  <Link href="/product/cloud-security" className="product-feature link_block even-child w-inline-block">
+                    <div className="product-feature-img img-left wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(-100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8bf5fbee380cfd1cc505_CloudSecurity_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                        <DotLottiePlayer src="/lottie/68cb8bf5fbee380cfd1cc505_CloudSecurity_v2.lottie" loop={false} autoplay={false} width={914} height={582} playOnReveal />
+                      </div>
+                    </div>
+                    <div className="product-text text-right wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <h4 className="h4_v2 color_rg">
+                        Cloud security
+                      </h4>
+                      <div className="body-text-medium">
+                        Gain deeper insights into your cloud security, focusing on key areas such as identity and access management, misconfigurations, secrets management, and database architecture – empowering you to scale with confidence.
+                      </div>
+                      <ArrowTextLink>
+                        Learn more
+                      </ArrowTextLink>
+                    </div>
+                  </Link>
+                </section>
+                <section id="app-security" className="product-feature">
+                  <Link href="/product/app-security" className="product-feature link_block w-inline-block">
+                    <div className="product-text wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(-100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <h4 className="h4_v2 color_rg">
+                        Application security
+                      </h4>
+                      <div className="body-text-medium">
+                        Monitor your application attack surface through Mycroft to find what hackers are looking for to exploit your application. Identify, triage, and continually monitor your potential threats to ensure your application is protected from threats 24/7.
+                      </div>
+                      <ArrowTextLink>
+                        Learn more
+                      </ArrowTextLink>
+                    </div>
+                    <div className="product-feature-img wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8c56ad76da070bd27894_AppSecurity_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                        <DotLottiePlayer src="/lottie/68cb8c56ad76da070bd27894_AppSecurity_v2.lottie" loop={false} autoplay={false} width={914} height={582} playOnReveal />
+                      </div>
+                    </div>
+                  </Link>
+                </section>
+                <section id="threat-management" className="product-feature even-child">
+                  <Link href="/product/device-management" className="product-feature link_block even-child w-inline-block">
+                    <div className="product-feature-img img-left wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(-100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8c6691e1f0cbbf1d9550_ThreatManagement_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                        <DotLottiePlayer src="/lottie/68cb8c6691e1f0cbbf1d9550_ThreatManagement_v2.lottie" loop={false} autoplay={false} width={914} height={582} playOnReveal />
+                      </div>
+                    </div>
+                    <div className="product-text text-right wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <h4 className="h4_v2 color_rg">
+                        Device management
+                      </h4>
+                      <div className="body-text-medium">
+                        Monitor and manage your endpoints to ensure security and compliance stays strong across all devices through managing your encryption, malware, and more.
+                      </div>
+                      <ArrowTextLink>
+                        Learn more
+                      </ArrowTextLink>
+                    </div>
+                  </Link>
+                </section>
+                <section id="agentic-ai" className="product-feature last-child">
+                  <Link href="/product/third-party-risk-management" className="product-feature link_block w-inline-block">
+                    <div className="product-text wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(-100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <h4 className="h4_v2 color_rg">
+                        Third-party risk management
+                      </h4>
+                      <div className="body-text-medium">
+                        Our platform provides visibility and control over external vulnerabilities, helping your organization stay secure, compliant, and protected from outside threats.
+                      </div>
+                      <ArrowTextLink>
+                        Learn more
+                      </ArrowTextLink>
+                    </div>
+                    <div className="product-feature-img wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
+                      <div data-is-ix2-target="1" className="product-feature-lottie" data-animation-type="lottie" data-src="/lottie/68cb8c8fe1d100b0bcefb3d1_AgenticAI_v2.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="eager">
+                        <DotLottiePlayer src="/lottie/68cb8c8fe1d100b0bcefb3d1_AgenticAI_v2.lottie" loop={false} autoplay={false} width={914} height={582} playOnReveal />
+                      </div>
+                    </div>
+                  </Link>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,23 @@
+/** Disclosure-body section of /ai-disclosure. Ported from Webflow by the Webflow Cloner agent. */
+export function AiDisclosureBody() {
+  return (
+    <section className="section">
+      <div className="w-layout-blockcontainer wf-container w-container">
+        <div className="row">
+          <div className="col">
+            <div className="rich-text w-richtext">
+              <p>
+                <strong>
+                  AI Transparency and Disclosure
+                </strong>
+              </p>
+              <p>
+                This application uses Google Gemini models served via Google Cloud Platform (GCP) as part of its AI functionality. These services are used to process user inputs and generate AI-assisted outputs within the platform. Because generative AI can produce inaccurate or incomplete content, users are responsible for reviewing and validating outputs before use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

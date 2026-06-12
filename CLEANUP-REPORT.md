@@ -113,8 +113,8 @@ tidiness; nothing to commit.
 
 ## 14. For awareness (no action required)
 
-- **`/resources` listings are hardcoded snapshots**
-  (`src/app/resources/_snapshot/ResourcesCollection*.data.ts`), not generated
+- **`/resources` listings are hardcoded data files**
+  (`src/app/resources/_sections/Resources*.data.ts`), not generated
   from `src/content/blog/`. A new blog post will NOT appear on `/resources`
   unless those data files are also updated — make sure the `add-blog-post`
   skill (item 1) does this, and say so in EDITING-GUIDE.md.
@@ -123,9 +123,9 @@ tidiness; nothing to commit.
   `body`, `h1`, buttons, etc.), so don't remove it — but self-hosting them
   like the other fonts in `public/fonts/` would cut an external render-blocking
   request.
-- **Snapshot numbering gaps** (e.g. there is no `HomeSection2.tsx` or
-  `ProductSection3.tsx`) are an artifact of the cloner's generated names, not
-  missing files. Harmless; renumber only if doing the kebab-case rename anyway.
+- **Snapshot numbering gaps** — resolved June 2026: the cloner's numbered
+  `_snapshot/<Page>SectionN` components were renamed to descriptive names in
+  `_sections/` (e.g. `HomeHero`, `PricingPlans`), so the gaps no longer exist.
 - **Lottie filenames** keep their Webflow asset-hash prefixes
   (`67f56c6d…_Mycroft-Product_Animation-HERO2_v1.lottie`). Cosmetic; renaming
   requires updating every `data-src`/`src` reference, so low value.

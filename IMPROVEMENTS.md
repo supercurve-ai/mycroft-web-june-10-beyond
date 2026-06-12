@@ -92,7 +92,7 @@ a straight Webflow export artifact. Lazy-loading the LCP image is one of the
 most common Core Web Vitals penalties. For each page's hero/first-section
 image, drop `loading="lazy"` and add `fetchPriority="high"`. The home page hero
 is Lottie (already `data-loading="eager"`), so check the product, framework,
-about, and pricing heroes in `_snapshot/`.
+about, and pricing heroes in `_sections/`.
 
 ### 7. Delete the shadowed [slug] routes (Med / S)
 `src/app/frameworks/[slug]/` and `src/app/product/[slug]/` render generic MDX
@@ -133,7 +133,7 @@ flakiness and costs mobile performance.
 231 of 236 `alt` attributes are empty strings. Empty alt is *correct* for the
 decorative icons and background art, which is most of them — but it's wrong for
 meaningful images: blog cover images, case-study photos/logos, team headshots,
-product screenshots. Sweep the `_snapshot` sections and MDX frontmatter for
+product screenshots. Sweep the `_sections` components and MDX frontmatter for
 images that carry content and describe them. Helps screen readers and image
 SEO. Doesn't have to be 100% before launch — prioritize blog covers and product
 screenshots.

@@ -6,7 +6,10 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
 ## Layout
 
 - `src/app/<route>/page.tsx` — one folder per page (the home page is
-  `src/app/page.tsx`); each composes section components from `_snapshot/`.
+  `src/app/page.tsx`); each renders its route's `_sections/<Page>PageContent`,
+  which composes the descriptively named section components in that folder
+  (e.g. `HomeHero`, `PricingPlans`; renamed June 2026 from the cloner's
+  `_snapshot/<Page>SectionN` scheme).
 - `src/app/frameworks/_shared/FrameworkPage.tsx` — the shared template behind
   all nine `/frameworks/*` pages (their per-page snapshots were consolidated
   June 2026, pixel-parity verified). Each route keeps only a `content.tsx`
@@ -20,7 +23,7 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
   audit-and-compliance additionally keeps its unique `AuditHero` and
   `ComplianceCarousel` sections, passed in through the template's
   `hero`/`benefits` slots. The `/product` overview page is unrelated and still
-  uses its own `_snapshot/`. NOTE: snapshot text can contain non-breaking
+  uses its own `_sections/`. NOTE: ported Webflow copy can contain non-breaking
   spaces (U+00A0) that look like plain spaces — when moving copy around, check
   with `grep -P '\xC2\xA0'` or line wrapping will silently change.
 - `src/app/_shared/` — components shared across pages: `SiteNav` (self-contained,
@@ -52,7 +55,7 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
   site follows. Must stay imported AFTER webflow-shared.css in globals.css.
 - `src/lib/tokens.ts` — TS class-name tokens (`t.type.h2`, `t.layout.*`) that
   reproduce the site's type scale with Tailwind utilities. Use these when
-  building NET-NEW components; snapshot components keep their remaining
+  building NET-NEW components; ported section components keep their remaining
   Webflow class names until their tranche of the Tailwind migration. Custom responsive variants `max-tablet:` (≤991px),
   `max-landscape:` (≤767px), `max-portrait:` (≤479px) match Webflow's
   breakpoints — Tailwind's default `sm/md/lg` do not.

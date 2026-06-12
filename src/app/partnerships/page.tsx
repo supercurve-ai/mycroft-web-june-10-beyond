@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PartnershipsSnapshot } from "./_snapshot/PartnershipsSnapshot";
+import { PartnershipsPageContent } from "./_sections/PartnershipsPageContent";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function PartnershipsPage() {
   return (
     <>
-      <PartnershipsSnapshot />
+      <PartnershipsPageContent />
       <WebflowInteractions />
     </>
   );
