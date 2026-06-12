@@ -1,0 +1,51 @@
+import type { Testimonial } from "./FrameworkPage";
+
+/**
+ * The three client-testimonial variants used across the /frameworks/* pages.
+ * Quotes and tint classes are captured verbatim from the Webflow pages.
+ */
+
+export const adamWeave: Testimonial = {
+  labelTint: "tint_50bw",
+  boxTint: "tint_50bw",
+  imgTint: "tint_75mint",
+  img: {
+    src: "/assets/adam-cropped-mono-img.webp",
+    srcSet: "/assets/adam-cropped-mono-img-p-500.webp 500w, /assets/adam-cropped-mono-img.webp 600w",
+    sizes: "(max-width: 479px) 100vw, 215px",
+  },
+  quote: "Mycroft's 5-in-1 platform seamlessly consolidated our entire security stack, eliminating the need for multiple point solutions and endless checklists.”",
+  name: "Adam Cohen",
+  title: "CEO of WEAVE",
+  logo: { src: "/assets/weave-logo.svg", width: 114 },
+};
+
+export const jorgeSmashsend: Testimonial = {
+  labelTint: "lavender",
+  boxTint: "",
+  imgTint: "",
+  img: {
+    src: "/assets/jorge-cropped-mono-img.webp",
+    srcSet: "/assets/jorge-cropped-mono-img-p-500.webp 500w, /assets/jorge-cropped-mono-img.webp 600w",
+    sizes: "215px",
+  },
+  quote: "With Mycroft, they have a deep expertise in security, which is not a feature but a core foundation of their platform.”",
+  name: "Jorge Ferreiro",
+  title: "CEO of Smashsend",
+  logo: { src: "/assets/smashsend-logo-mono.svg" },
+};
+
+export const steveIntegratrace: Testimonial = {
+  labelTint: "_75terra",
+  boxTint: "_75terra",
+  imgTint: "blueberry",
+  img: {
+    src: "/assets/steve-cropped-mono-img.webp",
+    srcSet: "/assets/steve-cropped-mono-img-p-500.webp 500w, /assets/steve-cropped-mono-img.webp 600w",
+    sizes: "(max-width: 479px) 100vw, 215px",
+  },
+  quote: "Mycroft provided us with the best  guidance through our SOC 2 process. We knew we were in good hands from the beginning.”",
+  name: "Steve Emmanuel",
+  title: "CEO & Co-founder of integratrace",
+  logo: { src: "/assets/integratrace-logo.svg" },
+};
