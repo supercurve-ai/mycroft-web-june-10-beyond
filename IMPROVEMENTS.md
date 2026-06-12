@@ -16,7 +16,7 @@ Effort scale: **S** = under an hour, **M** = a half-day, **L** = a day or more.
 | 4 | Add canonical URLs to every page | SEO | Med–High | S |
 | 5 | Add a branded 404 page (`not-found.tsx`) | Launch / SEO | Med | S |
 | 6 | Stop lazy-loading above-the-fold images | Performance | Med | S |
-| 7 | Delete the shadowed `[slug]` routes for frameworks + product | Code health | Med | S |
+| 7 | ~~Delete the shadowed `[slug]` routes for frameworks + product~~ **Done June 12, 2026** | Code health | Med | S |
 | 8 | Metadata (or noindex) for the bare index pages | SEO | Med | S |
 | 9 | Resolve the `/security` page-vs-redirect question | Launch | Med | S |
 | 10 | Triage the open bugs already in TASKS.md | Launch | Med | M |
@@ -94,7 +94,13 @@ image, drop `loading="lazy"` and add `fetchPriority="high"`. The home page hero
 is Lottie (already `data-loading="eager"`), so check the product, framework,
 about, and pricing heroes in `_sections/`.
 
-### 7. Delete the shadowed [slug] routes (Med / S)
+### 7. ~~Delete the shadowed [slug] routes~~ — DONE (June 12, 2026)
+The `[slug]` folders were already gone; this pass removed the rest: the
+orphaned `src/content/frameworks/` and `src/content/product/` collections,
+`src/lib/frameworks.ts`, and the unstyled `/frameworks` stub index (now a 301
+to `/`, alongside the other legacy redirects in `next.config.mjs`). The blog
+and case-studies loaders were merged into a generic `src/lib/content.ts`.
+Original finding below.
 `src/app/frameworks/[slug]/` and `src/app/product/[slug]/` render generic MDX
 articles from `src/content/frameworks/` and `src/content/product/` — but every
 one of those slugs is shadowed by a hand-built static folder

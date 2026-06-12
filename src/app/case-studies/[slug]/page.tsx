@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getCaseStudiesSlugs, getCaseStudiesSource, getCaseStudiesMeta } from "@/lib/caseStudies";
+import { caseStudies } from "@/lib/content";
 import { renderMdx } from "@/lib/mdx";
 import { caseStudyMdxComponents } from "@/components/case-study-mdx";
 import { SiteNav } from "@/components/SiteNav";
@@ -11,12 +11,12 @@ import { CtaSection } from "@/components/CtaSection";
 import { CaseStudyInteractions } from "./CaseStudyInteractions";
 
 export function generateStaticParams() {
-  return getCaseStudiesSlugs().map((slug) => ({ slug }));
+  return caseStudies.getSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const meta = getCaseStudiesMeta(slug);
+  const meta = caseStudies.getMeta(slug);
   return { title: meta.title, description: meta.excerpt,
     openGraph: { title: meta.title, description: meta.excerpt,
       images: meta.coverImage ? [meta.coverImage] : undefined },
@@ -40,12 +40,12 @@ function ShareIcon({ children }: { children: React.ReactNode }) {
 
 export default async function CaseStudiesPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  if (!getCaseStudiesSlugs().includes(slug)) notFound();
-  const meta = getCaseStudiesMeta(slug);
-  const { content } = await renderMdx(getCaseStudiesSource(slug), caseStudyMdxComponents);
+  if (!caseStudies.getSlugs().includes(slug)) notFound();
+  const meta = caseStudies.getMeta(slug);
+  const { content } = await renderMdx(caseStudies.getSource(slug), caseStudyMdxComponents);
 
   // prev/next chain in the original CMS order
-  const all = getCaseStudiesSlugs().map(getCaseStudiesMeta)
+  const all = caseStudies.getSlugs().map(caseStudies.getMeta)
     .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
   const index = all.findIndex((m) => m.slug === slug);
   const prev = index > 0 ? all[index - 1] : null;

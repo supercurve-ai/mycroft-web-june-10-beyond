@@ -33,6 +33,8 @@ const nextConfig = {
       { source: "/staging-pages/cloud-security", destination: "/product/cloud-security", permanent: true },
       { source: "/staging-pages/audit-and-compliance", destination: "/product/audit-and-compliance", permanent: true },
       { source: "/blog", destination: "/resources", permanent: true },
+      // The bare /frameworks index never existed on the original site
+      { source: "/frameworks", destination: "/", permanent: true },
       // Trust center lives on the app subdomain.
       { source: "/security", destination: "https://app.mycroft.io/trust/mycroft", permanent: true },
       // The Webflow rules below pointed at staging/archive pages that were

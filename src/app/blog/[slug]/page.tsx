@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getBlogSlugs, getBlogSource, getBlogMeta } from "@/lib/blog";
+import { blog } from "@/lib/content";
 import { renderMdx } from "@/lib/mdx";
 import { mdxComponents } from "@/components/mdx-components";
 import { SiteNav } from "@/components/SiteNav";
@@ -9,12 +9,12 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { CtaSection } from "@/components/CtaSection";
 
 export function generateStaticParams() {
-  return getBlogSlugs().map((slug) => ({ slug }));
+  return blog.getSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const meta = getBlogMeta(slug);
+  const meta = blog.getMeta(slug);
   return { title: meta.title, description: meta.excerpt,
     openGraph: { title: meta.title, description: meta.excerpt,
       images: meta.coverImage ? [meta.coverImage] : undefined },
@@ -30,8 +30,8 @@ function formatDate(iso: string): string {
 
 export default async function BlogPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  if (!getBlogSlugs().includes(slug)) notFound();
-  const { frontmatter, content } = await renderMdx(getBlogSource(slug), mdxComponents);
+  if (!blog.getSlugs().includes(slug)) notFound();
+  const { frontmatter, content } = await renderMdx(blog.getSource(slug), mdxComponents);
   const fm = frontmatter as {
     title?: string; excerpt?: string; date?: string; author?: string;
     authorImage?: string; readingTime?: string; coverImage?: string;
