@@ -11,20 +11,20 @@ import { ScrollFeatureSlider, type ScrollFeatureSlide } from "@/app/_shared/Scro
 const blogPosts = [
   {
     href: "/blog/cmmc-compliance-platform",
-    imgSrc: "/assets/343403.webp",
-    imgSrcSet: "/assets/343403-p-500.webp 500w, /assets/343403.webp 720w",
+    imgSrc: "/assets/blog/cmmc-compliance-platform/343403.webp",
+    imgSrcSet: "/assets/blog/cmmc-compliance-platform/343403-p-500.webp 500w, /assets/blog/cmmc-compliance-platform/343403.webp 720w",
     title: "CMMC compliance platforms: What to look for now that 48 CFR is in effect",
   },
   {
     href: "/blog/third-party-vendor-risk-management",
-    imgSrc: "/assets/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail.webp",
-    imgSrcSet: "/assets/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-500.webp 500w, /assets/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-800.webp 800w, /assets/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-1080.webp 1080w, /assets/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-1600.webp 1600w, /assets/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail.webp 1952w",
+    imgSrc: "/assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail.webp",
+    imgSrcSet: "/assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-500.webp 500w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-800.webp 800w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-1080.webp 1080w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-1600.webp 1600w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail.webp 1952w",
     title: "Third-party vendor risk management: the complete guide (and why most programs still fail)",
   },
   {
     href: "/blog/vendor-risk-management-software",
-    imgSrc: "/assets/vendor-risk-management-software.webp",
-    imgSrcSet: "/assets/vendor-risk-management-software-p-500.webp 500w, /assets/vendor-risk-management-software-p-800.webp 800w, /assets/vendor-risk-management-software-p-1080.webp 1080w, /assets/vendor-risk-management-software-p-1600.webp 1600w, /assets/vendor-risk-management-software.webp 1952w",
+    imgSrc: "/assets/blog/vendor-risk-management-software/vendor-risk-management-software.webp",
+    imgSrcSet: "/assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-500.webp 500w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-800.webp 800w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-1080.webp 1080w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-1600.webp 1600w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software.webp 1952w",
     title: "Vendor risk management software: What to evaluate beyond the feature checklist",
   },
 ];
