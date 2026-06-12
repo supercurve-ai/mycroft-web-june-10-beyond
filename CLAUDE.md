@@ -7,14 +7,43 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
 
 - `src/app/<route>/page.tsx` — one folder per page (the home page is
   `src/app/page.tsx`); each composes section components from `_snapshot/`.
+- `src/app/frameworks/_shared/FrameworkPage.tsx` — the shared template behind
+  all nine `/frameworks/*` pages (their per-page snapshots were consolidated
+  June 2026, pixel-parity verified). Each route keeps only a `content.tsx`
+  (that framework's copy, images, FAQ, testimonial pick) and a thin
+  `page.tsx`. Edit copy in `content.tsx`; edit layout once in the template;
+  a new framework page = new folder with those two files + a sitemap entry.
+- `src/app/product/_shared/ProductSubpage.tsx` — the same treatment for the
+  five `/product/*` subpages (consolidated June 2026, pixel-parity verified),
+  with `ProductHero`/`ProductBenefits` for the standard hero and 3-up benefits
+  sections. Each route keeps a `content.tsx` + thin `page.tsx`;
+  audit-and-compliance additionally keeps its unique `AuditHero` and
+  `ComplianceCarousel` sections, passed in through the template's
+  `hero`/`benefits` slots. The `/product` overview page is unrelated and still
+  uses its own `_snapshot/`. NOTE: snapshot text can contain non-breaking
+  spaces (U+00A0) that look like plain spaces — when moving copy around, check
+  with `grep -P '\xC2\xA0'` or line wrapping will silently change.
 - `src/app/_shared/` — components shared across pages: `SiteNav` (self-contained,
   manages its own dropdowns/hamburger with React state), `SiteFooter`, `NavLink`
   (current-page-aware link), `WebflowInteractions` (tabs/sliders/reveals/lightbox),
   `ThirdPartyScripts` (re-wired analytics/pixels), `DotLottiePlayer`.
-- `src/app/webflow-shared.css` — the captured global Webflow stylesheet.
-  `src/app/<route>/<route>.css` — page-specific CSS (only a handful of pages
-  still have one; they hold genuinely page-unique rules). Don't rewrite these
-  to Tailwind wholesale; the class names are what keeps the clone faithful.
+- `src/app/webflow-shared.css` — the captured Webflow stylesheet, being
+  migrated to Tailwind utilities tranche by tranche (owner-approved June
+  2026; page CSS files and the atomic spacing/container classes are already
+  converted). It is imported into the `webflow` cascade layer, which sits
+  BELOW Tailwind's `utilities` layer (see globals.css) — so plain Tailwind
+  utilities in JSX always override Webflow rules without `!`. Two traps:
+  (1) a Webflow class whose name collides with a Tailwind utility now loses
+  to it — rename the Webflow class (e.g. `container` → `wf-container`) or
+  re-assert it in tokens.css like `.product-text.text-right`; (2) element
+  selectors added to tokens.css must go inside `@layer webflow { … }` or
+  they'll override every Webflow class rule regardless of specificity.
+  **Migration workflow:** convert classes with
+  `scripts/convert-webflow-classes.py` (edit TARGETS), then prove pixel
+  parity with `scripts/visual-diff.mjs` (capture baseline → change →
+  capture → compare; run against `pnpm build` + `pnpm start --port 3199`,
+  never build while the server is running). Treat sub-0.01% diffs on
+  product_*@390 as known flakes.
 - `src/app/tokens.css` — the design-token layer: the Mycroft palette, fonts,
   and Webflow breakpoints as Tailwind `@theme` tokens, plus the site-wide
   chrome (selection color, nav dropdown hover, marquee keyframes, …) that was
@@ -23,15 +52,26 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
   site follows. Must stay imported AFTER webflow-shared.css in globals.css.
 - `src/lib/tokens.ts` — TS class-name tokens (`t.type.h2`, `t.layout.*`) that
   reproduce the site's type scale with Tailwind utilities. Use these when
-  building NET-NEW components; existing snapshot components keep their
-  Webflow class names. Custom responsive variants `max-tablet:` (≤991px),
+  building NET-NEW components; snapshot components keep their remaining
+  Webflow class names until their tranche of the Tailwind migration. Custom responsive variants `max-tablet:` (≤991px),
   `max-landscape:` (≤767px), `max-portrait:` (≤479px) match Webflow's
   breakpoints — Tailwind's default `sm/md/lg` do not.
 - `src/content/<collection>/*.mdx` — CMS articles (blog posts). One file per
   post, gray-matter frontmatter + Markdown body.
 - `src/app/sitemap.ts` — the sitemap, mirroring the original site's. Served at
   `/sitemap.xml`. New indexable pages MUST be added here.
- 
+- `public/assets/<category>/` — all site images, organized by kind (June
+  2026): `blog/<post-slug>/` (one folder per post), `screenshots/` (product
+  UI shots, incl. the bases used by FrameworkPage solution cards and pricing
+  FeatureTileSmall — their srcSets hardcode this folder), `logos/` (customer/
+  partner/investor marks), `badges/` (compliance framework badges), `icons/`,
+  `meta/` (OG/social share images), `team/` (Mycroft team headshots),
+  `customers/` (customer testimonial/pull-quote headshots), `case-studies/`,
+  `photos/` (page photography), `decor/` (backgrounds, patterns, glows),
+  `brand/` (Mycroft lockups). Put new assets in the matching folder; an
+  image's `-p-500/-p-800/…` responsive variants must live beside it (srcSet
+  builders derive variant paths from the base path).
+
 ## Rules
 
 1. **New pages:** use the `add-page` skill (or `/add-page`). ALWAYS ask the
@@ -41,7 +81,10 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
    markup (sliders, tabs, scroll reveals, lightboxes) — it wires those after
    hydration. The nav/footer don't need it.
 4. Set `NEXT_PUBLIC_SITE_URL` to the production domain before launch so the
-   sitemap + metadata point at the right host.
+   sitemap + metadata point at the right host. Also set `ZAPIER_WEBHOOK_URL`
+   (see `.env.example`) — without it the "Book a demo" form
+   (`src/app/_shared/BookDemoForm.tsx` → `/api/demo-form`) drops every lead
+   with a 503.
 5. **No Webflow dependencies.** The client is leaving Webflow, so this site
    must not rely on anything Webflow-hosted. Never add a new reference to
    `cdn.prod.website-files.com` (or any other Webflow-served URL) in code,

@@ -10,7 +10,7 @@ Effort scale: **S** = under an hour, **M** = a half-day, **L** = a day or more.
 
 | # | Item | Category | Impact | Effort |
 |---|------|----------|--------|--------|
-| 1 | Verify cookie consent actually gates the trackers | Launch / legal | High | M |
+| 1 | ~~Verify cookie consent actually gates the trackers~~ **Done June 12, 2026** | Launch / legal | High | M |
 | 2 | Add `robots.txt` | SEO | High | S |
 | 3 | Set `NEXT_PUBLIC_SITE_URL` in production | Launch | High | S |
 | 4 | Add canonical URLs to every page | SEO | Med–High | S |
@@ -42,21 +42,20 @@ Effort scale: **S** = under an hour, **M** = a half-day, **L** = a day or more.
 
 ## Before launch — details
 
-### 1. Verify cookie consent actually gates the trackers (High / M)
-`ThirdPartyScripts.tsx` loads CookieYes `beforeInteractive` "so it can gate the
-trackers below" — but CookieYes's automatic blocking works by rewriting
-`<script>` tags it finds in the HTML. The trackers here (2× GTM, GA4 + Google
-Ads, Clarity, HubSpot, PostHog, RB2B, Claydar, Pierview, PartnerStack) are
-injected by React via `next/script` after hydration, so there's a real chance
-they fire **before consent**. For a security-and-compliance company, shipping a
-non-compliant cookie banner is a reputational risk beyond the legal one
-(GDPR/PIPEDA — and the site sells GDPR/PIPEDA compliance).
-**Do:** on a preview deploy, open the site fresh, decline consent, and check the
-network tab for GA/Clarity/PostHog/RB2B requests. If they fire, gate them —
-either move trackers into GTM with Google Consent Mode, or wrap the `<Script>`
-blocks so they only render after a consent cookie/event from CookieYes.
-Related: "Create a CookieYes account and test" is already on the manual task list —
-this is the technical half of that test.
+### 1. ~~Verify cookie consent actually gates the trackers~~ — DONE (June 12, 2026)
+The suspicion was confirmed by a headless-browser test against a production
+build: every tracker fired before consent and even after "Reject All" —
+CookieYes's auto-blocking rewrites script tags found in the HTML, and these
+are injected by React via `next/script` after hydration, so it never saw them.
+**Fixed:** `ThirdPartyScripts.tsx` is now a client component that renders each
+tracker's `<Script>` tags only after the matching CookieYes consent category
+(analytics / advertisement / functional) is granted, via `getCkyConsent()` +
+the `cookieyes_consent_update` event. Includes Google Consent Mode v2
+defaults/updates, a reload on consent withdrawal, an always-on
+`gtagSendEvent` navigation fallback, and removal of the ungateable GTM
+`<noscript>` iframes. Verified headless (prod build, `local.mycroft.io`
+hosts alias): fresh GDPR visit = zero tracker requests; Accept All = all
+trackers fire without reload; Reject All = still zero after reload.
 
 ### 2. Add robots.txt (High / S)
 There is no `src/app/robots.ts` or `public/robots.txt`. Add a `robots.ts` that
