@@ -1,4 +1,4 @@
-import { DotLottiePlayer } from "@/app/_shared/DotLottiePlayer";
+import { DotLottiePlayer } from "@/components/DotLottiePlayer";
 
 /**
  * The standard /product/* hero: copy on the left, an eagerly-loaded lottie on

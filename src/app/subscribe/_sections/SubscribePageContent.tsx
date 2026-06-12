@@ -1,7 +1,7 @@
 import { SubscribeBlogPostCard } from "./SubscribeBlogPostCard";
 import { subscribeBlogPosts } from "./SubscribeBlogPostCard.data";
-import { SiteNav } from "../../_shared/SiteNav";
-import { SiteFooter } from "../../_shared/SiteFooter";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SubscribeNewsletterHero } from "./SubscribeNewsletterHero";
 import { SubscribeSectionDivider } from "./SubscribeSectionDivider";
 

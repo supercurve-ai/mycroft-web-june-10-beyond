@@ -1,4 +1,4 @@
-import { ButtonLarge } from "@/app/_shared/ButtonLarge";
+import { ButtonLarge } from "@/components/ButtonLarge";
 import { ResourcesBlogPostList } from "./ResourcesBlogPostList";
 /** Featured-blog section of /resources. Ported from Webflow by the Webflow Cloner agent. */
 export function ResourcesFeaturedBlog() {

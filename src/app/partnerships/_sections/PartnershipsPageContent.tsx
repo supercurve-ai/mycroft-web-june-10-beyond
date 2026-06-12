@@ -1,11 +1,11 @@
-import { ButtonLarge } from "@/app/_shared/ButtonLarge";
+import { ButtonLarge } from "@/components/ButtonLarge";
 import { PartnershipsBlogPostCard } from "./PartnershipsBlogPostCard";
 import { partnershipsBlogPosts } from "./PartnershipsBlogPostCard.data";
-import { SiteNav } from "../../_shared/SiteNav";
-import { SiteFooter } from "../../_shared/SiteFooter";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 import { PartnershipsHero } from "./PartnershipsHero";
 import { PartnershipsBenefits } from "./PartnershipsBenefits";
-import { ScrollFeatureSlider, type ScrollFeatureSlide } from "../../_shared/ScrollFeatureSlider";
+import { ScrollFeatureSlider, type ScrollFeatureSlide } from "@/components/ScrollFeatureSlider";
 
 const partnerSlides: ScrollFeatureSlide[] = [
   {

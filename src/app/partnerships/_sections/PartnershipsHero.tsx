@@ -1,4 +1,4 @@
-import { HubspotForm } from "@/app/_shared/HubspotForm";
+import { HubspotForm } from "@/components/HubspotForm";
 
 /** Hero section of /partnerships. Ported from Webflow by the Webflow Cloner agent. */
 export function PartnershipsHero() {

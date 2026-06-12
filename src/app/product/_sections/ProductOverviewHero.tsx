@@ -1,4 +1,4 @@
-import { ButtonLarge } from "@/app/_shared/ButtonLarge";
+import { ButtonLarge } from "@/components/ButtonLarge";
 
 /** Hero section of /product. Ported from Webflow by the Webflow Cloner agent. */
 export function ProductOverviewHero() {

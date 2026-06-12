@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { PricingPageContent } from "./_sections/PricingPageContent";
-import { WebflowInteractions } from "../_shared/WebflowInteractions";
+import { WebflowInteractions } from "@/components/WebflowInteractions";
 
 export const metadata: Metadata = {
   title: "Mycroft Pricing | Find the right pricing package for your security program",

@@ -1,4 +1,4 @@
-import { FaqItem } from "@/app/_shared/Accordion";
+import { FaqItem } from "@/components/Accordion";
 import { AuditHero } from "./AuditHero";
 import { ComplianceCarousel } from "./ComplianceCarousel";
 import type { ProductSubpageContent } from "../_shared/ProductSubpage";

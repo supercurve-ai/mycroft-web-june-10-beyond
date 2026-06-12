@@ -1,4 +1,4 @@
-import { BookDemoForm } from "@/app/_shared/BookDemoForm";
+import { BookDemoForm } from "@/components/BookDemoForm";
 
 /** Hero section of /pricing. Ported from Webflow by the Webflow Cloner agent. */
 export function PricingHero() {

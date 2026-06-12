@@ -1,4 +1,4 @@
-import { ButtonLarge } from "@/app/_shared/ButtonLarge";
+import { ButtonLarge } from "@/components/ButtonLarge";
 
 /** Partner-benefits section of /partnerships. Ported from Webflow by the Webflow Cloner agent. */
 export function PartnershipsBenefits() {

@@ -1,6 +1,6 @@
-import { TrustedBySection } from "@/app/_shared/LogoMarquee";
-import { SiteNav } from "../../_shared/SiteNav";
-import { SiteFooter } from "../../_shared/SiteFooter";
+import { TrustedBySection } from "@/components/LogoMarquee";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 import { ProductOverviewHero } from "./ProductOverviewHero";
 import { ProductComplianceSlider } from "./ProductComplianceSlider";
 import { ProductFeatures } from "./ProductFeatures";

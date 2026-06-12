@@ -1,4 +1,4 @@
-import { LogoMarquee } from "@/app/_shared/LogoMarquee";
+import { LogoMarquee } from "@/components/LogoMarquee";
 
 /** About-Mycroft and investors section of /about. Ported from Webflow by the Webflow Cloner agent. */
 export function AboutCompanyAndInvestors() {

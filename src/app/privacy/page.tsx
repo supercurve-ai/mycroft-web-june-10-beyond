@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { PrivacyPageContent } from "./_sections/PrivacyPageContent";
-import { WebflowInteractions } from "../_shared/WebflowInteractions";
+import { WebflowInteractions } from "@/components/WebflowInteractions";
 
 export const metadata: Metadata = {
   title: "Mycroft Privacy Policy | Our privacy policy details how we collect, use, and share information",

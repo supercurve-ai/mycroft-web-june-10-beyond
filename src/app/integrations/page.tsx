@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IntegrationsPageContent } from "./_sections/IntegrationsPageContent";
-import { WebflowInteractions } from "../_shared/WebflowInteractions";
+import { WebflowInteractions } from "@/components/WebflowInteractions";
 
 export const metadata: Metadata = {
   title: "Mycroft — Integrations: Powered by our AI Agents.",

@@ -1,5 +1,5 @@
-import { ButtonLarge } from "@/app/_shared/ButtonLarge";
-import { DotLottiePlayer } from "../_shared/DotLottiePlayer";
+import { ButtonLarge } from "@/components/ButtonLarge";
+import { DotLottiePlayer } from "@/components/DotLottiePlayer";
 
 /** Hero section of /home. Ported from Webflow by the Webflow Cloner agent. */
 export function HomeHero() {

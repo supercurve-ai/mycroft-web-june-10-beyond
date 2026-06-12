@@ -4,9 +4,9 @@ import { notFound } from "next/navigation";
 import { getBlogSlugs, getBlogSource, getBlogMeta } from "@/lib/blog";
 import { renderMdx } from "@/lib/mdx";
 import { mdxComponents } from "@/components/mdx-components";
-import { SiteNav } from "@/app/_shared/SiteNav";
-import { SiteFooter } from "@/app/_shared/SiteFooter";
-import { CtaSection } from "@/app/_shared/CtaSection";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
+import { CtaSection } from "@/components/CtaSection";
 
 export function generateStaticParams() {
   return getBlogSlugs().map((slug) => ({ slug }));

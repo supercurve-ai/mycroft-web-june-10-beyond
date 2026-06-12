@@ -1,4 +1,4 @@
-import { ComplianceSection } from "../../_shared/ComplianceSection";
+import { ComplianceSection } from "@/components/ComplianceSection";
 
 /** Compliance-badges section of /faqs. Ported from Webflow by the Webflow Cloner agent. */
 export function FaqsComplianceBadges() {

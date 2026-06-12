@@ -1,6 +1,6 @@
-import { SiteNav } from "../../_shared/SiteNav";
-import { SiteFooter } from "../../_shared/SiteFooter";
-import { ComplianceSection } from "../../_shared/ComplianceSection";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
+import { ComplianceSection } from "@/components/ComplianceSection";
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io/thank-you page. DOM + classes mirror

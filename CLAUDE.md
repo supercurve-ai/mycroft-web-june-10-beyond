@@ -26,10 +26,14 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
   uses its own `_sections/`. NOTE: ported Webflow copy can contain non-breaking
   spaces (U+00A0) that look like plain spaces — when moving copy around, check
   with `grep -P '\xC2\xA0'` or line wrapping will silently change.
-- `src/app/_shared/` — components shared across pages: `SiteNav` (self-contained,
-  manages its own dropdowns/hamburger with React state), `SiteFooter`, `NavLink`
-  (current-page-aware link), `WebflowInteractions` (tabs/sliders/reveals/lightbox),
-  `ThirdPartyScripts` (re-wired analytics/pixels), `DotLottiePlayer`.
+- `src/components/` — components shared across pages (moved from
+  `src/app/_shared/` June 2026; import as `@/components/...`): `SiteNav`
+  (self-contained, manages its own dropdowns/hamburger with React state),
+  `SiteFooter`, `NavLink` (current-page-aware link), `WebflowInteractions`
+  (tabs/sliders/reveals/lightbox), `ThirdPartyScripts` (re-wired
+  analytics/pixels), `DotLottiePlayer`, plus the MDX component maps for
+  blog/case-study rendering. The route-local `_shared/` folders
+  (`frameworks/_shared`, `product/_shared`) stay colocated with their routes.
 - `src/app/webflow-shared.css` — the captured Webflow stylesheet, being
   migrated to Tailwind utilities tranche by tranche (owner-approved June
   2026; page CSS files and the atomic spacing/container classes are already
@@ -86,7 +90,7 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
 4. Set `NEXT_PUBLIC_SITE_URL` to the production domain before launch so the
    sitemap + metadata point at the right host. Also set `ZAPIER_WEBHOOK_URL`
    (see `.env.example`) — without it the "Book a demo" form
-   (`src/app/_shared/BookDemoForm.tsx` → `/api/demo-form`) drops every lead
+   (`src/components/BookDemoForm.tsx` → `/api/demo-form`) drops every lead
    with a 503.
 5. **No Webflow dependencies.** The client is leaving Webflow, so this site
    must not rely on anything Webflow-hosted. Never add a new reference to

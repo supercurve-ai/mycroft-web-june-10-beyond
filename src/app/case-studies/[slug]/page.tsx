@@ -5,9 +5,9 @@ import { notFound } from "next/navigation";
 import { getCaseStudiesSlugs, getCaseStudiesSource, getCaseStudiesMeta } from "@/lib/caseStudies";
 import { renderMdx } from "@/lib/mdx";
 import { caseStudyMdxComponents } from "@/components/case-study-mdx";
-import { SiteNav } from "@/app/_shared/SiteNav";
-import { SiteFooter } from "@/app/_shared/SiteFooter";
-import { CtaSection } from "@/app/_shared/CtaSection";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
+import { CtaSection } from "@/components/CtaSection";
 import { CaseStudyInteractions } from "./CaseStudyInteractions";
 
 export function generateStaticParams() {

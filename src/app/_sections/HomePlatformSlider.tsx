@@ -1,5 +1,5 @@
-import { ProductSlider } from "../_shared/ProductSlider";
-import type { ProductSlide } from "../_shared/ProductSlideCard";
+import { ProductSlider } from "@/components/ProductSlider";
+import type { ProductSlide } from "@/components/ProductSlideCard";
 
 const SLIDES: ProductSlide[] = [
   {

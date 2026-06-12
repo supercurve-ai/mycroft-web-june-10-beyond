@@ -1,6 +1,6 @@
-import { CtaSection } from "@/app/_shared/CtaSection";
-import { SiteNav } from "../../_shared/SiteNav";
-import { SiteFooter } from "../../_shared/SiteFooter";
+import { CtaSection } from "@/components/CtaSection";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 import { ResourcesHero } from "./ResourcesHero";
 import { ResourcesFeaturedBlog } from "./ResourcesFeaturedBlog";
 import { ResourcesCaseStudies } from "./ResourcesCaseStudies";

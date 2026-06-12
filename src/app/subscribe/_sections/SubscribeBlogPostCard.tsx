@@ -1,4 +1,4 @@
-import { ReadNowLink } from "@/app/_shared/ReadNowLink";
+import { ReadNowLink } from "@/components/ReadNowLink";
 
 /** One SubscribeBlogPostCard item (Webflow CMS collection). Ported from Webflow by the Webflow Cloner agent. */
 export type SubscribeBlogPostItem = { href_0: string; image_1: string; image_2: string; mobile_3: string };

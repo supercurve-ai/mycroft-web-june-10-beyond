@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ArrowTextLink } from "@/app/_shared/ArrowTextLink";
-import { DotLottiePlayer } from "../../_shared/DotLottiePlayer";
+import { ArrowTextLink } from "@/components/ArrowTextLink";
+import { DotLottiePlayer } from "@/components/DotLottiePlayer";
 
 /** Product-features section of /product. Ported from Webflow by the Webflow Cloner agent. */
 export function ProductFeatures() {

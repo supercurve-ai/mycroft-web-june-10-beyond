@@ -1,13 +1,13 @@
 import type { CSSProperties, ReactNode } from "react";
 import type { Metadata } from "next";
-import { ButtonLarge } from "@/app/_shared/ButtonLarge";
-import { ArrowTextLink } from "@/app/_shared/ArrowTextLink";
-import { FaqItem } from "@/app/_shared/Accordion";
-import { CtaSection } from "@/app/_shared/CtaSection";
-import { SiteNav } from "@/app/_shared/SiteNav";
-import { SiteFooter } from "@/app/_shared/SiteFooter";
-import { UnlockFrameworksSection } from "@/app/_shared/UnlockFrameworksSection";
-import { WebflowInteractions } from "@/app/_shared/WebflowInteractions";
+import { ButtonLarge } from "@/components/ButtonLarge";
+import { ArrowTextLink } from "@/components/ArrowTextLink";
+import { FaqItem } from "@/components/Accordion";
+import { CtaSection } from "@/components/CtaSection";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
+import { UnlockFrameworksSection } from "@/components/UnlockFrameworksSection";
+import { WebflowInteractions } from "@/components/WebflowInteractions";
 
 /**
  * Shared template for the /frameworks/* pages. All nine framework pages render

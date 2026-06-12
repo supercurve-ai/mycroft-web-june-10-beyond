@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
-import { TrustedBySection } from "@/app/_shared/LogoMarquee";
-import { CtaSection } from "@/app/_shared/CtaSection";
-import { ButtonLarge } from "@/app/_shared/ButtonLarge";
-import { ReadNowLink } from "@/app/_shared/ReadNowLink";
-import { SiteNav } from "@/app/_shared/SiteNav";
-import { SiteFooter } from "@/app/_shared/SiteFooter";
-import { ScrollFeatureSlider, type ScrollFeatureSlide } from "@/app/_shared/ScrollFeatureSlider";
+import { TrustedBySection } from "@/components/LogoMarquee";
+import { CtaSection } from "@/components/CtaSection";
+import { ButtonLarge } from "@/components/ButtonLarge";
+import { ReadNowLink } from "@/components/ReadNowLink";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
+import { ScrollFeatureSlider, type ScrollFeatureSlide } from "@/components/ScrollFeatureSlider";
 
 /** The 3-up "latest insights" teasers — the same three posts on every product subpage. */
 const blogPosts = [

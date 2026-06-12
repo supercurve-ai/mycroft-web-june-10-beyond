@@ -1,7 +1,7 @@
-import { TrustedBySection } from "@/app/_shared/LogoMarquee";
-import { CtaSection } from "@/app/_shared/CtaSection";
-import { SiteNav } from "../_shared/SiteNav";
-import { SiteFooter } from "../_shared/SiteFooter";
+import { TrustedBySection } from "@/components/LogoMarquee";
+import { CtaSection } from "@/components/CtaSection";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 import { HomeHero } from "./HomeHero";
 import { HomeProblem } from "./HomeProblem";
 import { HomeSolution } from "./HomeSolution";

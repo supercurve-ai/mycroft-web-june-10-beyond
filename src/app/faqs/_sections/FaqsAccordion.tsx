@@ -1,4 +1,4 @@
-import { AccordionItem } from "@/app/_shared/Accordion";
+import { AccordionItem } from "@/components/Accordion";
 
 /** FAQ-accordion section of /faqs. Ported from Webflow by the Webflow Cloner agent. */
 export function FaqsAccordion() {

@@ -1,5 +1,5 @@
-import { SiteNav } from "../../_shared/SiteNav";
-import { SiteFooter } from "../../_shared/SiteFooter";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 import { TermsHeader } from "./TermsHeader";
 import { TermsMsaBody } from "./TermsMsaBody";
 

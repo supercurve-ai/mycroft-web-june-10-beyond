@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ThankYouPageContent } from "./_sections/ThankYouPageContent";
-import { WebflowInteractions } from "../_shared/WebflowInteractions";
+import { WebflowInteractions } from "@/components/WebflowInteractions";
 
 export const metadata: Metadata = {
   title: "Thank you",

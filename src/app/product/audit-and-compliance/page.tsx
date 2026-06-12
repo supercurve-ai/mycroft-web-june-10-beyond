@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { WebflowInteractions } from "../../_shared/WebflowInteractions";
+import { WebflowInteractions } from "@/components/WebflowInteractions";
 import { ProductSubpage } from "../_shared/ProductSubpage";
 import { auditAndComplianceContent } from "./content";
 

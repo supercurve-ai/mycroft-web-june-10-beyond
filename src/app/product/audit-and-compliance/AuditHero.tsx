@@ -1,4 +1,4 @@
-import { DotLottiePlayer } from "@/app/_shared/DotLottiePlayer";
+import { DotLottiePlayer } from "@/components/DotLottiePlayer";
 
 /**
  * The audit-and-compliance hero. Unlike the other product subpages (which use

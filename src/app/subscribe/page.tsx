@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SubscribePageContent } from "./_sections/SubscribePageContent";
-import { WebflowInteractions } from "../_shared/WebflowInteractions";
+import { WebflowInteractions } from "@/components/WebflowInteractions";
 
 export const metadata: Metadata = {
   title: "Subscribe",

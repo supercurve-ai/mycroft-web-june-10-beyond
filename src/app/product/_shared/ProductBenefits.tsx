@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { ButtonLarge } from "@/app/_shared/ButtonLarge";
+import { ButtonLarge } from "@/components/ButtonLarge";
 
 /**
  * The standard /product/* "why this matters" section: centered heading + dek

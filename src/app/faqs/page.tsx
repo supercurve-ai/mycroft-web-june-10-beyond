@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { FaqsPageContent } from "./_sections/FaqsPageContent";
-import { WebflowInteractions } from "../_shared/WebflowInteractions";
+import { WebflowInteractions } from "@/components/WebflowInteractions";
 
 export const metadata: Metadata = {
   title: "Mycroft FAQs | Answers to all of your frequently asked cybersecurity questions",
