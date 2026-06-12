@@ -71,7 +71,10 @@ export function ProductSlideCard({
               : "opacity 350ms ease-in",
           }}
         >
-          <DotLottiePlayer src={lottieSrc} loop={true} autoplay={true} />
+          {/* playing={active}: hidden slides keep their geometry (visibility:
+              hidden), so without the gate all five lotties would animate
+              simultaneously whenever the slider is on screen */}
+          <DotLottiePlayer src={lottieSrc} loop={true} autoplay={true} playing={active} />
         </div>
       </div>
     </div>

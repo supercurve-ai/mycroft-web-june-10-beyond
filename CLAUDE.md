@@ -31,8 +31,7 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
   post, gray-matter frontmatter + Markdown body.
 - `src/app/sitemap.ts` — the sitemap, mirroring the original site's. Served at
   `/sitemap.xml`. New indexable pages MUST be added here.
-- `clone-manifest.json` — clone bookkeeping. Don't edit by hand.
-
+ 
 ## Rules
 
 1. **New pages:** use the `add-page` skill (or `/add-page`). ALWAYS ask the

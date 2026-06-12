@@ -21,6 +21,7 @@ const nextConfig = {
   // Pin the tracing root to this app so a parent monorepo lockfile doesn't
   // confuse Next's workspace-root inference.
   outputFileTracingRoot: __dirname,
+  turbopack: { root: __dirname },
   // 301 redirects carried over from the original Webflow site settings.
   async redirects() {
     return [

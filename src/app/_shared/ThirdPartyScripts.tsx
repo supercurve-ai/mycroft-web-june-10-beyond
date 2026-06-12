@@ -9,11 +9,14 @@ import Script from "next/script";
 export function ThirdPartyScripts() {
   return (
     <>
-      {/* CookieYes consent banner — loads first so it can gate the trackers below */}
+      {/* CookieYes consent banner. afterInteractive (not beforeInteractive):
+          a render-blocking third-party script cost ~1s of First Contentful
+          Paint on mobile. It still loads ahead of the lazyOnload trackers
+          below, so consent can gate them. */}
       <Script
         id="cookieyes"
         src="https://cdn-cookieyes.com/client_data/a916ae047a70f15c42c4e90f/script.js"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
       {/* Google Tag Manager (GTM-5PVJPRF5) */}
       <Script id="wf-gtm" strategy="afterInteractive">{`
@@ -47,13 +50,13 @@ export function ThirdPartyScripts() {
         };
       `}</Script>
       {/* Microsoft Clarity (wfseo666us) */}
-      <Script id="wf-clarity" strategy="afterInteractive">{`
+      <Script id="wf-clarity" strategy="lazyOnload">{`
         (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "wfseo666us");
       `}</Script>
       {/* HubSpot (45783254) — tracking + forms/chat loader */}
-      <Script id="hs-script-loader" src="https://js.hs-scripts.com/45783254.js" strategy="afterInteractive" />
+      <Script id="hs-script-loader" src="https://js.hs-scripts.com/45783254.js" strategy="lazyOnload" />
       {/* PostHog (proxied through h.mycroft.io) */}
-      <Script id="wf-posthog" strategy="afterInteractive">{`
+      <Script id="wf-posthog" strategy="lazyOnload">{`
         !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group identify setPersonProperties setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags resetGroups onFeatureFlags addFeatureFlagsHandler onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
         posthog.init('phc_GtosxRdOMMmu5RXHrz4Y00qhNP1jk1j9CAb6WcuBP5W', {
           api_host: 'https://h.mycroft.io',
@@ -62,15 +65,15 @@ export function ThirdPartyScripts() {
         });
       `}</Script>
       {/* RB2B visitor identification (1N5W0HM2VMO5) */}
-      <Script id="wf-reb2b" strategy="afterInteractive">{`
+      <Script id="wf-reb2b" strategy="lazyOnload">{`
         !function () {var reb2b = window.reb2b = window.reb2b || [];if (reb2b.invoked) return;reb2b.invoked = true;reb2b.methods = ["identify", "collect"];reb2b.factory = function (method) {return function () {var args = Array.prototype.slice.call(arguments);args.unshift(method);reb2b.push(args);return reb2b;};};for (var i = 0; i < reb2b.methods.length; i++) {var key = reb2b.methods[i];reb2b[key] = reb2b.factory(key);}reb2b.load = function (key) {var script = document.createElement("script");script.type = "text/javascript";script.async = true;script.src = "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/" + key + "/1N5W0HM2VMO5.js.gz";var first = document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script, first);};reb2b.SNIPPET_VERSION = "1.0.1";reb2b.load("1N5W0HM2VMO5");}();
       `}</Script>
       {/* Claydar (cvOLom811d) */}
-      <Script src="https://static.claydar.com/init.v1.js?id=cvOLom811d" strategy="afterInteractive" />
+      <Script src="https://static.claydar.com/init.v1.js?id=cvOLom811d" strategy="lazyOnload" />
       {/* Pierview analytics (pv_117_9yb3hvwq) */}
-      <Script src="https://www.pierview.ai/pierview-analytics.js?id=pv_117_9yb3hvwq" strategy="afterInteractive" />
+      <Script src="https://www.pierview.ai/pierview-analytics.js?id=pv_117_9yb3hvwq" strategy="lazyOnload" />
       {/* GrowSumo / PartnerStack (proxied through try.mycroft.io) */}
-      <Script id="wf-growsumo" strategy="afterInteractive">{`
+      <Script id="wf-growsumo" strategy="lazyOnload">{`
         (function() {var gs = document.createElement('script');gs.src = 'https://try.mycroft.io/pr/js';gs.type = 'text/javascript';gs.async = 'true';gs.onload = gs.onreadystatechange = function() {var rs = this.readyState;if (rs && rs != 'complete' && rs != 'loaded') return;try {growsumo._initialize('pk_70tCwluPGfprivFbqNRViRr0CipFGsdZ', ["try.mycroft.io"]); if (typeof(growsumoInit) === 'function') {growsumoInit();}} catch (e) {}};var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gs, s);})();
       `}</Script>
     </>
