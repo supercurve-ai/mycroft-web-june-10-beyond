@@ -1,0 +1,210 @@
+---
+title: "ISO 27001 vs CMMC: Which certification does your company need?"
+slug: "iso-27001-vs-cmmc"
+excerpt: "Despite some overlap, ISO 27001 and CMMC solve different problems. Here's how to tell which certification your company needs and when to pursue both."
+coverImage: "/assets/blog/iso-27001-vs-cmmc/iso-27001-vs-cmmc.webp"
+date: "2026-06-12"
+author: "Mike Kim"
+authorImage: "/assets/mikekim2025.png"
+readingTime: "10 min read"
+---
+
+## TLDR:
+
+- ISO 27001 is a voluntary, globally recognized security standard, while CMMC is a mandatory DoD contract requirement.
+- While ISO 27001 can give you a head start on CMMC requirements, it won't get you the whole way there.
+- If your contracts require both, build one unified program from day one rather than running two parallel compliance tracks.
+
+ISO 27001 and the Cybersecurity Maturity Model Certification (CMMC) are both cybersecurity frameworks. Both require organizations to implement security controls, undergo third-party audits, and demonstrate that they're actively managing information security risks.
+
+But that's where the similarities end.
+
+ISO 27001 is an internationally recognized standard for building an Information Security Management System (ISMS), making it applicable to any industry or geography. CMMC is a mandatory compliance requirement for U.S. Department of Defense (DoD) contractors and subcontractors working within the Defense Industrial Base (DIB). Both ISO 27001 and CMMC share some vocabulary and control overlap, but they serve fundamentally different purposes for fundamentally different buyers.
+
+Choosing the wrong one—or treating them as equivalent paths to the same destination—wastes time, misallocates budgets, and creates a false sense of data security. This post breaks down the key differences between ISO 27001 vs CMMC, offers a clear framework for deciding which to pursue first, and explains how to build one unified program if your contracts eventually require both.
+
+## What is ISO 27001?
+
+ISO 27001 is an international standard published by the International Organization for Standardization that establishes, implements, maintains, and continually improves an ISMS. An ISMS provides a structured approach to identifying, managing, and reducing information security risks across an organization, including people, processes, and technology.
+
+While ISO 27001 certification is voluntary in most markets, the standard itself is rigorous. This is what makes it so widely required by enterprise customers, federal agencies, and regulated-industry prospects as proof of security maturity. Organizations worldwide use it to demonstrate a formal commitment to information security, regardless of geography or sector.
+
+The 2022 version of the standard includes 93 Annex A controls across four categories: Organizational, people, physical, and technological. Unlike CMMC, not all are mandatory—organizations take a risk-based approach, selecting applicable controls based on a formal risk assessment. Controls can be documented as not applicable with justification, which gives teams the flexibility to tailor the framework to their actual risk profile.
+
+Formal certification requires an external audit by an accredited certification body, typically the American National Standards Institute (ANSI) National Accreditation Board or an equivalent body. Certification is only valid for three years, and annual surveillance audits are required to demonstrate continuous improvement and ongoing compliance.
+
+## What is the Cybersecurity Maturity Model Certification (CMMC)?
+
+CMMC is a U.S. Department of Defense compliance framework. It's designed to protect federal contract information (FCI) and controlled unclassified information (CUI) across the DIB. Unlike ISO 27001, CMMC is not voluntary. It's a contractual requirement embedded in DoD solicitations under two rules: 32 CFR Part 170 (the program rule, effective December 16, 2024), which establishes the CMMC framework, and 48 CFR (the acquisition rule, effective November 10, 2025), which embeds CMMC requirements directly into DoD contracts.
+
+CMMC focuses on ensuring that DoD contractors (including their subcontractors) meet a defined set of cybersecurity controls before being awarded contracts involving sensitive data. The framework applies to any organization that handles CUI or FCI, including cloud-native software companies operating anywhere in the DoD supply chain.
+
+CMMC operates across three maturity levels:
+
+| **CMMC level** | **Controls** | **Assessment type** | **Who does it apply to** |
+| --- | --- | --- | --- |
+| **Level 1: Foundational** | 15 (from FAR clause 52.204-21) | Annual self-assessment | Contractors handling FCI |
+| **Level 2: Advanced** | 110 (from NIST SP 800-171 R2) | Third-party C3PAO assessment **(most contracts fall here)** | Contractors handling CUI |
+| **Level 3: Expert** | 134 (110 from Level 2 and 24 from NIST SP 800-172) | Government-Led Defense Industrial Base Cybersecurity Assessment Center (DIBCAC) assessment | Contractors supporting the most critical DoD programs |
+
+Most commercial software companies entering the DoD supply chain will encounter Level 2—and [choosing the right CMMC monitoring provider](https://diogenesclub.ca/blog/choose-cmmc-compliance-monitoring-provider) early in that process makes a measurable difference. This is when the implementation process gets serious, and where a solid ISO 27001 foundation helps (but it won't carry you across the finish line alone).
+
+## ISO 27001 vs CMMC: A side-by-side comparison
+
+Both frameworks require organizations to implement security controls, conduct formal assessments, and demonstrate that they're actively managing cybersecurity risks. But the mechanisms, flexibility, and stakes are different enough that comparing them head-to-head is worth doing carefully.
+
+| | **ISO 27001** | **CMMC 2.0** |
+| --- | --- | --- |
+| **Purpose** | International standard for managing information security risks across any organization | Mandatory DoD requirement to protect FCI and CUI across the Defense Industrial Base |
+| **Who it applies to** | Any organization, any industry, any geography | DoD contractors and subcontractors handling FCI or CUI |
+| **Mandatory or voluntary** | Voluntary | Mandatory |
+| **NIST-based** | No — ISO/IEC framework | Yes — NIST SP 800-171 R2 (Level 2 and 3); SP 800-172 (Level 3 only) |
+| **Scope** | Organization-defined ISMS boundary, and companies can limit scope | No carve-outs; every system touching FCI or CUI is in scope |
+| **Control flexibility** | Risk-based<br/>93 Annex A controls<br/>Some may be marked "not applicable" | Prescriptive<br/>All controls required at each level<br/>No "not-applicable" option |
+| **Third-party audit body** | Accredited certification body (e.g., ANSI National Accreditation Board) | DoD-accredited C3PAO (Level 2)<br/>DIBCAC (Level 3) |
+| **Certification duration** | 3 years | 3 years |
+| **Annual obligations** | Annual surveillance audits | Annual affirmation required |
+
+### What's the difference in scope?
+
+ISO 27001 lets organizations define their own scope. You decide which systems, processes, and data fall under your ISMS. A company can intentionally limit scope to reduce audit surface area, a useful option for scaling teams managing limited financial resources and headcount.
+
+CMMC has no such flexibility. Every system that touches FCI or CUI is in scope, with no carve-outs. For cloud-native SaaS companies with data distributed across multiple environments, this is one of the most significant operational surprises in the entire compliance process. There's no "we'll exclude that environment for now." It's all in scope.
+
+### How do CMMC controls and frameworks differ?
+
+ISO 27001 takes a risk-based approach to control selection. Of the 93 Annex A controls, organizations choose what's relevant to their environment. Some can be marked not applicable with documented justification, giving teams the flexibility to tailor security controls to their actual risk profile.
+
+CMMC is prescriptive. For example, CMMC Level 2 controls require all 110 NIST SP 800-171 Revision 2 (R2) advanced practices. There's no "not-applicable" option. CMMC practices include specific control requirements around access control, multi-factor authentication, audit logs, system security plans, and incident response, among others. Control requirements are not negotiable based on company size or risk tolerance.
+
+### What does each certification signal to the market?
+
+ISO 27001 is a market-access credential. It tells global enterprise prospects and partners that the organization has a mature, formally audited approach to managing information security risks and safeguarding sensitive information. For companies selling into financial services or healthcare, it's often a deal requirement.
+
+CMMC is a contract gate. It says: We're legally eligible to hold DoD contracts involving sensitive data. Achieving CMMC certification doesn't differentiate you commercially. Failing to achieve it disqualifies you contractually, making you ineligible to bid on or hold any DoD contracts.
+
+### How does the CMMC audit process differ?
+
+ISO 27001 certification requires an external audit by an accredited certification body, with a three-year certification cycle and annual surveillance audits to verify ongoing compliance.
+
+CMMC assessments at Level 2 are conducted by DoD-accredited C3PAOs. Level 3 assessments are conducted by the government's DIBCAC. The assessment process evaluates whether CMMC controls are actually operating effectively in your environment, not just whether they're documented in a CMMC system security plan. Certification is valid for three years, with an annual affirmation required.
+
+One thing to keep in mind: [As of late 2025](https://cybersheath.com/resources/blog/why-defense-contractors-face-a-c3pao-capacity-crisis/), only 431 CMMC certificates had been awarded. With only 83 certified C3PAOs available—and the gap between supply and demand widening—understanding [how C3PAOs differ from 3PAOs](https://diogenesclub.ca/blog/3pao-vs-c3pao-how-to-choose-federal-assessor) before you start your search will save time. Organizations looking to achieve CMMC compliance should start early. The C3PAO queue is long, and the assessment bottleneck will only grow as enforcement phases roll out through 2026.
+
+## Which certification does your company need?
+
+Here's the part most comparison articles sidestep. Rather than listing every scenario with an "it depends," this section makes the call.
+
+### When to pursue ISO 27001
+
+ISO 27001 is the right starting point if:
+
+- Your growth path runs through global enterprise accounts, particularly in financial services, healthcare, or regulated industries outside the U.S. defense supply chain.
+- Enterprise buyers are requesting evidence of a security program through RFPs, vendor questionnaires, or security reviews, and ISO 27001 is the internationally recognized standard they're looking for.
+- You want a flexible, risk-based framework that scales across your organization and builds a foundation for managing risks across your full environment, regardless of geography.
+
+### When to achieve CMMC compliance
+
+Pursue CMMC certification if:
+
+- You hold or are bidding on DoD contracts that involve FCI or CUI.
+- A prime contractor in your supply chain is flowing down CMMC compliance requirements to subcontractors.
+- 48 CFR is already embedded in your active contracts, and at that point, it's simply a timeline decision.
+
+If you're evaluating tooling at the same time, here's what to look for in a [CMMC compliance platform](https://www.mycroft.io/blog/cmmc-compliance-platform) now that 48 CFR is in effect.
+
+### How do you know if CMMC applies to your company?
+
+Ask these two questions:
+
+- Does your work involve accessing, transmitting, or storing FCI or CUI?
+- Are you a subcontractor to a DoD prime contractor?
+
+If the answer to either is yes, CMMC will eventually apply. Organizations that start assessments and gap remediation early are better positioned in the C3PAO queue—and [Mycroft's CMMC framework page](https://www.mycroft.io/frameworks/cmmc) is a useful starting point for understanding where you stand.
+
+## Does ISO 27001 certification help with CMMC compliance?
+
+While ISO 27001 provides a meaningful head start, it won't get you there on its own. Organizations that are ISO 27001 certified can leverage their existing ISMS to facilitate compliance with CMMC, particularly at Levels 1 and 2, due to substantial overlap in risk assessment, access control, incident response, change management, and supply chain security.
+
+If you've already built a functioning ISMS, you're not starting from scratch with CMMC. Evidence gathered for ISO 27001 annual surveillance audits, such as risk registers, access reviews, vendor assessments, and audit logs, can often be reused or adapted for CMMC requirements.
+
+Here are three gaps to understand:
+
+1. CMMC has no non-applicable controls, so ISO 27001's scoping flexibility doesn't transfer. If it touches CUI, the control applies.
+2. CMMC requires evidence that is precisely mapped to NIST SP 800-171 R2 control numbers. ISO 27001 evidence doesn't automatically satisfy the CMMC audit standard or replace the formal CMMC system security plan.
+3. A C3PAO evaluates whether your CMMC controls are operating effectively in practice, not just whether they're documented.
+
+The practical takeaway: ISO 27001 reduces your CMMC implementation effort significantly, but it doesn't replace a CMMC-specific gap assessment, remediation plan, and formal assessment preparation.
+
+## When you need both: Building one program that covers ISO 27001 and CMMC
+
+The scenario is more common than companies expect: You're scaling into both global enterprise markets (where ISO 27001 is expected) and DoD-adjacent work (where CMMC is required). The instinct is to run two separate compliance programs. But building a unified security program allows you to use ISO 27001 as the foundation and then layer CMMC requirements on top by mapping any overlapping controls.
+
+Integrating CMMC into an existing ISO 27001 program doesn't require rebuilding your compliance program from scratch. It means being intentional about how you build your evidence collection and control documentation so that it serves both frameworks from day one, rather than running two parallel compliance tracks indefinitely.
+
+![Diagram showing the control overlap between ISO 27001 and CMMC Level 2: access control, risk assessment, incident response, supply chain security, and continuous monitoring are shared domains where evidence is collected once and mapped to both frameworks.](/assets/blog/iso-27001-vs-cmmc/iso-27001-vs-cmmc-control-overlap.webp)
+
+### Where the control overlap works in your favor
+
+When it comes to both ISO 27001 and CMMC, the following have meaningful overlap:
+
+- Access control
+- Risk assessment
+- Incident response
+- Supply chain security
+- Ongoing monitoring
+
+Evidence collected for ISO 27001 surveillance (e.g., access reviews, risk registers, vendor assessments, and system logs) can often be adapted for CMMC annual affirmation requirements, reducing both the time burden and the resource allocation needed to maintain both certifications.
+
+Building your documentation and evidence collection with both frameworks in mind from day one eliminates duplicate work. For lean security teams, that efficiency is the difference between a manageable compliance process and a last-minute audit scramble.
+
+### Why parallel programs create more work, not less
+
+Running ISO 27001 and CMMC as separate programs creates two compounding problems:
+
+1. **The timeline mismatch:** CMMC annual affirmation and ISO 27001 annual surveillance audits run on different schedules. Without automation and ongoing monitoring, a lean team ends up in a near-constant state of audit prep.
+2. **The evidence specificity gap:** CMMC expects evidence mapped precisely to NIST SP 800-171 R2 control numbers. ISO 27001 uses a different structure. Manually re-mapping evidence across multiple frameworks is time-consuming, error-prone, and scales poorly as your security program grows.
+
+[Wisedocs](https://www.mycroft.io/case-studies/wisedocs), an Insurtech company operating in a heavily regulated industry with no dedicated internal security headcount, faced this exact kind of multi-framework compliance pressure. By working with Mycroft, they managed complex compliance requirements without engaging additional consulting services or hiring dedicated staff.
+
+Mycroft's platform manages multi-framework compliance, including ISO 27001 and CMMC, through a unified evidence-collection and control-mapping layer. Lean teams don't end up running two separate programs, which is exactly the kind of [tool sprawl](https://diogenesclub.ca/blog/how-to-eliminate-security-tool-sprawl) Mycroft was built to eliminate.
+
+## What ISO 27001 and CMMC don't cover (and why it matters)
+
+Both frameworks define what security controls you need. Neither one operates your security program for you.
+
+ISO 27001 and CMMC are compliance frameworks. They're not cloud security scanners, application vulnerability managers, device management systems, or third-party risk monitoring tools. They don't detect advanced persistent threats in real time, flag misconfigurations in your cloud environment, or continuously monitor your vendor ecosystem for emerging cybersecurity risks. Both frameworks require organizations to implement controls and conduct periodic assessments, but compliance requirements alone don't protect customer data between audit cycles.
+
+The risk is that companies achieve formal certification and assume their security posture is complete. It isn't. The gaps that exist in cloud infrastructure visibility, application security, device management, and ongoing monitoring remain unaddressed regardless of which certification you hold.
+
+> "Compliance frameworks are a means to an end—the end being the ability to move upmarket and close enterprise deals. But a certification doesn't tell you what's happening in your cloud environment at 2 am." — **Mike Kim, CEO and Founder, Mycroft**
+
+## Your certification is the floor, not the ceiling
+
+ISO 27001 unlocks global enterprise markets. CMMC unlocks the DoD supply chain. They're different tools built for different jobs, and treating them as interchangeable leads to wasted time, misallocated budgets, and a false sense of data protection.
+
+Whichever certification is right for your company, it's the floor of a real security program—not the ceiling. What falls outside both frameworks is exactly where breaches tend to happen. For companies that need to move fast on either (or both) without the in-house headcount to run a full security operation, Mycroft operates the full program on your behalf.
+
+[See how Mycroft manages your ISO 27001, CMMC, and full security stack without adding headcount.](https://www.mycroft.io/demo)
+
+## Frequently asked questions (FAQs)
+
+### Can a company hold both ISO 27001 certification and CMMC certification?
+
+Yes, and for companies selling into both global enterprise and Department of Defense (DoD) markets, holding both is increasingly expected. ISO 27001 and CMMC aren't mutually exclusive. The control overlap between them makes pursuing both more efficient than doing so sequentially. The most effective approach is to build ISO 27001 as the foundation first, then layer CMMC requirements on top using a unified evidence-collection process, rather than treating them as two separate compliance programs running in parallel.
+
+### Does ISO 27001 satisfy CMMC Level 2 requirements?
+
+No. ISO 27001 provides meaningful overlap with Cybersecurity Maturity Model Certification (CMMC) Level 2, particularly in access control, incident response, and risk assessment. But it doesn't satisfy the specific evidence requirements, control prescriptiveness, or the Certified Third-Party Assessment Organization (C3PAO) assessment process that CMMC demands. Organizations handling controlled unclassified information (CUI) still need a CMMC-specific gap assessment, a formal system security plan, and dedicated assessment preparation through an accredited C3PAO.
+
+### What CMMC level applies to most software companies in the DoD supply chain?
+
+Most commercial software companies handling controlled unclassified information (CUI) will be required to meet Cybersecurity Maturity Model Certification (CMMC) Level 2, which requires 110 controls aligned with National Institute of Standards and Technology (NIST) SP 800-171 and a third-party Certified Third-Party Assessment Organization (C3PAO) assessment. Level 1 applies to companies that handle only Federal Contract Information and requires only basic cybersecurity practices, verified through an annual self-assessment. Level 3 is reserved for the most sensitive national security programs and requires 134 controls and a government-led Defense Industrial Base Cybersecurity Assessment Center (DIBCAC) assessment.
+
+### How long does it take to achieve CMMC compliance?
+
+For Level 2 certification, 6 to 12 months is a realistic timeframe to achieve compliance, depending on your existing security posture, team size, and how far your current security controls are from the National Institute of Standards and Technology (NIST) SP 800-171 requirements. With only 83 Certified Third-Party Assessment Organizations (C3PAOs) available to conduct assessments and just 431 Cybersecurity Maturity Model Certification (CMMC) certificates issued as of late 2025, starting early directly improves your position in the assessment queue. Waiting until a contract requires it often results in missed enforcement deadlines.
+
+### How does Mycroft help companies pursuing ISO 27001, CMMC, or both?
+
+Mycroft's agentic AI platform manages audit and compliance, cloud security, application security, device management, and third-party risk management in one place. Whether you're working toward ISO 27001, Cybersecurity Maturity Model Certification (CMMC), or both, Mycroft gives lean teams a unified program that satisfies multiple frameworks without requiring dedicated in-house security headcount to run day-to-day operations.
