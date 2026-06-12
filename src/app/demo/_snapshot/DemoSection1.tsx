@@ -4,7 +4,7 @@ import { BookDemoForm } from "@/app/_shared/BookDemoForm";
 export function DemoSection1() {
   return (
     <section id="hero" className="section-hero">
-      <div className="page-padding">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
         <div className="container-xl">
           <div className="hero-demo-container demo_page">
             <div className="hero-demo-top">

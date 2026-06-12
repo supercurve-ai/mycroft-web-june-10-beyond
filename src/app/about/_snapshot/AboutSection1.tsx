@@ -2,9 +2,9 @@
 export function AboutSection1() {
   return (
     <section id="hero" className="section-hero">
-      <div className="page-padding">
-        <div className="container-medium">
-          <div className="container-flex hero_about">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
+          <div className="container-flex hero_about min-[1600px]:pt-16! min-[1600px]:pb-40!">
             <div className="eyebrow-label-medium center">
               <div className="eyebrow-medium color_rg">
                 COMPANY Mission
@@ -14,7 +14,7 @@ export function AboutSection1() {
               <h1 className="h1_v2 color_rg">
                 To redefine how modern businesses stay secure
               </h1>
-              <div className="padding-top xxxs">
+              <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                 <div className="text-dek-l">
                   Mycroft empowers companies to achieve enterprise grade security without building massive teams.
                 </div>
@@ -29,7 +29,7 @@ export function AboutSection1() {
       <div className="hero-background pattern_pixels extra_bright"></div>
       <div className="overlap-top">
         <div className="overlap-block tint_75rg"></div>
-        <div className="container-large">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="overlap-block top_block _50percent tint_75rg"></div>
         </div>
         <div className="overlap-block transparent"></div>

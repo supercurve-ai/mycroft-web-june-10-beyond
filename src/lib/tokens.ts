@@ -39,7 +39,7 @@ export const type = {
 
   // ── Deks / quotes (mirror .text-dek-m, .pullquote-text) ───────────────────
   dek: "font-body text-unblack text-[1.7rem] leading-[125%]",
-  pullquote: "font-display text-unblack text-[2.875rem] leading-[115%] tracking-[-0.01rem] mb-[1.25rem] max-tablet:text-[2.5rem] max-landscape:text-[1.875rem] max-landscape:mb-[1rem] max-portrait:text-[1.65rem]",
+  pullquote: "font-display text-unblack text-[2.875rem] leading-[115%] tracking-[-0.01rem] mb-5 max-tablet:text-[2.5rem] max-landscape:text-[1.875rem] max-landscape:mb-4 max-portrait:text-[1.65rem]",
 
   // ── Body text (mirror .body-text-large / -medium / -small) ────────────────
   bodyLG: "font-body text-unblack text-[1.375rem] leading-[125%] max-tablet:text-[1.25rem] max-portrait:text-[1.125rem]",
@@ -115,13 +115,13 @@ export const layout = {
   // .page-padding — horizontal page gutters
   pagePadding: "relative mx-auto px-8 max-portrait:px-5",
   // .container-large / -medium / -small — centered max-width wrappers
-  containerLarge: "w-full max-w-[75rem] mx-auto",
-  containerMedium: "w-full max-w-[60rem] mx-auto",
-  containerSmall: "w-full max-w-[50rem] mx-auto",
+  containerLarge: "w-full max-w-300 mx-auto",
+  containerMedium: "w-full max-w-240 mx-auto",
+  containerSmall: "w-full max-w-200 mx-auto",
   // Webflow's --spacing-layout--container-max-width (74.875rem) via @theme
   containerSite: "w-full max-w-site mx-auto",
   // --spacing-layout--section-padding-* (lg 5rem / md 6rem / sm 5rem / xs 4rem)
-  sectionPadding: "py-[5rem] max-tablet:py-[6rem] max-landscape:py-[5rem] max-portrait:py-[4rem]",
+  sectionPadding: "py-20 max-tablet:py-24 max-landscape:py-20 max-portrait:py-16",
 } as const
 
 // ─── COMPONENTS ──────────────────────────────────────────────────────────────

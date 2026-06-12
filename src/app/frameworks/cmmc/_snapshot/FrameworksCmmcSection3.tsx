@@ -2,8 +2,8 @@
 export function FrameworksCmmcSection3() {
   return (
     <section className="section_v2 tint_60eg overflow_hidden">
-      <div className="page-padding">
-        <div className="container-small">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-200 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-none max-landscape:w-[92%] max-portrait:w-full">
           <div className="container-flex vertical center text_center gap_xs">
             <h3 className="h3_v2 color_rg">
               Additional features for CMMC
@@ -13,7 +13,7 @@ export function FrameworksCmmcSection3() {
             </div>
           </div>
         </div>
-        <div className="container-large">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "150ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "150ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}} className="w-layout-grid fw-features-grid wf-reveal">
             <div className="fw-grid-tile">
               <h6 className="h6 color_mint">

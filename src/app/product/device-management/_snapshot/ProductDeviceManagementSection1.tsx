@@ -4,8 +4,8 @@ import { DotLottiePlayer } from "../../../_shared/DotLottiePlayer";
 export function ProductDeviceManagementSection1() {
   return (
     <section id="hero" className="section-hero">
-      <div className="page-padding">
-        <div className="container-large">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="container-flex hero_product">
             <div className="col-hero-left devmng">
               <div className="eyebrow-label-medium">

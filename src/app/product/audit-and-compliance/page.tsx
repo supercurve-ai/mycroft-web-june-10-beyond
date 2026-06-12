@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./product-audit-and-compliance.css";
 import { ProductAuditAndComplianceSnapshot } from "./_snapshot/ProductAuditAndComplianceSnapshot";
 import { WebflowInteractions } from "../../_shared/WebflowInteractions";
 

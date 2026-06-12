@@ -6,9 +6,9 @@ import { DotLottiePlayer } from "../../_shared/DotLottiePlayer";
 export function ProductSection4() {
   return (
     <section id="product-features" className="section_v2 tint_40eg overflow_hidden">
-      <div className="page-padding">
-        <div className="container-small">
-          <div className="padding-top large">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-200 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-none max-landscape:w-[92%] max-portrait:w-full">
+          <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
             <div className="container-flex vertical">
               <div className="eyebrow-label-small product">
                 <div className="eyebrow-small color_rg">
@@ -20,7 +20,7 @@ export function ProductSection4() {
                 <br />
                 the 5-in-1 platform
               </h2>
-              <div className="padding-top xxs">
+              <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                 <div className="text-dek-m text_center">
                   Mycroft is the first platform to combine security and compliance stack with AI Agents that operate as your teammate. Achieve enterprise grade security without the overhead and massive team.
                 </div>
@@ -28,9 +28,9 @@ export function ProductSection4() {
             </div>
           </div>
         </div>
-        <div className="container-large">
-          <div className="padding-top medium">
-            <div className="padding-btm medium">
+        <div className="w-full max-w-300 ml-auto mr-auto">
+          <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
+            <div className="w-full pb-(--sizing--rem--4-5rem) max-tablet:pb-(--sizing--rem--3-5rem) max-landscape:pb-(--sizing--rem--2-5rem) max-portrait:pb-(--sizing--rem--1-5rem)">
               <div className="product-container">
                 <section id="audit-compliance" className="product-feature">
                   <Link href="/product/audit-and-compliance" className="product-feature link_block w-inline-block">

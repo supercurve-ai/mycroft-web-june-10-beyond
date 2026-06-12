@@ -17,12 +17,12 @@ export function ResourcesCollection2({ item }: { item: ResourcesCollection2Item 
           <a href={item.href_0} className="w-inline-block">
             <img src={item.image_1} loading="lazy" width="512" alt="" sizes="(max-width: 767px) 100vw, 512px" srcSet={item.image_2} className="feature-tile-img" />
           </a>
-          <div className="padding-top xxs">
+          <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
             <div className="h6">
               {item.h6_3}
             </div>
           </div>
-          <div className="padding-top xxs">
+          <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
             <div className="blog-card-author">
               <img src={item.image_4} loading="lazy" alt="" className="blog-author-picture" />
               <div className="blog-author-info">
@@ -35,7 +35,7 @@ export function ResourcesCollection2({ item }: { item: ResourcesCollection2Item 
               </div>
             </div>
           </div>
-          <div className="padding-top xxs">
+          <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
             <div className="blog-card-author">
               <a href={item.href_7}>
                 Read case study -{'>'}

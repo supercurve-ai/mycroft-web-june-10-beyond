@@ -5,9 +5,9 @@ import { DotLottiePlayer } from "../_shared/DotLottiePlayer";
 export function HomeSection1() {
   return (
     <section id="hero" className="section-hero">
-      <div className="page-padding">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
         <div className="container-xl">
-          <div className="container-flex hero_v2">
+          <div className="container-flex hero_v2 tablet:max-[1200px]:pt-[12vw]! tablet:max-[1200px]:pb-[20vw]!">
             <div className="col-hero-left homepage">
               <div className="hero-copy">
                 <a href="https://www.mycroft.io/blog/stealth-to-seed-mycrofts-ai-security-compliance-platform-backed-by-3-5m-led-by-luge-capital" target="_blank" className="link-block w-inline-block">
@@ -18,7 +18,7 @@ export function HomeSection1() {
                     <img src="/assets/arrow-icon-white.svg" loading="lazy" alt="" />
                   </div>
                 </a>
-                <h1 className="h1_v2 hero_hed">
+                <h1 className="h1_v2 hero_hed tablet:max-[1200px]:text-[5vw]! tablet:max-[1200px]:mb-[2vw]!">
                   Security automated. Compliance solved.
                 </h1>
                 <div className="text-dek-m text_earlgrey40 size_down">

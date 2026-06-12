@@ -4,7 +4,7 @@ import { NavLink } from "./NavLink";
 export function SiteFooter() {
   return (
     <footer className="section-footer_v2">
-      <div className="container-large">
+      <div className="w-full max-w-300 ml-auto mr-auto">
         <div className="container-flex space-between footer-content">
           <div className="container-flex vertical space-between">
             <div className="container-flex footer-menu">

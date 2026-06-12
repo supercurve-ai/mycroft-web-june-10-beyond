@@ -41,8 +41,8 @@ export default async function BlogPage({ params }: { params: Promise<{ slug: str
       <SiteNav />
       <main id="main" className="page-content">
         <section className="section_v2 earl40">
-          <div className="page-padding">
-            <div className="container-large">
+          <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+            <div className="w-full max-w-300 ml-auto mr-auto">
               <div className="container-flex blog">
                 <div className="blog-container">
                   <div className="blog-header-container">

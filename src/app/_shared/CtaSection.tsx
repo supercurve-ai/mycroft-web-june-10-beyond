@@ -7,10 +7,10 @@ import { ButtonLarge } from "./ButtonLarge";
 export function CtaSection({ variant }: { variant: "fireplace" | "lamp" }) {
   return (
     <section id="demo-cta" className="section_v2 color_smoke overflow-hidden">
-      <div className="page-padding">
-        <div className="container-large">
-          <div className="padding-top xl">
-            <div className="padding-btm xxl">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
+          <div className="w-full pt-(--sizing--rem--8-5rem) max-tablet:pt-(--sizing--rem--6-5rem) max-landscape:pt-(--sizing--rem--4-5rem) max-portrait:pt-(--sizing--rem--3-5rem)">
+            <div className="w-full pb-(--sizing--rem--10rem) max-tablet:pb-(--sizing--rem--8rem) max-landscape:pb-(--sizing--rem--6rem) max-portrait:pb-(--sizing--rem--4-5rem)">
               <div
                 className={`container-flex space-between ${
                   variant === "fireplace" ? "cta-custom2" : "cta-custom"
@@ -21,7 +21,7 @@ export function CtaSection({ variant }: { variant: "fireplace" | "lamp" }) {
                     <h3 className="h3_v2 color_white">
                       Stop managing tools. Start automating security.
                     </h3>
-                    <div className="padding-top xxs">
+                    <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                       <div className="text-dek-m color_40eg">
                         Mycroft is the only platform that performs the full end-to-end delivery of your entire security and compliance requirements in a single platform powered by its AI Agents. Navigate security and compliance challenges without adding headcount.
                       </div>

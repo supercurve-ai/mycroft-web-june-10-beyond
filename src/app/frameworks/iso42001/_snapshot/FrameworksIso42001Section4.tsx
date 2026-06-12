@@ -2,12 +2,12 @@
 export function FrameworksIso42001Section4() {
   return (
     <section id="Testimonial" className="section_v2 split_background _60eg_smoke">
-      <div className="page-padding">
-        <div className="container-large">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="pullquote-container">
             <div className="container-flex align-top">
               <div className="slant-label pullquote tint_50bw">
-                <div className="eyebrow-large no-wrap">
+                <div className="eyebrow-large whitespace-nowrap max-portrait:whitespace-nowrap">
                   Client Testimonial
                 </div>
               </div>

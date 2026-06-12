@@ -4,8 +4,8 @@ import { ButtonLarge } from "@/app/_shared/ButtonLarge";
 export function FrameworksCpraSection1() {
   return (
     <section id="fw-hero" className="section-hero white_background">
-      <div className="page-padding">
-        <div className="container-large">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="container-flex fw_hero">
             <div className="container-flex vertical fw_hero_left">
               <div className="eyebrow-label-medium">
@@ -21,7 +21,7 @@ export function FrameworksCpraSection1() {
                   Mycroft’s Risk Operations Center removes the operational burden, helping you meet CPRA requirements and manage consumer data with confidence.
                 </div>
               </div>
-              <div className="padding-top xxs">
+              <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                 <div className="container-flex center_mobile">
                   <ButtonLarge href="/demo" shine>
                     Book a demo
@@ -37,18 +37,18 @@ export function FrameworksCpraSection1() {
         </div>
       </div>
       <div className="split-background">
-        <div className="page-padding">
+        <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
           <div className="container-xl compliance_features">
-            <div className="container-small">
-              <div className="padding-top large">
-                <div className="padding-btm small">
+            <div className="w-full max-w-200 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-none max-landscape:w-[92%] max-portrait:w-full">
+              <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
+                <div className="w-full pb-(--sizing--rem--2-5rem) max-tablet:pb-(--sizing--rem--2rem) max-landscape:pb-(--sizing--rem--1-5rem) max-portrait:pb-(--sizing--rem--1rem)">
                   <div className="container-flex vertical center">
-                    <div className="padding-btm xsmall">
+                    <div className="w-full pb-(--sizing--rem--1-75rem) max-tablet:pb-(--sizing--rem--1-5rem) max-landscape:pb-(--sizing--rem--1rem) max-portrait:pb-(--sizing--rem--0-75rem)">
                       <div className="container-flex vertical center text_center">
                         <h3 className="h3_v2 color_white">
                           Why CPRA/CCPA matters to you
                         </h3>
-                        <div className="padding-top xxs">
+                        <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                           <div className="text-dek-m color_40eg">
                             CPRA builds on the foundation of CCPA, expanding consumer rights, increasing enforcement, and introducing stricter requirements for data governance and accountability.
                           </div>
@@ -59,7 +59,7 @@ export function FrameworksCpraSection1() {
                 </div>
               </div>
             </div>
-            <div className="container-large">
+            <div className="w-full max-w-300 ml-auto mr-auto">
               <div className="w-layout-grid features-3up frameworks">
                 <div className="feature-item frameworks wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "50ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "50ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
                   <img src="/assets/datalock-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
@@ -67,7 +67,7 @@ export function FrameworksCpraSection1() {
                     <div className="h6 color_mint">
                       Expanded beyond CCPA
                     </div>
-                    <div className="padding-top xxxs">
+                    <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                       <div className="body-text-small color_mint smaller">
                         CPRA enhances CCPA by introducing new rights such as correction of personal data, limits on sensitive data use, and stronger obligations for businesses handling consumer information.
                       </div>
@@ -80,7 +80,7 @@ export function FrameworksCpraSection1() {
                     <div className="h6 color_mint">
                       Stronger enforcement and accountability
                     </div>
-                    <div className="padding-top xxxs">
+                    <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                       <div className="body-text-small color_mint smaller">
                         The California Privacy Protection Agency enforces CPRA requirements, increasing regulatory scrutiny and the need for operational readiness.
                       </div>
@@ -93,7 +93,7 @@ export function FrameworksCpraSection1() {
                     <div className="h6 color_mint">
                       Operational complexity at scale
                     </div>
-                    <div className="padding-top xxxs">
+                    <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                       <div className="body-text-small color_mint smaller">
                         Managing consumer rights, disclosures, and data usage across systems requires structured processes beyond what CCPA alone demanded.
                       </div>
@@ -101,7 +101,7 @@ export function FrameworksCpraSection1() {
                   </div>
                 </div>
               </div>
-              <div className="padding-btm xsmall">
+              <div className="w-full pb-(--sizing--rem--1-75rem) max-tablet:pb-(--sizing--rem--1-5rem) max-landscape:pb-(--sizing--rem--1rem) max-portrait:pb-(--sizing--rem--0-75rem)">
                 <div className="container-flex vertical center">
                   <ButtonLarge href="/demo" shine>
                     Book a demo

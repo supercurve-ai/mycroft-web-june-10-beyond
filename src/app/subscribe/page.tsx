@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./subscribe.css";
 import { SubscribeSnapshot } from "./_snapshot/SubscribeSnapshot";
 import { WebflowInteractions } from "../_shared/WebflowInteractions";
 

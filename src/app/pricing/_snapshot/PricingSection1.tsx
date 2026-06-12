@@ -4,7 +4,7 @@ import { BookDemoForm } from "@/app/_shared/BookDemoForm";
 export function PricingSection1() {
   return (
     <section id="hero" className="section-hero">
-      <div className="page-padding">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
         <div className="container-xl">
           <div className="hero-demo-container">
             <div className="hero-demo-top">
@@ -63,7 +63,7 @@ export function PricingSection1() {
               <h3 className="h3_v2 color_rg text_center">
                 Plans for everyone
               </h3>
-              <div className="padding-top xxxs">
+              <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                 <div className="text-dek-m text_center">
                   Find the right package for your security program
                 </div>

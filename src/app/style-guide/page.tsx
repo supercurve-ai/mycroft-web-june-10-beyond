@@ -110,7 +110,7 @@ function SectionHead({ id, title, blurb }: { id: string; title: string; blurb: s
   return (
     <div id={id} className="scroll-mt-24 mb-10">
       <h2 className={type_.h3}>{title}</h2>
-      <p className={`${type_.bodySM} text-smoke mt-3 max-w-[44rem]`}>{blurb}</p>
+      <p className={`${type_.bodySM} text-smoke mt-3 max-w-176`}>{blurb}</p>
     </div>
   );
 }
@@ -170,7 +170,7 @@ export default function StyleGuidePage() {
         <div>
           <p className={`${type_.eyebrow} text-smoke mb-4`}>Internal reference</p>
           <h1 className={type_.h2}>Design tokens</h1>
-          <p className={`${type_.body} text-smoke mt-4 max-w-[46rem]`}>
+          <p className={`${type_.body} text-smoke mt-4 max-w-184`}>
             The Mycroft theme as extracted from the Webflow clone. CSS variables and
             Tailwind bindings live in <CodeChip>src/app/tokens.css</CodeChip>; the
             class-name tokens rendered on this page come from{" "}
@@ -303,7 +303,7 @@ export default function StyleGuidePage() {
               </div>
             ))}
           </div>
-          <div className="mt-8 grid gap-4 max-w-[44rem] text-[14px]">
+          <div className="mt-8 grid gap-4 max-w-176 text-[14px]">
             <p>
               <CodeChip>t.layout.pagePadding</CodeChip>{" "}
               <span className="text-smoke">
@@ -381,7 +381,7 @@ export default function StyleGuidePage() {
             title="Site chrome"
             blurb="Global behaviors defined once in tokens.css (formerly duplicated in every page's CSS)."
           />
-          <div className="space-y-8 max-w-[46rem]">
+          <div className="space-y-8 max-w-184">
             <div className="rounded-card border border-earl-grey-60 p-6">
               <p className="text-[14px] font-medium mb-2">Text selection</p>
               <p className={type_.bodySM}>

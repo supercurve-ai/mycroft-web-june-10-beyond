@@ -2,17 +2,17 @@
 export function HomeSection5() {
   return (
     <section id="features" className="section_v2 color_sand">
-      <div className="page-padding">
-        <div className="container-large">
-          <div className="padding-top xxl">
-            <div className="padding-btm xxl">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
+          <div className="w-full pt-(--sizing--rem--10rem) max-tablet:pt-(--sizing--rem--8rem) max-landscape:pt-(--sizing--rem--6rem) max-portrait:pt-(--sizing--rem--4-5rem)">
+            <div className="w-full pb-(--sizing--rem--10rem) max-tablet:pb-(--sizing--rem--8rem) max-landscape:pb-(--sizing--rem--6rem) max-portrait:pb-(--sizing--rem--4-5rem)">
               <div className="container-flex space-between features">
                 <div className="features-col-left">
                   <div className="feature-padding">
                     <h2 className="h2_v2 color_rg">
                       We've got you covered
                     </h2>
-                    <div className="padding-top xxs">
+                    <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                       <div className="text-dek-m">
                         Eliminate the need for multiple solutions. Everything you need is included.
                       </div>
@@ -39,7 +39,7 @@ export function HomeSection5() {
                           </strong>
                         </h6>
                       </div>
-                      <div className="padding-top xxs">
+                      <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                         <div className="body-text-large">
                           No more security theater. Enhance your security and compliance posture to enterprise requirements with all the solutions you need – from your laptops to your policies.
                         </div>
@@ -63,7 +63,7 @@ export function HomeSection5() {
                           Autonomous compliance
                         </h6>
                       </div>
-                      <div className="padding-top xxs">
+                      <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                         <div className="body-text-large">
                           With Mycroft’s AI Agents, your security and compliance programs are managed autonomously — leveraging your integrations to respond, automate and scale seamlessly.
                         </div>
@@ -89,7 +89,7 @@ export function HomeSection5() {
                           </strong>
                         </h6>
                       </div>
-                      <div className="padding-top xxs">
+                      <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                         <div className="body-text-large">
                           Mycroft contextualizes and can automatically remediate issues on your behalf, allowing you to spend your resources more efficiently.
                         </div>
@@ -113,7 +113,7 @@ export function HomeSection5() {
                           Real experts, always here
                         </h6>
                       </div>
-                      <div className="padding-top xxs">
+                      <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                         <div className="body-text-large">
                           Mycroft's customer success team are made of security and compliance experts, watching your environment 24/7/365, supported by your AI Security and Compliance Officer.
                         </div>

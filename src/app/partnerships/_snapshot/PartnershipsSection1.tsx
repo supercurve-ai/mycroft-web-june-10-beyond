@@ -4,7 +4,7 @@ import { HubspotForm } from "@/app/_shared/HubspotForm";
 export function PartnershipsSection1() {
   return (
     <section id="hero" className="section-hero">
-      <div className="page-padding">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
         <div className="container-xl">
           <div className="hero-demo-container demo_page">
             <div className="hero-demo-full">
@@ -14,11 +14,11 @@ export function PartnershipsSection1() {
                     PARTNERSHIPS
                   </div>
                 </div>
-                <div className="padding-top">
+                <div className="w-full">
                   <h3 className="h3_v2 color_rg">
                     Empower security together.
                   </h3>
-                  <div className="padding-top xsmall">
+                  <div className="w-full pt-(--sizing--rem--1-75rem) max-tablet:pt-(--sizing--rem--1-5rem) max-landscape:pt-(--sizing--rem--1rem) max-portrait:pt-(--sizing--rem--0-75rem)">
                     <div className="body-text-medium">
                       Partner with Mycroft on the mission to revolutionize security and compliance for every industry.
                     </div>
@@ -26,7 +26,7 @@ export function PartnershipsSection1() {
                 </div>
               </div>
               <div className="demo-col-right">
-                <div className="demo-form-container">
+                <div className="demo-form-container [&_[data-hsfc-id='FieldLabel']]:hidden!">
                   <h5 className="h5">
                     Talk to our team!
                   </h5>

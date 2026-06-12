@@ -3,11 +3,11 @@ export function PricingSection3() {
   return (
     <section id="testimonial" className="section_v2 split_background _40earlgrey_rg">
       <div className="page-padding-2">
-        <div className="container-large">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="pullquote-container">
             <div className="container-flex align-top">
               <div className="slant-label pullquote lavender">
-                <div className="eyebrow-large no-wrap">
+                <div className="eyebrow-large whitespace-nowrap max-portrait:whitespace-nowrap">
                   Client Testimonial
                 </div>
               </div>

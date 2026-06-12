@@ -87,7 +87,7 @@ export function TrustedBySection({ btm }: { btm?: "rg" | "earlgrey40" }) {
       id="customers"
       className={btm ? `section-customers btm_${btm}` : "section-customers"}
     >
-      <div className="container-large">
+      <div className="w-full max-w-300 ml-auto mr-auto">
         <div className="container-flex vertical center">
           <div className={btm ? "label-container color-rg75" : "label-container"}>
             <div className="eyebrow-medium tint_40eg">

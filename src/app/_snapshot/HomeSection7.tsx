@@ -43,19 +43,19 @@ const SLIDES: ProductSlide[] = [
 export function HomeSection7() {
   return (
     <section id="platform" className="section_v2 tint_40eg overflow_hidden">
-      <div className="page-padding">
-        <div className="container-medium product_cta">
-          <div className="padding-top xxl">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-208 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
+          <div className="w-full pt-(--sizing--rem--10rem) max-tablet:pt-(--sizing--rem--8rem) max-landscape:pt-(--sizing--rem--6rem) max-portrait:pt-(--sizing--rem--4-5rem)">
             <div className="container-flex vertical">
               <h2 className="h2_v2 color_rg text_center">
                 Mycroft’s versatility:
                 <br />
                 your security stack in{" "}
-                <span className="no-wrap">
+                <span className="whitespace-nowrap">
                   5 pillars
                 </span>
               </h2>
-              <div className="padding-top xxs">
+              <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                 <div className="text-dek-s text_center">
                   Mycroft is the only platform that combines your entire security stack and gets you compliant while automating your workflows. All powered by your AI Security and Compliance Officer.
                 </div>
@@ -64,10 +64,10 @@ export function HomeSection7() {
           </div>
         </div>
       </div>
-      <div className="padding-top medium">
-        <div className="padding-btm xl">
+      <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
+        <div className="w-full pb-(--sizing--rem--8-5rem) max-tablet:pb-(--sizing--rem--6-5rem) max-landscape:pb-(--sizing--rem--4-5rem) max-portrait:pb-(--sizing--rem--3-5rem)">
           <div className="custom-page-padding">
-            <div className="container-large">
+            <div className="w-full max-w-300 ml-auto mr-auto">
               <ProductSlider slides={SLIDES} />
             </div>
           </div>

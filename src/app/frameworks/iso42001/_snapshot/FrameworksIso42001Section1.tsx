@@ -4,8 +4,8 @@ import { ButtonLarge } from "@/app/_shared/ButtonLarge";
 export function FrameworksIso42001Section1() {
   return (
     <section id="fw-hero" className="section-hero white_background">
-      <div className="page-padding">
-        <div className="container-large">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="container-flex fw_hero">
             <div className="container-flex vertical fw_hero_left">
               <div className="eyebrow-label-medium">
@@ -15,20 +15,20 @@ export function FrameworksIso42001Section1() {
               </div>
               <div className="hero-copy hero_padding_med">
                 <h1 className="h3_v2 color_rg">
-                  <span className="no-wrap">
+                  <span className="whitespace-nowrap">
                     ISO 42001
                   </span>{" "}
                   compliance, built for AI governance
                 </h1>
                 <div className="text-dek-m">
                   Mycroft’s Risk Operations Center removes the operational burden, helping you implement responsible AI practices and meet{" "}
-                  <span className="no-wrap">
+                  <span className="whitespace-nowrap">
                     ISO 42001
                   </span>{" "}
                   requirements.
                 </div>
               </div>
-              <div className="padding-top xxs">
+              <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                 <div className="container-flex center_mobile">
                   <ButtonLarge href="/demo" shine>
                     Book a demo
@@ -44,24 +44,24 @@ export function FrameworksIso42001Section1() {
         </div>
       </div>
       <div className="split-background">
-        <div className="page-padding">
+        <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
           <div className="container-xl compliance_features">
-            <div className="container-small">
-              <div className="padding-top large">
-                <div className="padding-btm small">
+            <div className="w-full max-w-200 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-none max-landscape:w-[92%] max-portrait:w-full">
+              <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
+                <div className="w-full pb-(--sizing--rem--2-5rem) max-tablet:pb-(--sizing--rem--2rem) max-landscape:pb-(--sizing--rem--1-5rem) max-portrait:pb-(--sizing--rem--1rem)">
                   <div className="container-flex vertical center">
-                    <div className="padding-btm xsmall">
+                    <div className="w-full pb-(--sizing--rem--1-75rem) max-tablet:pb-(--sizing--rem--1-5rem) max-landscape:pb-(--sizing--rem--1rem) max-portrait:pb-(--sizing--rem--0-75rem)">
                       <div className="container-flex vertical center text_center">
                         <h3 className="h3_v2 color_white">
                           Why{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             ISO 42001
                           </span>{" "}
                           matters to you
                         </h3>
-                        <div className="padding-top xxs">
+                        <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                           <div className="text-dek-m color_40eg">
-                            <span className="no-wrap">
+                            <span className="whitespace-nowrap">
                               ISO 42001
                             </span>{" "}
                             provides a framework for managing AI systems responsibly, addressing risk, transparency, and governance.
@@ -73,7 +73,7 @@ export function FrameworksIso42001Section1() {
                 </div>
               </div>
             </div>
-            <div className="container-large">
+            <div className="w-full max-w-300 ml-auto mr-auto">
               <div className="w-layout-grid features-3up frameworks">
                 <div className="feature-item frameworks wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "50ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "50ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>
                   <img src="/assets/seal-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
@@ -81,7 +81,7 @@ export function FrameworksIso42001Section1() {
                     <div className="h6 color_mint">
                       Responsible AI practices
                     </div>
-                    <div className="padding-top xxxs">
+                    <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                       <div className="body-text-small color_mint smaller">
                         Ensure your AI systems are developed and used ethically and transparently.
                       </div>
@@ -94,7 +94,7 @@ export function FrameworksIso42001Section1() {
                     <div className="h6 color_mint">
                       Risk management for AI
                     </div>
-                    <div className="padding-top xxxs">
+                    <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                       <div className="body-text-small color_mint smaller">
                         Identify and mitigate risks associated with AI models and data.
                       </div>
@@ -107,7 +107,7 @@ export function FrameworksIso42001Section1() {
                     <div className="h6 color_mint">
                       Regulatory readiness
                     </div>
-                    <div className="padding-top xxxs">
+                    <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                       <div className="body-text-small color_mint smaller">
                         Prepare for emerging AI regulations and standards globally.
                       </div>
@@ -115,7 +115,7 @@ export function FrameworksIso42001Section1() {
                   </div>
                 </div>
               </div>
-              <div className="padding-btm xsmall">
+              <div className="w-full pb-(--sizing--rem--1-75rem) max-tablet:pb-(--sizing--rem--1-5rem) max-landscape:pb-(--sizing--rem--1rem) max-portrait:pb-(--sizing--rem--0-75rem)">
                 <div className="container-flex vertical center">
                   <ButtonLarge href="/demo" shine>
                     Book a demo

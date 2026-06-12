@@ -2,7 +2,7 @@
 export function AiDisclosureSection2() {
   return (
     <section className="section">
-      <div className="w-layout-blockcontainer container w-container">
+      <div className="w-layout-blockcontainer wf-container w-container">
         <div className="row">
           <div className="col">
             <div className="rich-text w-richtext">

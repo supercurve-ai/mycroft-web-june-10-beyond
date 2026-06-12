@@ -27,7 +27,7 @@ export function FrameworksIso27001Snapshot() {
           blurb={
             <>
               Achieve{" "}
-              <span className="no-wrap">ISO 27001</span>{" "}
+              <span className="whitespace-nowrap">ISO 27001</span>{" "}
               compliance with Mycroft and take advantage of the head start gained in other industry frameworks.
             </>
           }

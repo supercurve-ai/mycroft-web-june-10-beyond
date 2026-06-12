@@ -14,7 +14,7 @@ export function ThankYouSnapshot() {
       <SiteNav />
       <main id="main" className="page-main nav_v2">
         <header style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "opacity": "1", "transformStyle": "preserve-3d"}} className="section u-bg-wallpaper nav_v2">
-          <div className="w-layout-blockcontainer container w-container">
+          <div className="w-layout-blockcontainer wf-container w-container">
             <div className="row row-justify-center">
               <div className="col u-text-center">
                 <img src="/assets/chair.webp" loading="lazy" alt="" className="image-6" />

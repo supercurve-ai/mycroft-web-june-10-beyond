@@ -32,7 +32,7 @@ function Section({
       ) : (
         h2
       )}
-      <div className="cs-richtext w-richtext">{children}</div>
+      <div className="cs-richtext w-richtext [&_blockquote_p]:mb-0! [&_blockquote_p]:text-inherit! [&_blockquote_p]:[font-size:inherit]! [&_blockquote_p]:leading-[inherit]! [&_blockquote_p]:tracking-[inherit]! [&_blockquote_p]:[font-weight:inherit]!">{children}</div>
     </section>
   );
 }

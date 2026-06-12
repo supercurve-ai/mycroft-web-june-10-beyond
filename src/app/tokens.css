@@ -19,6 +19,16 @@
 /* `static` so every variable is emitted into :root even when no Tailwind
    utility uses it yet — webflow-shared.css reads these via var(). */
 @theme static {
+  /* Case-study prev/next underline hover (Webflow IX2 a-88/a-89: slide out
+     left, jump to the right edge, slide back in). Used via the
+     animate-cs-underline-exit utility in case-studies/[slug]/page.tsx. */
+  --animate-cs-underline-exit: cs-underline-exit 350ms ease forwards;
+  @keyframes cs-underline-exit {
+    0% { transform: translateX(0%); }
+    99.9% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
   /* ─── Fonts ────────────────────────────────────────────────────────────────
      Self-hosted @font-face declarations live in webflow-shared.css; the woff2
      files are under public/fonts/. Utilities: font-display, font-body, … */
@@ -93,13 +103,19 @@
   color: #fff;
 }
 
-/* Reset apple form styles */
-input, textarea, select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-image: none;
+/* Reset apple form styles. In the `webflow` layer (appended after
+   webflow-shared.css's rules) so class rules like .submit-button keep
+   beating this element reset on specificity, as they did when everything
+   was unlayered — outside the layer it would override every form control's
+   border-radius on the site. */
+@layer webflow {
+  input, textarea, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background-image: none;
+  }
 }
 
 :root {
@@ -129,7 +145,11 @@ body {
    circle/square when nested). `revert` rolls the property back to those UA
    defaults. Components that want marker-less lists (.w-list-unstyled,
    .demo-ul, .pricing-ul) still win — their class rules outrank this. */
-ul, ol { list-style: revert; }
+/* In the webflow layer for the same reason as the form reset above: class
+   rules (.w-list-unstyled, nav/footer menus) must keep beating this. */
+@layer webflow {
+  ul, ol { list-style: revert; }
+}
 
 /* Tables in article rich text. Webflow's stylesheet has no table rules, so
    tables in MDX posts (markdown pipe tables and raw HTML alike) are styled

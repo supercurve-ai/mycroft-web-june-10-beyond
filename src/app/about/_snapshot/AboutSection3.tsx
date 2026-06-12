@@ -2,14 +2,14 @@
 export function AboutSection3() {
   return (
     <section id="leadership" className="section_v2 tint_75rg">
-      <div className="page-padding">
-        <div className="container-large">
-          <div className="padding-top large">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
+          <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
             <h2 className="h2_v2 color_white text_center">
               Leadership
             </h2>
           </div>
-          <div className="padding-btm xxl">
+          <div className="w-full pb-(--sizing--rem--10rem) max-tablet:pb-(--sizing--rem--8rem) max-landscape:pb-(--sizing--rem--6rem) max-portrait:pb-(--sizing--rem--4-5rem)">
             <div className="founder-grid">
               <div className="founder-tile wf-scrub" data-wf-scrub="5,15" style={{"opacity": "0", "transform": "translate3d(50px, 0px, 0px)"}}>
                 <div className="founder-tile-top">

@@ -2,7 +2,7 @@
 export function AiDisclosureSection1() {
   return (
     <section className="section u-bg-primary nav_v2">
-      <div className="w-layout-blockcontainer container w-container">
+      <div className="w-layout-blockcontainer wf-container w-container">
         <div className="row">
           <div className="col u-text-center">
             <h1 className="h1 u-text-white">

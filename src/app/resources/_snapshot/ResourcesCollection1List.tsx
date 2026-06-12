@@ -23,7 +23,7 @@ export function ResourcesCollection1List() {
         <div
           role="navigation"
           aria-label="List"
-          className="w-pagination-wrapper padding-top medium"
+          className="w-pagination-wrapper w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)"
         >
           <button
             type="button"

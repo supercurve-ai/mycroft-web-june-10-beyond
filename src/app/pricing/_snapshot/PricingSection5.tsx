@@ -4,23 +4,23 @@ import { FeatureTileSmall } from "./FeatureTileSmall";
 export function PricingSection5() {
   return (
     <section id="Features" className="section_v2 color_sand">
-      <div className="page-padding">
-        <div className="padding-top xl features_small">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full pt-(--sizing--rem--8-5rem) max-tablet:pt-(--sizing--rem--6-5rem) max-landscape:pt-(--sizing--rem--5-5rem) max-portrait:pt-(--sizing--rem--4-5rem)">
           <div className="container-xl">
             <div className="container-xs">
               <div className="container-flex vertical">
                 <h3 className="h3_v2 color_rg text_center">
                   Skip the security grind
                 </h3>
-                <div className="padding-top xxxs">
+                <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                   <div className="text-dek-s text_center">
                     Mycroft eliminates the need for multiple solutions, everything you need is included.
                   </div>
                 </div>
               </div>
             </div>
-            <div className="padding-top medium">
-              <div className="padding-btm xxxl features_small">
+            <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
+              <div className="w-full pb-(--sizing--rem--12rem) max-tablet:pb-(--sizing--rem--10rem) max-landscape:pb-(--sizing--rem--5rem) max-portrait:pb-(--sizing--rem--3-5rem)">
                 <div className="container-flex space-between features">
                   <div className="features-grid">
                     <FeatureTileSmall
@@ -67,7 +67,7 @@ export function PricingSection5() {
       </div>
       <div className="overlap-top">
         <div className="overlap-block smoke"></div>
-        <div className="container-large">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="overlap-block top_block _50percent smoke"></div>
         </div>
         <div className="overlap-block transparent"></div>

@@ -1,5 +1,0 @@
-/* Page-specific overrides only — the shared page-embedded chrome now lives
-   once in src/app/tokens.css. */
-
-/* Hide HubSpot-injected field labels on this page's embedded form. */
-[data-hsfc-id="FieldLabel"] { display: none !important; }

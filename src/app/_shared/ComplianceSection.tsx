@@ -17,10 +17,10 @@ export function ComplianceSection({
   body?: string;
 } = {}) {
   return (
-    <div className="page-padding">
-      <div className="container-large">
-        <div className="padding-top large">
-          <div className="padding-btm large">
+    <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+      <div className="w-full max-w-300 ml-auto mr-auto">
+        <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
+          <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
             <div className="container-flex vertical">
               <div className="compliance-col-left">
                 <div className="eyebrow-label-small compliance-margins">
@@ -29,12 +29,12 @@ export function ComplianceSection({
                   </div>
                 </div>
               </div>
-              <div className="padding-btm xsmall">
+              <div className="w-full pb-(--sizing--rem--1-75rem) max-tablet:pb-(--sizing--rem--1-5rem) max-landscape:pb-(--sizing--rem--1rem) max-portrait:pb-(--sizing--rem--0-75rem)">
                 <div className="container-flex center_align_y-axis horizontal_tablet left_align_tablet">
                   <div className="compliance-col-left">
                     <div className="container-flex vertical mobile_portrait_center">
                       <h4 className="h4_v2 color_white">{heading}</h4>
-                      <div className="padding-top xxxs">
+                      <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                         <div className="body-text-medium text_40earlgrey">{body}</div>
                       </div>
                     </div>

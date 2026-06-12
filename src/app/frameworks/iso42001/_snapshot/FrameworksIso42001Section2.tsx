@@ -4,9 +4,9 @@ import { ArrowTextLink } from "@/app/_shared/ArrowTextLink";
 export function FrameworksIso42001Section2() {
   return (
     <section id="fw-features" className="section_v2 tint_60eg overflow_hidden">
-      <div className="page-padding">
-        <div className="container-small fw_features_hed">
-          <div className="padding-top large">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-156 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-128 max-landscape:w-[92%] max-portrait:w-full">
+          <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
             <div className="container-flex vertical">
               <div className="eyebrow-label-small product">
                 <div className="eyebrow-small color_rg">
@@ -15,11 +15,11 @@ export function FrameworksIso42001Section2() {
               </div>
               <h2 className="h2_v2 color_rg text_center">
                 Mycroft’s AI platform solutions for{" "}
-                <span className="no-wrap">
+                <span className="whitespace-nowrap">
                   ISO 42001
                 </span>
               </h2>
-              <div className="padding-top xxs">
+              <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                 <div className="text-dek-l text_center">
                   A unified platform designed to operationalize AI governance requirements without adding internal workload.
                 </div>
@@ -27,9 +27,9 @@ export function FrameworksIso42001Section2() {
             </div>
           </div>
         </div>
-        <div className="container-large">
-          <div className="padding-top medium">
-            <div className="padding-btm large">
+        <div className="w-full max-w-300 ml-auto mr-auto">
+          <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
+            <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
               <div className="product-container">
                 <section id="app-security" className="product-feature">
                   <div className="product-text wf-reveal" style={{"willChange": "opacity, transform", "opacity": "0", "transform": "translate3d(-100px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d", "--wf-op-dur": "1000ms", "--wf-op-delay": "0ms", "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)", "--wf-tr-dur": "1000ms", "--wf-tr-delay": "0ms", "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)"}}>

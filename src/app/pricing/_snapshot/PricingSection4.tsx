@@ -9,7 +9,7 @@ export function PricingSection4() {
       </div>
       <div className="overlap-btm">
         <div className="overlap-block transparent"></div>
-        <div className="container-large">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="overlap-block btm_block"></div>
         </div>
         <div className="overlap-block"></div>

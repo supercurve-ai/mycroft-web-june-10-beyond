@@ -4,10 +4,10 @@ import { AccordionItem } from "@/app/_shared/Accordion";
 export function FaqsSection2() {
   return (
     <section id="about-mycroft" className="section_v2 earl40">
-      <div className="page-padding">
-        <div className="container-large">
-          <div className="padding-top medium">
-            <div className="padding-btm xl">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-300 ml-auto mr-auto">
+          <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
+            <div className="w-full pb-(--sizing--rem--8-5rem) max-tablet:pb-(--sizing--rem--6-5rem) max-landscape:pb-(--sizing--rem--4-5rem) max-portrait:pb-(--sizing--rem--3-5rem)">
               <div className="blog-container">
                 <div className="content-wrapper slim w-container">
                   <div className="accordion-wrapper">

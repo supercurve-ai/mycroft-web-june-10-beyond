@@ -39,7 +39,7 @@ export function ProductSlideCard({
             <strong>{title}</strong>
           </h4>
           <div className="body-text-medium">{body}</div>
-          <div className="padding-top xxs">
+          <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
             <div className="container-flex">
               <ButtonLarge href={href} decorative={!active}>
                 Learn more

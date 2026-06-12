@@ -5,17 +5,17 @@ export function ProductCloudSecuritySection3() {
   return (
     <section id="compliance" className="section_v2">
       <div className="section-overlap">
-        <div className="page-padding">
-          <div className="container-small">
-            <div className="padding-top large">
-              <div className="padding-btm small">
+        <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+          <div className="w-full max-w-200 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-none max-landscape:w-[92%] max-portrait:w-full">
+            <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
+              <div className="w-full pb-(--sizing--rem--2-5rem) max-tablet:pb-(--sizing--rem--2rem) max-landscape:pb-(--sizing--rem--1-5rem) max-portrait:pb-(--sizing--rem--1rem)">
                 <div className="container-flex vertical center">
-                  <div className="padding-btm xsmall">
+                  <div className="w-full pb-(--sizing--rem--1-75rem) max-tablet:pb-(--sizing--rem--1-5rem) max-landscape:pb-(--sizing--rem--1rem) max-portrait:pb-(--sizing--rem--0-75rem)">
                     <div className="container-flex vertical center text_center">
                       <h3 className="h3_v2 color_white">
                         Why cloud security isn’t just an option — it’s essential
                       </h3>
-                      <div className="padding-top xxs">
+                      <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                         <div className="text-dek-m color_40eg">
                           While many solutions claim to secure your cloud environment, our product delivers true cloud security built for today’s dynamic, multi-cloud world.
                         </div>
@@ -26,8 +26,8 @@ export function ProductCloudSecuritySection3() {
               </div>
             </div>
           </div>
-          <div className="container-large">
-            <div className="padding-btm xl">
+          <div className="w-full max-w-300 ml-auto mr-auto">
+            <div className="w-full pb-(--sizing--rem--8-5rem) max-tablet:pb-(--sizing--rem--6-5rem) max-landscape:pb-(--sizing--rem--4-5rem) max-portrait:pb-(--sizing--rem--3-5rem)">
               <div className="w-layout-grid features-3up">
                 <div className="feature-item">
                   <img src="/assets/checkmark-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
@@ -35,7 +35,7 @@ export function ProductCloudSecuritySection3() {
                     <div className="h6 color_mint">
                       Protection of sensitive data
                     </div>
-                    <div className="padding-top xxxs">
+                    <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                       <div className="body-text-small color_mint smaller">
                         Cloud services often handle sensitive information such as customer data, intellectual property, and financial records.
                       </div>
@@ -48,7 +48,7 @@ export function ProductCloudSecuritySection3() {
                     <div className="h6 color_mint">
                       Regulatory compliance
                     </div>
-                    <div className="padding-top xxxs">
+                    <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                       <div className="body-text-small color_mint smaller">
                         Cloud security is essential to meet the legal requirements for industry compliance, avoiding hefty fines or legal penalties.
                       </div>
@@ -61,7 +61,7 @@ export function ProductCloudSecuritySection3() {
                     <div className="h6 color_mint">
                       Preventing unauthorized access
                     </div>
-                    <div className="padding-top xxxs">
+                    <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                       <div className="body-text-small color_mint smaller">
                         Adequate security controls reduce the risk of unauthorized access, data theft, or malicious activities by cybercriminals.
                         <br />

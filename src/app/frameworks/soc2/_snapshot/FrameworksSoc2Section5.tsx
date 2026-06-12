@@ -4,10 +4,10 @@ import { FaqItem } from "@/app/_shared/Accordion";
 export function FrameworksSoc2Section5() {
   return (
     <section className="section_v2 color_smoke">
-      <div className="page-padding">
-        <div className="container-medium">
-          <div className="padding-top medium">
-            <div className="padding-btm large">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
+          <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
+            <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
               <img src="/assets/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
               <img src="/assets/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
               <div className="container-flex faq_container">
@@ -20,39 +20,39 @@ export function FrameworksSoc2Section5() {
                   </div>
                 </div>
                 <FaqItem question={<>What is{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             SOC 2
                           </span>{" "}
                           and who needs it?</>} first>
                   SOC 2 is an independent CPA attestation that a service organization’s controls meet Trust Services Criteria (security, availability, processing integrity, confidentiality, privacy). SaaS/cloud providers, managed service providers, and any vendor that stores or processes customer data commonly pursue SOC 2 to meet buyer and contractual expectations.
                 </FaqItem>
                 <FaqItem question={<>What’s the difference between{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             SOC 2
                           </span>{" "}
                           Type I and{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             SOC 2
                           </span>{" "}
                           Type II?</>}>
                   Type I reports on control design at a specific point in time. Type II reports on control operating effectiveness over a period (commonly 3–12 months). Customers and enterprise buyers usually request Type II for stronger assurance.
                 </FaqItem>
                 <FaqItem question={<>How long and costly is{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             SOC 2
                           </span>{" "}
                           compliance?</>}>
                   Time and cost vary by scope and maturity. Typical timelines: 1–3 months to prepare baseline controls and Type I; 6–12+ months to collect evidence for a Type II. Costs include internal effort, tooling, and external CPA audit fees; automation and focused scope lower both time and expense.
                 </FaqItem>
                 <FaqItem question={<>What features of a{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             SOC 2
                           </span>{" "}
                           solution speed compliance?</>}>
                   Automated evidence collection and testing, control templates mapped to Trust Services Criteria, policy and control generators, integrations with cloud and security tooling, centralized evidence storage with tamper-evident metadata, and auditor-ready reporting — all reduce manual work and audit friction.
                 </FaqItem>
                 <FaqItem question={<>Will{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             SOC 2
                           </span>{" "}
                           replace other regulatory requirements (PCI, HIPAA, FedRAMP)?</>} last>

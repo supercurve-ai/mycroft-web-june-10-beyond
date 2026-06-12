@@ -24,23 +24,23 @@ export function UnlockFrameworksSection({ blurb, dials }: { blurb: ReactNode; di
   return (
     <div className="negative-margin-wrapper reduce_top">
       <section id="Features" className="section_v2 color_smoke">
-        <div className="page-padding">
-          <div className="padding-top xl">
-            <div className="container-medium tab_mob_100">
-              <div className="container-small narrower_desktop">
+        <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+          <div className="w-full pt-(--sizing--rem--8-5rem) max-tablet:pt-(--sizing--rem--6-5rem) max-landscape:pt-(--sizing--rem--4-5rem) max-portrait:pt-(--sizing--rem--3-5rem)">
+            <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-full max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
+              <div className="w-full max-w-184 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-none max-landscape:w-[92%] max-portrait:w-full">
                 <div className="container-flex vertical">
                   <h2 className="h2_v2 color_white text_center">
                     Unlock other frameworks
                   </h2>
-                  <div className="padding-top xxxs">
+                  <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                     <div className="text-dek-m color_40eg text_center">
                       {blurb}
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="padding-top small">
-                <div className="padding-btm large">
+              <div className="w-full pt-(--sizing--rem--2-5rem) max-tablet:pt-(--sizing--rem--2rem) max-landscape:pt-(--sizing--rem--1-5rem) max-portrait:pt-(--sizing--rem--1rem)">
+                <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
                   <div className="container-flex vertical">
                     <div className="w-layout-grid fw-dials-grid">
                       {dials.map((dial, i) => (
@@ -60,7 +60,7 @@ export function UnlockFrameworksSection({ blurb, dials }: { blurb: ReactNode; di
                       ))}
                     </div>
                     <div className="container-flex vertical center">
-                      <div className="padding-top small flex_center">
+                      <div className="w-full pt-(--sizing--rem--2-5rem) max-tablet:pt-(--sizing--rem--2rem) max-landscape:pt-(--sizing--rem--1-5rem) max-portrait:pt-(--sizing--rem--1rem) justify-center items-center flex">
                         <ButtonLarge href="/demo" shine>
                           Book a demo
                         </ButtonLarge>

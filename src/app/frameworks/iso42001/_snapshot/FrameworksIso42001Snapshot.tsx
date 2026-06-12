@@ -27,7 +27,7 @@ export function FrameworksIso42001Snapshot() {
           blurb={
             <>
               Achieve{" "}
-              <span className="no-wrap">ISO 42001</span>{" "}
+              <span className="whitespace-nowrap">ISO 42001</span>{" "}
               compliance with Mycroft and take advantage of the head start gained in other industry frameworks.
             </>
           }

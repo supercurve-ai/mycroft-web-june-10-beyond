@@ -6,7 +6,7 @@ export function IntegrationsSection2() {
     <section id="compliance" className="section_v2">
       <div className="overlap-top">
         <div className="overlap-block"></div>
-        <div className="container-large">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="overlap-block top_block"></div>
         </div>
         <div className="overlap-block transparent"></div>
@@ -21,7 +21,7 @@ export function IntegrationsSection2() {
       </div>
       <div className="overlap-btm">
         <div className="overlap-block transparent"></div>
-        <div className="container-large">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="overlap-block btm_block"></div>
         </div>
         <div className="overlap-block"></div>

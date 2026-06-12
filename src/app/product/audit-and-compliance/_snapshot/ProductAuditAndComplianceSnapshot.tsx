@@ -64,9 +64,9 @@ export function ProductAuditAndComplianceSnapshot() {
         <div className="scroll-container-outer">
           <div className="scroll-container-inner">
             <section id="product-features" className="section_v2 split_background rg_40earlgrey">
-              <div className="page-padding">
+              <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
                 <div className="container-xl">
-                  <div className="padding-btm medium">
+                  <div className="w-full pb-(--sizing--rem--4-5rem) max-tablet:pb-(--sizing--rem--3-5rem) max-landscape:pb-(--sizing--rem--2-5rem) max-portrait:pb-(--sizing--rem--1-5rem)">
                     <div className="scroll-slider-outer">
                       <ScrollFeatureSlider id="audit-compliance" slides={auditComplianceSlides}>
                         <ButtonLarge href="/demo" velvet shine>
@@ -92,25 +92,25 @@ export function ProductAuditAndComplianceSnapshot() {
               </div>
             </section>
             <section id="platform-features" className="section_v2 tint_40eg">
-              <div className="page-padding">
-                <div className="container-large">
-                  <div className="padding-top small">
-                    <div className="padding-btm large">
+              <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+                <div className="w-full max-w-300 ml-auto mr-auto">
+                  <div className="w-full pt-(--sizing--rem--2-5rem) max-tablet:pt-(--sizing--rem--2rem) max-landscape:pt-(--sizing--rem--1-5rem) max-portrait:pt-(--sizing--rem--1rem)">
+                    <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
                       <div className="container-flex vertical center">
                         <div className="eyebrow-label-small product">
                           <div className="eyebrow-small color_rg">
                             Platform features
                           </div>
                         </div>
-                        <div className="padding-btm small">
+                        <div className="w-full pb-(--sizing--rem--2-5rem) max-tablet:pb-(--sizing--rem--2rem) max-landscape:pb-(--sizing--rem--1-5rem) max-portrait:pb-(--sizing--rem--1rem)">
                           <div className="container-flex vertical center">
-                            <div className="container-small">
+                            <div className="w-full max-w-200 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-none max-landscape:w-[92%] max-portrait:w-full">
                               <div className="narrow-text-container">
                                 <div className="container-flex vertical center">
                                   <h4 className="h4_v2 color_rg">
                                     Accelerate your path to compliance with our advanced features
                                   </h4>
-                                  <div className="padding-top xxxs">
+                                  <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                                     <div className="text-dek-m">
                                       Our platform accelerates compliance through customizable controls, real-time dashboards, and streamlined workflows – enabling efficient and rapid growth.
                                     </div>
@@ -169,23 +169,23 @@ export function ProductAuditAndComplianceSnapshot() {
         <ProductAuditAndComplianceSection4 />
         <div className="negative-margin-wrapper reduce_top">
           <section id="Features" className="section_v2 color_smoke">
-            <div className="page-padding">
-              <div className="padding-top xl">
-                <div className="container-medium">
-                  <div className="container-small narrower_desktop">
+            <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+              <div className="w-full pt-(--sizing--rem--8-5rem) max-tablet:pt-(--sizing--rem--6-5rem) max-landscape:pt-(--sizing--rem--4-5rem) max-portrait:pt-(--sizing--rem--3-5rem)">
+                <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
+                  <div className="w-full max-w-184 ml-auto mr-auto max-tablet:w-[80%] max-tablet:max-w-none max-landscape:w-[92%] max-portrait:w-full">
                     <div className="container-flex vertical">
                       <h3 className="h3_v2 color_white text_center">
                         Read the latest insights from our experts
                       </h3>
-                      <div className="padding-top xxxs">
+                      <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                         <div className="text-dek-s text_40_grey text_center">
                           Stay secure with expert, data-driven resources to strengthen your security knowledge and ensure compliance confidence.
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="padding-top small">
-                    <div className="padding-btm large">
+                  <div className="w-full pt-(--sizing--rem--2-5rem) max-tablet:pt-(--sizing--rem--2rem) max-landscape:pt-(--sizing--rem--1-5rem) max-portrait:pt-(--sizing--rem--1rem)">
+                    <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
                       <div className="container-flex space-between _3up_blog">
                         <div className="_3up-blog-wrapper w-dyn-list">
                           <div role="list" className="_3up-blog-grid w-dyn-items">

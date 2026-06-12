@@ -4,10 +4,10 @@ import { FaqItem } from "@/app/_shared/Accordion";
 export function FrameworksIso42001Section5() {
   return (
     <section className="section_v2 color_smoke">
-      <div className="page-padding">
-        <div className="container-medium">
-          <div className="padding-top medium">
-            <div className="padding-btm large">
+      <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+        <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
+          <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
+            <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
               <img src="/assets/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
               <img src="/assets/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
               <div className="container-flex faq_container">
@@ -17,43 +17,43 @@ export function FrameworksIso42001Section5() {
                   </h3>
                   <div className="text-dek-l text_40eg">
                     Answers that help customers with{" "}
-                    <span className="no-wrap">
+                    <span className="whitespace-nowrap">
                       ISO 42001
                     </span>{" "}
                     compliance
                   </div>
                 </div>
                 <FaqItem question={<>What is{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             ISO 42001?
                           </span></>} first>
-                  <span className="no-wrap">
+                  <span className="whitespace-nowrap">
                         ISO 42001
                       </span>{" "}
                       is a framework for managing artificial intelligence systems responsibly, focusing on governance, risk, and transparency.
                 </FaqItem>
                 <FaqItem question={<>Who needs{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             ISO 42001?
                           </span></>}>
                   Organizations developing or using AI systems that need to demonstrate responsible AI practices and prepare for emerging regulations.
                 </FaqItem>
                 <FaqItem question={<>What does{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             ISO 42001
                           </span>{" "}
                           cover?</>}>
                   It covers AI risk management, model governance, data usage, and oversight of AI systems.
                 </FaqItem>
                 <FaqItem question={<>Is{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             ISO 42001
                           </span>{" "}
                           required?</>}>
                   While not yet mandatory, it is becoming increasingly important as governments introduce AI regulations.
                 </FaqItem>
                 <FaqItem question={<>How does Mycroft help with{" "}
-                          <span className="no-wrap">
+                          <span className="whitespace-nowrap">
                             ISO 42001?
                           </span></>} last>
                   Mycroft helps operationalize AI governance by managing policies, controls, and evidence so your organization can demonstrate responsible AI practices.

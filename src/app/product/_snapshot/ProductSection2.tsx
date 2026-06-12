@@ -4,30 +4,30 @@ export function ProductSection2() {
     <section id="compliance" className="section_v2">
       <div className="overlap-top">
         <div className="overlap-block"></div>
-        <div className="container-large">
+        <div className="w-full max-w-300 ml-auto mr-auto">
           <div className="overlap-block top_block _60percent"></div>
         </div>
         <div className="overlap-block transparent"></div>
       </div>
       <div className="section-overlap">
-        <div className="page-padding">
-          <div className="container-medium">
-            <div className="padding-top large">
-              <div className="padding-btm large">
+        <div className="pr-(--sizing--rem--2rem) pl-(--sizing--rem--2rem) ml-auto mr-auto relative max-portrait:pr-(--sizing--rem--1-25rem) max-portrait:pl-(--sizing--rem--1-25rem)">
+          <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
+            <div className="w-full pt-(--sizing--rem--6rem) max-tablet:pt-(--sizing--rem--5rem) max-landscape:pt-(--sizing--rem--3-5rem) max-portrait:pt-(--sizing--rem--2-5rem)">
+              <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
                 <div className="container-flex vertical center">
                   <div className="eyebrow-label-small compliance-margins">
                     <div className="eyebrow-small color_mint">
                       Compliance
                     </div>
                   </div>
-                  <div className="padding-btm large">
+                  <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
                     <div className="container-flex vertical">
                       <div className="narrow-text-container">
                         <div className="container-flex vertical center">
                           <h4 className="h4_v2 color_white">
                             Leverage enterprise security
                           </h4>
-                          <div className="padding-top xxxs">
+                          <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                             <div className="text-dek-m text_earlgrey40">
                               Mycroft’s integrated platform with its AI Agents is the platform for your entire security and compliance stack, so that you can focus on everything else.
                             </div>
@@ -67,7 +67,7 @@ export function ProductSection2() {
                             </div>
                             <div aria-live="off" aria-atomic="true" className="w-slider-aria-label" data-wf-ignore=""></div>
                           </div>
-                          <div className="w-slider-nav w-round">
+                          <div className="w-slider-nav w-round [&_.w-slider-dot]:size-4! [&_.w-slider-dot]:rounded-full! [&_.w-slider-dot]:bg-transparent! [&_.w-slider-dot]:border! [&_.w-slider-dot]:border-solid! [&_.w-slider-dot]:border-(--color-mint)! [&_.w-slider-dot]:transition-[background-color_250ms_ease,border-color_250ms_ease]! [&_.w-slider-dot]:my-0! [&_.w-slider-dot.w-active]:bg-(--color-mint)! [&_.w-slider-dot.w-active]:border-(--color-mint)!">
                             <div className="w-slider-dot w-active" data-wf-ignore="" aria-label="Show slide 1 of 3" aria-pressed="true" role="button" tabIndex={0} style={{"marginLeft": "8px", "marginRight": "8px"}}></div>
                             <div className="w-slider-dot" data-wf-ignore="" aria-label="Show slide 2 of 3" aria-pressed="false" role="button" tabIndex={-1} style={{"marginLeft": "8px", "marginRight": "8px"}}></div>
                             <div className="w-slider-dot" data-wf-ignore="" aria-label="Show slide 3 of 3" aria-pressed="false" role="button" tabIndex={-1} style={{"marginLeft": "8px", "marginRight": "8px"}}></div>
