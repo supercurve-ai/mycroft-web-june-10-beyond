@@ -7,10 +7,8 @@ const eslintConfig = defineConfig([
   ...nextTs,
   {
     rules: {
-      // The site is a 1:1 Webflow clone: body copy contains literal quotes,
-      // and images are plain <img> tags with optimization disabled.
-      "react/no-unescaped-entities": "off",
-      "@next/next/no-img-element": "off",
+      "react/no-unescaped-entities": "error",
+      "@next/next/no-img-element": "error",
     },
   },
   globalIgnores([

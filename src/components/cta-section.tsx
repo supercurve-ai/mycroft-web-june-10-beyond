@@ -1,4 +1,5 @@
 import { ButtonLarge } from "./button-large";
+import { WfImage } from "@/components/wf-image";
 
 /**
  * The closing "Book a demo" banner every page ends with. Two art variants
@@ -33,18 +34,18 @@ export function CtaSection({ variant }: { variant: "fireplace" | "lamp" }) {
                 </div>
                 {variant === "fireplace" ? (
                   <div className="col-cta-right fireplace">
-                    <img src="/assets/decor/fireplace-glowhover.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/decor/fireplace-glowhover-p-500.webp 500w, /assets/decor/fireplace-glowhover-p-800.webp 800w, /assets/decor/fireplace-glowhover.webp 994w" className="cta-fireplace-glow-img" style={{ opacity: "0.5" }} />
-                    <img src="/assets/decor/fireplace-hover.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/decor/fireplace-hover-p-500.webp 500w, /assets/decor/fireplace-hover-p-800.webp 800w, /assets/decor/fireplace-hover.webp 994w" className="cta-fireplace-hover-img" style={{ opacity: "0" }} />
-                    <img src="/assets/decor/fireplace.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/decor/fireplace-p-500.webp 500w, /assets/decor/fireplace-p-800.webp 800w, /assets/decor/fireplace.webp 994w" />
+                    <WfImage src="/assets/decor/fireplace-glowhover.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/decor/fireplace-glowhover-p-500.webp 500w, /assets/decor/fireplace-glowhover-p-800.webp 800w, /assets/decor/fireplace-glowhover.webp 994w" className="cta-fireplace-glow-img" style={{ opacity: "0.5" }} />
+                    <WfImage src="/assets/decor/fireplace-hover.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/decor/fireplace-hover-p-500.webp 500w, /assets/decor/fireplace-hover-p-800.webp 800w, /assets/decor/fireplace-hover.webp 994w" className="cta-fireplace-hover-img" style={{ opacity: "0" }} />
+                    <WfImage src="/assets/decor/fireplace.webp" loading="lazy" width="497" sizes="(max-width: 767px) 100vw, 497px" alt="" srcSet="/assets/decor/fireplace-p-500.webp 500w, /assets/decor/fireplace-p-800.webp 800w, /assets/decor/fireplace.webp 994w" />
                   </div>
                 ) : (
                   <div className="col-cta-right">
                     <div className="cta-lamp-container">
-                      <img src="/assets/decor/lamp2.webp" loading="lazy" width="240" alt="" className="cta-lamp-img" />
-                      <img src="/assets/decor/glow2a.webp" loading="lazy" width="240" alt="" className="cta-glow2a-img" />
-                      <img src="/assets/decor/glow2a.webp" loading="lazy" width="240" alt="" className="cta-glow2b-img" style={{ opacity: "0" }} />
+                      <WfImage src="/assets/decor/lamp2.webp" loading="lazy" width="240" alt="" className="cta-lamp-img" />
+                      <WfImage src="/assets/decor/glow2a.webp" loading="lazy" width="240" alt="" className="cta-glow2a-img" />
+                      <WfImage src="/assets/decor/glow2a.webp" loading="lazy" width="240" alt="" className="cta-glow2b-img" style={{ opacity: "0" }} />
                     </div>
-                    <img src="/assets/decor/chair-v4.webp" loading="lazy" width="398.5" sizes="(max-width: 479px) 100vw, 399px" alt="" srcSet="/assets/decor/chair-v4-p-500.webp 500w, /assets/decor/chair-v4.webp 797w" className="cta-chair-img" />
+                    <WfImage src="/assets/decor/chair-v4.webp" loading="lazy" width="398.5" sizes="(max-width: 479px) 100vw, 399px" alt="" srcSet="/assets/decor/chair-v4-p-500.webp 500w, /assets/decor/chair-v4.webp 797w" className="cta-chair-img" />
                   </div>
                 )}
               </div>

@@ -1,3 +1,5 @@
+import { WfImage } from "@/components/wf-image";
+
 /** Problem-statement section of /home. Ported from Webflow by the Webflow Cloner agent. */
 export function HomeProblem() {
   return (
@@ -26,7 +28,7 @@ export function HomeProblem() {
           <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
             <div className="w-layout-grid problem-tile-grid">
               <div className="home-problem_card-container">
-                <img src="/assets/icons/circus-icon.svg" loading="lazy" width="40" alt="" />
+                <WfImage src="/assets/icons/circus-icon.svg" loading="lazy" width="40" alt="" />
                 <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                   <h6 className="h6 color_rg">
                     Compliance circus
@@ -39,7 +41,7 @@ export function HomeProblem() {
                 </div>
               </div>
               <div className="home-problem_card-container">
-                <img src="/assets/icons/laptop-icon.svg" loading="lazy" width="40" alt="" />
+                <WfImage src="/assets/icons/laptop-icon.svg" loading="lazy" width="40" alt="" />
                 <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                   <h6 className="h6 color_rg">
                     Tool sprawl
@@ -52,7 +54,7 @@ export function HomeProblem() {
                 </div>
               </div>
               <div className="home-problem_card-container">
-                <img src="/assets/icons/piggybank-icon.svg" loading="lazy" width="40" alt="" />
+                <WfImage src="/assets/icons/piggybank-icon.svg" loading="lazy" width="40" alt="" />
                 <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
                   <h6 className="h6 color_rg">
                     Enterprise bloat

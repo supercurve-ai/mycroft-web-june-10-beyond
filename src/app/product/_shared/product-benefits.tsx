@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { ButtonLarge } from "@/components/button-large";
+import { WfImage } from "@/components/wf-image";
 
 /**
  * The standard /product/* "why this matters" section: centered heading + dek
@@ -40,7 +41,7 @@ export function ProductBenefits(props: {
               <div className="w-layout-grid features-3up">
                 {props.features.map((feature) => (
                   <div className="feature-item" key={feature.title}>
-                    <img src={feature.icon} loading="lazy" width="38" alt="" className="feature-icon" />
+                    <WfImage src={feature.icon} loading="lazy" width="38" alt="" className="feature-icon" />
                     <div className="container-flex vertical center text_center">
                       <div className="h6 color_mint">
                         {feature.title}

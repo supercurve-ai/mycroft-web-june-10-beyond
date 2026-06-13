@@ -1,3 +1,5 @@
+import { WfImage } from "@/components/wf-image";
+
 /** Features section of /home. Ported from Webflow by the Webflow Cloner agent. */
 export function HomeFeatures() {
   return (
@@ -10,7 +12,7 @@ export function HomeFeatures() {
                 <div className="features-col-left">
                   <div className="feature-padding">
                     <h2 className="h2_v2 color_rg">
-                      We've got you covered
+                      We&#39;ve got you covered
                     </h2>
                     <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                       <div className="text-dek-m">
@@ -27,12 +29,12 @@ export function HomeFeatures() {
                           PRIVACY & SECURITY
                         </div>
                       </div>
-                      <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
+                      <WfImage src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
                     </div>
                     <div className="feature-tile-content">
-                      <img src="/assets/photos/wgyc-1-no-performative-security.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/photos/wgyc-1-no-performative-security-p-500.webp 500w, /assets/photos/wgyc-1-no-performative-security-p-800.webp 800w, /assets/photos/wgyc-1-no-performative-security-p-1080.webp 1080w, /assets/photos/wgyc-1-no-performative-security.webp 1128w" className="feature-tile-img" />
+                      <WfImage src="/assets/photos/wgyc-1-no-performative-security.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/photos/wgyc-1-no-performative-security-p-500.webp 500w, /assets/photos/wgyc-1-no-performative-security-p-800.webp 800w, /assets/photos/wgyc-1-no-performative-security-p-1080.webp 1080w, /assets/photos/wgyc-1-no-performative-security.webp 1128w" className="feature-tile-img" />
                       <div className="feature-tile-label">
-                        <img src="/assets/icons/crest-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
+                        <WfImage src="/assets/icons/crest-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
                         <h6 className="h6 color_rg">
                           <strong>
                             No performative security
@@ -53,12 +55,12 @@ export function HomeFeatures() {
                           ARTIFICIAL INTELLIGENCE
                         </div>
                       </div>
-                      <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
+                      <WfImage src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
                     </div>
                     <div className="feature-tile-content">
-                      <img src="/assets/screenshots/features-img2.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w" className="feature-tile-img" />
+                      <WfImage src="/assets/screenshots/features-img2.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w" className="feature-tile-img" />
                       <div className="feature-tile-label">
-                        <img src="/assets/icons/gear-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
+                        <WfImage src="/assets/icons/gear-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
                         <h6 className="h6 color_rg">
                           Autonomous compliance
                         </h6>
@@ -77,12 +79,12 @@ export function HomeFeatures() {
                           MANAGED REMEDIATIONS
                         </div>
                       </div>
-                      <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
+                      <WfImage src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
                     </div>
                     <div className="feature-tile-content">
-                      <img src="/assets/screenshots/features-img3.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/screenshots/features-img3-p-500.webp 500w, /assets/screenshots/features-img3-p-800.webp 800w, /assets/screenshots/features-img3-p-1080.webp 1080w, /assets/screenshots/features-img3.webp 1128w" className="feature-tile-img" />
+                      <WfImage src="/assets/screenshots/features-img3.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/screenshots/features-img3-p-500.webp 500w, /assets/screenshots/features-img3-p-800.webp 800w, /assets/screenshots/features-img3-p-1080.webp 1080w, /assets/screenshots/features-img3.webp 1128w" className="feature-tile-img" />
                       <div className="feature-tile-label">
-                        <img src="/assets/icons/push-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
+                        <WfImage src="/assets/icons/push-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
                         <h6 className="h6 color_rg">
                           <strong>
                             Time saved, time gained
@@ -103,19 +105,19 @@ export function HomeFeatures() {
                           EXPERT-LED SUPPORT
                         </div>
                       </div>
-                      <img src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
+                      <WfImage src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape" />
                     </div>
                     <div className="feature-tile-content">
-                      <img src="/assets/photos/wgyc-4-real-experts-always-here.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/photos/wgyc-4-real-experts-always-here-p-500.webp 500w, /assets/photos/wgyc-4-real-experts-always-here-p-800.webp 800w, /assets/photos/wgyc-4-real-experts-always-here-p-1080.webp 1080w, /assets/photos/wgyc-4-real-experts-always-here.webp 1128w" className="feature-tile-img" />
+                      <WfImage src="/assets/photos/wgyc-4-real-experts-always-here.webp" loading="lazy" width="512" height="320" sizes="(max-width: 767px) 100vw, 512px" alt="" srcSet="/assets/photos/wgyc-4-real-experts-always-here-p-500.webp 500w, /assets/photos/wgyc-4-real-experts-always-here-p-800.webp 800w, /assets/photos/wgyc-4-real-experts-always-here-p-1080.webp 1080w, /assets/photos/wgyc-4-real-experts-always-here.webp 1128w" className="feature-tile-img" />
                       <div className="feature-tile-label">
-                        <img src="/assets/icons/star-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
+                        <WfImage src="/assets/icons/star-icon.svg" loading="lazy" alt="" className="feature-tile-icon" />
                         <h6 className="h6 color_rg">
                           Real experts, always here
                         </h6>
                       </div>
                       <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
                         <div className="body-text-large">
-                          Mycroft's customer success team are made of security and compliance experts, watching your environment 24/7/365, supported by your AI Security and Compliance Officer.
+                          Mycroft&#39;s customer success team are made of security and compliance experts, watching your environment 24/7/365, supported by your AI Security and Compliance Officer.
                         </div>
                       </div>
                     </div>

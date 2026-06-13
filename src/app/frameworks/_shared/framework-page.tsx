@@ -8,6 +8,7 @@ import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { UnlockFrameworksSection } from "@/components/unlock-frameworks-section";
 import { WebflowInteractions } from "@/components/webflow-interactions";
+import { WfImage } from "@/components/wf-image";
 
 /**
  * Shared template for the /frameworks/* pages. All nine framework pages render
@@ -141,7 +142,7 @@ function HeroSection({ d }: { d: FrameworkPageData }) {
               </div>
             </div>
             <div className="fw-hero-circle">
-              <img src={d.hero.badge.src} loading="lazy" alt={d.hero.badge.alt} className="fw-hero-badge-img" style={{"willChange": "transform", "transform": "translate3d(8px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} />
+              <WfImage src={d.hero.badge.src} loading="lazy" alt={d.hero.badge.alt} className="fw-hero-badge-img" style={{"willChange": "transform", "transform": "translate3d(8px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} />
               <div className="fw-hero-dots" style={{"willChange": "transform", "transform": "translate3d(-4px, -4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}}></div>
             </div>
           </div>
@@ -170,7 +171,7 @@ function HeroSection({ d }: { d: FrameworkPageData }) {
               <div className="w-layout-grid features-3up frameworks">
                 {d.hero.features.map((feature, i) => (
                   <div key={i} className="feature-item frameworks wf-reveal" style={reveal(100, 0, 50 + i * 100)}>
-                    <img src={feature.icon} loading="lazy" width="38" alt="" className="feature-icon" />
+                    <WfImage src={feature.icon} loading="lazy" width="38" alt="" className="feature-icon" />
                     <div className="container-flex vertical center text_center">
                       <div className="h6 color_mint">{feature.title}</div>
                       <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">
@@ -246,7 +247,7 @@ function SolutionsSection({ d }: { d: FrameworkPageData }) {
                   );
                   const img = (
                     <div className={even ? "product-feature-img img-left wf-reveal" : "product-feature-img wf-reveal"} style={reveal(even ? -100 : 100, 0, 0)}>
-                      <img src={`/assets/screenshots/${card.img.base}.webp`} loading="lazy" width={card.img.width} sizes={card.img.sizes} alt="" srcSet={solutionSrcSet(card.img.base)} className="fw-features-img" />
+                      <WfImage src={`/assets/screenshots/${card.img.base}.webp`} loading="lazy" width={card.img.width} sizes={card.img.sizes} alt="" srcSet={solutionSrcSet(card.img.base)} className="fw-features-img" />
                     </div>
                   );
                   return (
@@ -312,7 +313,7 @@ function TestimonialSection({ t }: { t: Testimonial }) {
             <div className={tinted("pullquote-content")}>
               <div className="container-flex pullquote_container">
                 <div className={t.imgTint ? `pullquote-img-container ${t.imgTint}` : "pullquote-img-container"}>
-                  <img width="215" loading="lazy" alt="" src={t.img.src} sizes={t.img.sizes} srcSet={t.img.srcSet} className="pullquote-img" />
+                  <WfImage width="215" loading="lazy" alt="" src={t.img.src} sizes={t.img.sizes} srcSet={t.img.srcSet} className="pullquote-img" />
                 </div>
                 <div className="container-flex pullquote_right">
                   <div className="pullquote-text hanging_quote">
@@ -322,7 +323,7 @@ function TestimonialSection({ t }: { t: Testimonial }) {
                     <div className="pullquote-text">{t.quote}</div>
                     <div className="pullquote-name">{t.name}</div>
                     <div className="pullquote-title">{t.title}</div>
-                    <img width={t.logo.width} loading="lazy" alt="" src={t.logo.src} />
+                    <WfImage width={t.logo.width} loading="lazy" alt="" src={t.logo.src} />
                   </div>
                 </div>
               </div>
@@ -342,8 +343,8 @@ function FaqSection({ d }: { d: FrameworkPageData }) {
         <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
           <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
             <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
-              <img src="/assets/icons/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
-              <img src="/assets/icons/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
+              <WfImage src="/assets/icons/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
+              <WfImage src="/assets/icons/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
               <div className="container-flex faq_container">
                 <div className="faq-hed-flex">
                   <h3 className="h3_v2 color_white">

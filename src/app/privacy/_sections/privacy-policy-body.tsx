@@ -11,7 +11,7 @@ export function PrivacyPolicyBody() {
                   Introduction
                 </strong>
                 <br />
-                Mycroft Technologies Inc. is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and share information collected through our services ("Services"). By using our Services, you consent to the practices described in this policy.
+                Mycroft Technologies Inc. is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and share information collected through our services (&quot;Services&quot;). By using our Services, you consent to the practices described in this policy.
                 <br />
                 <br />
                 <strong>
@@ -296,11 +296,11 @@ export function PrivacyPolicyBody() {
                   Google API Services User Data Policy / Limited Use Disclosure
                 </strong>
                 <br />
-                Mycroft's use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements.Specifically, Mycroft affirms that data obtained through Google APIs is:
+                Mycroft&#39;s use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements.Specifically, Mycroft affirms that data obtained through Google APIs is:
               </p>
               <ul role="list">
                 <li>
-                  Used only to provide or improve user-facing features that are prominent in the Mycroft application's user interface
+                  Used only to provide or improve user-facing features that are prominent in the Mycroft application&#39;s user interface
                 </li>
                 <li>
                   Not transferred to third parties except as necessary to provide or improve those features, to comply with applicable law, or as part of a merger, acquisition, or sale of assets with user notice

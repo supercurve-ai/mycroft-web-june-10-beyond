@@ -68,7 +68,7 @@ export function FaqsAccordion() {
                     </AccordionItem>
                     <AccordionItem question="What are the benefits of bundling a pen test with Mycroft?">
                       <p>
-                          Bundling a penetration test with Mycroft is faster, often cheaper, and improves the efficiency of evidence handling. By using Mycroft's all-in-one platform, organizations streamline their security and compliance processes while ensuring comprehensive coverage for their cybersecurity needs.
+                          Bundling a penetration test with Mycroft is faster, often cheaper, and improves the efficiency of evidence handling. By using Mycroft&#39;s all-in-one platform, organizations streamline their security and compliance processes while ensuring comprehensive coverage for their cybersecurity needs.
                         </p>
                     </AccordionItem>
                   </div>

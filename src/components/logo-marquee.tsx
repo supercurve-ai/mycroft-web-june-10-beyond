@@ -1,3 +1,5 @@
+import { WfImage } from "@/components/wf-image";
+
 // height = width scaled by the file's intrinsic aspect ratio (the original
 // markup used height="Auto", which is invalid HTML and left the imgs unsized)
 type Logo = { src: string; width: number; height: number };
@@ -54,7 +56,7 @@ export function LogoMarquee({
   const row = (
     <div className="marquee-row scroll">
       {logos.map((logo) => (
-        <img
+        <WfImage
           key={logo.src}
           width={logo.width}
           height={logo.height}

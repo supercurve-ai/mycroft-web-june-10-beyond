@@ -9,6 +9,7 @@ import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { CtaSection } from "@/components/cta-section";
 import { CaseStudyInteractions } from "./case-study-interactions";
+import { WfImage } from "@/components/wf-image";
 
 export function generateStaticParams() {
   return caseStudies.getSlugs().map((slug) => ({ slug }));
@@ -71,7 +72,7 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ sl
                   </div>
                 </div>
                 {heroImage ? (
-                  <img src={heroImage} loading="lazy" width="860" alt=""
+                  <WfImage src={heroImage} loading="lazy" width="860" alt=""
                     sizes="(max-width: 991px) 100vw, 860px" srcSet={buildSrcSet(heroImage)}
                     className="cs-hero-img" />
                 ) : null}
@@ -163,7 +164,7 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ sl
                         <div className="container-flex pullquote_container cs_var">
                           <div className="pullquote-img-container cs_var">
                             {meta.testimonial.photo ? (
-                              <img width="215" loading="lazy" alt={meta.testimonial.name}
+                              <WfImage width="215" loading="lazy" alt={meta.testimonial.name}
                                 src={meta.testimonial.photo} className="pullquote-img cs_var" />
                             ) : null}
                           </div>
@@ -174,7 +175,7 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ sl
                               <div className="pullquote-name">{meta.testimonial.name}</div>
                               <div className="pullquote-title">{meta.testimonial.role}</div>
                               {meta.testimonial.logo ? (
-                                <img width="114" loading="lazy" alt="" src={meta.testimonial.logo} className="pullquote-logo" />
+                                <WfImage width="114" loading="lazy" alt="" src={meta.testimonial.logo} className="pullquote-logo" />
                               ) : null}
                             </div>
                           </div>

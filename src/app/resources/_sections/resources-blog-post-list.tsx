@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ResourcesBlogPostCard } from "./resources-blog-post-card";
 import { resourcesBlogPosts } from "./resources-blog-post-card.data";
+import { WfImage } from "@/components/wf-image";
 
 /**
  * Client-side Load More for the ResourcesBlogPostCard collection: the original
@@ -32,7 +33,7 @@ export function ResourcesBlogPostList() {
             onClick={() => setVisible((v) => v + 4)}
           >
             <div className="btn-text-large w-inline-block">{"More"}</div>
-            <img
+            <WfImage
               src="/assets/icons/arrow-icon-v2.svg"
               loading="lazy"
               alt=""

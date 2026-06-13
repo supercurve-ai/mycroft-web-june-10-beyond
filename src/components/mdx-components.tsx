@@ -1,10 +1,11 @@
 import type { ComponentProps } from "react";
+import { WfImage } from "@/components/wf-image";
 
 /** MDX element → component map. Extend to style article elements. */
 export const mdxComponents = {
   img: (props: ComponentProps<"img">) => (
      
-    <img {...props} alt={props.alt ?? ""} style={{ maxWidth: "100%", height: "auto" }} />
+    <WfImage {...props} alt={props.alt ?? ""} style={{ maxWidth: "100%", height: "auto" }} />
   ),
   // GFM pipe tables only need the scroll wrapper; the visual styling lives
   // in tokens.css (.rich-text-v2 table …) so markdown and raw HTML tables

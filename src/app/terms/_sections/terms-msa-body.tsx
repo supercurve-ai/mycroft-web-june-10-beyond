@@ -41,19 +41,19 @@ export function TermsMsaBody() {
               <p>
                 A.	Mycroft provides (i) a proprietary cloud-based software-as-a-service platform that allows its customers to scan, measure and identify deficiencies in a company’s cybersecurity controls in comparison to industry standard certifications and regulatory standards (the
                 <strong>
-                  "Platform"
+                  &quot;Platform&quot;
                 </strong>
                 ), together with services related to use and access of such Platform (the
                 <strong>
-                  "Subscription Services"
+                  &quot;Subscription Services&quot;
                 </strong>
                 ); (ii) custom development, integration, implementation, reporting, support, and training services relating to the Platform (
                 <strong>
-                  "Professional Services"
+                  &quot;Professional Services&quot;
                 </strong>
                 ); and (iii) any other services provided for under this Agreement or an applicable Statement of Work ((i), (ii) and (iii) are collectively the
                 <strong>
-                  "Services"
+                  &quot;Services&quot;
                 </strong>
                 ).
               </p>
@@ -86,7 +86,7 @@ export function TermsMsaBody() {
                 <strong>
                   a.	Services and Statements of Work.
                 </strong>
-                Subject to and conditioned on Client's payment of Fees and compliance with the terms and conditions of this Agreement, Mycroft shall perform the Services as set out in the one or more Statements of Work entered into between the parties. Each executed Statement of Work is automatically deemed to include all the terms and provisions of this Agreement. Absent the execution of a Statement of Work, this Agreement does not, in and of itself, represent a commitment by either party to provide any minimum amount of charges or services. Client shall bear no financial responsibility whatsoever for any additional services rendered or products provided by Mycroft for which Mycroft did not obtain an executed Statement of Work prior to the commencement of such services or the provision of such products. In the event of a conflict between this Agreement and an applicable Statement of Work, the Statement of Work shall take precedence only for the purposes of that Statement of Work and the terms and provisions of this Agreement are not otherwise amended, modified, cancelled, waived, or released.
+                Subject to and conditioned on Client&#39;s payment of Fees and compliance with the terms and conditions of this Agreement, Mycroft shall perform the Services as set out in the one or more Statements of Work entered into between the parties. Each executed Statement of Work is automatically deemed to include all the terms and provisions of this Agreement. Absent the execution of a Statement of Work, this Agreement does not, in and of itself, represent a commitment by either party to provide any minimum amount of charges or services. Client shall bear no financial responsibility whatsoever for any additional services rendered or products provided by Mycroft for which Mycroft did not obtain an executed Statement of Work prior to the commencement of such services or the provision of such products. In the event of a conflict between this Agreement and an applicable Statement of Work, the Statement of Work shall take precedence only for the purposes of that Statement of Work and the terms and provisions of this Agreement are not otherwise amended, modified, cancelled, waived, or released.
               </p>
               <p>
                 <strong>
@@ -113,7 +113,7 @@ export function TermsMsaBody() {
                 II.	any Deliverables incorporated, referenced, linked to or otherwise provided by Mycroft during the Term, solely for use by Authorized Users and for use in conjunction with the Platform, in accordance with the terms and conditions herein; and
               </p>
               <p>
-                III.	the Documentation during the Term solely for Client's internal business purposes in connection with its use of the Services.
+                III.	the Documentation during the Term solely for Client&#39;s internal business purposes in connection with its use of the Services.
               </p>
               <p>
                 <strong>
@@ -136,9 +136,9 @@ export function TermsMsaBody() {
                 <strong>
                   g.	Suspension.
                 </strong>
-                Notwithstanding anything to the contrary in this Agreement, Mycroft may temporarily suspend Client's or any Authorized User's access to any portion or all of the Mycroft Technology if: (i) Mycroft reasonably determines that (A) there is a threat or attack on any of the Mycroft Technology or the Services, (B) Client's or any Authorized User's use of the Mycroft Technology or the Services disrupts or poses a security risk to Mycroft or to any other client or vendor of Mycroft, (C) Client or any Authorized User is using the Mycroft Technology or the Services for fraudulent or illegal activities, (D) subject to applicable law, Client has ceased to continue its business in the ordinary course, made an assignment for the benefit of creditors or similar disposition of its assets, or become the subject of any bankruptcy, reorganization, liquidation, dissolution, or similar proceeding, or (E) Mycroft provision of the Services or the Mycroft Technology to Client or any Authorized User is prohibited by applicable law; (ii) any vendor of Mycroft has suspended or terminated Mycroft's access to or use of any third-party services or products required to enable Client to access or use the Services or the Mycroft Technology; or (iii) in accordance with Section 4(a) (any such suspension described in subclause (i), (ii), or (iii), a
+                Notwithstanding anything to the contrary in this Agreement, Mycroft may temporarily suspend Client&#39;s or any Authorized User&#39;s access to any portion or all of the Mycroft Technology if: (i) Mycroft reasonably determines that (A) there is a threat or attack on any of the Mycroft Technology or the Services, (B) Client&#39;s or any Authorized User&#39;s use of the Mycroft Technology or the Services disrupts or poses a security risk to Mycroft or to any other client or vendor of Mycroft, (C) Client or any Authorized User is using the Mycroft Technology or the Services for fraudulent or illegal activities, (D) subject to applicable law, Client has ceased to continue its business in the ordinary course, made an assignment for the benefit of creditors or similar disposition of its assets, or become the subject of any bankruptcy, reorganization, liquidation, dissolution, or similar proceeding, or (E) Mycroft provision of the Services or the Mycroft Technology to Client or any Authorized User is prohibited by applicable law; (ii) any vendor of Mycroft has suspended or terminated Mycroft&#39;s access to or use of any third-party services or products required to enable Client to access or use the Services or the Mycroft Technology; or (iii) in accordance with Section 4(a) (any such suspension described in subclause (i), (ii), or (iii), a
                 <strong>
-                  "Service Suspension"
+                  &quot;Service Suspension&quot;
                 </strong>
                 ). Mycroft shall use commercially reasonable efforts to provide written notice of any Service Suspension to Client and to provide updates regarding resumption of access to the Services following any Service Suspension. Mycroft shall use commercially reasonable efforts to resume providing access to the Services as soon as reasonably possible after the event giving rise to the Service Suspension is cured. Mycroft will have no liability for any damage, liabilities, losses (including any loss of data or profits), or any other consequences that Client or any Authorized User may incur as a result of a Service Suspension, unless the Service Suspension is a result of the gross negligence or willful misconduct of Mycroft.
               </p>
@@ -146,13 +146,13 @@ export function TermsMsaBody() {
                 <strong>
                   h.	Aggregated Statistics.
                 </strong>
-                Notwithstanding anything to the contrary in this Agreement, Mycroft may monitor Client's use of the Mycroft Technology and Subscription Services and collect and compile Aggregated Statistics. As between Mycroft and Client, all right, title, and interest in Aggregated Statistics, and all intellectual property rights therein, belong to and are retained solely by Mycroft. Client acknowledges that Mycroft may compile Aggregated Statistics based on Client Data inputted into or used to provide the Subscription Services. Client agrees that Mycroft may use Aggregated Statistics to the extent and in the manner permitted under applicable law, including to develop, optimize, benchmark, or measure Mycroft’s products or services and for internal research, analytical and informational purposes related to Client's use of Mycroft products or services, provided that such Aggregated Statistics do not identify Client or include any Client Data, Client Confidential Information or Personal Information in identifiable form.
+                Notwithstanding anything to the contrary in this Agreement, Mycroft may monitor Client&#39;s use of the Mycroft Technology and Subscription Services and collect and compile Aggregated Statistics. As between Mycroft and Client, all right, title, and interest in Aggregated Statistics, and all intellectual property rights therein, belong to and are retained solely by Mycroft. Client acknowledges that Mycroft may compile Aggregated Statistics based on Client Data inputted into or used to provide the Subscription Services. Client agrees that Mycroft may use Aggregated Statistics to the extent and in the manner permitted under applicable law, including to develop, optimize, benchmark, or measure Mycroft’s products or services and for internal research, analytical and informational purposes related to Client&#39;s use of Mycroft products or services, provided that such Aggregated Statistics do not identify Client or include any Client Data, Client Confidential Information or Personal Information in identifiable form.
               </p>
               <p>
                 <strong>
                   i.	Beta Services.
                 </strong>
-                From time to time, Mycroft may make Beta Services available to Client. Client may choose to try such Beta Services or not in its sole discretion. Beta Services are intended for evaluation purposes and not for production use, are not supported, and may be subject to additional terms. Beta Services are not considered Services under this Agreement. However, all restrictions, Mycroft reservations of rights, and Client obligations concerning the Mycroft Technology, the Deliverables and use of any related Third-Party Products will apply equally to Client’s use of Beta Services. Unless otherwise stated, any Beta Services trial period will expire on the earlier of one year from the trial start date or the date that a version of the Beta Services becomes generally available without the applicable Beta Services designation. Beta Services may be subject to additional terms beyond those set out in this Agreement, which shall be provided by Mycroft from time to time upon Client's use of any such Beta Services. Mycroft may discontinue Beta Services at any time in its sole discretion and may never make them generally available. Beta Services are provided "as is" and "as available", and Mycroft will have no liability or indemnification obligations for any harm or damage arising out of or in connection with any Beta Services.
+                From time to time, Mycroft may make Beta Services available to Client. Client may choose to try such Beta Services or not in its sole discretion. Beta Services are intended for evaluation purposes and not for production use, are not supported, and may be subject to additional terms. Beta Services are not considered Services under this Agreement. However, all restrictions, Mycroft reservations of rights, and Client obligations concerning the Mycroft Technology, the Deliverables and use of any related Third-Party Products will apply equally to Client’s use of Beta Services. Unless otherwise stated, any Beta Services trial period will expire on the earlier of one year from the trial start date or the date that a version of the Beta Services becomes generally available without the applicable Beta Services designation. Beta Services may be subject to additional terms beyond those set out in this Agreement, which shall be provided by Mycroft from time to time upon Client&#39;s use of any such Beta Services. Mycroft may discontinue Beta Services at any time in its sole discretion and may never make them generally available. Beta Services are provided &quot;as is&quot; and &quot;as available&quot;, and Mycroft will have no liability or indemnification obligations for any harm or damage arising out of or in connection with any Beta Services.
               </p>
               <p>
                 <strong>
@@ -232,9 +232,9 @@ export function TermsMsaBody() {
                 </strong>
                 Client shall pay Mycroft the fees (
                 <strong>
-                  "Fees"
+                  &quot;Fees&quot;
                 </strong>
-                ) as set forth in this Agreement or a Statement of Work without setoff or deduction within fifteen (15) days of Mycroft sending the invoice, unless otherwise stated herein. If Client fails to make any payment when due, without limiting Mycroft’s other rights and remedies: (i) Mycroft may charge interest on the past due amount at the rate of 1.5% per month (19.56% per annum when compounded) or, if lower, the maximum amount permitted under applicable law; (ii) Client shall reimburse Mycroft for all reasonable collection costs including legal fees, court costs, and collection agency fees; and (iii) if such failure continues for ten (10) days or more, Mycroft may suspend Client's and its Authorized User's access to any portion or all of the Services or Mycroft Technology until such amounts are paid in full.
+                ) as set forth in this Agreement or a Statement of Work without setoff or deduction within fifteen (15) days of Mycroft sending the invoice, unless otherwise stated herein. If Client fails to make any payment when due, without limiting Mycroft’s other rights and remedies: (i) Mycroft may charge interest on the past due amount at the rate of 1.5% per month (19.56% per annum when compounded) or, if lower, the maximum amount permitted under applicable law; (ii) Client shall reimburse Mycroft for all reasonable collection costs including legal fees, court costs, and collection agency fees; and (iii) if such failure continues for ten (10) days or more, Mycroft may suspend Client&#39;s and its Authorized User&#39;s access to any portion or all of the Services or Mycroft Technology until such amounts are paid in full.
               </p>
               <p>
                 <strong>
@@ -420,7 +420,7 @@ export function TermsMsaBody() {
                 <strong>
                   e.	NO FURTHER WARRANTIES AND DISCLAIMER.
                 </strong>
-                EXCEPT AS EXPRESSLY PROVIDED UNDER THIS AGREEMENT OR AN APPLICABLE STATEMENT OF WORK, THE MYCROFT TECHNOLOGY AND SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" AND MYCROFT HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. MYCROFT SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, AND ALL WARRANTIES ARISING FROM COURSE OF DEALING, USAGE, OR TRADE PRACTICE. MYCROFT MAKES NO WARRANTY OF ANY KIND THAT THE MYCROFT TECHNOLOGY OR ANY SERVICES, OR RESULTS OF THE USE THEREOF, WILL MEET CLIENT'S OR ANY OTHER PERSON'S REQUIREMENTS, OPERATE WITHOUT INTERRUPTION, ACHIEVE ANY INTENDED RESULT, BE COMPATIBLE OR WORK WITH ANY SOFTWARE, SYSTEM, OR OTHER SERVICES, OR BE SECURE, ACCURATE, COMPLETE, FREE OF HARMFUL CODE, DEFECTS OR ERRORS. MYCROFT MAKES NO WARRANTY OF ANY KIND AND DISCLAIMS ANY AND ALL REPRESENTATIONS, WARRANTIES OR DISCLAIMERS IN RELATION TO ANY THIRD-PARTY PRODUCTS, VENDOR PRODUCTS OR SERVICES, OR DATA STORAGE PROVIDER USED IN CONJUNCTION WITH THE MYCROFT TECHNOLOGY OR THE SERVICES.
+                EXCEPT AS EXPRESSLY PROVIDED UNDER THIS AGREEMENT OR AN APPLICABLE STATEMENT OF WORK, THE MYCROFT TECHNOLOGY AND SERVICES ARE PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; AND MYCROFT HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. MYCROFT SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, AND ALL WARRANTIES ARISING FROM COURSE OF DEALING, USAGE, OR TRADE PRACTICE. MYCROFT MAKES NO WARRANTY OF ANY KIND THAT THE MYCROFT TECHNOLOGY OR ANY SERVICES, OR RESULTS OF THE USE THEREOF, WILL MEET CLIENT&#39;S OR ANY OTHER PERSON&#39;S REQUIREMENTS, OPERATE WITHOUT INTERRUPTION, ACHIEVE ANY INTENDED RESULT, BE COMPATIBLE OR WORK WITH ANY SOFTWARE, SYSTEM, OR OTHER SERVICES, OR BE SECURE, ACCURATE, COMPLETE, FREE OF HARMFUL CODE, DEFECTS OR ERRORS. MYCROFT MAKES NO WARRANTY OF ANY KIND AND DISCLAIMS ANY AND ALL REPRESENTATIONS, WARRANTIES OR DISCLAIMERS IN RELATION TO ANY THIRD-PARTY PRODUCTS, VENDOR PRODUCTS OR SERVICES, OR DATA STORAGE PROVIDER USED IN CONJUNCTION WITH THE MYCROFT TECHNOLOGY OR THE SERVICES.
               </p>
               <p>
                 <strong>
@@ -454,13 +454,13 @@ export function TermsMsaBody() {
               <p>
                 I.	Mycroft shall indemnify, defend, and hold harmless Client from and against any and all losses, damages, liabilities, costs (including reasonable legal fees) (
                 <strong>
-                  "Losses"
+                  &quot;Losses&quot;
                 </strong>
                 ) incurred by Client resulting from any third-party claim, suit, action, or proceeding (
                 <strong>
-                  "Third-party Claim"
+                  &quot;Third-party Claim&quot;
                 </strong>
-                ) that the Services, the Mycroft Technology, or any use of the Services, Mycroft Technology in accordance with this Agreement or an applicable Statement of Work, infringes, violates or misappropriates any third party's Canadian intellectual property rights, provided that Client promptly notifies Mycroft in writing of the claim, cooperates with Mycroft, and allows Mycroft sole authority to control the defense and settlement of such claim.
+                ) that the Services, the Mycroft Technology, or any use of the Services, Mycroft Technology in accordance with this Agreement or an applicable Statement of Work, infringes, violates or misappropriates any third party&#39;s Canadian intellectual property rights, provided that Client promptly notifies Mycroft in writing of the claim, cooperates with Mycroft, and allows Mycroft sole authority to control the defense and settlement of such claim.
               </p>
               <p>
                 II.	If such a claim is made or appears possible, Client agrees to permit Mycroft, at its sole discretion, to: (A) modify or replace the infringing Services or Mycroft Technology; or component or part thereof, to make it non-infringing, or (B) obtain the right for Client to continue use. If Mycroft determines that neither alternative is reasonably available, Mycroft may terminate this Agreement, in its entirety or with respect to the affected component or part, effective immediately on written notice to Client.
@@ -469,13 +469,13 @@ export function TermsMsaBody() {
                 III.	This will not apply to the extent that the alleged infringement arises from: (A) use of the Services or Mycroft Technology in combination with data, software, hardware, equipment, or technology not provided by Mycroft or authorized by Mycroft in writing; (B) modifications to the Services or Mycroft Technology not made by Mycroft; (C) Client Data; (D) the instructions or requirements of the Client as it relates to the development of the Deliverables; or (E) Third-party Products.
               </p>
               <p>
-                IV.	THIS SECTION 8(A) SETS FORTH CLIENT'S SOLE REMEDIES AND MYCROFT’S SOLE LIABILITY AND OBLIGATION FOR ANY ACTUAL, THREATENED, OR ALLEGED CLAIMS THAT THE SERVICES OR MYCROFT TECHNOLOGY INFRINGE, MISAPPROPRIATE, OR OTHERWISE VIOLATE ANY INTELLECTUAL PROPERTY RIGHTS OF ANY THIRD PARTY.
+                IV.	THIS SECTION 8(A) SETS FORTH CLIENT&#39;S SOLE REMEDIES AND MYCROFT’S SOLE LIABILITY AND OBLIGATION FOR ANY ACTUAL, THREATENED, OR ALLEGED CLAIMS THAT THE SERVICES OR MYCROFT TECHNOLOGY INFRINGE, MISAPPROPRIATE, OR OTHERWISE VIOLATE ANY INTELLECTUAL PROPERTY RIGHTS OF ANY THIRD PARTY.
               </p>
               <p>
                 <strong>
                   b.	Client Indemnification.
                 </strong>
-                Client shall indemnify, hold harmless, and, at Mycroft’s option, defend Mycroft from and against any Losses resulting from any Third-party Claim that the Client Data, or any use of the Client Data in accordance with this Agreement, infringes, violates or misappropriates such third party's intellectual property or privacy rights and any Third-party Claims based on Client's or any Authorized User's (i) negligence or wilful misconduct; (ii) use of the Services or the Mycroft Technology in a manner not authorized by this Agreement; (iii) use of the Services or the Mycroft Technology in combination with data, software, hardware, equipment or technology not provided by Mycroft or authorized by Mycroft in writing; or (iv) modifications to the Services or the Mycroft Technology not made by Mycroft, provided that Client may not settle any Third-party Claim against Mycroft unless Mycroft consents to such settlement, and further provided that Mycroft will have the right, at its option, to defend itself against any such Third-party Claim or to participate in the defence thereof by counsel of its own choice.
+                Client shall indemnify, hold harmless, and, at Mycroft’s option, defend Mycroft from and against any Losses resulting from any Third-party Claim that the Client Data, or any use of the Client Data in accordance with this Agreement, infringes, violates or misappropriates such third party&#39;s intellectual property or privacy rights and any Third-party Claims based on Client&#39;s or any Authorized User&#39;s (i) negligence or wilful misconduct; (ii) use of the Services or the Mycroft Technology in a manner not authorized by this Agreement; (iii) use of the Services or the Mycroft Technology in combination with data, software, hardware, equipment or technology not provided by Mycroft or authorized by Mycroft in writing; or (iv) modifications to the Services or the Mycroft Technology not made by Mycroft, provided that Client may not settle any Third-party Claim against Mycroft unless Mycroft consents to such settlement, and further provided that Mycroft will have the right, at its option, to defend itself against any such Third-party Claim or to participate in the defence thereof by counsel of its own choice.
               </p>
               <p>
                 ‍
@@ -489,7 +489,7 @@ export function TermsMsaBody() {
                 a.	IN NO EVENT WILL MYCROFT BE LIABLE UNDER OR IN CONNECTION WITH THIS AGREEMENT UNDER ANY LEGAL OR EQUITABLE THEORY, INCLUDING BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), INDEMNITY, STRICT LIABILITY, AND OTHERWISE, FOR ANY: (i) CONSEQUENTIAL, INCIDENTAL, INDIRECT, EXEMPLARY, SPECIAL, AGGRAVATED, OR PUNITIVE DAMAGES; (ii) INCREASED COSTS, DIMINUTION IN VALUE, OR LOST BUSINESS, PRODUCTION, SAVINGS, REVENUES, OR PROFITS; (iii) LOSS OF GOODWILL OR REPUTATION; (iv) USE, INABILITY TO USE, LOSS, INTERRUPTION, DELAY OR RECOVERY OF ANY DATA, OR BREACH OF DATA OR SYSTEM SECURITY; OR (v) COST OF REPLACEMENT GOODS OR SERVICES, IN EACH CASE REGARDLESS OF WHETHER CLIENT WAS ADVISED OF THE POSSIBILITY OF SUCH LOSSES OR DAMAGES OR SUCH LOSSES OR DAMAGES WERE OTHERWISE FORESEEABLE.
               </p>
               <p>
-                b.	IN NO EVENT WILL MYCROFT'S AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT UNDER ANY LEGAL OR EQUITABLE THEORY, INCLUDING BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), INDEMNITY, STRICT LIABILITY, AND OTHERWISE EXCEED THE TOTAL AMOUNTS PAID AND AMOUNTS ACCRUED BUT NOT YET PAID TO MYCROFT UNDER THE APPLICABLE STATEMENT OF WORK RELATING TO EVENT GIVING RISE TO THE CLAIM.
+                b.	IN NO EVENT WILL MYCROFT&#39;S AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT UNDER ANY LEGAL OR EQUITABLE THEORY, INCLUDING BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), INDEMNITY, STRICT LIABILITY, AND OTHERWISE EXCEED THE TOTAL AMOUNTS PAID AND AMOUNTS ACCRUED BUT NOT YET PAID TO MYCROFT UNDER THE APPLICABLE STATEMENT OF WORK RELATING TO EVENT GIVING RISE TO THE CLAIM.
               </p>
               <p>
                 c.	SECTION 9 WILL NOT APPLY TO LIMIT EITHER PARTY’S LIABILITY FOR FRAUD, OR ANY OTHER LIABILITY THAT CANNOT BE LIMITED BY APPLICABLE LAW. THE ALLOCATIONS OF LIABILITY IN THIS SECTION 9 REPRESENT THE AGREED AND BARGAINED-FOR UNDERSTANDING OF THE PARTIES AND MYCROFT’S COMPENSATION REFLECTS SUCH ALLOCATIONS.
@@ -506,7 +506,7 @@ export function TermsMsaBody() {
                 <strong>
                   a.	Term.
                 </strong>
-                This Agreement shall commence on the Effective Date and continue for so long as any Statement of Work remains in effect (the "Term"). For the purposes of this Agreement, the “Effective Date” means the earlier of: (a) the earliest effective date set out in any Statement of Work entered into between the Client and Mycroft, and (b) the date on which the Client first accesses or uses the Mycroft Technology..
+                This Agreement shall commence on the Effective Date and continue for so long as any Statement of Work remains in effect (the &quot;Term&quot;). For the purposes of this Agreement, the “Effective Date” means the earlier of: (a) the earliest effective date set out in any Statement of Work entered into between the Client and Mycroft, and (b) the date on which the Client first accesses or uses the Mycroft Technology..
               </p>
               <p>
                 <strong>
@@ -548,7 +548,7 @@ export function TermsMsaBody() {
                 V.	Where this Agreement or any applicable Statement of Work is terminated by Mycroft for material breach by Client or for convenience by Client, then Client will pay to Mycroft an amount equal to the aggregate of all unpaid Fees (if any) that would otherwise be payable under the applicable Statement of Work for the remainder of the Term, including any and all licensing, maintenance, support or other fees for hardware, software, equipment, hosting, or other third party services and Third-party Products, referred to in a Statement of Work that cannot be cancelled or mitigated and any additional termination for convenience fees set out in the applicable Statement of Work.
               </p>
               <p>
-                VI.	No expiration or termination will affect Client's obligation to pay all Fees that may have become due before such expiration or termination, or entitle Client to any refund for Services provided prior to the expiration or termination.
+                VI.	No expiration or termination will affect Client&#39;s obligation to pay all Fees that may have become due before such expiration or termination, or entitle Client to any refund for Services provided prior to the expiration or termination.
               </p>
               <p>
                 <strong>
@@ -594,9 +594,9 @@ export function TermsMsaBody() {
                 </strong>
                 All notices, requests, consents, claims, demands, waivers, and other communications hereunder (each, a
                 <strong>
-                  "Notice"
+                  &quot;Notice&quot;
                 </strong>
-                ) must be in writing and addressed to the parties at the addresses set forth on the first page of the applicable Statement of Work (or such other address that may be later designated by the parties, in writing). Notices are deemed given: (i) when received, if delivered by hand or courier; (ii) when sent, if by facsimile or email during the addressee's normal business hours, or on the next business day if sent after normal business hours; and (iii) on the third business day after mailing by certified or registered mail, postage prepaid.
+                ) must be in writing and addressed to the parties at the addresses set forth on the first page of the applicable Statement of Work (or such other address that may be later designated by the parties, in writing). Notices are deemed given: (i) when received, if delivered by hand or courier; (ii) when sent, if by facsimile or email during the addressee&#39;s normal business hours, or on the next business day if sent after normal business hours; and (iii) on the third business day after mailing by certified or registered mail, postage prepaid.
               </p>
               <p>
                 <strong>
@@ -604,7 +604,7 @@ export function TermsMsaBody() {
                 </strong>
                 Mycroft is not liable to Client for any delay or failure to performing its obligations hereunder, if and to the extent such failure or delay is caused by circumstances beyond Mycroft’s reasonable control (
                 <strong>
-                  "Force Majeure Event"
+                  &quot;Force Majeure Event&quot;
                 </strong>
                 ), including but not limited to acts of God, epidemics, pandemics, natural disaster, explosion, war, terrorism, civil unrest, labour disruptions, system or utilities failure, loss or malfunction of data, or governmental actions. The parties shall confer in good faith to mitigate the effect of any Force Majeure Event.
               </p>
@@ -656,7 +656,7 @@ export function TermsMsaBody() {
                 </strong>
                 This Agreement is subject to any laws, regulations, orders, or other restrictions on export from the United States of America (U.S.) or Canada. Client shall not export Mycroft Technology without the prior written consent of Mycroft and compliance with such laws. Client represents and warrants that it (i) is not located in a country that is subject to a U.S. or Canadian government embargo, or designated as a
                 <strong>
-                  "terrorist supporting"
+                  &quot;terrorist supporting&quot;
                 </strong>
                 country by either country, and (ii) is not listed as a prohibited or restricted party by either government.
               </p>
@@ -676,19 +676,19 @@ export function TermsMsaBody() {
               </h4>
               <p>
                 <strong>
-                  "Affiliate"
+                  &quot;Affiliate&quot;
                 </strong>
                 means any entity that directly or indirectly controls, is controlled by, or is under common control with the subject entity. For the purposes of this definition, control means direct or indirect ownership or control of more than 50% of the voting interests of the entity or subject entity.
               </p>
               <p>
                 <strong>
-                  "Aggregated Statistics"
+                  &quot;Aggregated Statistics&quot;
                 </strong>
-                means data and information related to Client's use of the Services that is used by Mycroft in an aggregate and anonymized manner, including to compile statistical and performance information related to the provision and operation of the Services, and general industry analysis that may be used for internal purposes. For greater certainty, Aggregated Statistics shall not contain any Personal Information and does not in any way identify Client, or include any identifiable Client Data or Client Confidential Information.
+                means data and information related to Client&#39;s use of the Services that is used by Mycroft in an aggregate and anonymized manner, including to compile statistical and performance information related to the provision and operation of the Services, and general industry analysis that may be used for internal purposes. For greater certainty, Aggregated Statistics shall not contain any Personal Information and does not in any way identify Client, or include any identifiable Client Data or Client Confidential Information.
               </p>
               <p>
                 <strong>
-                  “Artificial Intelligence"
+                  “Artificial Intelligence&quot;
                 </strong>
                 or
                 <strong>
@@ -716,49 +716,49 @@ export function TermsMsaBody() {
               </p>
               <p>
                 <strong>
-                  "Authorized User"
+                  &quot;Authorized User&quot;
                 </strong>
-                means Client's employees, consultants, contractors, and agents (a) who are authorized by Client to access and use the Services under the rights granted to Client pursuant to this Agreement; and (b) for whom access to the Services has been purchased hereunder.
+                means Client&#39;s employees, consultants, contractors, and agents (a) who are authorized by Client to access and use the Services under the rights granted to Client pursuant to this Agreement; and (b) for whom access to the Services has been purchased hereunder.
               </p>
               <p>
                 <strong>
-                  "Beta Services"
+                  &quot;Beta Services&quot;
                 </strong>
                 means certain functionality, features, software or services related to the Services offered by Mycroft on a limited basis which are designated as beta, pilot, trial, limited release, non-production or a similar description.
               </p>
               <p>
                 <strong>
-                  "Bots"
+                  &quot;Bots&quot;
                 </strong>
                 has the meaning set forth in Section 2(e).
               </p>
               <p>
                 <strong>
-                  "Client Data"
+                  &quot;Client Data&quot;
                 </strong>
                 means information, data, and other content, in any form or medium, that is submitted, posted, or otherwise transmitted by or on behalf of Client or an Authorized User through the Services or to Mycroft for use with the Services. For greater certainty, Client Data shall not include Aggregated Statistics.
               </p>
               <p>
                 <strong>
-                  "Confidential Information"
+                  &quot;Confidential Information&quot;
                 </strong>
                 has the meaning set forth in Section 5(a).
               </p>
               <p>
                 <strong>
-                  "Deliverables"
+                  &quot;Deliverables&quot;
                 </strong>
                 means any customized deliverables, work product, reports, documents, presentations, materials, information, designs, graphics, content, ideas, concepts, inventions, innovations, works, trade-marks, trade names, know-how, methods, tools, programs, solutions, resources, methodologies, business processes, templates, test cases and plans, test scripts, technologies, software, computer or mobile programs, software architecture, compilations, source code, object code, executable and pseudo code, machine learning code, mobile or web applications, algorithms, frameworks, resources, methodologies, processes, data (excluding Client Data and Aggregated Statistics) and any modifications, enhancements, upgrades and improvements thereto, together with intellectual property rights therein, provided, created, brought into existence, derived or developed by Mycroft in the provision of Professional Services.
               </p>
               <p>
                 <strong>
-                  "Documentation"
+                  &quot;Documentation&quot;
                 </strong>
                 means Mycroft’s user manuals, user documentation, handbooks, and guides relating to the Services provided by Mycroft to Client either electronically or in hard copy form.
               </p>
               <p>
                 <strong>
-                  "Effective Date"
+                  &quot;Effective Date&quot;
                 </strong>
                 has the meaning set out in Section 10(a)(I).
               </p>
@@ -788,19 +788,19 @@ export function TermsMsaBody() {
               </p>
               <p>
                 <strong>
-                  "Feedback"
+                  &quot;Feedback&quot;
                 </strong>
                 has the meaning set forth in Section 6(f).
               </p>
               <p>
                 <strong>
-                  "Fees"
+                  &quot;Fees&quot;
                 </strong>
                 has the meaning set forth in Section 4(a).
               </p>
               <p>
                 <strong>
-                  "Losses"
+                  &quot;Losses&quot;
                 </strong>
                 has the meaning set forth in Section 8(a).
               </p>
@@ -818,7 +818,7 @@ export function TermsMsaBody() {
               </p>
               <p>
                 <strong>
-                  "Mycroft Technology"
+                  &quot;Mycroft Technology&quot;
                 </strong>
                 means: (a) the Platform, the Documentation and the Deliverables; (b) any modifications, enhancements, upgrades and improvements to any components, in whole or in part, set out in (a); (c) the networks, systems data (excluding Client Data) used by Mycroft to provide (a) and (b); and (d) any and all intellectual property rights in relation to (a), (b) and (c).
               </p>
@@ -830,7 +830,7 @@ export function TermsMsaBody() {
               </p>
               <p>
                 <strong>
-                  "Notice"
+                  &quot;Notice&quot;
                 </strong>
                 has the meaning set forth in Section 11(d).
               </p>
@@ -842,7 +842,7 @@ export function TermsMsaBody() {
               </p>
               <p>
                 <strong>
-                  "Statement of Work"
+                  &quot;Statement of Work&quot;
                 </strong>
                 means any statement of work, order form or initiating ordering document entered into between the parties for the provision of the Services.
               </p>
@@ -891,13 +891,13 @@ export function TermsMsaBody() {
               </p>
               <p>
                 <strong>
-                  "Professional Services"
+                  &quot;Professional Services&quot;
                 </strong>
                 has the meaning set forth in the Recitals.
               </p>
               <p>
                 <strong>
-                  "Security Event"
+                  &quot;Security Event&quot;
                 </strong>
                 has the meaning set forth in Section 5(d).
               </p>
@@ -915,37 +915,37 @@ export function TermsMsaBody() {
               </p>
               <p>
                 <strong>
-                  "Service Suspension"
+                  &quot;Service Suspension&quot;
                 </strong>
                 has the meaning set forth in Section 2(g).
               </p>
               <p>
                 <strong>
-                  "Services"
+                  &quot;Services&quot;
                 </strong>
                 has the meaning set forth in the Recitals.
               </p>
               <p>
                 <strong>
-                  "Subscription Services"
+                  &quot;Subscription Services&quot;
                 </strong>
                 has the meaning set forth in the Recitals.
               </p>
               <p>
                 <strong>
-                  "Term"
+                  &quot;Term&quot;
                 </strong>
                 has the meaning set forth in Section 10(a)(I).
               </p>
               <p>
                 <strong>
-                  "Third-party Claim"
+                  &quot;Third-party Claim&quot;
                 </strong>
                 has the meaning set forth in Section 8(a)(I).
               </p>
               <p>
                 <strong>
-                  "Third-party Products"
+                  &quot;Third-party Products&quot;
                 </strong>
                 means any third-party products described in the applicable Statement of Work or incorporated into the Services.
               </p>
@@ -969,7 +969,7 @@ export function TermsMsaBody() {
               </p>
               <p>
                 <strong>
-                  "Vendor Terms"
+                  &quot;Vendor Terms&quot;
                 </strong>
                 has the meaning set forth in Section 2(k).
               </p>
@@ -1015,11 +1015,11 @@ export function TermsMsaBody() {
               <p>
                 (xi)	use any non-Mycroft automation code in relation to the Mycroft Technology (including any
                 <strong>
-                  "spider"
+                  &quot;spider&quot;
                 </strong>
                 or
                 <strong>
-                  "bot"
+                  &quot;bot&quot;
                 </strong>
                 );
               </p>
@@ -1029,7 +1029,7 @@ export function TermsMsaBody() {
               <p>
                 (xiii)	use, employ, operate, or create a computer program to simulate the human behaviour (
                 <strong>
-                  "Bots"
+                  &quot;Bots&quot;
                 </strong>
                 ) or user activity in relation to the Mycroft Technology or the Services; or
               </p>

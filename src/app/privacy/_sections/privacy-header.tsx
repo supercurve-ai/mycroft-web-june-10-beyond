@@ -6,7 +6,7 @@ export function PrivacyHeader() {
         <div className="row">
           <div className="col u-text-center">
             <h1 className="h1 u-text-white">
-              Mycroft's Privacy Policy
+              Mycroft&#39;s Privacy Policy
             </h1>
             <div className="u-text-white is-italics">
               Last revised: May 19, 2026

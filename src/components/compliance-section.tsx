@@ -1,3 +1,5 @@
+import { WfImage } from "@/components/wf-image";
+
 /**
  * The "Compliance" section shared by most pages: eyebrow + heading + copy on
  * the left, the five compliance-badge SVGs on the right. The badges use the
@@ -65,7 +67,7 @@ export function ComplianceSection({
 /** range = the data-wf-scrub keyframe window in scroll-progress %. */
 function ScrubBadge({ src, range, last }: { src: string; range: string; last?: boolean }) {
   return (
-    <img
+    <WfImage
       src={src}
       loading="lazy"
       alt=""

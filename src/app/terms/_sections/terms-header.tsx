@@ -6,7 +6,7 @@ export function TermsHeader() {
         <div className="row">
           <div className="col u-text-center">
             <h1 className="h1 u-text-white">
-              Mycroft's Master Service Agreement (MSA)
+              Mycroft&#39;s Master Service Agreement (MSA)
             </h1>
             <div className="u-text-white is-italics">
               Last revised: November 21, 2025

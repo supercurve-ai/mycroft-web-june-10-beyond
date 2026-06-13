@@ -1,4 +1,5 @@
 import { LogoMarquee } from "@/components/logo-marquee";
+import { WfImage } from "@/components/wf-image";
 
 /** About-Mycroft and investors section of /about. Ported from Webflow by the Webflow Cloner agent. */
 export function AboutCompanyAndInvestors() {
@@ -13,14 +14,14 @@ export function AboutCompanyAndInvestors() {
                   <h3 className="h3_v2 color_white">
                     About Mycroft
                   </h3>
-                  <img src="/assets/decor/chair-lockup-static.webp" loading="lazy" sizes="(max-width: 752px) 100vw, 752px" srcSet="/assets/decor/chair-lockup-static-p-500.webp 500w, /assets/decor/chair-lockup-static.webp 752w" alt="" className="about-img" />
+                  <WfImage src="/assets/decor/chair-lockup-static.webp" loading="lazy" sizes="(max-width: 752px) 100vw, 752px" srcSet="/assets/decor/chair-lockup-static-p-500.webp 500w, /assets/decor/chair-lockup-static.webp 752w" alt="" className="about-img" />
                 </div>
                 <div className="about-col-right">
                   <div className="text-dek-l text_white">
-                    Mycroft is redefining how companies stay secure and compliant from day one. We're building AI Security and Compliance Officers that act as the teammate that help you scale confidently without slowing down.
+                    Mycroft is redefining how companies stay secure and compliant from day one. We&#39;re building AI Security and Compliance Officers that act as the teammate that help you scale confidently without slowing down.
                     <br />
                     <br />
-                    We're a team backed by decades of security and compliance expertise and scaling experience and decided to build the AI-native platform we wished we had.
+                    We&#39;re a team backed by decades of security and compliance expertise and scaling experience and decided to build the AI-native platform we wished we had.
                   </div>
                 </div>
               </div>

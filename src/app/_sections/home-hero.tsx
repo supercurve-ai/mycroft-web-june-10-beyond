@@ -1,5 +1,6 @@
 import { ButtonLarge } from "@/components/button-large";
 import { DotLottiePlayer } from "@/components/dot-lottie-player";
+import { WfImage } from "@/components/wf-image";
 
 /** Hero section of /home. Ported from Webflow by the Webflow Cloner agent. */
 export function HomeHero() {
@@ -15,7 +16,7 @@ export function HomeHero() {
                     <div className="eyebrow-small tint_40eg">
                       Announcement: Seed raise of $3.5M USD
                     </div>
-                    <img src="/assets/icons/arrow-icon-white.svg" loading="lazy" alt="" />
+                    <WfImage src="/assets/icons/arrow-icon-white.svg" loading="lazy" alt="" />
                   </div>
                 </a>
                 <h1 className="h1_v2 hero_hed tablet:max-[1200px]:text-[5vw]! tablet:max-[1200px]:mb-[2vw]!">

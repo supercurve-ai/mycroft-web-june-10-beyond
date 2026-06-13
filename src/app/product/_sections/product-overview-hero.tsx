@@ -1,4 +1,5 @@
 import { ButtonLarge } from "@/components/button-large";
+import { WfImage } from "@/components/wf-image";
 
 /** Hero section of /product. Ported from Webflow by the Webflow Cloner agent. */
 export function ProductOverviewHero() {
@@ -25,10 +26,10 @@ export function ProductOverviewHero() {
             </div>
             <div className="col-hero-right product">
               <div className="hero-imgs product">
-                <img src="/assets/decor/glow-front-2x.webp" loading="lazy" width="Auto" sizes="(max-width: 832px) 100vw, 832px" alt="" srcSet="/assets/decor/glow-front-2x-p-500.webp 500w, /assets/decor/glow-front-2x-p-800.webp 800w, /assets/decor/glow-front-2x.webp 832w" className="hero-img-glow-front" />
-                <img src="/assets/decor/glow-hover-2x.webp" loading="lazy" width="Auto" style={{"opacity": "0.25"}} alt="" srcSet="/assets/decor/glow-hover-2x-p-500.webp 500w, /assets/decor/glow-hover-2x-p-800.webp 800w, /assets/decor/glow-hover-2x.webp 832w" sizes="(max-width: 832px) 100vw, 832px" className="hero-img-glow-hover" />
-                <img src="/assets/decor/glow-back-2x.webp" loading="lazy" width="Auto" sizes="(max-width: 832px) 100vw, 832px" alt="" srcSet="/assets/decor/glow-back-2x-p-500.webp 500w, /assets/decor/glow-back-2x-p-800.webp 800w, /assets/decor/glow-back-2x.webp 832w" className="hero-img-glow-back" />
-                <img src="/assets/decor/lantern-v1-2x.webp" loading="eager" width="416" sizes="(max-width: 479px) 100vw, 416px" alt="" srcSet="/assets/decor/lantern-v1-2x-p-500.webp 500w, /assets/decor/lantern-v1-2x-p-800.webp 800w, /assets/decor/lantern-v1-2x.webp 832w" className="hero-img-lamp2" />
+                <WfImage src="/assets/decor/glow-front-2x.webp" loading="lazy" width="Auto" sizes="(max-width: 832px) 100vw, 832px" alt="" srcSet="/assets/decor/glow-front-2x-p-500.webp 500w, /assets/decor/glow-front-2x-p-800.webp 800w, /assets/decor/glow-front-2x.webp 832w" className="hero-img-glow-front" />
+                <WfImage src="/assets/decor/glow-hover-2x.webp" loading="lazy" width="Auto" style={{"opacity": "0.25"}} alt="" srcSet="/assets/decor/glow-hover-2x-p-500.webp 500w, /assets/decor/glow-hover-2x-p-800.webp 800w, /assets/decor/glow-hover-2x.webp 832w" sizes="(max-width: 832px) 100vw, 832px" className="hero-img-glow-hover" />
+                <WfImage src="/assets/decor/glow-back-2x.webp" loading="lazy" width="Auto" sizes="(max-width: 832px) 100vw, 832px" alt="" srcSet="/assets/decor/glow-back-2x-p-500.webp 500w, /assets/decor/glow-back-2x-p-800.webp 800w, /assets/decor/glow-back-2x.webp 832w" className="hero-img-glow-back" />
+                <WfImage src="/assets/decor/lantern-v1-2x.webp" loading="eager" width="416" sizes="(max-width: 479px) 100vw, 416px" alt="" srcSet="/assets/decor/lantern-v1-2x-p-500.webp 500w, /assets/decor/lantern-v1-2x-p-800.webp 800w, /assets/decor/lantern-v1-2x.webp 832w" className="hero-img-lamp2" />
               </div>
             </div>
           </div>

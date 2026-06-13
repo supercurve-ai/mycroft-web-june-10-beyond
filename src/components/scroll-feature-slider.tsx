@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
+import { WfImage } from "@/components/wf-image";
 
 export type ScrollFeatureSlide = {
   heading: string;
@@ -337,7 +338,7 @@ function FeatureRowContent({
         <div className="body-text-large smaller_tablet">{slide.body}</div>
       </div>
       <div className={cls("features-img-container")} style={imgStyle}>
-        <img
+        <WfImage
           src={slide.image.src}
           loading="lazy"
           width={slide.image.width}

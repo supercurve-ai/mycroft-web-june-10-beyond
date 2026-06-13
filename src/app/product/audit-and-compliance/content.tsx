@@ -106,7 +106,7 @@ export const auditAndComplianceContent: ProductSubpageContent = {
         This depends on the industry and the type of data being processed. Common standards include GDPR, HIPAA, PCI DSS, and NIST frameworks. Organizations should assess their regulatory landscape and ensure compliance with applicable requirements.
       </FaqItem>
       <FaqItem question="How can we effectively communicate audit findings to stakeholders?">
-        Effective communication involves presenting findings in a clear, concise manner, highlighting both risks and recommended actions. Use visual aids, such as charts and dashboards, to convey the state of compliance and security clearly, and tailor the message based on the audience's technical understanding and interests.
+        Effective communication involves presenting findings in a clear, concise manner, highlighting both risks and recommended actions. Use visual aids, such as charts and dashboards, to convey the state of compliance and security clearly, and tailor the message based on the audience&#39;s technical understanding and interests.
       </FaqItem>
       <FaqItem question="What steps should we take if we fail an audit?" last>
         If an audit reveals non-compliance or vulnerabilities, organizations should develop an action plan to address the issues identified. This includes remediating the findings, implementing necessary changes to policies and controls, and scheduling follow-up reviews to ensure compliance improvements are sustained.
