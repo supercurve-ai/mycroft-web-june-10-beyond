@@ -143,7 +143,9 @@ function HeroSection({ d }: { d: FrameworkPageData }) {
               </div>
             </div>
             <div className="fw-hero-circle">
-              <OptimizedImage src={d.hero.badge.src} loading="lazy" alt={d.hero.badge.alt} className="fw-hero-badge-img" style={{"willChange": "transform", "transform": "translate3d(8px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} />
+              {/* LCP element on framework pages: load it eagerly with a high
+                  priority hint so it isn't deferred behind the hero JS. */}
+              <OptimizedImage src={d.hero.badge.src} fetchPriority="high" alt={d.hero.badge.alt} className="fw-hero-badge-img" style={{"willChange": "transform", "transform": "translate3d(8px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}} />
               <div className="fw-hero-dots" style={{"willChange": "transform", "transform": "translate3d(-4px, -4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "transformStyle": "preserve-3d"}}></div>
             </div>
           </div>
@@ -172,7 +174,7 @@ function HeroSection({ d }: { d: FrameworkPageData }) {
               <div className="w-layout-grid features-3up frameworks">
                 {d.hero.features.map((feature, i) => (
                   <div key={i} className="feature-item frameworks wf-reveal" style={reveal(100, 0, 50 + i * 100)}>
-                    <OptimizedImage src={feature.icon} loading="lazy" width="38" alt="" className="feature-icon" />
+                    <OptimizedImage src={feature.icon} loading="lazy" width="38" height="38" alt="" className="feature-icon" />
                     <div className="container-flex vertical center text_center">
                       <div className="h6 color_mint">{feature.title}</div>
                       <div className="w-full pt-(--sizing--rem--0-75rem) max-tablet:pt-[.65rem] max-portrait:pt-[.4rem]">

@@ -9041,6 +9041,16 @@ figcaption {
     max-height: 320px;
   }
 
+  /* Mobile (<=767px) flips the product hero to column-reverse, putting the
+     lottie ABOVE the copy. The lottie lazy-mounts, so its column must reserve
+     the animation's box up front (like .hero-imgs.audit does) or the copy
+     jumps down ~233px when the canvas appears (CLS). Aspect-ratio over the
+     column's full width reproduces the settled canvas box exactly. */
+  .hero-imgs.cloudsec {
+    width: 100%;
+    aspect-ratio: 1100 / 840;
+  }
+
   .hero-lottie2 {
     width: 45vw;
     max-width: 260px;

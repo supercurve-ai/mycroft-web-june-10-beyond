@@ -57,7 +57,7 @@ export function FaqItem({
                   transform: open ? "scaleY(0)" : "none",
                   transition: "transform 0.3s ease",
                 }}
-              ></div>
+              />
             </div>
             <div className="minus _75_mint"></div>
           </div>

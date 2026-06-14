@@ -247,11 +247,18 @@ export function DotLottiePlayer({
   }, [instance, playOnView]);
 
   // The wrapper keeps the canvas's layout footprint before the player mounts,
-  // so lazy-mounting causes no layout shift.
+  // so lazy-mounting causes no layout shift. When we know the intrinsic size,
+  // the aspect ratio must DRIVE the height (height:auto) — a definite
+  // `height:100%` against an indefinite-height parent (e.g. the product hero's
+  // column-reverse image column) collapses to 0 and overrides aspect-ratio,
+  // so the box reserves nothing until the canvas mounts and then jumps,
+  // shifting everything below it. Lotties with no intrinsic size keep
+  // `height:100%` to fill their Webflow-sized parent.
+  const hasIntrinsic = width !== undefined && height !== undefined;
   const sizing = {
     width: "100%",
-    height: "100%",
-    aspectRatio: width && height ? `${width} / ${height}` : undefined,
+    height: hasIntrinsic ? "auto" : "100%",
+    aspectRatio: hasIntrinsic ? `${width} / ${height}` : undefined,
   } as const;
 
   return (
