@@ -1,8 +1,8 @@
 import type { CSSProperties, ReactNode } from "react";
 import type { Metadata } from "next";
 import { ButtonLarge } from "@/components/button-large";
-import { ArrowTextLink } from "@/components/arrow-text-link";
 import { FaqItem } from "@/components/accordion";
+import { ProductFeatureRow } from "@/components/product-feature-row";
 import { CtaSection } from "@/components/cta-section";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
@@ -236,30 +236,20 @@ function SolutionsSection({ d }: { d: FrameworkPageData }) {
           <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
             <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
               <div className="product-container">
-                {d.solutions.cards.map((card, i) => {
-                  const even = i % 2 === 1;
-                  const last = i === d.solutions.cards.length - 1;
-                  const text = (
-                    <div className={even ? "product-text text-right wf-reveal" : "product-text wf-reveal"} style={reveal(even ? 100 : -100, 0, 0)}>
-                      <h4 className="h4_v2 color_rg">{card.title}</h4>
-                      <div className="body-text-medium">{card.copy}</div>
-                      <ArrowTextLink href="/demo">
-                        Book a demo
-                      </ArrowTextLink>
-                    </div>
-                  );
-                  const img = (
-                    <div className={even ? "product-feature-img img-left wf-reveal" : "product-feature-img wf-reveal"} style={reveal(even ? -100 : 100, 0, 0)}>
+                {d.solutions.cards.map((card, i) => (
+                  <ProductFeatureRow
+                    key={i}
+                    id={SOLUTION_IDS[i]}
+                    index={i}
+                    count={d.solutions.cards.length}
+                    title={card.title}
+                    copy={card.copy}
+                    media={
                       <OptimizedImage src={screenshot(card.img.base)} loading="lazy" width={card.img.width} sizes={card.img.sizes} alt="" className="fw-features-img" />
-                    </div>
-                  );
-                  return (
-                    <section key={i} id={SOLUTION_IDS[i]} className={`product-feature${even ? " even-child" : ""}${last ? " last-child" : ""}`}>
-                      {even ? img : text}
-                      {even ? text : img}
-                    </section>
-                  );
-                })}
+                    }
+                    cta={{ label: "Book a demo", href: "/demo" }}
+                  />
+                ))}
               </div>
             </div>
           </div>

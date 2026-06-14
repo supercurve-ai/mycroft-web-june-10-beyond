@@ -99,8 +99,13 @@ export function WebflowInteractions() {
     // SCROLLING_IN_VIEW continuous actions. Progress: 0 = element top at viewport bottom, 100 = element
     // bottom at viewport top. data-wf-scrub="start,end" gives the keyframe
     // range in progress-%; values are exponentially smoothed (IX2 smoothing
-    // 50). Opacity interpolates linearly, x with ease-in, per the original
-    // action lists (a-30/31/32). On pages too short to scroll the element all
+    // 50). Opacity interpolates linearly and the offset eases in; the
+    // from-state (axis, distance, start-opacity) comes from data-wf-scrub-from
+    // — default x/50px/0 = a-30/31/32, the home features tiles use y/15%/0.5 =
+    // a-29 "Move-fade-up". The slide can run over its own window via
+    // data-wf-scrub-move="start,end" (default = the fade window); a-50/51
+    // (product columns) slide x over 0–25% but fade over 0–15%. On pages too
+    // short to scroll the element all
     // the way past the viewport top (e.g. /demo, where the badges sit just
     // above the footer), the end keyframe is capped at the progress reachable
     // at max scroll so the animation still completes at the page bottom.
@@ -110,10 +115,36 @@ export function WebflowInteractions() {
     if (scrubs.length && !reduce && !mobile) {
       scrubs.forEach((el) => el.setAttribute("data-wf-scrubbed", ""));
       const items = scrubs.map((el) => {
-        const [start = 0, end = 100] = (el.dataset.wfScrub ?? "")
+        const [oStart = 0, oEnd = 100] = (el.dataset.wfScrub ?? "")
           .split(",")
           .map(Number);
-        return { el, start, end, value: -1 };
+        // The slide can run over its own keyframe window, independent of the
+        // fade — a-50/51 (product columns) slide x over 0–25% but fade over
+        // 0–15%. Defaults to the fade window (a-30/31/32, where they match).
+        const [mStart = oStart, mEnd = oEnd] = (el.dataset.wfScrubMove ?? "")
+          .split(",")
+          .filter((s) => s !== "")
+          .map(Number);
+        // from-state "axis,distance,opacity"; defaults reproduce a-30/31/32
+        // (slide-in-from-right: x 50px → 0, opacity 0 → 1)
+        const [axis = "x", dist = "50px", fromOp = "0"] = (
+          el.dataset.wfScrubFrom ?? ""
+        ).split(",");
+        const distNum = parseFloat(dist);
+        const distUnit = dist.replace(/[-.\d]/g, "") || "px";
+        return {
+          el,
+          oStart,
+          oEnd,
+          mStart,
+          mEnd,
+          ov: -1,
+          mv: -1,
+          axis,
+          distNum,
+          distUnit,
+          fromOp: Number(fromOp),
+        };
       });
       const easeIn = (t: number) => t * t;
       let raf = 0;
@@ -127,22 +158,35 @@ export function WebflowInteractions() {
         for (const it of items) {
           const r = it.el.getBoundingClientRect();
           const progress = ((vh - r.top) / (vh + r.height)) * 100;
-          const maxProgress = progress + (scrollLeft / (vh + r.height)) * 100;
-          const end = Math.min(it.end, maxProgress);
-          const target =
-            end > it.start
-              ? Math.min(1, Math.max(0, (progress - it.start) / (end - it.start)))
-              : progress > it.start
-                ? 1
-                : 0;
-          let next =
-            it.value < 0 ? target : it.value + (target - it.value) * 0.5;
-          if (Math.abs(target - next) < 0.001) next = target;
-          else settling = true;
-          if (next !== it.value) {
-            it.value = next;
-            it.el.style.opacity = String(next);
-            it.el.style.transform = `translate3d(${50 * (1 - easeIn(next))}px, 0px, 0px)`;
+          // cap so an element that can't scroll fully past the viewport top
+          // (e.g. just above the footer) still completes by the page bottom
+          const cap = progress + (scrollLeft / (vh + r.height)) * 100;
+          const advance = (start: number, end: number, cur: number) => {
+            const e = Math.min(end, cap);
+            const target =
+              e > start
+                ? Math.min(1, Math.max(0, (progress - start) / (e - start)))
+                : progress > start
+                  ? 1
+                  : 0;
+            let next = cur < 0 ? target : cur + (target - cur) * 0.5;
+            if (Math.abs(target - next) < 0.001) next = target;
+            else settling = true;
+            return next;
+          };
+          const ov = advance(it.oStart, it.oEnd, it.ov);
+          const mv = advance(it.mStart, it.mEnd, it.mv);
+          if (ov !== it.ov) {
+            it.ov = ov;
+            it.el.style.opacity = String(it.fromOp + (1 - it.fromOp) * ov);
+          }
+          if (mv !== it.mv) {
+            it.mv = mv;
+            const off = `${it.distNum * (1 - easeIn(mv))}${it.distUnit}`;
+            it.el.style.transform =
+              it.axis === "y"
+                ? `translate3d(0px, ${off}, 0px)`
+                : `translate3d(${off}, 0px, 0px)`;
           }
         }
         raf = settling ? requestAnimationFrame(frame) : 0;

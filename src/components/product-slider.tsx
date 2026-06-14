@@ -96,12 +96,15 @@ export function ProductSlider({
                 style={{
                   gridArea: "1 / 1",
                   opacity: active ? 1 : 0,
-                  transform: active ? "translateX(0px)" : "translateX(-20px)",
                   visibility: active ? "visible" : "hidden",
-                  // hold visibility until the 400ms exit animation finishes
+                  // native Webflow "fade" slider: a 750ms ease crossfade with no
+                  // horizontal slide — the slide drifts in x only at the text
+                  // level (IX2 a-70/a-71, handled in the card), the artwork
+                  // never moves. visibility holds the outgoing slide through its
+                  // fade.
                   transition: active
-                    ? "transform 500ms ease-in-out, opacity 400ms ease-in-out, visibility 0s"
-                    : "transform 400ms ease-in-out, opacity 400ms ease-in-out, visibility 0s linear 400ms",
+                    ? "opacity 750ms ease, visibility 0s"
+                    : "opacity 750ms ease, visibility 0s linear 750ms",
                 }}
               >
                 <ProductSlideCard {...slide} active={active} />

@@ -31,15 +31,32 @@ export function ProductSlideCard({
   image,
   active = true,
 }: ProductSlideCardProps) {
+  // IX2 "Product Slider IN/OUT" (a-70/a-71): each text element drifts in from
+  // x −20px and fades, staggered 0/200/400ms on enter, all 400ms on exit — the
+  // artwork never moves (only the cover wipe + lottie fade in the right pane).
+  const textAnim = (i: number) => ({
+    opacity: active ? 1 : 0,
+    transform: active ? "translateX(0px)" : "translateX(-20px)",
+    transition: active
+      ? `transform 500ms ease-in-out ${i * 200}ms, opacity 400ms ease-in-out ${i * 200}ms`
+      : "transform 400ms ease-in-out, opacity 400ms ease-in-out",
+    willChange: "transform, opacity",
+  });
+
   return (
     <div className="slide__wrapper">
       <div className="slider__left-pane">
         <div className="slide-text-wrapper">
-          <h4 className="h4_v2">
+          <h4 className="h4_v2" style={textAnim(0)}>
             <strong>{title}</strong>
           </h4>
-          <div className="body-text-medium">{body}</div>
-          <div className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)">
+          <div className="body-text-medium" style={textAnim(1)}>
+            {body}
+          </div>
+          <div
+            className="w-full pt-(--sizing--rem--1-25rem) max-tablet:pt-(--sizing--rem--1rem) max-landscape:pt-(--sizing--rem--0-75rem) max-portrait:pt-(--sizing--rem--0-5rem)"
+            style={textAnim(2)}
+          >
             <div className="container-flex">
               <ButtonLarge href={href} decorative={!active}>
                 Learn more

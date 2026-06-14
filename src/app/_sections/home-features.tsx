@@ -66,19 +66,13 @@ export function HomeFeatures() {
                     </div>
                   </div>
                   <div
-                    className="feature-tile-container wf-reveal"
+                    className="feature-tile-container wf-scrub"
+                    data-wf-scrub="0,20"
+                    data-wf-scrub-from="y,15%,0.5"
                     style={{
                       willChange: "opacity, transform",
                       opacity: "0.5",
-                      transform:
-                        "translate3d(0px, 15%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      transformStyle: "preserve-3d",
-                      "--wf-op-dur": "1000ms",
-                      "--wf-op-delay": "0ms",
-                      "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)",
-                      "--wf-tr-dur": "1000ms",
-                      "--wf-tr-delay": "0ms",
-                      "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)",
+                      transform: "translate3d(0px, 15%, 0px)",
                     }}
                   >
                     <div className="container-flex">
@@ -124,19 +118,13 @@ export function HomeFeatures() {
                     </div>
                   </div>
                   <div
-                    className="feature-tile-container wf-reveal"
+                    className="feature-tile-container wf-scrub"
+                    data-wf-scrub="0,20"
+                    data-wf-scrub-from="y,15%,0.5"
                     style={{
                       willChange: "opacity, transform",
                       opacity: "0.5",
-                      transform:
-                        "translate3d(0px, 15%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      transformStyle: "preserve-3d",
-                      "--wf-op-dur": "1000ms",
-                      "--wf-op-delay": "0ms",
-                      "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)",
-                      "--wf-tr-dur": "1000ms",
-                      "--wf-tr-delay": "0ms",
-                      "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)",
+                      transform: "translate3d(0px, 15%, 0px)",
                     }}
                   >
                     <div className="container-flex">
@@ -183,19 +171,13 @@ export function HomeFeatures() {
                     </div>
                   </div>
                   <div
-                    className="feature-tile-container wf-reveal"
+                    className="feature-tile-container wf-scrub"
+                    data-wf-scrub="0,20"
+                    data-wf-scrub-from="y,15%,0.5"
                     style={{
                       willChange: "opacity, transform",
                       opacity: "0.5",
-                      transform:
-                        "translate3d(0px, 15%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      transformStyle: "preserve-3d",
-                      "--wf-op-dur": "1000ms",
-                      "--wf-op-delay": "0ms",
-                      "--wf-op-ease": "cubic-bezier(0.165,0.84,0.44,1)",
-                      "--wf-tr-dur": "1000ms",
-                      "--wf-tr-delay": "0ms",
-                      "--wf-tr-ease": "cubic-bezier(0.165,0.84,0.44,1)",
+                      transform: "translate3d(0px, 15%, 0px)",
                     }}
                   >
                     <div className="container-flex">
