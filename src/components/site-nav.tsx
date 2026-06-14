@@ -294,11 +294,29 @@ export function SiteNav() {
     };
   }, [openDropdown, mobileOpen]);
 
-  // the open mobile menu locks page scroll
+  // The open mobile menu locks page scroll. Mirror mycroft.io's lock: pin the
+  // body with position:fixed at the negative of the current scroll offset and
+  // freeze its width to the current clientWidth. Fixing the width stops the
+  // (centered, sticky) layout shifting when the scrollbar is removed, and the
+  // position:fixed pin locks scroll on iOS Safari where overflow:hidden alone
+  // doesn't. On close, restore the styles and the scroll position.
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    if (!mobileOpen) return;
+    const { body } = document;
+    // Measure BEFORE touching any style — setting overflow:hidden removes the
+    // scrollbar, after which clientWidth reports the full (widened) viewport.
+    const scrollY = window.scrollY;
+    const lockedWidth = document.documentElement.clientWidth;
+    body.style.overflow = "hidden";
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.width = `${lockedWidth}px`;
     return () => {
-      document.body.style.overflow = "";
+      body.style.overflow = "";
+      body.style.position = "";
+      body.style.top = "";
+      body.style.width = "";
+      window.scrollTo(0, scrollY);
     };
   }, [mobileOpen]);
 
