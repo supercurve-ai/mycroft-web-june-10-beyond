@@ -1,4 +1,5 @@
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import adamImg from "@public/assets/customers/adam-cropped-mono-img.webp";
 
 /** Testimonial section of /about. Ported from Webflow by the Webflow Cloner agent. */
 export function AboutTestimonial() {
@@ -23,7 +24,7 @@ export function AboutTestimonial() {
               <div className="pullquote-content tint_50bw">
                 <div className="container-flex pullquote_container">
                   <div className="pullquote-img-container tint_75mint">
-                    <WfImage width="215" sizes="(max-width: 479px) 100vw, 215px" alt="" src="/assets/customers/adam-cropped-mono-img.webp" loading="lazy" srcSet="/assets/customers/adam-cropped-mono-img-p-500.webp 500w, /assets/customers/adam-cropped-mono-img.webp 600w" className="pullquote-img" />
+                    <OptimizedImage width="215" sizes="(max-width: 479px) 100vw, 215px" alt="" src={adamImg} loading="lazy" className="pullquote-img" />
                   </div>
                   <div className="container-flex pullquote_right">
                     <div className="pullquote-text hanging_quote">
@@ -39,7 +40,7 @@ export function AboutTestimonial() {
                       <div className="pullquote-title">
                         CEO of WEAVE
                       </div>
-                      <WfImage width="114" loading="lazy" alt="" src="/assets/logos/weave-logo.svg" />
+                      <OptimizedImage width="114" loading="lazy" alt="" src="/assets/logos/weave-logo.svg" />
                     </div>
                   </div>
                 </div>

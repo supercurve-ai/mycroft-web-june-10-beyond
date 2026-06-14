@@ -1,4 +1,5 @@
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import jorgeImg from "@public/assets/customers/jorge-cropped-mono-img.webp";
 
 /** Testimonial section of /pricing. Ported from Webflow by the Webflow Cloner agent. */
 export function PricingTestimonial() {
@@ -22,7 +23,7 @@ export function PricingTestimonial() {
             <div className="pullquote-content">
               <div className="container-flex pullquote_container">
                 <div className="pullquote-img-container">
-                  <WfImage width="215" sizes="215px" alt="" src="/assets/customers/jorge-cropped-mono-img.webp" loading="lazy" srcSet="/assets/customers/jorge-cropped-mono-img-p-500.webp 500w, /assets/customers/jorge-cropped-mono-img.webp 600w" className="pullquote-img" />
+                  <OptimizedImage width="215" sizes="215px" alt="" src={jorgeImg} loading="lazy" className="pullquote-img" />
                 </div>
                 <div className="container-flex pullquote_right">
                   <div className="pullquote-text hanging_quote">
@@ -38,7 +39,7 @@ export function PricingTestimonial() {
                     <div className="pullquote-title">
                       CEO of Smashsend
                     </div>
-                    <WfImage loading="lazy" src="/assets/logos/smashsend-logo-mono.svg" alt="" />
+                    <OptimizedImage loading="lazy" src="/assets/logos/smashsend-logo-mono.svg" alt="" />
                   </div>
                 </div>
               </div>

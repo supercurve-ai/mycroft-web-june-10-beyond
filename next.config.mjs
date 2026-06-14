@@ -6,7 +6,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-  images: { unoptimized: true },
+  // Vercel/Next image optimization: serve AVIF (then WebP) at high quality so
+  // the product UI screenshots stay crisp. WfImage is the only image renderer
+  // and pins quality={90}. Replaces Webflow's hand-built `-p-*` srcset variants.
+  images: {
+    formats: ["image/avif", "image/webp"],
+    qualities: [90],
+  },
   // Let phones/tablets on the local network load the dev server's JS — Next
   // blocks dev assets for non-localhost hosts by default, which made pages
   // render but never hydrate (dead hamburger menu etc.) when testing on a

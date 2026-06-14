@@ -43,8 +43,6 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       body: "Our dashboard provides an overview of assessment statuses, showing the number of completed versus incomplete evaluations and includes a breakdown of vendor criticality to prioritize your focus –helping you efficiently monitor, prioritize, and manage third-party risks.",
       image: {
         src: "/assets/screenshots/product-dashboard.webp",
-        srcSet:
-          "/assets/screenshots/product-dashboard-p-500.webp 500w, /assets/screenshots/product-dashboard-p-800.webp 800w, /assets/screenshots/product-dashboard-p-1080.webp 1080w, /assets/screenshots/product-dashboard.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -54,8 +52,6 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       body: "Our platform allows users to select a vendor and access a tailored checklist of actionable steps. Completing these actions ensures the vendor meets your security and compliance standards, streamlining the onboarding and risk mitigation processes.",
       image: {
         src: "/assets/screenshots/product-checklist.webp",
-        srcSet:
-          "/assets/screenshots/product-checklist-p-500.webp 500w, /assets/screenshots/product-checklist-p-800.webp 800w, /assets/screenshots/product-checklist-p-1080.webp 1080w, /assets/screenshots/product-checklist.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -68,7 +64,6 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/features-img2.webp",
-          srcSet: "/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w",
           width: "562.5",
           sizes: "(max-width: 767px) 100vw, 563px",
         },
@@ -78,7 +73,6 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/feature-risktriage-v1.webp",
-          srcSet: "/assets/screenshots/feature-risktriage-v1-p-500.webp 500w, /assets/screenshots/feature-risktriage-v1-p-800.webp 800w, /assets/screenshots/feature-risktriage-v1-p-1080.webp 1080w, /assets/screenshots/feature-risktriage-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -88,7 +82,6 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/feature-automatedworkflows-v1.webp",
-          srcSet: "/assets/screenshots/feature-automatedworkflows-v1-p-500.webp 500w, /assets/screenshots/feature-automatedworkflows-v1-p-800.webp 800w, /assets/screenshots/feature-automatedworkflows-v1-p-1080.webp 1080w, /assets/screenshots/feature-automatedworkflows-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -103,7 +96,6 @@ export const thirdPartyRiskManagementContent: ProductSubpageContent = {
     imgTint: "_30terra",
     img: {
       src: "/assets/customers/ilya-cropped-mono-img.webp",
-      srcSet: "/assets/customers/ilya-cropped-mono-img-p-500.webp 500w, /assets/customers/ilya-cropped-mono-img.webp 600w",
       sizes: "(max-width: 479px) 100vw, 215px",
     },
     quote: "Effortless SOC 2 compliance, worry-free experience. They handle all the parts of SOC 2, so I don’t have to worry about the details.”",

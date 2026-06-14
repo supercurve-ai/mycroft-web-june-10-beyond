@@ -6,26 +6,25 @@ import { ReadNowLink } from "@/components/read-now-link";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { ScrollFeatureSlider, type ScrollFeatureSlide } from "@/components/scroll-feature-slider";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import { screenshot } from "@/lib/screenshots";
+import { staticImage } from "@/lib/static-images";
 
 /** The 3-up "latest insights" teasers — the same three posts on every product subpage. */
 const blogPosts = [
   {
     href: "/blog/cmmc-compliance-platform",
     imgSrc: "/assets/blog/cmmc-compliance-platform/343403.webp",
-    imgSrcSet: "/assets/blog/cmmc-compliance-platform/343403-p-500.webp 500w, /assets/blog/cmmc-compliance-platform/343403.webp 720w",
     title: "CMMC compliance platforms: What to look for now that 48 CFR is in effect",
   },
   {
     href: "/blog/third-party-vendor-risk-management",
     imgSrc: "/assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail.webp",
-    imgSrcSet: "/assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-500.webp 500w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-800.webp 800w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-1080.webp 1080w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail-p-1600.webp 1600w, /assets/blog/third-party-vendor-risk-management/third-party-vendor-risk-management-the-complete-guide-and-why-most-programs-still-fail.webp 1952w",
     title: "Third-party vendor risk management: the complete guide (and why most programs still fail)",
   },
   {
     href: "/blog/vendor-risk-management-software",
     imgSrc: "/assets/blog/vendor-risk-management-software/vendor-risk-management-software.webp",
-    imgSrcSet: "/assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-500.webp 500w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-800.webp 800w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-1080.webp 1080w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software-p-1600.webp 1600w, /assets/blog/vendor-risk-management-software/vendor-risk-management-software.webp 1952w",
     title: "Vendor risk management software: What to evaluate beyond the feature checklist",
   },
 ];
@@ -42,7 +41,7 @@ export type ProductSubpageContent = {
     heading: string;
     dek: ReactNode;
     items: {
-      img: { src: string; srcSet: string; width: string; sizes: string };
+      img: { src: string; width: string; sizes: string };
       title: string;
       body: string;
     }[];
@@ -55,7 +54,7 @@ export type ProductSubpageContent = {
     theme?: string;
     /** Tint class suffix on the headshot container. */
     imgTint?: string;
-    img: { src: string; srcSet: string; sizes: string };
+    img: { src: string; sizes: string };
     quote: string;
     name: string;
     role: string;
@@ -142,7 +141,7 @@ export function ProductSubpage(content: ProductSubpageContent) {
                             <div className="platform-grid">
                               {content.platform.items.map((item) => (
                                 <div className="platform-item" key={item.title}>
-                                  <WfImage src={item.img.src} loading="lazy" width={item.img.width} sizes={item.img.sizes} alt="" srcSet={item.img.srcSet} className="platform-img" />
+                                  <OptimizedImage src={screenshot(item.img.src)} loading="lazy" width={item.img.width} sizes={item.img.sizes} alt="" className="platform-img" />
                                   <div className="platform-text">
                                     <h6 className="h6 larger_mobile">
                                       {item.title}
@@ -186,7 +185,7 @@ export function ProductSubpage(content: ProductSubpageContent) {
                 <div className={`pullquote-content${pullquote.theme ? ` ${pullquote.theme}` : ""}`}>
                   <div className="container-flex pullquote_container">
                     <div className={`pullquote-img-container${pullquote.imgTint ? ` ${pullquote.imgTint}` : ""}`}>
-                      <WfImage width="215" loading="lazy" alt="" src={pullquote.img.src} sizes={pullquote.img.sizes} srcSet={pullquote.img.srcSet} className="pullquote-img" />
+                      <OptimizedImage width="215" loading="lazy" alt="" src={staticImage(pullquote.img.src)} sizes={pullquote.img.sizes} className="pullquote-img" />
                     </div>
                     <div className="container-flex pullquote_right">
                       <div className="pullquote-text hanging_quote">
@@ -202,7 +201,7 @@ export function ProductSubpage(content: ProductSubpageContent) {
                         <div className="pullquote-title">
                           {pullquote.role}
                         </div>
-                        <WfImage width={pullquote.logo.width} loading="lazy" src={pullquote.logo.src} alt="" />
+                        <OptimizedImage width={pullquote.logo.width} loading="lazy" src={staticImage(pullquote.logo.src)} alt="" />
                       </div>
                     </div>
                   </div>
@@ -236,7 +235,7 @@ export function ProductSubpage(content: ProductSubpageContent) {
                             {blogPosts.map((post) => (
                               <div role="listitem" className="_3up-blog-item w-dyn-item" key={post.href}>
                                 <a href={post.href} className="blog-item-link w-inline-block">
-                                  <WfImage src={post.imgSrc} loading="lazy" alt="" sizes="100vw" srcSet={post.imgSrcSet} className="_3up-blog-img" />
+                                  <OptimizedImage src={post.imgSrc} loading="lazy" alt="" sizes="100vw" className="_3up-blog-img" />
                                   <div className="body-text-small color_white text_600 larger_mobile">
                                     {post.title}
                                   </div>
@@ -259,8 +258,8 @@ export function ProductSubpage(content: ProductSubpageContent) {
             <div className="w-full max-w-240 ml-auto mr-auto max-tablet:w-[90%] max-tablet:max-w-none max-landscape:w-full max-portrait:w-full">
               <div className="w-full pt-(--sizing--rem--4-5rem) max-tablet:pt-(--sizing--rem--3-5rem) max-landscape:pt-(--sizing--rem--2-5rem) max-portrait:pt-(--sizing--rem--1-5rem)">
                 <div className="w-full pb-(--sizing--rem--6rem) max-tablet:pb-(--sizing--rem--5rem) max-landscape:pb-(--sizing--rem--3-5rem) max-portrait:pb-(--sizing--rem--2-5rem)">
-                  <WfImage src="/assets/icons/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
-                  <WfImage src="/assets/icons/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
+                  <OptimizedImage src="/assets/icons/faq-notchlabel-desktop.svg" loading="lazy" alt="" className="faq-notch-desktop" />
+                  <OptimizedImage src="/assets/icons/faq-notchlabel-mobile.svg" loading="lazy" alt="" className="faq-notch-mobile" />
                   <div className="container-flex faq_container">
                     <h3 className="h3_v2 color_white">
                       Frequently asked questions

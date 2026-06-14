@@ -43,8 +43,6 @@ export const appSecurityContent: ProductSubpageContent = {
       body: "Mycroft's platform scans applications for security vulnerabilities, providing detailed, severity-categorized descriptions and tracking issues over time, helping your team prioritize fixes and strengthen application security.",
       image: {
         src: "/assets/screenshots/product-appscan.webp",
-        srcSet:
-          "/assets/screenshots/product-appscan-p-500.webp 500w, /assets/screenshots/product-appscan-p-800.webp 800w, /assets/screenshots/product-appscan-p-1080.webp 1080w, /assets/screenshots/product-appscan.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -54,8 +52,6 @@ export const appSecurityContent: ProductSubpageContent = {
       body: "Mycroft's platform automatically scans your applications on a regular schedule and generates a centralized dashboard that displays all the latest security issues, prioritized by severity and current status, enabling your team to easily identify critical vulnerabilities and track their resolution progress.",
       image: {
         src: "/assets/screenshots/product-autoscan.webp",
-        srcSet:
-          "/assets/screenshots/product-autoscan-p-500.webp 500w, /assets/screenshots/product-autoscan-p-800.webp 800w, /assets/screenshots/product-autoscan-p-1080.webp 1080w, /assets/screenshots/product-autoscan.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -65,8 +61,6 @@ export const appSecurityContent: ProductSubpageContent = {
       body: "Mycroft's platform enables you to create custom scans tailored to your application’s specific needs and risk areas, then consolidates the results into an easy-to-review dashboard, giving you clear visibility into vulnerabilities and security posture in one centralized location.",
       image: {
         src: "/assets/screenshots/product-scanjobs.webp",
-        srcSet:
-          "/assets/screenshots/product-scanjobs-p-500.webp 500w, /assets/screenshots/product-scanjobs-p-800.webp 800w, /assets/screenshots/product-scanjobs-p-1080.webp 1080w, /assets/screenshots/product-scanjobs.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -79,7 +73,6 @@ export const appSecurityContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/features-img2.webp",
-          srcSet: "/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w",
           width: "562.5",
           sizes: "(max-width: 767px) 100vw, 563px",
         },
@@ -89,7 +82,6 @@ export const appSecurityContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/features-img3.webp",
-          srcSet: "/assets/screenshots/features-img3-p-500.webp 500w, /assets/screenshots/features-img3-p-800.webp 800w, /assets/screenshots/features-img3-p-1080.webp 1080w, /assets/screenshots/features-img3.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -99,7 +91,6 @@ export const appSecurityContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/feature-reporting-v1.webp",
-          srcSet: "/assets/screenshots/feature-reporting-v1-p-500.webp 500w, /assets/screenshots/feature-reporting-v1-p-800.webp 800w, /assets/screenshots/feature-reporting-v1-p-1080.webp 1080w, /assets/screenshots/feature-reporting-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -114,7 +105,6 @@ export const appSecurityContent: ProductSubpageContent = {
     imgTint: "tint_75mint",
     img: {
       src: "/assets/customers/adam-cropped-mono-img.webp",
-      srcSet: "/assets/customers/adam-cropped-mono-img-p-500.webp 500w, /assets/customers/adam-cropped-mono-img.webp 600w",
       sizes: "(max-width: 479px) 100vw, 215px",
     },
     quote: "Mycroft's 5-in-1 platform seamlessly consolidated our entire security stack, eliminating the need for multiple point solutions and endless checklists.”",

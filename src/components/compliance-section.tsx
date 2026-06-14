@@ -1,4 +1,4 @@
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
 
 /**
  * The "Compliance" section shared by most pages: eyebrow + heading + copy on
@@ -67,7 +67,7 @@ export function ComplianceSection({
 /** range = the data-wf-scrub keyframe window in scroll-progress %. */
 function ScrubBadge({ src, range, last }: { src: string; range: string; last?: boolean }) {
   return (
-    <WfImage
+    <OptimizedImage
       src={src}
       loading="lazy"
       alt=""

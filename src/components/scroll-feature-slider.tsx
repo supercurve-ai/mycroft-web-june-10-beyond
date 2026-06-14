@@ -1,14 +1,14 @@
 "use client";
 
 import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import { screenshot } from "@/lib/screenshots";
 
 export type ScrollFeatureSlide = {
   heading: string;
   body: ReactNode;
   image: {
     src: string;
-    srcSet?: string;
     sizes?: string;
     width?: number;
     alt?: string;
@@ -338,13 +338,12 @@ function FeatureRowContent({
         <div className="body-text-large smaller_tablet">{slide.body}</div>
       </div>
       <div className={cls("features-img-container")} style={imgStyle}>
-        <WfImage
-          src={slide.image.src}
+        <OptimizedImage
+          src={screenshot(slide.image.src)}
           loading="lazy"
           width={slide.image.width}
           sizes={slide.image.sizes}
           alt={slide.image.alt ?? ""}
-          srcSet={slide.image.srcSet}
           className="features-img"
         />
       </div>

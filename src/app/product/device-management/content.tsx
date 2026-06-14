@@ -43,8 +43,6 @@ export const deviceManagementContent: ProductSubpageContent = {
       body: "Mycroft's platform feature offers a comprehensive dashboard with insights into each device, displaying specifications, status, and compliance. It conducts regular compliance checks to ensure all devices meet security standards.",
       image: {
         src: "/assets/screenshots/product-devicedashboard.webp",
-        srcSet:
-          "/assets/screenshots/product-devicedashboard-p-500.webp 500w, /assets/screenshots/product-devicedashboard-p-800.webp 800w, /assets/screenshots/product-devicedashboard-p-1080.webp 1080w, /assets/screenshots/product-devicedashboard.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -54,8 +52,6 @@ export const deviceManagementContent: ProductSubpageContent = {
       body: "Our platform lets you remotely lock a device in case of theft or security incidents, safeguarding sensitive data from unauthorized access. Quick remote lock actions help reduce data breach risks, protecting your company's information.",
       image: {
         src: "/assets/screenshots/product-devicelocking.webp",
-        srcSet:
-          "/assets/screenshots/product-devicelocking-p-500.webp 500w, /assets/screenshots/product-devicelocking-p-800.webp 800w, /assets/screenshots/product-devicelocking-p-1080.webp 1080w, /assets/screenshots/product-devicelocking.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -65,8 +61,6 @@ export const deviceManagementContent: ProductSubpageContent = {
       body: "Mycroft's platform feature allows users to  erase sensitive data from lost or stolen devices, ensuring data protection and regulatory compliance, while minimizing data breach risks. This tool empowers businesses to maintain control over mobile assets and enhance overall security.",
       image: {
         src: "/assets/screenshots/product-devicewipe.webp",
-        srcSet:
-          "/assets/screenshots/product-devicewipe-p-500.webp 500w, /assets/screenshots/product-devicewipe-p-800.webp 800w, /assets/screenshots/product-devicewipe-p-1080.webp 1080w, /assets/screenshots/product-devicewipe.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -79,7 +73,6 @@ export const deviceManagementContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/feature-dataencryption-v1.webp",
-          srcSet: "/assets/screenshots/feature-dataencryption-v1-p-500.webp 500w, /assets/screenshots/feature-dataencryption-v1-p-800.webp 800w, /assets/screenshots/feature-dataencryption-v1-p-1080.webp 1080w, /assets/screenshots/feature-dataencryption-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -89,7 +82,6 @@ export const deviceManagementContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/features-img2.webp",
-          srcSet: "/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w",
           width: "562.5",
           sizes: "(max-width: 767px) 100vw, 563px",
         },
@@ -99,7 +91,6 @@ export const deviceManagementContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/feature-policyenforcement-v1.webp",
-          srcSet: "/assets/screenshots/feature-policyenforcement-v1-p-500.webp 500w, /assets/screenshots/feature-policyenforcement-v1-p-800.webp 800w, /assets/screenshots/feature-policyenforcement-v1-p-1080.webp 1080w, /assets/screenshots/feature-policyenforcement-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -114,7 +105,6 @@ export const deviceManagementContent: ProductSubpageContent = {
     imgTint: "blueberry",
     img: {
       src: "/assets/customers/steve-cropped-mono-img.webp",
-      srcSet: "/assets/customers/steve-cropped-mono-img-p-500.webp 500w, /assets/customers/steve-cropped-mono-img.webp 600w",
       sizes: "(max-width: 479px) 100vw, 215px",
     },
     quote: "Mycroft provided us with the best  guidance through our SOC 2 process. We knew we were in good hands from the beginning.”",

@@ -1,5 +1,9 @@
 import { ButtonLarge } from "@/components/button-large";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import glowFront from "@public/assets/decor/glow-front-2x.webp";
+import glowHover from "@public/assets/decor/glow-hover-2x.webp";
+import glowBack from "@public/assets/decor/glow-back-2x.webp";
+import lantern from "@public/assets/decor/lantern-v1-2x.webp";
 
 /** Hero section of /product. Ported from Webflow by the Webflow Cloner agent. */
 export function ProductOverviewHero() {
@@ -26,10 +30,10 @@ export function ProductOverviewHero() {
             </div>
             <div className="col-hero-right product">
               <div className="hero-imgs product">
-                <WfImage src="/assets/decor/glow-front-2x.webp" loading="lazy" width="Auto" sizes="(max-width: 832px) 100vw, 832px" alt="" srcSet="/assets/decor/glow-front-2x-p-500.webp 500w, /assets/decor/glow-front-2x-p-800.webp 800w, /assets/decor/glow-front-2x.webp 832w" className="hero-img-glow-front" />
-                <WfImage src="/assets/decor/glow-hover-2x.webp" loading="lazy" width="Auto" style={{"opacity": "0.25"}} alt="" srcSet="/assets/decor/glow-hover-2x-p-500.webp 500w, /assets/decor/glow-hover-2x-p-800.webp 800w, /assets/decor/glow-hover-2x.webp 832w" sizes="(max-width: 832px) 100vw, 832px" className="hero-img-glow-hover" />
-                <WfImage src="/assets/decor/glow-back-2x.webp" loading="lazy" width="Auto" sizes="(max-width: 832px) 100vw, 832px" alt="" srcSet="/assets/decor/glow-back-2x-p-500.webp 500w, /assets/decor/glow-back-2x-p-800.webp 800w, /assets/decor/glow-back-2x.webp 832w" className="hero-img-glow-back" />
-                <WfImage src="/assets/decor/lantern-v1-2x.webp" loading="eager" width="416" sizes="(max-width: 479px) 100vw, 416px" alt="" srcSet="/assets/decor/lantern-v1-2x-p-500.webp 500w, /assets/decor/lantern-v1-2x-p-800.webp 800w, /assets/decor/lantern-v1-2x.webp 832w" className="hero-img-lamp2" />
+                <OptimizedImage src={glowFront} loading="lazy" width="Auto" sizes="(max-width: 832px) 100vw, 832px" alt="" className="hero-img-glow-front" />
+                <OptimizedImage src={glowHover} loading="lazy" width="Auto" style={{"opacity": "0.25"}} alt="" sizes="(max-width: 832px) 100vw, 832px" className="hero-img-glow-hover" />
+                <OptimizedImage src={glowBack} loading="lazy" width="Auto" sizes="(max-width: 832px) 100vw, 832px" alt="" className="hero-img-glow-back" />
+                <OptimizedImage src={lantern} loading="eager" width="416" sizes="(max-width: 479px) 100vw, 416px" alt="" className="hero-img-lamp2" />
               </div>
             </div>
           </div>

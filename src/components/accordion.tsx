@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, type ReactNode } from "react";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
 
 /**
  * Dark FAQ item with the plus/minus toggle (`faq-item` in the Webflow styles),
@@ -128,7 +128,7 @@ export function AccordionItem({
         >
           <strong>{question}</strong>
         </h4>
-        <WfImage
+        <OptimizedImage
           src="/assets/icons/arrow-icon.svg"
           loading="lazy"
           width={25}

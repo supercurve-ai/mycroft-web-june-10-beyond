@@ -69,15 +69,21 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
   `/sitemap.xml`. New indexable pages MUST be added here.
 - `public/assets/<category>/` — all site images, organized by kind (June
   2026): `blog/<post-slug>/` (one folder per post), `screenshots/` (product
-  UI shots, incl. the bases used by FrameworkPage solution cards and pricing
-  FeatureTileSmall — their srcSets hardcode this folder), `logos/` (customer/
-  partner/investor marks), `badges/` (compliance framework badges), `icons/`,
-  `meta/` (OG/social share images), `team/` (Mycroft team headshots),
-  `customers/` (customer testimonial/pull-quote headshots), `case-studies/`,
-  `photos/` (page photography), `decor/` (backgrounds, patterns, glows),
-  `brand/` (Mycroft lockups). Put new assets in the matching folder; an
-  image's `-p-500/-p-800/…` responsive variants must live beside it (srcSet
-  builders derive variant paths from the base path).
+  UI shots), `logos/` (customer/partner/investor marks), `badges/` (compliance
+  framework badges), `icons/`, `meta/` (OG/social share images), `team/`
+  (Mycroft team headshots), `customers/` (testimonial/pull-quote headshots),
+  `case-studies/`, `photos/` (page photography), `decor/` (backgrounds,
+  patterns, glows), `brand/` (Mycroft lockups). Put new assets in the matching
+  folder. **All content images render through `OptimizedImage` (`next/image`,
+  which generates its own responsive srcset — there are no more `-p-*` variant
+  files).** Most are **static imports** resolved by `src/lib/static-images.ts`
+  (a path→`StaticImageData` map; `screenshot()` in `src/lib/screenshots.ts` is a
+  thin stem adapter over it) — to add a screenshot/logo/customer/photo, import
+  it there. Only the `.mdx`/CMS images (`blog/` + `case-studies/`, referenced by
+  runtime strings) use the `src/lib/image-dimensions.json` manifest (regenerate
+  with `node scripts/build-image-manifest.mjs`, which now scans only those two
+  folders). SVGs, decor backgrounds (CSS `url()`) and `meta/` OG images go
+  through none of this.
 
 ## Rules
 

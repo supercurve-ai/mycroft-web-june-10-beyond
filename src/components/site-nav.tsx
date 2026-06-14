@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
 import { NavLink } from "./nav-link";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
 
 /* Webflow's captured IX2 pre-animation states. webflow-shared.css animates
    these to their final state when a dropdown opens (.wf-open rules) or on
@@ -91,57 +91,57 @@ function SolutionsSubmenu() {
       </div>
       <div className="w-layout-grid sub-solutions-grid">
         <NavLink href="/frameworks/soc2" className="solution-tile w-inline-block" tabIndex={0} style={tileHidden}>
-          <WfImage src="/assets/badges/soc-2-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
+          <OptimizedImage src="/assets/badges/soc-2-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
           <div>
             SOC 2
           </div>
         </NavLink>
         <NavLink href="/frameworks/gdpr" className="solution-tile w-inline-block" tabIndex={0} style={tileHidden}>
-          <WfImage src="/assets/badges/gdpr-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
+          <OptimizedImage src="/assets/badges/gdpr-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
           <div>
             GDPR
           </div>
         </NavLink>
         <NavLink href="/frameworks/pipeda" className="solution-tile row_child w-inline-block" tabIndex={0} style={tileHidden}>
-          <WfImage src="/assets/badges/pipeda-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
+          <OptimizedImage src="/assets/badges/pipeda-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
           <div>
             PIPEDA
           </div>
         </NavLink>
         <div id="w-node-_1202cf2e-6549-af6f-7a6b-50d1b7f45e02-e51a302e" className="mobile-hr"></div>
         <NavLink href="/frameworks/cmmc" className="solution-tile w-inline-block" tabIndex={0} style={tileHidden}>
-          <WfImage src="/assets/badges/cmmc-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
+          <OptimizedImage src="/assets/badges/cmmc-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
           <div>
             CMMC
           </div>
         </NavLink>
         <NavLink href="/frameworks/fedramp" className="solution-tile w-inline-block" tabIndex={0} style={tileHidden}>
-          <WfImage src="/assets/badges/fedramp-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
+          <OptimizedImage src="/assets/badges/fedramp-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
           <div>
             FedRAMP
           </div>
         </NavLink>
         <NavLink href="/frameworks/iso27001" className="solution-tile row_child w-inline-block" tabIndex={0} style={tileHidden}>
-          <WfImage src="/assets/badges/iso-27001-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
+          <OptimizedImage src="/assets/badges/iso-27001-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
           <div>
             ISO 27001
           </div>
         </NavLink>
         <div id="w-node-_091afdd5-dbdf-64fe-4376-a4c1cb784ddd-e51a302e" className="mobile-hr"></div>
         <NavLink href="/frameworks/hipaa" className="solution-tile w-inline-block" tabIndex={0} style={tileHidden}>
-          <WfImage src="/assets/badges/hipaa-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
+          <OptimizedImage src="/assets/badges/hipaa-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
           <div>
             HIPAA
           </div>
         </NavLink>
         <NavLink href="/frameworks/cpra" className="solution-tile w-inline-block" tabIndex={0} style={tileHidden}>
-          <WfImage src="/assets/badges/crpa-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
+          <OptimizedImage src="/assets/badges/crpa-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
           <div>
             CPRA/CCPA
           </div>
         </NavLink>
         <NavLink href="/frameworks/iso42001" className="solution-tile last_child w-inline-block" tabIndex={0} style={tileHidden}>
-          <WfImage src="/assets/badges/iso-42001-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
+          <OptimizedImage src="/assets/badges/iso-42001-badge.svg" loading="lazy" width="Auto" alt="" className="solution-icon" />
           <div>
             ISO42001
           </div>
@@ -329,7 +329,7 @@ export function SiteNav() {
               <div className="nav-btn-text">
                 Book a demo
               </div>
-              <WfImage src="/assets/icons/arrow-icon-white.svg" loading="lazy" alt="" className="nav-btn-arrow" style={frozenIcon} />
+              <OptimizedImage src="/assets/icons/arrow-icon-white.svg" loading="lazy" alt="" className="nav-btn-arrow" style={frozenIcon} />
             </NavLink>
             <a href="https://app.mycroft.io" target="_blank" className="btn-nav full_width grey w-inline-block">
               <div className="nav-btn-text color_rg">
@@ -344,7 +344,7 @@ export function SiteNav() {
         <div className="nav-outer-wrapper">
           <div className="nav-menu-wrapper">
             <NavLink href="/" className="logo-lockup w-nav-brand" aria-label="home">
-              <WfImage loading="eager" src="/assets/brand/mycroft-lockup-green-v2.svg" alt="Mycroft logo lockup" className="nav-logo-img" />
+              <OptimizedImage loading="eager" src="/assets/brand/mycroft-lockup-green-v2.svg" alt="Mycroft logo lockup" className="nav-logo-img" />
             </NavLink>
             <div className="nav-menu-links_v3">
               <NavDropdown id={2} label={<>Product<br /></>} open={openDropdown === 2} onToggle={() => toggleDropdown(2)} onClose={closeDropdowns}>
@@ -363,7 +363,7 @@ export function SiteNav() {
                 <div className="nav-btn-text">
                   Book a demo
                 </div>
-                <WfImage src="/assets/icons/arrow-icon-white.svg" loading="lazy" alt="" className="nav-btn-arrow" style={frozenIcon} />
+                <OptimizedImage src="/assets/icons/arrow-icon-white.svg" loading="lazy" alt="" className="nav-btn-arrow" style={frozenIcon} />
               </NavLink>
             </div>
           </div>
@@ -374,7 +374,7 @@ export function SiteNav() {
         <div className="nav-mob-outer">
           <div className="nav-mob-inner">
             <NavLink href="/" className="logo-lockup mobile w-nav-brand" aria-label="home">
-              <WfImage loading="eager" src="/assets/brand/mycroft-lockup-green-v2.svg" alt="Mycroft logo lockup" className="nav-logo-img" />
+              <OptimizedImage loading="eager" src="/assets/brand/mycroft-lockup-green-v2.svg" alt="Mycroft logo lockup" className="nav-logo-img" />
             </NavLink>
             <a
               href="#"

@@ -11,7 +11,6 @@ export const adamWeave: Testimonial = {
   imgTint: "tint_75mint",
   img: {
     src: "/assets/customers/adam-cropped-mono-img.webp",
-    srcSet: "/assets/customers/adam-cropped-mono-img-p-500.webp 500w, /assets/customers/adam-cropped-mono-img.webp 600w",
     sizes: "(max-width: 479px) 100vw, 215px",
   },
   quote: "Mycroft's 5-in-1 platform seamlessly consolidated our entire security stack, eliminating the need for multiple point solutions and endless checklists.”",
@@ -26,7 +25,6 @@ export const jorgeSmashsend: Testimonial = {
   imgTint: "",
   img: {
     src: "/assets/customers/jorge-cropped-mono-img.webp",
-    srcSet: "/assets/customers/jorge-cropped-mono-img-p-500.webp 500w, /assets/customers/jorge-cropped-mono-img.webp 600w",
     sizes: "215px",
   },
   quote: "With Mycroft, they have a deep expertise in security, which is not a feature but a core foundation of their platform.”",
@@ -41,7 +39,6 @@ export const steveIntegratrace: Testimonial = {
   imgTint: "blueberry",
   img: {
     src: "/assets/customers/steve-cropped-mono-img.webp",
-    srcSet: "/assets/customers/steve-cropped-mono-img-p-500.webp 500w, /assets/customers/steve-cropped-mono-img.webp 600w",
     sizes: "(max-width: 479px) 100vw, 215px",
   },
   quote: "Mycroft provided us with the best  guidance through our SOC 2 process. We knew we were in good hands from the beginning.”",

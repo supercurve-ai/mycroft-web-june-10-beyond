@@ -1,7 +1,8 @@
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { ComplianceSection } from "@/components/compliance-section";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import chairImg from "@public/assets/decor/chair.webp";
 
 /**
  * Faithful React port of the Webflow https://www.mycroft.io/thank-you page. DOM + classes mirror
@@ -18,7 +19,7 @@ export function ThankYouPageContent() {
           <div className="w-layout-blockcontainer wf-container w-container">
             <div className="row row-justify-center">
               <div className="col u-text-center">
-                <WfImage src="/assets/decor/chair.webp" loading="lazy" alt="" className="image-6" />
+                <OptimizedImage src={chairImg} loading="lazy" alt="" className="image-6" />
               </div>
             </div>
             <div className="row row-justify-center">

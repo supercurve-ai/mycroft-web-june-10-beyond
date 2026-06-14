@@ -13,8 +13,6 @@ const partnerSlides: ScrollFeatureSlide[] = [
     body: "Partnering with Mycroft positions you at the forefront of the cybersecurity landscape. With our cutting-edge technology and comprehensive suite of security solutions, you can enhance your offerings and deliver unparalleled protection to your clients.",
     image: {
       src: "/assets/photos/msp-partners.webp",
-      srcSet:
-        "/assets/photos/msp-partners-p-500.webp 500w, /assets/photos/msp-partners-p-800.webp 800w, /assets/photos/msp-partners-p-1080.webp 1080w, /assets/photos/msp-partners.webp 1320w",
       sizes: "(max-width: 479px) 100vw, 676px",
       width: 676,
     },
@@ -24,8 +22,6 @@ const partnerSlides: ScrollFeatureSlide[] = [
     body: "Collaborate with leading tech providers and leverage complementary strengths, streamline processes, and innovate faster. Tech partnerships with Mycroft enable seamless integration of diverse tools and platforms.",
     image: {
       src: "/assets/photos/tech-partners.webp",
-      srcSet:
-        "/assets/photos/tech-partners-p-500.webp 500w, /assets/photos/tech-partners-p-800.webp 800w, /assets/photos/tech-partners-p-1080.webp 1080w, /assets/photos/tech-partners.webp 1320w",
       sizes: "(max-width: 479px) 100vw, 676px",
       width: 676,
     },
@@ -35,8 +31,6 @@ const partnerSlides: ScrollFeatureSlide[] = [
     body: "Join Mycroft’s network of verified auditors and work with customers that value real compliance and security an exceed industry standards. With Mycroft, you gain a strategic ally committed to safeguarding long-term resilience in an increasingly complex digital landscape.",
     image: {
       src: "/assets/photos/auditors.webp",
-      srcSet:
-        "/assets/photos/auditors-p-500.webp 500w, /assets/photos/auditors-p-800.webp 800w, /assets/photos/auditors-p-1080.webp 1080w, /assets/photos/auditors.webp 1320w",
       sizes: "(max-width: 479px) 100vw, 676px",
       width: 676,
     },

@@ -48,8 +48,6 @@ export const cloudSecurityContent: ProductSubpageContent = {
       body: "Our platform continuously scans your cloud environment, delivering comprehensive security findings, providing clear insights into your security posture, allowing you to quickly identify and prioritize vulnerabilities based on their importance and scope.",
       image: {
         src: "/assets/screenshots/product-automatedscan.webp",
-        srcSet:
-          "/assets/screenshots/product-automatedscan-p-500.webp 500w, /assets/screenshots/product-automatedscan-p-800.webp 800w, /assets/screenshots/product-automatedscan-p-1080.webp 1080w, /assets/screenshots/product-automatedscan.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -59,8 +57,6 @@ export const cloudSecurityContent: ProductSubpageContent = {
       body: "Configure our platform to automatically scan your cloud security environment regularly, providing continuous oversight without manual effort. It features a customized dashboard that consolidates findings, displaying security issues, severity, and affected regions or services.",
       image: {
         src: "/assets/screenshots/product-automatedscan-2.webp",
-        srcSet:
-          "/assets/screenshots/product-automatedscan-p-500-2.webp 500w, /assets/screenshots/product-automatedscan-p-800-2.webp 800w, /assets/screenshots/product-automatedscan-p-1080-2.webp 1080w, /assets/screenshots/product-automatedscan-2.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -70,8 +66,6 @@ export const cloudSecurityContent: ProductSubpageContent = {
       body: "Our platform not only identifies cloud security failed findings but also provides actionable remediation suggestions tailored to each issue. With our proactive recommendations, you can streamline your remediation process and ensure your cloud environment remains secure, compliant, and resilient.",
       image: {
         src: "/assets/screenshots/product-remediation.webp",
-        srcSet:
-          "/assets/screenshots/product-remediation-p-500.webp 500w, /assets/screenshots/product-remediation-p-800.webp 800w, /assets/screenshots/product-remediation-p-1080.webp 1080w, /assets/screenshots/product-remediation.webp 1352w",
         sizes: "(max-width: 767px) 100vw, 676px",
         width: 676,
       },
@@ -89,7 +83,6 @@ export const cloudSecurityContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/features-img2.webp",
-          srcSet: "/assets/screenshots/features-img2-p-500.webp 500w, /assets/screenshots/features-img2-p-800.webp 800w, /assets/screenshots/features-img2-p-1080.webp 1080w, /assets/screenshots/features-img2.webp 1125w",
           width: "562.5",
           sizes: "(max-width: 767px) 100vw, 563px",
         },
@@ -99,7 +92,6 @@ export const cloudSecurityContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/features-img3.webp",
-          srcSet: "/assets/screenshots/features-img3-p-500.webp 500w, /assets/screenshots/features-img3-p-800.webp 800w, /assets/screenshots/features-img3-p-1080.webp 1080w, /assets/screenshots/features-img3.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -109,7 +101,6 @@ export const cloudSecurityContent: ProductSubpageContent = {
       {
         img: {
           src: "/assets/screenshots/feature-reporting-v1.webp",
-          srcSet: "/assets/screenshots/feature-reporting-v1-p-500.webp 500w, /assets/screenshots/feature-reporting-v1-p-800.webp 800w, /assets/screenshots/feature-reporting-v1-p-1080.webp 1080w, /assets/screenshots/feature-reporting-v1.webp 1128w",
           width: "564",
           sizes: "(max-width: 767px) 100vw, 564px",
         },
@@ -124,7 +115,6 @@ export const cloudSecurityContent: ProductSubpageContent = {
     imgTint: "_30terra",
     img: {
       src: "/assets/customers/ilya-cropped-mono-img.webp",
-      srcSet: "/assets/customers/ilya-cropped-mono-img-p-500.webp 500w, /assets/customers/ilya-cropped-mono-img.webp 600w",
       sizes: "(max-width: 479px) 100vw, 215px",
     },
     quote: "Effortless SOC 2 compliance, worry-free experience. They handle all the parts of SOC 2, so I don’t have to worry about the details.”",

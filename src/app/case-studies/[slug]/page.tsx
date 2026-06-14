@@ -1,5 +1,3 @@
-import fs from "node:fs";
-import path from "node:path";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { caseStudies } from "@/lib/content";
@@ -9,7 +7,8 @@ import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { CtaSection } from "@/components/cta-section";
 import { CaseStudyInteractions } from "./case-study-interactions";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import { staticImage } from "@/lib/static-images";
 
 export function generateStaticParams() {
   return caseStudies.getSlugs().map((slug) => ({ slug }));
@@ -23,16 +22,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       images: meta.coverImage ? [meta.coverImage] : undefined },
     twitter: { card: "summary_large_image", title: meta.title, description: meta.excerpt,
       images: meta.coverImage ? [meta.coverImage] : undefined } };
-}
-
-/** "/assets/x.webp" → "…-p-500.webp 500w, …" for the variants that exist in public/. */
-function buildSrcSet(src: string): string | undefined {
-  const ext = path.extname(src);
-  const stem = src.slice(0, -ext.length);
-  const variants = [500, 800]
-    .filter((w) => fs.existsSync(path.join(process.cwd(), "public", `${stem}-p-${w}${ext}`)))
-    .map((w) => `${stem}-p-${w}${ext} ${w}w`);
-  return variants.length ? [...variants, `${src} 1000w`].join(", ") : undefined;
 }
 
 function ShareIcon({ children }: { children: React.ReactNode }) {
@@ -72,8 +61,8 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ sl
                   </div>
                 </div>
                 {heroImage ? (
-                  <WfImage src={heroImage} loading="lazy" width="860" alt=""
-                    sizes="(max-width: 991px) 100vw, 860px" srcSet={buildSrcSet(heroImage)}
+                  <OptimizedImage src={heroImage} loading="lazy" width="860" alt=""
+                    sizes="(max-width: 991px) 100vw, 860px"
                     className="cs-hero-img" />
                 ) : null}
               </div>
@@ -164,8 +153,8 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ sl
                         <div className="container-flex pullquote_container cs_var">
                           <div className="pullquote-img-container cs_var">
                             {meta.testimonial.photo ? (
-                              <WfImage width="215" loading="lazy" alt={meta.testimonial.name}
-                                src={meta.testimonial.photo} className="pullquote-img cs_var" />
+                              <OptimizedImage width="215" loading="lazy" alt={meta.testimonial.name}
+                                src={staticImage(meta.testimonial.photo)} className="pullquote-img cs_var" />
                             ) : null}
                           </div>
                           <div className="container-flex pullquote_right cs_var">
@@ -175,7 +164,7 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ sl
                               <div className="pullquote-name">{meta.testimonial.name}</div>
                               <div className="pullquote-title">{meta.testimonial.role}</div>
                               {meta.testimonial.logo ? (
-                                <WfImage width="114" loading="lazy" alt="" src={meta.testimonial.logo} className="pullquote-logo" />
+                                <OptimizedImage width="114" loading="lazy" alt="" src={staticImage(meta.testimonial.logo)} className="pullquote-logo" />
                               ) : null}
                             </div>
                           </div>

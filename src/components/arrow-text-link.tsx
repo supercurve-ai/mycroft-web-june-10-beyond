@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
 
 /**
  * Small underlined text link with the inline arrow svg (`text-link link_embed`).
@@ -19,7 +19,7 @@ export function ArrowTextLink({
       <div className="body-text-small color_aubergine text-500 link_underline">
         {children}
       </div>
-      <WfImage
+      <OptimizedImage
         src="/assets/icons/arrow-icon-small-aubergine.svg"
         alt=""
         className="arrow-icon-small"

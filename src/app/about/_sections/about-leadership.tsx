@@ -1,4 +1,7 @@
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import mike2Img from "@public/assets/team/mike-2.webp";
+import jon2Img from "@public/assets/team/jon-2.webp";
+import jan2Img from "@public/assets/team/jan-2.webp";
 
 /** Leadership section of /about. Ported from Webflow by the Webflow Cloner agent. */
 export function AboutLeadership() {
@@ -23,7 +26,7 @@ export function AboutLeadership() {
                       Co-founder, CEO
                     </div>
                   </div>
-                  <WfImage src="/assets/team/mike-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/team/mike-2-p-500.webp 500w, /assets/team/mike-2-p-800.webp 800w, /assets/team/mike-2.webp 840w" className="founder-img" />
+                  <OptimizedImage src={mike2Img} loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" className="founder-img" />
                 </div>
                 <div className="founder-tile-btm">
                   <div className="founder-body">
@@ -57,7 +60,7 @@ export function AboutLeadership() {
                       Co-founder, PRODUCT & DESIGN
                     </div>
                   </div>
-                  <WfImage src="/assets/team/jon-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/team/jon-2-p-500.webp 500w, /assets/team/jon-2-p-800.webp 800w, /assets/team/jon-2.webp 840w" className="founder-img" />
+                  <OptimizedImage src={jon2Img} loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" className="founder-img" />
                 </div>
                 <div className="founder-tile-btm">
                   <div className="founder-body">
@@ -91,7 +94,7 @@ export function AboutLeadership() {
                       Co-founder, Engineering
                     </div>
                   </div>
-                  <WfImage src="/assets/team/jan-2.webp" loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" srcSet="/assets/team/jan-2-p-500.webp 500w, /assets/team/jan-2-p-800.webp 800w, /assets/team/jan-2.webp 840w" className="founder-img" />
+                  <OptimizedImage src={jan2Img} loading="lazy" width="280" sizes="(max-width: 479px) 100vw, 280px" alt="" className="founder-img" />
                 </div>
                 <div className="founder-tile-btm">
                   <div className="founder-body">

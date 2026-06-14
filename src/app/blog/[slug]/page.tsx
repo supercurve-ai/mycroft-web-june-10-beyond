@@ -7,7 +7,8 @@ import { mdxComponents } from "@/components/mdx-components";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import { CtaSection } from "@/components/cta-section";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import { staticImage } from "@/lib/static-images";
 
 export function generateStaticParams() {
   return blog.getSlugs().map((slug) => ({ slug }));
@@ -64,7 +65,7 @@ export default async function BlogPage({ params }: { params: Promise<{ slug: str
                       {fm.author ? (
                         <div className="blog-card-author">
                           {fm.authorImage ? (
-                            <WfImage src={fm.authorImage} loading="lazy" alt={fm.author} className="blog-author-picture" />
+                            <OptimizedImage src={staticImage(fm.authorImage)} loading="lazy" alt={fm.author} className="blog-author-picture" />
                           ) : null}
                           <div className="blog-author-info">
                             <div className="body-text-medium is-semi-bold">{fm.author}</div>
@@ -84,7 +85,7 @@ export default async function BlogPage({ params }: { params: Promise<{ slug: str
                   </div>
                   {fm.coverImage ? (
                     <div className="blog-image-container">
-                      <WfImage src={fm.coverImage} loading="lazy" alt={fm.title ?? ""} sizes="100vw" className="blog-main-image" />
+                      <OptimizedImage src={fm.coverImage} loading="lazy" alt={fm.title ?? ""} sizes="100vw" className="blog-main-image" />
                     </div>
                   ) : null}
                   <div className="blog-article-container">

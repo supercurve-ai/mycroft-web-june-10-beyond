@@ -1,5 +1,6 @@
 import { LogoMarquee } from "@/components/logo-marquee";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import chairLockupImg from "@public/assets/decor/chair-lockup-static.webp";
 
 /** About-Mycroft and investors section of /about. Ported from Webflow by the Webflow Cloner agent. */
 export function AboutCompanyAndInvestors() {
@@ -14,7 +15,7 @@ export function AboutCompanyAndInvestors() {
                   <h3 className="h3_v2 color_white">
                     About Mycroft
                   </h3>
-                  <WfImage src="/assets/decor/chair-lockup-static.webp" loading="lazy" sizes="(max-width: 752px) 100vw, 752px" srcSet="/assets/decor/chair-lockup-static-p-500.webp 500w, /assets/decor/chair-lockup-static.webp 752w" alt="" className="about-img" />
+                  <OptimizedImage src={chairLockupImg} loading="lazy" sizes="(max-width: 752px) 100vw, 752px" alt="" className="about-img" />
                 </div>
                 <div className="about-col-right">
                   <div className="text-dek-l text_white">

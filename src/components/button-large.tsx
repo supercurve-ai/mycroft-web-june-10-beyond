@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
 
 /* Webflow IX2 freezes elements with these inline transforms; the captured
    markup carries them, so the component reproduces them 1:1. */
@@ -58,7 +58,7 @@ export function ButtonLarge({
       <div className={velvet ? "btn-text-large color_mint" : "btn-text-large"}>
         {children}
       </div>
-      <WfImage
+      <OptimizedImage
         src={velvet ? "/assets/icons/arrow-icon-mint-v1.svg" : "/assets/icons/arrow-icon-v2.svg"}
         loading="lazy"
         alt=""

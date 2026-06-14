@@ -3,13 +3,17 @@
 import { useState } from "react";
 import { ResourcesBlogPostCard } from "./resources-blog-post-card";
 import { resourcesBlogPosts } from "./resources-blog-post-card.data";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
 
 /**
- * Client-side Load More for the ResourcesBlogPostCard collection: the original
- * page only served 4 item(s) per ?page=N round-trip; the clone
- * folded all 18 item(s) into the data array and reveals them in
- * page-size steps. Ported from Webflow by the Webflow Cloner agent.
+ * Client-side Load More for the ResourcesBlogPostCard collection. The live
+ * Webflow page uses CMS pagination (4 posts per page) via real
+ * `?698790ea_page=N` links, progressively enhanced by Finsweet Attributes into
+ * in-place "load more" that swaps in the next 4 without changing the URL. The
+ * clone reproduces that visible behavior by folding all 18 posts into the data
+ * array and revealing them 4 at a time; note there are no paginated URLs here,
+ * so live's `?698790ea_page=2…N` pages have no clone equivalent.
+ * Ported from Webflow by the Webflow Cloner agent.
  */
 export function ResourcesBlogPostList() {
   const [visible, setVisible] = useState(4);
@@ -33,7 +37,7 @@ export function ResourcesBlogPostList() {
             onClick={() => setVisible((v) => v + 4)}
           >
             <div className="btn-text-large w-inline-block">{"More"}</div>
-            <WfImage
+            <OptimizedImage
               src="/assets/icons/arrow-icon-v2.svg"
               loading="lazy"
               alt=""

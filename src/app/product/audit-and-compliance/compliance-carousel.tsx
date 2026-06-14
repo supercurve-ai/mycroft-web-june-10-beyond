@@ -1,4 +1,7 @@
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import complianceSlide1 from "@public/assets/screenshots/compliance-slide1.webp";
+import complianceSlide2 from "@public/assets/screenshots/compliance-slide2-x2.webp";
+import complianceSlide3 from "@public/assets/screenshots/compliance-slide3-x2.webp";
 
 /**
  * The audit-and-compliance "Leverage enterprise security" section: a Webflow
@@ -39,7 +42,7 @@ export function ComplianceCarousel() {
                           <div className="compliance-slider-mask w-slider-mask" id="w-slider-mask-0">
                             <div className="compliance-slide w-slide" aria-label="1 of 3" role="group" style={{"transition": "all", "transform": "translateX(0px)", "opacity": "1"}}>
                               <div className="container-flex vertical center">
-                                <WfImage src="/assets/screenshots/compliance-slide1.webp" loading="lazy" width="800" sizes="(max-width: 767px) 100vw, 800px" alt="" srcSet="/assets/screenshots/compliance-slide1-p-500.webp 500w, /assets/screenshots/compliance-slide1-p-800.webp 800w, /assets/screenshots/compliance-slide1-p-1080.webp 1080w, /assets/screenshots/compliance-slide1.webp 1600w" className="compliance-slide-img" />
+                                <OptimizedImage src={complianceSlide1} loading="lazy" width="800" sizes="(max-width: 767px) 100vw, 800px" alt="" className="compliance-slide-img" />
                                 <div className="compliance-slider-text smaller">
                                   Enable enterprise-grade security and compliance for all companies
                                 </div>
@@ -47,7 +50,7 @@ export function ComplianceCarousel() {
                             </div>
                             <div className="compliance-slide w-slide" aria-label="2 of 3" role="group" aria-hidden="true" style={{"transition": "all", "transform": "translateX(0px)", "opacity": "1"}}>
                               <div className="container-flex vertical center" aria-hidden="true">
-                                <WfImage src="/assets/screenshots/compliance-slide2-x2.webp" loading="lazy" width="800" sizes="(max-width: 767px) 100vw, 800px" alt="" srcSet="/assets/screenshots/compliance-slide2-x2-p-500.webp 500w, /assets/screenshots/compliance-slide2-x2-p-800.webp 800w, /assets/screenshots/compliance-slide2-x2-p-1080.webp 1080w, /assets/screenshots/compliance-slide2-x2.webp 1600w" className="compliance-slide-img" aria-hidden="true" />
+                                <OptimizedImage src={complianceSlide2} loading="lazy" width="800" sizes="(max-width: 767px) 100vw, 800px" alt="" className="compliance-slide-img" aria-hidden="true" />
                                 <div className="compliance-slider-text smaller" aria-hidden="true">
                                   Achieve multiple certifications in the time it usually takes to acquire one
                                 </div>
@@ -55,7 +58,7 @@ export function ComplianceCarousel() {
                             </div>
                             <div className="compliance-slide w-slide" aria-label="3 of 3" role="group" aria-hidden="true" style={{"transition": "all", "transform": "translateX(0px)", "opacity": "1"}}>
                               <div className="container-flex vertical center" aria-hidden="true">
-                                <WfImage src="/assets/screenshots/compliance-slide3-x2.webp" loading="lazy" width="800" sizes="(max-width: 767px) 100vw, 800px" alt="" srcSet="/assets/screenshots/compliance-slide3-x2-p-500.webp 500w, /assets/screenshots/compliance-slide3-x2-p-800.webp 800w, /assets/screenshots/compliance-slide3-x2-p-1080.webp 1080w, /assets/screenshots/compliance-slide3-x2.webp 1600w" className="compliance-slide-img" aria-hidden="true" />
+                                <OptimizedImage src={complianceSlide3} loading="lazy" width="800" sizes="(max-width: 767px) 100vw, 800px" alt="" className="compliance-slide-img" aria-hidden="true" />
                                 <div className="compliance-slider-text smaller" aria-hidden="true">
                                   Otherwise annoying audits
                                   <span className="no-break normal_mobile" aria-hidden="true">

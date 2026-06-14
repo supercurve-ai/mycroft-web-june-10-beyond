@@ -1,4 +1,5 @@
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import steveImg from "@public/assets/customers/steve-cropped-mono-img.webp";
 
 /** Testimonial section of /product. Ported from Webflow by the Webflow Cloner agent. */
 export function ProductTestimonial() {
@@ -22,7 +23,7 @@ export function ProductTestimonial() {
             <div className="pullquote-content _75terra">
               <div className="container-flex pullquote_container">
                 <div className="pullquote-img-container blueberry">
-                  <WfImage width="215" loading="lazy" alt="" src="/assets/customers/steve-cropped-mono-img.webp" sizes="(max-width: 479px) 100vw, 215px" srcSet="/assets/customers/steve-cropped-mono-img-p-500.webp 500w, /assets/customers/steve-cropped-mono-img.webp 600w" className="pullquote-img" />
+                  <OptimizedImage width="215" loading="lazy" alt="" src={steveImg} sizes="(max-width: 479px) 100vw, 215px" className="pullquote-img" />
                 </div>
                 <div className="container-flex pullquote_right">
                   <div className="pullquote-text hanging_quote">
@@ -38,7 +39,7 @@ export function ProductTestimonial() {
                     <div className="pullquote-title">
                       CEO & Co-founder of integratrace
                     </div>
-                    <WfImage loading="lazy" src="/assets/logos/integratrace-logo.svg" alt="" />
+                    <OptimizedImage loading="lazy" src="/assets/logos/integratrace-logo.svg" alt="" />
                   </div>
                 </div>
               </div>

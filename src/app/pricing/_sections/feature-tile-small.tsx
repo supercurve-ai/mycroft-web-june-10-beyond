@@ -1,5 +1,6 @@
 import type { CSSProperties, ReactNode } from "react";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
+import { screenshot } from "@/lib/screenshots";
 
 /**
  * One tile of the "Skip the security grind" grid on /pricing.
@@ -55,20 +56,19 @@ export function FeatureTileSmall({
             {eyebrow}
           </div>
         </div>
-        <WfImage src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape small_feature" />
+        <OptimizedImage src="/assets/icons/triangle-shape.svg" loading="lazy" alt="" className="triangle-shape small_feature" />
       </div>
       <div className="feature-tile-content-small">
-        <WfImage
-          src={`/assets/screenshots/${imageBase}.webp`}
+        <OptimizedImage
+          src={screenshot(imageBase)}
           loading="lazy"
           width="512"
           sizes="(max-width: 479px) 100vw, 512px"
           alt=""
-          srcSet={`/assets/screenshots/${imageBase}-p-500.webp 500w, /assets/screenshots/${imageBase}-p-800.webp 800w, /assets/screenshots/${imageBase}.webp 1024w`}
           className="feature-tile-img"
         />
         <div className={smallLabel ? "feature-small-tile-label" : "feature-tile-label"}>
-          <WfImage
+          <OptimizedImage
             src={icon}
             loading="lazy"
             alt=""

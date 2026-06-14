@@ -1,5 +1,5 @@
 import { ButtonLarge } from "@/components/button-large";
-import { WfImage } from "@/components/wf-image";
+import { OptimizedImage } from "@/components/optimized-image";
 
 /** Partner-benefits section of /partnerships. Ported from Webflow by the Webflow Cloner agent. */
 export function PartnershipsBenefits() {
@@ -38,7 +38,7 @@ export function PartnershipsBenefits() {
             <div className="w-full pb-(--sizing--rem--8-5rem) max-tablet:pb-(--sizing--rem--6-5rem) max-landscape:pb-(--sizing--rem--4-5rem) max-portrait:pb-(--sizing--rem--3-5rem)">
               <div className="w-layout-grid features-3up">
                 <div className="feature-item">
-                  <WfImage src="/assets/icons/puzzle-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
+                  <OptimizedImage src="/assets/icons/puzzle-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
                   <div className="container-flex vertical center text_center">
                     <div className="h6 color_mint">
                       Collaborative growth
@@ -51,7 +51,7 @@ export function PartnershipsBenefits() {
                   </div>
                 </div>
                 <div className="feature-item">
-                  <WfImage src="/assets/icons/markets-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
+                  <OptimizedImage src="/assets/icons/markets-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
                   <div className="container-flex vertical center text_center">
                     <div className="h6 color_mint">
                       Revenue potential
@@ -64,7 +64,7 @@ export function PartnershipsBenefits() {
                   </div>
                 </div>
                 <div className="feature-item">
-                  <WfImage src="/assets/icons/checkmark-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
+                  <OptimizedImage src="/assets/icons/checkmark-icon.svg" loading="lazy" width="38" alt="" className="feature-icon" />
                   <div className="container-flex vertical center text_center">
                     <div className="h6 color_mint">
                       Shared Vision for Security
