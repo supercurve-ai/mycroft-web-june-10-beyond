@@ -7,6 +7,7 @@ const Iso42001 = ({ children = "ISO 42001" }: { children?: string }) => (
 
 export const iso42001: FrameworkPageData = {
   meta: {
+    path: "/frameworks/iso42001",
     title: "Mycroft Frameworks | ISO 42001 compliance, built for AI governance",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you implement responsible AI practices and meet ISO 42001 requirements.",
     image: "/assets/meta/frameworks-iso42001-meta-v1.jpg",

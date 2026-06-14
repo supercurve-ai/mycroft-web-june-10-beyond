@@ -7,6 +7,7 @@ const Soc2 = ({ children = "SOC 2" }: { children?: string }) => (
 
 export const soc2: FrameworkPageData = {
   meta: {
+    path: "/frameworks/soc2",
     title: "Mycroft Frameworks | Proper SOC 2 compliance, accredited auditor approved",
     description: "Mycroft’s Risk Operations Center eliminates the busywork, helping you achieve SOC 2 compliance the right way.",
     image: "/assets/meta/frameworks-soc2-meta-v1.jpg",

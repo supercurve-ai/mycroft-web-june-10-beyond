@@ -3,6 +3,7 @@ import { adamWeave } from "../_shared/testimonials";
 
 export const cmmc: FrameworkPageData = {
   meta: {
+    path: "/frameworks/cmmc",
     title: "Mycroft Frameworks | CMMC compliance, built for defense contractors",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet all CMMC requirements and secure DoD contracts with confidence.",
     image: "/assets/meta/frameworks-cmmc-meta-v1.jpg",

@@ -7,6 +7,7 @@ const Iso27001 = ({ children = "ISO 27001" }: { children?: string }) => (
 
 export const iso27001: FrameworkPageData = {
   meta: {
+    path: "/frameworks/iso27001",
     title: "Mycroft Frameworks | ISO 27001 compliance, built for global organizations",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve ISO 27001 certification and strengthen your information security program.",
     image: "/assets/meta/frameworks-iso27001-meta-v1.jpg",

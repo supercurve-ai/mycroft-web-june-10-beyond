@@ -3,6 +3,7 @@ import { adamWeave } from "../_shared/testimonials";
 
 export const hipaa: FrameworkPageData = {
   meta: {
+    path: "/frameworks/hipaa",
     title: "Mycroft Frameworks | HIPAA compliance, built for healthcare organizations",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet HIPAA requirements and protect sensitive health information with confidence.",
     image: "/assets/meta/frameworks-hipaa-meta-v1.jpg",

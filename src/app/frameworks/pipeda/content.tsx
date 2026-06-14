@@ -3,6 +3,7 @@ import { adamWeave } from "../_shared/testimonials";
 
 export const pipeda: FrameworkPageData = {
   meta: {
+    path: "/frameworks/pipeda",
     title: "Mycroft Frameworks | PIPEDA compliance, built for Canadian businesses",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet PIPEDA requirements and manage personal data responsibly at scale.",
     image: "/assets/meta/frameworks-pipeda-meta-v1.jpg",

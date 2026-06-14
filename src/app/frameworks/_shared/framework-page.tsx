@@ -9,6 +9,8 @@ import { SiteFooter } from "@/components/site-footer";
 import { UnlockFrameworksSection } from "@/components/unlock-frameworks-section";
 import { WebflowInteractions } from "@/components/webflow-interactions";
 import { OptimizedImage } from "@/components/optimized-image";
+import { JsonLd } from "@/components/json-ld";
+import { pageSchema } from "@/lib/structured-data";
 import { screenshot } from "@/lib/screenshots";
 import { staticImage } from "@/lib/static-images";
 
@@ -42,7 +44,7 @@ export interface Testimonial {
 }
 
 export interface FrameworkPageData {
-  meta: { title: string; description: string; image: string };
+  meta: { title: string; description: string; image: string; path: string };
   hero: {
     title: ReactNode;
     dek: ReactNode;
@@ -365,9 +367,30 @@ function FaqSection({ d }: { d: FrameworkPageData }) {
   );
 }
 
+/** WebPage + SoftwareApplication + FAQPage + Review schema, built from the page's content. */
+function frameworkSchema(d: FrameworkPageData) {
+  return pageSchema({
+    name: d.meta.title,
+    description: d.meta.description,
+    path: d.meta.path,
+    appName: "Mycroft Risk Operations Center",
+    featureList: [
+      ...d.solutions.cards.map((c) => c.title),
+      ...d.grid.tiles.map((t) => t.title),
+    ],
+    faqs: d.faq.items,
+    review: {
+      author: d.testimonial.name,
+      jobTitle: d.testimonial.title,
+      body: d.testimonial.quote.replace(/[”"]\s*$/u, "").trim(),
+    },
+  });
+}
+
 export function FrameworkPage({ data: d }: { data: FrameworkPageData }) {
   return (
     <>
+      <JsonLd data={frameworkSchema(d)} />
       <div className="page-wrapper u-minh-100vh color_rg">
         <div className="styles__global-embed-code w-embed"></div>
         <SiteNav />

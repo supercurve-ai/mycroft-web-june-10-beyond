@@ -9,6 +9,8 @@ import { CtaSection } from "@/components/cta-section";
 import { CaseStudyInteractions } from "./case-study-interactions";
 import { OptimizedImage } from "@/components/optimized-image";
 import { staticImage } from "@/lib/static-images";
+import { JsonLd } from "@/components/json-ld";
+import { articleSchema } from "@/lib/structured-data";
 
 export function generateStaticParams() {
   return caseStudies.getSlugs().map((slug) => ({ slug }));
@@ -18,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const meta = caseStudies.getMeta(slug);
   return { title: meta.title, description: meta.excerpt,
-    openGraph: { title: meta.title, description: meta.excerpt,
+    openGraph: { title: meta.title, description: meta.excerpt, type: "article",
       images: meta.coverImage ? [meta.coverImage] : undefined },
     twitter: { card: "summary_large_image", title: meta.title, description: meta.excerpt,
       images: meta.coverImage ? [meta.coverImage] : undefined } };
@@ -46,6 +48,16 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ sl
 
   return (
     <>
+      <JsonLd
+        data={articleSchema({
+          title: meta.title ?? "",
+          description: meta.excerpt,
+          path: `/case-studies/${slug}`,
+          datePublished: meta.date,
+          author: meta.author,
+          image: meta.coverImage,
+        })}
+      />
       <SiteNav />
       <main id="main" className="page-content">
         <section id="hero" className="section-hero">

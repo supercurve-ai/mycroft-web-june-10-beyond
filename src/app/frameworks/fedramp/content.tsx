@@ -3,6 +3,7 @@ import { jorgeSmashsend } from "../_shared/testimonials";
 
 export const fedramp: FrameworkPageData = {
   meta: {
+    path: "/frameworks/fedramp",
     title: "Mycroft Frameworks | FedRAMP compliance, built for cloud providers",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve FedRAMP authorization and operate securely in the public sector.",
     image: "/assets/meta/frameworks-fedramp-meta-v1.jpg",

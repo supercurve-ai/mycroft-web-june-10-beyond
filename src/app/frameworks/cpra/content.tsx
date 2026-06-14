@@ -3,6 +3,7 @@ import { jorgeSmashsend } from "../_shared/testimonials";
 
 export const cpra: FrameworkPageData = {
   meta: {
+    path: "/frameworks/cpra",
     title: "Mycroft Frameworks | CPRA compliance, built on CCPA, ready for what’s next",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you meet CPRA requirements and manage consumer data with confidence.",
     image: "/assets/meta/frameworks-crpa-meta-v2.jpg",

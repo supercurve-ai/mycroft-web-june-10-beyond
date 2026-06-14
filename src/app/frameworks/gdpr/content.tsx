@@ -3,6 +3,7 @@ import { jorgeSmashsend } from "../_shared/testimonials";
 
 export const gdpr: FrameworkPageData = {
   meta: {
+    path: "/frameworks/gdpr",
     title: "Mycroft Frameworks | GDPR compliance, built for real-world execution",
     description: "Mycroft’s Risk Operations Center removes the operational burden, helping you achieve and maintain GDPR compliance with confidence.",
     image: "/assets/meta/frameworks-gdpr-meta-v1.jpg",

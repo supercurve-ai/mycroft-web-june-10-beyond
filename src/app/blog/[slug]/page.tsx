@@ -9,6 +9,8 @@ import { SiteFooter } from "@/components/site-footer";
 import { CtaSection } from "@/components/cta-section";
 import { OptimizedImage } from "@/components/optimized-image";
 import { staticImage } from "@/lib/static-images";
+import { JsonLd } from "@/components/json-ld";
+import { articleSchema } from "@/lib/structured-data";
 
 export function generateStaticParams() {
   return blog.getSlugs().map((slug) => ({ slug }));
@@ -18,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const meta = blog.getMeta(slug);
   return { title: meta.title, description: meta.excerpt,
-    openGraph: { title: meta.title, description: meta.excerpt,
+    openGraph: { title: meta.title, description: meta.excerpt, type: "article",
       images: meta.coverImage ? [meta.coverImage] : undefined },
     twitter: { card: "summary_large_image", title: meta.title, description: meta.excerpt,
       images: meta.coverImage ? [meta.coverImage] : undefined } };
@@ -40,6 +42,16 @@ export default async function BlogPage({ params }: { params: Promise<{ slug: str
   };
   return (
     <>
+      <JsonLd
+        data={articleSchema({
+          title: fm.title ?? "",
+          description: fm.excerpt,
+          path: `/blog/${slug}`,
+          datePublished: fm.date,
+          author: fm.author,
+          image: fm.coverImage,
+        })}
+      />
       <SiteNav />
       <main id="main" className="page-content">
         <section className="section_v2 earl40">
