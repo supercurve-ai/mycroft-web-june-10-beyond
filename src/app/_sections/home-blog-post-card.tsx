@@ -1,7 +1,7 @@
 import { ReadNowLink } from "@/components/read-now-link";
 import { OptimizedImage } from "@/components/optimized-image";
 
-/** One HomeBlogPostCard item (Webflow CMS collection). Ported from Webflow by the Webflow Cloner agent. */
+/** One HomeBlogPostCard item (Webflow CMS collection). */
 export type HomeBlogPostItem = { href_0: string; image_1: string; mobile_3: string };
 
 export function HomeBlogPostCard({ item }: { item: HomeBlogPostItem }) {

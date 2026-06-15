@@ -1,6 +1,6 @@
 import type { ResourcesBlogPostItem } from "./resources-blog-post-card";
 
-/** Data for the ResourcesBlogPostCard collection, parsed from the Webflow CMS items. Ported from Webflow by the Webflow Cloner agent. */
+/** Data for the ResourcesBlogPostCard collection, parsed from the Webflow CMS items. */
 export const resourcesBlogPosts: ResourcesBlogPostItem[] = [
   {
     "href_0": "/blog/whats-the-most-efficient-way-to-handle-cmmc-compliance-assessments",

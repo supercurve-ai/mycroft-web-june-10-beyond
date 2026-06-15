@@ -11485,7 +11485,7 @@ figcaption {
   }
 }
 
-/* ===== Webflow Cloner — interaction styles (generic, shared) ===== */
+/* ===== Interaction styles (generic, shared) ===== */
 /* scroll-reveal (IX2 fade/slide-in, per-element timing via --wf-* vars) */
 .wf-reveal { transition:
     opacity   var(--wf-op-dur, 0.6s) var(--wf-op-ease, ease) var(--wf-op-delay, 0s),

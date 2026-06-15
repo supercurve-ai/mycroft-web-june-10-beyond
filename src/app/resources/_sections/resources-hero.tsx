@@ -1,4 +1,4 @@
-/** Hero section of /resources. Ported from Webflow by the Webflow Cloner agent. */
+/** Hero section of /resources. */
 export function ResourcesHero() {
   return (
     <section id="hero" className="section-hero">

@@ -1,7 +1,7 @@
 import { OptimizedImage } from "@/components/optimized-image";
 import adamImg from "@public/assets/customers/adam-cropped-mono-img.webp";
 
-/** Testimonial section of /about. Ported from Webflow by the Webflow Cloner agent. */
+/** Testimonial section of /about. */
 export function AboutTestimonial() {
   return (
     <section id="testimonial" className="section_v2 split_background _75rg_smoke">

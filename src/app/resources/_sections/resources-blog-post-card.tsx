@@ -1,7 +1,7 @@
 import { OptimizedImage } from "@/components/optimized-image";
 import mikeKimImg from "@public/assets/team/mikekim2025.png";
 
-/** One ResourcesBlogPostCard item (Webflow CMS collection). Ported from Webflow by the Webflow Cloner agent. */
+/** One ResourcesBlogPostCard item (Webflow CMS collection). */
 export type ResourcesBlogPostItem = { href_0: string; image_1: string; image_3: string; smaller_4: string; medium_5: string; medium_6: string; medium_7: string };
 
 export function ResourcesBlogPostCard({ item }: { item: ResourcesBlogPostItem }) {

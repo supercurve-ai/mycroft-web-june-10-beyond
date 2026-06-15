@@ -4,9 +4,7 @@ import { TermsHeader } from "./terms-header";
 import { TermsMsaBody } from "./terms-msa-body";
 
 /**
- * Faithful React port of the Webflow https://www.mycroft.io/terms page. DOM + classes mirror
- * the original 1:1; global styling is in webflow-shared.css, page CSS
- * in terms.css. Ported from Webflow by the Webflow Cloner agent.
+ * /terms page. Global styling is in webflow-shared.css.
  */
 export function TermsPageContent() {
   return (

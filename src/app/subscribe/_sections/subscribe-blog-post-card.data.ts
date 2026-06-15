@@ -1,6 +1,6 @@
 import type { SubscribeBlogPostItem } from "./subscribe-blog-post-card";
 
-/** Data for the SubscribeBlogPostCard collection, parsed from the Webflow CMS items. Ported from Webflow by the Webflow Cloner agent. */
+/** Data for the SubscribeBlogPostCard collection, parsed from the Webflow CMS items. */
 export const subscribeBlogPosts: SubscribeBlogPostItem[] = [
   {
     "href_0": "/blog/cmmc-compliance-platform",

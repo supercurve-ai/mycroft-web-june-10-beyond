@@ -1,7 +1,7 @@
 import { OptimizedImage } from "@/components/optimized-image";
 import { staticImage } from "@/lib/static-images";
 
-/** One ResourcesCaseStudyCard item (Webflow CMS collection). Ported from Webflow by the Webflow Cloner agent. */
+/** One ResourcesCaseStudyCard item (Webflow CMS collection). */
 export type ResourcesCaseStudyItem = { href_0: string; image_1: string; h6_3: string; image_4: string; text_5: string; div_6: string; href_7: string };
 
 export function ResourcesCaseStudyCard({ item }: { item: ResourcesCaseStudyItem }) {

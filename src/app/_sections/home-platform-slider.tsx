@@ -39,7 +39,7 @@ const SLIDES: ProductSlide[] = [
   },
 ];
 
-/** Platform-slider section of /home. Ported from Webflow by the Webflow Cloner agent. */
+/** Platform-slider section of /home. */
 export function HomePlatformSlider() {
   return (
     <section id="platform" className="section_v2 tint_40eg overflow_hidden">

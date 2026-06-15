@@ -1,6 +1,6 @@
 import { ButtonLarge } from "@/components/button-large";
 import { ResourcesBlogPostList } from "./resources-blog-post-list";
-/** Featured-blog section of /resources. Ported from Webflow by the Webflow Cloner agent. */
+/** Featured-blog section of /resources. */
 export function ResourcesFeaturedBlog() {
   return (
     <section id="about-mycroft" className="section_v2 earl40">

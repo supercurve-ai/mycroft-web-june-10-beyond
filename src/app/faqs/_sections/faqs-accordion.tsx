@@ -1,6 +1,6 @@
 import { AccordionItem } from "@/components/accordion";
 
-/** FAQ-accordion section of /faqs. Ported from Webflow by the Webflow Cloner agent. */
+/** FAQ-accordion section of /faqs. */
 export function FaqsAccordion() {
   return (
     <section id="about-mycroft" className="section_v2 earl40">

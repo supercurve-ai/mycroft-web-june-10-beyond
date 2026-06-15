@@ -1,6 +1,6 @@
 import type { PartnershipsBlogPostItem } from "./partnerships-blog-post-card";
 
-/** Data for the PartnershipsBlogPostCard collection, parsed from the Webflow CMS items. Ported from Webflow by the Webflow Cloner agent. */
+/** Data for the PartnershipsBlogPostCard collection, parsed from the Webflow CMS items. */
 export const partnershipsBlogPosts: PartnershipsBlogPostItem[] = [
   {
     "href_0": "/blog/cmmc-compliance-platform",

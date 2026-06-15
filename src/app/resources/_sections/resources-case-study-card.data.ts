@@ -1,6 +1,6 @@
 import type { ResourcesCaseStudyItem } from "./resources-case-study-card";
 
-/** Data for the ResourcesCaseStudyCard collection, parsed from the Webflow CMS items. Ported from Webflow by the Webflow Cloner agent. */
+/** Data for the ResourcesCaseStudyCard collection, parsed from the Webflow CMS items. */
 export const resourcesCaseStudies: ResourcesCaseStudyItem[] = [
   {
     "href_0": "/case-studies/smashsend",

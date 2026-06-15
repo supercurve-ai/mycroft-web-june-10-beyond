@@ -1,7 +1,7 @@
 import { ReadNowLink } from "@/components/read-now-link";
 import { OptimizedImage } from "@/components/optimized-image";
 
-/** One SubscribeBlogPostCard item (Webflow CMS collection). Ported from Webflow by the Webflow Cloner agent. */
+/** One SubscribeBlogPostCard item (Webflow CMS collection). */
 export type SubscribeBlogPostItem = { href_0: string; image_1: string; mobile_3: string };
 
 export function SubscribeBlogPostCard({ item }: { item: SubscribeBlogPostItem }) {

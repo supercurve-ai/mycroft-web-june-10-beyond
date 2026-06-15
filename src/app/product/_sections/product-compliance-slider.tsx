@@ -3,7 +3,7 @@ import complianceSlide1 from "@public/assets/screenshots/compliance-slide1.webp"
 import complianceSlide2 from "@public/assets/screenshots/compliance-slide2-x2.webp";
 import complianceSlide3 from "@public/assets/screenshots/compliance-slide3-x2.webp";
 
-/** Compliance-slider section of /product. Ported from Webflow by the Webflow Cloner agent. */
+/** Compliance-slider section of /product. */
 export function ProductComplianceSlider() {
   return (
     <section id="compliance" className="section_v2">

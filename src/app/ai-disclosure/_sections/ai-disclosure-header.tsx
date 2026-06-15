@@ -1,4 +1,4 @@
-/** Page-header section of /ai-disclosure. Ported from Webflow by the Webflow Cloner agent. */
+/** Page-header section of /ai-disclosure. */
 export function AiDisclosureHeader() {
   return (
     <section className="section u-bg-primary nav_v2">

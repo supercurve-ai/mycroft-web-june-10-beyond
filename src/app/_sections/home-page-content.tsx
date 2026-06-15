@@ -11,11 +11,7 @@ import { HomePlatformSlider } from "./home-platform-slider";
 import { HomeTestimonial } from "./home-testimonial";
 import { HomeLatestInsights } from "./home-latest-insights";
 
-/**
- * Faithful React port of the Webflow https://www.mycroft.io page. DOM + classes mirror
- * the original 1:1; global styling is in webflow-shared.css, page CSS
- * in home.css. Ported from Webflow by the Webflow Cloner agent.
- */
+
 export function HomePageContent() {
   return (
     <div className="page-wrapper u-minh-100vh">

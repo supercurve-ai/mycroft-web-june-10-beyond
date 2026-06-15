@@ -1,7 +1,7 @@
 import { ReadNowLink } from "@/components/read-now-link";
 import { OptimizedImage } from "@/components/optimized-image";
 
-/** One PartnershipsBlogPostCard item (Webflow CMS collection). Ported from Webflow by the Webflow Cloner agent. */
+/** One PartnershipsBlogPostCard item (Webflow CMS collection). */
 export type PartnershipsBlogPostItem = { href_0: string; image_1: string; mobile_3: string };
 
 export function PartnershipsBlogPostCard({ item }: { item: PartnershipsBlogPostItem }) {

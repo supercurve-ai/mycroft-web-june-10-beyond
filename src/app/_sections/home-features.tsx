@@ -4,7 +4,7 @@ import wgyc4Img from "@public/assets/photos/wgyc-4-real-experts-always-here.webp
 import featuresImg2 from "@public/assets/screenshots/features-img2.webp";
 import featuresImg3 from "@public/assets/screenshots/features-img3.webp";
 
-/** Features section of /home. Ported from Webflow by the Webflow Cloner agent. */
+/** Features section of /home. */
 export function HomeFeatures() {
   return (
     <section id="features" className="section_v2 color_sand">

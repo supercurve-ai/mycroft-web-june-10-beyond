@@ -1,4 +1,7 @@
 import { isValidElement, type ReactElement, type ReactNode } from "react";
+import { SITE_URL } from "./site-url";
+
+export { SITE_URL };
 
 /**
  * Builders for the site's JSON-LD structured data, rendered via <JsonLd>.
@@ -13,8 +16,6 @@ import { isValidElement, type ReactElement, type ReactNode } from "react";
  * Organization). They also fix two bugs from the original: a leaked
  * "/staging-pages/…" URL and a Webflow-CDN logo URL (now self-hosted).
  */
-
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.mycroft.io";
 
 /** Resolve a site-relative path to an absolute URL (schema fields require absolute). */
 function abs(p: string): string {

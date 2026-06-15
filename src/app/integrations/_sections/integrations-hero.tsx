@@ -1,4 +1,4 @@
-/** Hero section of /integrations. Ported from Webflow by the Webflow Cloner agent. */
+/** Hero section of /integrations. */
 export function IntegrationsHero() {
   return (
     <section id="hero" className="section-hero">

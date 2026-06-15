@@ -7,9 +7,7 @@ import { ResourcesCaseStudies } from "./resources-case-studies";
 import { ResourcesComplianceBadges } from "./resources-compliance-badges";
 
 /**
- * Faithful React port of the Webflow https://www.mycroft.io/resources page. DOM + classes mirror
- * the original 1:1; global styling is in webflow-shared.css, page CSS
- * in resources.css. Ported from Webflow by the Webflow Cloner agent.
+ * /resources page. Global styling is in webflow-shared.css.
  */
 export function ResourcesPageContent() {
   return (

@@ -4,8 +4,7 @@ import { pipeda } from "./content";
 export const metadata = frameworkMetadata(pipeda);
 
 /**
- * /frameworks/pipeda: a faithful React rebuild of the Webflow page, rendered
- * from the shared FrameworkPage template with this page's content.tsx.
+ * /frameworks/pipeda page, rendered from the shared FrameworkPage template with this page's content.tsx.
  */
 export default function FrameworksPipedaPage() {
   return <FrameworkPage data={pipeda} />;

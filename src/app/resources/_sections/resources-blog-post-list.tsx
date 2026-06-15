@@ -6,14 +6,7 @@ import { resourcesBlogPosts } from "./resources-blog-post-card.data";
 import { OptimizedImage } from "@/components/optimized-image";
 
 /**
- * Client-side Load More for the ResourcesBlogPostCard collection. The live
- * Webflow page uses CMS pagination (4 posts per page) via real
- * `?698790ea_page=N` links, progressively enhanced by Finsweet Attributes into
- * in-place "load more" that swaps in the next 4 without changing the URL. The
- * clone reproduces that visible behavior by folding all 18 posts into the data
- * array and revealing them 4 at a time; note there are no paginated URLs here,
- * so live's `?698790ea_page=2…N` pages have no clone equivalent.
- * Ported from Webflow by the Webflow Cloner agent.
+ * List of blog posts
  */
 export function ResourcesBlogPostList() {
   const [visible, setVisible] = useState(4);

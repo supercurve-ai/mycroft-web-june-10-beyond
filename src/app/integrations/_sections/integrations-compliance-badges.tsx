@@ -1,6 +1,6 @@
 import { ComplianceSection } from "@/components/compliance-section";
 
-/** Compliance-badges section of /integrations. Ported from Webflow by the Webflow Cloner agent. */
+/** Compliance-badges section of /integrations. */
 export function IntegrationsComplianceBadges() {
   return (
     <section id="compliance" className="section_v2">

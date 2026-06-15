@@ -38,9 +38,7 @@ const partnerSlides: ScrollFeatureSlide[] = [
 ];
 
 /**
- * Faithful React port of the Webflow https://www.mycroft.io/partnerships page. DOM + classes mirror
- * the original 1:1; global styling is in webflow-shared.css, page CSS
- * in partnerships.css. Ported from Webflow by the Webflow Cloner agent.
+ * /partnerships page. Global styling is in webflow-shared.css.
  */
 export function PartnershipsPageContent() {
   return (

@@ -2,7 +2,7 @@ import { LogoMarquee } from "@/components/logo-marquee";
 import { OptimizedImage } from "@/components/optimized-image";
 import chairLockupImg from "@public/assets/decor/chair-lockup-static.webp";
 
-/** About-Mycroft and investors section of /about. Ported from Webflow by the Webflow Cloner agent. */
+/** About-Mycroft and investors section of /about. */
 export function AboutCompanyAndInvestors() {
   return (
     <section id="about-mycroft" className="section_v2 tint_75rg">

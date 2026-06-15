@@ -5,7 +5,7 @@ import glowHover from "@public/assets/decor/glow-hover-2x.webp";
 import glowBack from "@public/assets/decor/glow-back-2x.webp";
 import lantern from "@public/assets/decor/lantern-v1-2x.webp";
 
-/** Hero section of /product. Ported from Webflow by the Webflow Cloner agent. */
+/** Hero section of /product. */
 export function ProductOverviewHero() {
   return (
     <section id="hero" className="section-hero">

@@ -4,9 +4,7 @@ import { AiDisclosureHeader } from "./ai-disclosure-header";
 import { AiDisclosureBody } from "./ai-disclosure-body";
 
 /**
- * Faithful React port of the Webflow https://mycroft.io/ai-disclosure page. DOM + classes mirror
- * the original 1:1; global styling is in webflow-shared.css, page CSS
- * in ai-disclosure.css. Ported from Webflow by the Webflow Cloner agent.
+ * AI Disclosures page. Global styling is in webflow-shared.css.
  */
 export function AiDisclosurePageContent() {
   return (

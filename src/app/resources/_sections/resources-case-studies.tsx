@@ -1,6 +1,6 @@
 import { ResourcesCaseStudyCard } from "./resources-case-study-card";
 import { resourcesCaseStudies } from "./resources-case-study-card.data";
-/** Case-studies section of /resources. Ported from Webflow by the Webflow Cloner agent. */
+/** Case-studies section of /resources. */
 export function ResourcesCaseStudies() {
   return (
     <section id="about-mycroft" className="section_v2 color_sand">

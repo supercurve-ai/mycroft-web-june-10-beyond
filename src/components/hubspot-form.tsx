@@ -21,7 +21,7 @@ const EMBED_SRC = "https://js.hsforms.net/forms/embed/v2.js";
 
 /**
  * HubSpot embedded form (the original site created it inline with
- * `hbspt.forms.create`; the cloner could only capture the empty iframe shell).
+ * `hbspt.forms.create`, which only renders an empty iframe shell server-side).
  * Loads HubSpot's embed script once and renders the form into a local target.
  */
 export function HubspotForm({

@@ -3,7 +3,7 @@ import mike2Img from "@public/assets/team/mike-2.webp";
 import jon2Img from "@public/assets/team/jon-2.webp";
 import jan2Img from "@public/assets/team/jan-2.webp";
 
-/** Leadership section of /about. Ported from Webflow by the Webflow Cloner agent. */
+/** Leadership section of /about. */
 export function AboutLeadership() {
   return (
     <section id="leadership" className="section_v2 tint_75rg">

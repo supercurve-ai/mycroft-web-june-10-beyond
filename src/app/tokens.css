@@ -86,7 +86,7 @@
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Site chrome — formerly a ~100-line block duplicated in every page's CSS
-   file (page-embedded <style> blocks captured by the cloner). Defined once,
+   file (originally page-embedded <style> blocks). Defined once,
    globally. Unlayered on purpose: these must beat Tailwind's layered styles
    and load after webflow-shared.css, exactly like the originals did.
    ───────────────────────────────────────────────────────────────────────── */

@@ -1,7 +1,7 @@
 import { OptimizedImage } from "@/components/optimized-image";
 import jorgeImg from "@public/assets/customers/jorge-cropped-mono-img.webp";
 
-/** Testimonial section of /pricing. Ported from Webflow by the Webflow Cloner agent. */
+/** Testimonial section of /pricing. */
 export function PricingTestimonial() {
   return (
     <section id="testimonial" className="section_v2 split_background _40earlgrey_rg">

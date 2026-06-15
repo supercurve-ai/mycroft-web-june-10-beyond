@@ -1,7 +1,7 @@
 import { ButtonLarge } from "@/components/button-large";
 import { OptimizedImage } from "@/components/optimized-image";
 
-/** Partner-benefits section of /partnerships. Ported from Webflow by the Webflow Cloner agent. */
+/** Partner-benefits section of /partnerships. */
 export function PartnershipsBenefits() {
   return (
     <section id="compliance" className="section_v2">

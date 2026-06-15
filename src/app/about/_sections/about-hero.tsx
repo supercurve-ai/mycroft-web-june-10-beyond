@@ -1,4 +1,4 @@
-/** Hero section of /about. Ported from Webflow by the Webflow Cloner agent. */
+/** Hero section of /about. */
 export function AboutHero() {
   return (
     <section id="hero" className="section-hero">

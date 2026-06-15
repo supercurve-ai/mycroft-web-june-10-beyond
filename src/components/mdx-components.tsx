@@ -1,8 +1,24 @@
 import type { ComponentProps } from "react";
 import { OptimizedImage } from "@/components/optimized-image";
 
+/**
+ * Rewrite an absolute link to the main Mycroft marketing site into a
+ * site-relative one, so links written in MDX content follow whatever host is
+ * serving the page (prod, staging, or a Vercel preview) instead of hard-jumping
+ * to www.mycroft.io. Other hosts — including Mycroft's separate subdomains
+ * (app./trust./status./h./try.) and external sites — are left untouched.
+ */
+function toSiteRelative(href: string): string {
+  const rel = href.replace(/^https?:\/\/(www\.)?mycroft\.io(?![\w.])/i, "");
+  if (rel === href) return href; // not the main site — leave it alone
+  return rel.startsWith("/") ? rel : `/${rel}`;
+}
+
 /** MDX element → component map. Extend to style article elements. */
 export const mdxComponents = {
+  a: ({ href, ...props }: ComponentProps<"a">) => (
+    <a href={typeof href === "string" ? toSiteRelative(href) : href} {...props} />
+  ),
   img: ({ src, ...props }: ComponentProps<"img">) => (
     <OptimizedImage
       {...props}

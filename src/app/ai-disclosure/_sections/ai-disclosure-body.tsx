@@ -1,4 +1,4 @@
-/** Disclosure-body section of /ai-disclosure. Ported from Webflow by the Webflow Cloner agent. */
+/** Disclosure-body section of /ai-disclosure. */
 export function AiDisclosureBody() {
   return (
     <section className="section">

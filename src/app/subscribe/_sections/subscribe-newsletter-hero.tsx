@@ -1,4 +1,4 @@
-/** Newsletter hero section of /subscribe. Ported from Webflow by the Webflow Cloner agent. */
+/** Newsletter hero section of /subscribe. */
 export function SubscribeNewsletterHero() {
   return (
     <section id="hero" className="section-hero">

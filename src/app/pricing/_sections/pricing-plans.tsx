@@ -1,4 +1,4 @@
-/** Pricing-plans section of /pricing. Ported from Webflow by the Webflow Cloner agent. */
+/** Pricing-plans section of /pricing. */
 export function PricingPlans() {
   return (
     <section id="pricing" className="section_v2 tint_40eg overflow_hidden">

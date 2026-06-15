@@ -1,4 +1,4 @@
-# This site — cloned from Webflow by the Webflow Cloner agent
+# This site — Clone of a webflow site
 
 A Next.js (App Router) app. Faithful clone: the DOM + class names mirror the
 original Webflow site 1:1 and are styled by the captured Webflow stylesheet.

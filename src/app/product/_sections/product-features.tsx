@@ -68,7 +68,7 @@ function lottieMedia(src: string) {
   );
 }
 
-/** Product-features section of /product. Ported from Webflow by the Webflow Cloner agent. */
+/** Product-features section of /product. */
 export function ProductFeatures() {
   return (
     <section id="product-features" className="section_v2 tint_40eg overflow_hidden">

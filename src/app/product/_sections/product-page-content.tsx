@@ -7,9 +7,7 @@ import { ProductFeatures } from "./product-features";
 import { ProductTestimonial } from "./product-testimonial";
 
 /**
- * Faithful React port of the Webflow https://www.mycroft.io/product page. DOM + classes mirror
- * the original 1:1; global styling is in webflow-shared.css, page CSS
- * in product.css. Ported from Webflow by the Webflow Cloner agent.
+ * /product page. Global styling is in webflow-shared.css.
  */
 export function ProductPageContent() {
   return (

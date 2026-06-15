@@ -1,4 +1,4 @@
-/** Hero section of /faqs. Ported from Webflow by the Webflow Cloner agent. */
+/** Hero section of /faqs. */
 export function FaqsHero() {
   return (
     <section id="hero" className="section-hero">

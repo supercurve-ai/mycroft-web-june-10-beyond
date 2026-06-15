@@ -1,6 +1,6 @@
 import { FeatureTileSmall } from "./feature-tile-small";
 
-/** Feature-grid section of /pricing. Ported from Webflow by the Webflow Cloner agent. */
+/** Feature-grid section of /pricing. */
 export function PricingFeatureGrid() {
   return (
     <section id="Features" className="section_v2 color_sand">

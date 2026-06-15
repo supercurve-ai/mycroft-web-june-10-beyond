@@ -1,6 +1,6 @@
 import { HomeBlogPostCard } from "./home-blog-post-card";
 import { homeBlogPosts } from "./home-blog-post-card.data";
-/** Latest-insights blog section of /home. Ported from Webflow by the Webflow Cloner agent. */
+/** Latest-insights blog section of /home. */
 export function HomeLatestInsights() {
   return (
     <section id="Features" className="section_v2 color_smoke">

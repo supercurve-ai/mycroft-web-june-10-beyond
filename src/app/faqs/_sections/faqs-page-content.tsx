@@ -6,9 +6,7 @@ import { FaqsAccordion } from "./faqs-accordion";
 import { FaqsComplianceBadges } from "./faqs-compliance-badges";
 
 /**
- * Faithful React port of the Webflow https://www.mycroft.io/faqs page. DOM + classes mirror
- * the original 1:1; global styling is in webflow-shared.css, page CSS
- * in faqs.css. Ported from Webflow by the Webflow Cloner agent.
+ * /faqs page. Global styling is in webflow-shared.css.
  */
 export function FaqsPageContent() {
   return (

@@ -1,4 +1,4 @@
-/** Transition/divider section of /subscribe. Ported from Webflow by the Webflow Cloner agent. */
+/** Transition/divider section of /subscribe. */
 export function SubscribeSectionDivider() {
   return (
     <section id="compliance" className="section_v2">

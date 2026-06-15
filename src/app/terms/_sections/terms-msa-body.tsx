@@ -1,4 +1,4 @@
-/** MSA-body section of /terms. Ported from Webflow by the Webflow Cloner agent. */
+/** MSA-body section of /terms. */
 export function TermsMsaBody() {
   return (
     <section style={{"transform": "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", "opacity": "1", "transformStyle": "preserve-3d"}} className="section">

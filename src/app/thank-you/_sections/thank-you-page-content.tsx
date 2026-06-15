@@ -5,9 +5,7 @@ import { OptimizedImage } from "@/components/optimized-image";
 import chairImg from "@public/assets/decor/chair.webp";
 
 /**
- * Faithful React port of the Webflow https://www.mycroft.io/thank-you page. DOM + classes mirror
- * the original 1:1; global styling is in webflow-shared.css, page CSS
- * in thank-you.css. Ported from Webflow by the Webflow Cloner agent.
+ * /thank-you page. Global styling is in webflow-shared.css.
  */
 export function ThankYouPageContent() {
   return (

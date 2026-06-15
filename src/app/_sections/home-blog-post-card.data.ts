@@ -1,6 +1,6 @@
 import type { HomeBlogPostItem } from "./home-blog-post-card";
 
-/** Data for the HomeBlogPostCard collection, parsed from the Webflow CMS items. Ported from Webflow by the Webflow Cloner agent. */
+/** Data for the HomeBlogPostCard collection */
 export const homeBlogPosts: HomeBlogPostItem[] = [
   {
     "href_0": "/blog/cmmc-compliance-platform",

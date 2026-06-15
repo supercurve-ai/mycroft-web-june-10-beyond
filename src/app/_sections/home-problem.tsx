@@ -1,6 +1,6 @@
 import { OptimizedImage } from "@/components/optimized-image";
 
-/** Problem-statement section of /home. Ported from Webflow by the Webflow Cloner agent. */
+/** Problem-statement section of /home. */
 export function HomeProblem() {
   return (
     <section id="problem" className="section_v2 tint_40eg overflow_hidden">

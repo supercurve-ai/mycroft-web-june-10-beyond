@@ -1,6 +1,6 @@
 import { HubspotForm } from "@/components/hubspot-form";
 
-/** Hero section of /partnerships. Ported from Webflow by the Webflow Cloner agent. */
+/** Hero section of /partnerships. */
 export function PartnershipsHero() {
   return (
     <section id="hero" className="section-hero">

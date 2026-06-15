@@ -1,4 +1,4 @@
-/** Solution section of /home. Ported from Webflow by the Webflow Cloner agent. */
+/** Solution section of /home. */
 export function HomeSolution() {
   return (
     <section id="solution" className="section_v2">

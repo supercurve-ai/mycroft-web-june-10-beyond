@@ -1,6 +1,6 @@
 import { BookDemoForm } from "@/components/book-demo-form";
 
-/** Demo-booking hero section of /demo. Ported from Webflow by the Webflow Cloner agent. */
+/** Demo-booking hero section of /demo. */
 export function DemoBookingHero() {
   return (
     <section id="hero" className="section-hero">
