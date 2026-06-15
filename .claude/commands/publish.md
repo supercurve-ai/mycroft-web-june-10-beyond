@@ -13,8 +13,11 @@ Steps:
 1. Run `git status` and `git diff --stat` to see what changed.
 2. Briefly tell the user, in plain English, what is about to go live (e.g. "This will publish your
    edits to the homepage headline and the new blog post").
-3. Quickly sanity-check that nothing is obviously broken — if there's any doubt the site builds,
-   run `pnpm build` and stop if it fails (explain the problem simply and offer to fix it).
+3. Quickly sanity-check that nothing is obviously broken before going live. Run the same checks as
+   the `/check` command (see `.claude/commands/check.md`): the site builds (`pnpm build`), no
+   leftover `cdn.prod.website-files.com` references (Rule 5), and any new public pages are in
+   `src/app/sitemap.ts` so Google can find them. Stop and explain simply (offer to fix) if any
+   fail — never publish a site that doesn't build.
 4. Stage everything: `git add -A`.
 5. Commit with a short, plain-English message describing the change (no jargon, no "Co-Authored-By"
    footer needed for her edits — keep it human, e.g. `Update homepage headline and add SOC 2 post`).
