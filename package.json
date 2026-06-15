@@ -1,6 +1,6 @@
 {
-  "name": "webflow-clone",
-  "version": "0.1.0",
+  "name": "mycroft-marketing-website",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build-image-manifest": "node scripts/build-image-manifest.mjs",
