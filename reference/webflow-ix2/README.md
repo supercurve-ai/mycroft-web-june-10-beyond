@@ -52,26 +52,34 @@ Already covered elsewhere in the clone:
   WebflowInteractions + per-element `--wf-*` vars carry the exact timings
 - `a-27` Hero Cursor Glow — CursorGlow.tsx
 - FAQ open/close (`a-113-116` etc.) — Accordion.tsx (FaqItem)
-- `a-70`/`a-71` product slider — ProductSlider/ProductSlideCard (cover-wipe
-  and lottie timings exact; the slide text animates as one block instead
-  of the original 0/200/400ms three-element stagger)
+- `a-70`/`a-71` product slider — ProductSlider/ProductSlideCard (native
+  fade crossfade 750ms ease on `.w-slide`; cover-wipe + lottie timings
+  exact; the three slide-text elements drift x −20→0 + fade, staggered
+  0/200/400ms on enter — the artwork itself never translates)
 - mobile hamburger menu — SiteNav + CSS
 
 Not applicable / not implemented:
 
 - Show/Hide-Navigation on scroll (`a-2/3/9/10/74-83`) — only the OLD navbar
   symbols had this; navbar_v3 (what the clone uses) has no scroll behavior
-- scroll-scrub interactions (SCROLLING_IN_VIEW: `a-50/51` product columns) —
-  progress-driven; the clone approximates them as threshold reveals.
-  EXCEPTIONS: `a-98/99` (features-scroll 3-slide) and `a-117/118`
-  (features2-scroll 2-slide) are implemented exactly in
+- scroll-scrub interactions (SCROLLING_IN_VIEW) are implemented exactly via
+  the `.wf-scrub` mechanism in WebflowInteractions (progress-driven, reverses
+  on scroll-up). `a-30-34` (slide-from-right scrubs, x 50px→0 easeIn + linear
+  fade, staggered keyframe windows) via `data-wf-scrub="start,end"` — used by
+  the /about founder tiles, the /pricing plan tiles, and the /pricing
+  compliance badges. `a-50/51` (`/product` "5-in-1" feature columns:
+  product-col-left x −100px / product-col-right x +100px, easeIn over 0–25%
+  progress + linear fade over 0–15%) via `data-wf-scrub="0,15"
+  data-wf-scrub-move="0,25" data-wf-scrub-from="x,±100px,0"` — the fade and
+  slide run over independent windows (`data-wf-scrub-move`). The slide-based
+  EXCEPTIONS `a-98/99` (features-scroll 3-slide) and `a-117/118`
+  (features2-scroll 2-slide) are instead implemented in
   `src/app/_shared/ScrollFeatureSlider.tsx` (timeline picked by slide
-  count) — used by /partnerships and all five /product/* pages.
-  Also `a-30-34` (slide-from-right scrubs,
-  x 50px→0 easeIn + linear fade, staggered keyframe windows) are now
-  implemented exactly via `.wf-scrub` + `data-wf-scrub="start,end"` in
-  WebflowInteractions — used by the /about founder tiles, the /pricing
-  plan tiles, and the /pricing compliance badges
+  count) — used by /partnerships and all five /product/* pages. `a-29` "Move-fade-up"
+  (home "We've got you covered" feature tiles 2–4: y 15%→0 easeIn +
+  linear fade 0.5→1 over 0–20% progress) is the same mechanism with a
+  non-default from-state (`data-wf-scrub-from="y,15%,0.5"`); tile 1 has no
+  interaction on the home page (`data-wf-page` 67efe01f), so it stays static
 - lottie scroll play/stop (`a-52`) — clone lotties autoplay. EXCEPTION:
   `a-122/125/126` (frameworks compliance dials: play after 750/1250/1750ms
   stagger on scroll-in) are implemented via DotLottiePlayer's `playOnView`
