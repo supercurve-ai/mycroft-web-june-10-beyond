@@ -87,9 +87,22 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
 
 ## Rules
 
-1. **New pages:** use the `add-page` skill (or `/add-page`). ALWAYS ask the
-   user whether the page should be findable by Google before finishing.
-2. **New blog posts:** use the `add-blog-post` skill (or `/add-blog-post`).
+1. **Content skills — prefer them over hand-editing.** Each encodes this site's
+   wiring (sitemap, static-images/manifest registration, NBSP traps, the shared
+   templates) so the same step never gets forgotten:
+   - **New pages:** `add-page` (generic), `add-framework-page` (`/frameworks/*`
+     via the shared template), `add-product-subpage` (`/product/*` via the
+     shared template). ALWAYS ask whether the page should be findable by Google
+     before finishing.
+   - **New articles:** `add-blog-post`, `add-case-study`.
+   - **Images:** `swap-image` (replace/add a screenshot, logo, photo, headshot,
+     badge, blog/case-study image — handles static-images.ts + the manifest).
+   - **Copy:** `edit-text` (find + change wording safely, NBSP-aware).
+   - **SEO:** `seo` (title, meta description, share image, findability).
+   - **Small blocks:** `site-bits` (team member, logo, testimonial, FAQ entry).
+2. **Before publishing:** `/check` (or the `/check` step inside `/publish`)
+   verifies the build, no Webflow-CDN leftovers, and that new public pages are
+   in the sitemap.
 3. Keep `WebflowInteractions` mounted on every page that uses Webflow widget
    markup (sliders, tabs, scroll reveals, lightboxes) — it wires those after
    hydration. The nav/footer don't need it.
@@ -112,8 +125,11 @@ original Webflow site 1:1 and are styled by the captured Webflow stylesheet.
 
 The site owner may not be a developer. `EDITING-GUIDE.md` (project root) is
 their plain-English cheat sheet — `/guide` shows it in chat. The operator
-commands `/start`, `/stop`, `/publish`, `/undo` exist for them: keep replies
-friendly and jargon-free when these are used, and never discard or publish
-work without confirming first.
+commands `/start`, `/stop`, `/preview`, `/check`, `/publish`, `/undo` exist for
+them: keep replies friendly and jargon-free when these are used, and never
+discard or publish work without confirming first. The content skills above
+(add-page, swap-image, edit-text, seo, …) are also written for plain-English
+use — they always end with a completeness report so the owner knows what, if
+anything, still needs a real asset or a decision.
 
 Run `pnpm dev` to develop, `pnpm build` to verify production builds.
