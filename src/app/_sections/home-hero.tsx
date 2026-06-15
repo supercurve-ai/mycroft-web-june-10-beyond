@@ -11,7 +11,7 @@ export function HomeHero() {
           <div className="container-flex hero_v2 tablet:max-[1200px]:pt-[12vw]! tablet:max-[1200px]:pb-[20vw]!">
             <div className="col-hero-left homepage">
               <div className="hero-copy">
-                <a href="https://www.mycroft.io/blog/stealth-to-seed-mycrofts-ai-security-compliance-platform-backed-by-3-5m-led-by-luge-capital" target="_blank" className="link-block w-inline-block">
+                <a href="https://www.mycroft.io/blog/stealth-to-seed-mycrofts-ai-security-compliance-platform-backed-by-3-5m-led-by-luge-capital" target="_blank" rel="noopener noreferrer" className="link-block w-inline-block">
                   <div className="container-flex hero_announcement announcement-pill">
                     <div className="eyebrow-small tint_40eg">
                       Announcement: Seed raise of $3.5M USD

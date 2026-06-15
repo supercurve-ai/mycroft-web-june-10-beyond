@@ -150,7 +150,7 @@ function SolutionsSubmenu() {
       <div className="sub-link-wrapper">
         {/* arrow keeps the .text-link:hover nudge — no inline transform here,
             or it would override the hover rule in webflow-shared.css */}
-        <a href="https://trust.mycroft.io/" target="_blank" className="text-link xs_link w-inline-block" tabIndex={0} style={{ alignItems: "center" }}>
+        <a href="https://trust.mycroft.io/" target="_blank" rel="noopener noreferrer" className="text-link xs_link w-inline-block" tabIndex={0} style={{ alignItems: "center" }}>
           <div>
             Trust center
           </div>
@@ -349,7 +349,7 @@ export function SiteNav() {
               </div>
               <OptimizedImage src="/assets/icons/arrow-icon-white.svg" loading="lazy" alt="" className="nav-btn-arrow" style={frozenIcon} />
             </NavLink>
-            <a href="https://app.mycroft.io" target="_blank" className="btn-nav full_width grey w-inline-block">
+            <a href="https://app.mycroft.io" target="_blank" rel="noopener noreferrer" className="btn-nav full_width grey w-inline-block">
               <div className="nav-btn-text color_rg">
                 Login
               </div>
@@ -374,7 +374,7 @@ export function SiteNav() {
               <PrimaryLinks />
             </div>
             <div className="nav-menu-ctas">
-              <a href="https://app.mycroft.io" target="_blank" className="nav-link_v2 login w-nav-link">
+              <a href="https://app.mycroft.io" target="_blank" rel="noopener noreferrer" className="nav-link_v2 login w-nav-link">
                 Login
               </a>
               <NavLink href="/demo" className="btn-nav w-inline-block">

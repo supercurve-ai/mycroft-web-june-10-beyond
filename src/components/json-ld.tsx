@@ -6,6 +6,10 @@
  * Webflow site shipped (mostly placeholder) JSON-LD this way; this replaces it
  * with real, content-driven schema (see src/lib/structured-data.ts).
  */
+function serializeJsonLd(item: object): string {
+  return JSON.stringify(item).replace(/</g, "\\u003c");
+}
+
 export function JsonLd({ data }: { data: object | object[] }) {
   const items = Array.isArray(data) ? data : [data];
   return (
@@ -14,9 +18,7 @@ export function JsonLd({ data }: { data: object | object[] }) {
         <script
           key={i}
           type="application/ld+json"
-          // JSON.stringify output is safe to inject: no user input, and the
-          // closing-tag sequence "</" cannot appear in serialized JSON values here.
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(item) }}
         />
       ))}
     </>

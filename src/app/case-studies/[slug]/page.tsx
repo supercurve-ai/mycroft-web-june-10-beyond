@@ -118,7 +118,7 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ sl
                               </svg>
                             </ShareIcon>
                           </a>
-                          <a data-share-twitter="true" href="#" target="_blank" className="cs-share-link transition-[background-color_250ms_ease]! active:bg-[#e1eded]! w-inline-block" aria-label="Share on X">
+                          <a data-share-twitter="true" href="#" target="_blank" rel="noopener noreferrer" className="cs-share-link transition-[background-color_250ms_ease]! active:bg-[#e1eded]! w-inline-block" aria-label="Share on X">
                             <ShareIcon>
                               <svg id="x-share" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                 <path fill="currentColor" d="M17.3,15.4l4.9-5.9h-1.2l-4.3,5.1-3.4-5.1h-3.9l5.2,7.8-5.2,6.2h1.2l4.5-5.4,3.6,5.4h3.9l-5.4-8.1h0ZM15.7,17.4l-.5-.8-4.2-6.2h1.8l3.4,5,.5.8,4.4,6.5h-1.8l-3.6-5.3h0Z"/>

@@ -17,7 +17,7 @@ export function SiteFooter() {
                 <NavLink href="/privacy" target="_blank" className="footer-link_v2">
                   Privacy
                 </NavLink>
-                <a href="https://status.mycroft.io/" target="_blank" className="footer-link_v2">
+                <a href="https://status.mycroft.io/" target="_blank" rel="noopener noreferrer" className="footer-link_v2">
                   Status
                 </a>
                 <NavLink href="/ai-disclosure" target="_blank" className="footer-link_v2">
