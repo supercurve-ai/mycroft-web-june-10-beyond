@@ -55,12 +55,11 @@ type Props = {
    */
   playOnView?: number;
   /**
-   * Tie playback to the closest `.wf-reveal` ancestor's fade-in: play only
-   * while the reveal is at full opacity and in the viewport, pause the moment
-   * it isn't (scrolling out snaps the reveal back to hidden), resume from the
-   * pause point after the next fade-in completes, and once the animation has
-   * played through, hold the final frame forever — later reveals/scrolls
-   * don't restart it. Reduced-motion users see the final frame immediately.
+   * Tie playback to the closest `.wf-reveal` ancestor's fade-in: wait until the
+   * reveal has reached full opacity (and is in the viewport) before playing,
+   * pause while scrolled off-screen and resume from the pause point on the way
+   * back, and once the animation has played through hold the final frame
+   * forever. Reduced-motion users see the final frame immediately.
    */
   playOnReveal?: boolean;
 };

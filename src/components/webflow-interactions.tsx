@@ -52,43 +52,24 @@ export function WebflowInteractions() {
       if (reduce || mobile) {
         reveals.forEach((el) => el.classList.add("is-revealed"));
       } else {
-        // IX2's SCROLL_INTO_VIEW re-fires every time the element enters the
-        // viewport — from either scroll direction — because each trigger
-        // re-applies the action list's initial-state group instantly before
-        // animating. Two observers reproduce that: one reveals at the usual
-        // threshold, the other snaps the element back to its hidden state
-        // (without animating — it's fully off-screen by then) once it has
-        // left the viewport, so the reveal replays on the next entry.
+        // IX2's SCROLL_INTO_VIEW reveals are all one-shot on the original site
+        // (every one of the 108 events has loop:false + playInReverse:false):
+        // the element animates in once when it first enters the viewport and
+        // then stays put — it does NOT reset or replay when scrolled away and
+        // back. So we reveal at the threshold and stop observing it.
         const io = new IntersectionObserver(
           (entries) => {
             for (const entry of entries) {
               if (entry.isIntersecting) {
                 entry.target.classList.add("is-revealed");
+                io.unobserve(entry.target);
               }
             }
           },
           { threshold: 0.15, rootMargin: "0px 0px -10% 0px" },
         );
-        const reset = new IntersectionObserver((entries) => {
-          for (const entry of entries) {
-            const el = entry.target as HTMLElement;
-            if (entry.isIntersecting || !el.classList.contains("is-revealed"))
-              continue;
-            const prev = el.style.transition;
-            el.style.transition = "none";
-            el.classList.remove("is-revealed");
-            void el.offsetWidth; // flush styles so the reset doesn't animate
-            el.style.transition = prev;
-          }
-        });
-        reveals.forEach((el) => {
-          io.observe(el);
-          reset.observe(el);
-        });
-        cleanups.push(() => {
-          io.disconnect();
-          reset.disconnect();
-        });
+        reveals.forEach((el) => io.observe(el));
+        cleanups.push(() => io.disconnect());
       }
     }
 
