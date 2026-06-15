@@ -7,25 +7,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   // Vercel/Next image optimization: serve AVIF (then WebP) at high quality so
-  // the product UI screenshots stay crisp. WfImage is the only image renderer
-  // and pins quality={90}. Replaces Webflow's hand-built `-p-*` srcset variants.
+  // the product UI screenshots stay crisp. OptimizedImage is the only image
+  // renderer and pins quality={90}. Replaces Webflow's hand-built `-p-*` srcset
+  // variants.
   images: {
     formats: ["image/avif", "image/webp"],
     qualities: [90],
   },
-  // Let phones/tablets on the local network load the dev server's JS — Next
-  // blocks dev assets for non-localhost hosts by default, which made pages
-  // render but never hydrate (dead hamburger menu etc.) when testing on a
-  // physical phone. Private-range IPs only; does not affect production.
-  allowedDevOrigins: [
-    "192.168.*.*",
-    "10.*.*.*",
-    "172.16.*.*",
-    "192.168.4.59",
-    "10.10.98.18",
-  ],
-  // Pin the tracing root to this app so a parent monorepo lockfile doesn't
-  // confuse Next's workspace-root inference.
   outputFileTracingRoot: __dirname,
   turbopack: { root: __dirname },
   // 301 redirects carried over from the original Webflow site settings.
