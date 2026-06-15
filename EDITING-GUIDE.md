@@ -33,12 +33,40 @@ right inside the **Claude desktop app**. Here's everything you need.
 | **`/start`** | Starts the preview so you can see the site at http://localhost:3000 |
 | **`/stop`** | Stops the preview when you're done |
 | **`/preview`** | Creates a **private link** to share for review — *not live yet* |
+| **`/check`** | Double-checks everything's healthy before you publish (no broken pages) |
 | **`/publish`** | Sends your changes to the **live** website |
 | **`/undo`** | Takes back your most recent change (it'll ask you to confirm first) |
 | **`/guide`** | Shows this cheat sheet right in the chat |
 
 You can also just *talk* — you don't have to use commands. Saying "publish this" or
 "undo that last change" works too.
+
+---
+
+## More things you can ask for (just say it in plain English)
+
+Claude has built-in helpers for the common jobs. You don't need to name them —
+just describe what you want and the right one kicks in:
+
+- **Change wording** — *"Change the homepage headline to …"*, *"Fix the typo in
+  the pricing section"*, *"Reword the paragraph that starts 'Mycroft helps…'"*.
+- **Swap a picture** — *"Replace the WEAVE logo with this new one"*, *"Use this
+  screenshot on the cloud-security page"* (attach or point to the image).
+- **Add a new page** — *"Add a page for our partners program"*. Claude will ask
+  whether it should show up on Google.
+- **Add a new compliance (framework) page** — *"Add a framework page for PCI
+  DSS"*.
+- **Add a new product page** — *"Add a product page for endpoint protection"*.
+- **Write a blog post or case study** — *"Add this blog post: …"*, *"Publish
+  this customer story about Acme"* (paste the text).
+- **Search / sharing previews (SEO)** — *"Change the search description for the
+  pricing page"*, *"Fix the image that shows when this page is shared on
+  LinkedIn"*, *"Should the careers page be findable on Google?"*.
+- **Small bits** — *"Add a new team member"*, *"Add this investor logo"*, *"Add
+  a testimonial from …"*, *"Add an FAQ about pricing"*.
+
+For each of these, Claude finishes with a short plain-English summary of what it
+did and flags anything still missing (like a real photo to drop in later).
 
 ---
 
